@@ -1,0 +1,31 @@
+\documentclass[12pt,a4paper, titlepage]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+\graphicspath{ {figures/} }
+\title{\emph{Rapport du TP OPTIMISATION Pt.1: Methodes Exactes} }
+\author{ 
+    \emph{BACHI Yasmine (CdE)}
+    \and
+    SAADI Fatma Zohra Khaoula
+    \and 
+    NOUALI Sarah
+    \and 
+    MOUSSAOUI Meroua
+    \and 
+    MIHOUBI Lamia Zohra}
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \chapter*{Introduction}
+    \addcontentsline{toc}{chapter}{Introduction} \markboth{INTRODUCTION}{} 
+    \chapter{Description du Problème de Bin Packing (BPP)}
+    \import{chapters/}{Description_BPP}
+    \chapter{Etat de l'Art}
+    \import{chapters/}{Etat_de_lart}
+
+\end{document}
