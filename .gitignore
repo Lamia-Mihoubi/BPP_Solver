@@ -1,0 +1,5 @@
+*
+!MethodeExacte.tex
+!/chapters/*.tex
+!/figures/*
+!.gitignore
