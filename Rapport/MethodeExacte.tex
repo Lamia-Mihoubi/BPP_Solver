@@ -23,6 +23,21 @@
     \tableofcontents
     \chapter*{Introduction}
     \addcontentsline{toc}{chapter}{Introduction} \markboth{INTRODUCTION}{} 
+    Le problème du bin packing, dans lequel un ensemble d’objets de différents poids doit être rangé dans un nombre minimum de boîtes identiques de capacité C est un problème NP-difficile, c’est à dire qu’il n y a aucune chance de trouver une méthode de résolution qui fournit la solution exacte en un temps polynomiale, sauf si l’égalité NP=P est prouvée. 
+    Dans ce projet, nous allons mettre en place un plateforme de résolution du problème du Bin Packing. pour cela , nous implémenterons 4 types de méthodes: 
+    \begin{enumerate}
+        \item \emph{méthodes exactes:} fournissant la solution optimale, mais qui sont très limités par la taille du problème. 
+        \item \emph{heuristiques:} qui sont des méthodes approchées spécifiques au problème.
+        \item \emph{métaheuristiques:} qui sont des méthodes approchées génériques.
+        \item \emph{hybridation d'une métaheuristique avec une recherche locale:} qui est notre contribution principale dans la résolution de ce problème.
+    \end{enumerate}
+    Nous commencerons par la présentation du problème, sa formulation mathématique, et une étude des méthodes de résolutions existantes dans la littérature.[ Etat de l’Art]. Ensuite, nous présenterons la conception détaillée de chaque méthode implémentée, ainsi que les résultats des test de ces méthodes effectués sur des benchmark connus.[Conception \& Tests]
+    On distingue 2 types de tests:
+    \begin{enumerate}
+        \item \emph{les tests empiriques:} dont le but de trouver la meilleure configuration des paramètres de nos méthodes implémentées.  
+        \item \emph{les tests comparatifs:} où on doit comparer les résultats obtenus des méthodes implémentées et sélectionner la meilleure méthode de résolution pour chaque instances. la comparaison se fait en terme de qualité de la solution et du temps d'exécution. 
+    \end{enumerate}
+    Ce rapport, va être  joint  avec un article exposant la solution hybride proposée.
     \chapter{Description du Problème de Bin Packing (BPP)}
     \import{chapters/}{Description_BPP}
     \chapter{Etat de l'Art}
