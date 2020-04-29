@@ -1,7 +1,43 @@
-\documentclass[class=article, crop=false]{standalone}
+\documentclass[class=report, crop=false]{standalone}
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
+\usepackage{mathtools}
 \begin{document}
-    Lorem ipsum....
+    \section{Domaines d'Application:}
+Le BPP a de nombreuses applications dans le domaine industriel, informatique, etc. Parmi lesquelles on trouve:
+    \renewcommand{\labelitemi}{$\circ$}  
+    \begin{itemize}
+        \item Chargement de conteneurs.
+        \item Placement des données sur plusieurs disques.
+        \item Planification des travaux.
+        \item Emballage de publicités dans des stations de radio / télévision de longueur fixe.
+        \item Stockage d’une grande collection de musique sur des cassettes / CD, etc.
+    \end{itemize}
     \section{Formulation Mathématique}
+    Etant donné \(m\) boites de capacité \(C\) et \(n\) articles de volume \(v_i\) chacun. \\
+    Soient: 
+    \[ x_{ij} =
+        \begin{cases}
+            1  & \quad \text{article } j \text{ rangé dans la boîte } i \\
+            0  & \quad \text{sinon } 
+        \end{cases}
+    \]
+\[ y_i =
+    \begin{cases}
+        1  & \quad \text{boîte } i \text{ utilisée } \\
+        0  & \quad \text{sinon } 
+    \end{cases}
+\]
+
+La formulation du problème donne ainsi le programme linéaire suivant
+\[(PN)
+    \begin{cases}
+        Z(min) = \displaystyle\sum_{i=1}^{m} y_i \\
+        \displaystyle\sum_{i=1}^{m} x_{ij}  = 1 \\
+        \displaystyle\sum_{j=1}^{n} v_j x_{ij} \le C y_i \\
+        y_i \in \{0,1\} \\
+        x_{ij} \in \{0,1\} 
+    \end{cases}
+\]  
+
 \end{document}
