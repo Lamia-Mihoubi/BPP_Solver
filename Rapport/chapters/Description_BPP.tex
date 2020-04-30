@@ -1,7 +1,7 @@
 \documentclass[class=report, crop=false]{standalone}
+\usepackage{mathtools}
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
-\usepackage{mathtools}
 \begin{document}
     \section{Domaines d'Application:}
 Le BPP a de nombreuses applications dans le domaine industriel, informatique, etc. Parmi lesquelles on trouve:
@@ -39,5 +39,7 @@ La formulation du problème donne ainsi le programme linéaire suivant
         x_{ij} \in \{0,1\} 
     \end{cases}
 \]  
+La première contrainte signifie qu’un article j ne peut être placé qu’en une seule boite
+La deuxième fait qu’on ne dépasse pas la taille d’une boite lors du rangement
 
 \end{document}
