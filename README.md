@@ -3,7 +3,7 @@
 
 ## Description des documents : 
 ce repo contient:
-- **Binpacker**  : la classe principale, où on peut instancier un probleme du bin packing et appeler les differentes méthodes implémentées.
+- **BPP_Solver.py**  : la classe principale, où on peut instancier un probleme du bin packing et appeler les differentes méthodes de résoulution implémentées.
 - **Dossier Exact_Methods**: contient l'ensemble des methodes exactes implementées pour le BPP, et qui sont : 
     - **BB.py** : implemente la methode branch and bound pour resoudre le BPP. 
     - **BBA.py**: implemente une version améliorée du Branch & Bound. 
