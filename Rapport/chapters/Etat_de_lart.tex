@@ -59,8 +59,49 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
     Elle s'appuie sur \emph{le principe d'optimalité de Bellman}: une solution optimale d'un problème s'obtient en combinant des solutions optimales à des sous-problèmes. 
     Un modèle pseudo-polynomial simple, pour résoudre le problème bin-packing, est obtenu en associant des variables aux décisions prises dans une table de programmation dynamique (DP) classique.
         \subsubsection*{DP-flow:}
-        Dans le modèle BPP proposé par \emph{Cambazard et O’Sullivan}, connu sous le nom de DP-flow, les états DP sont représentés par un graphique dans lequel un chemin qui commence à partir d'un nœud initial et se termine à un nœud terminal représente un remplissage possible d'une boîte. 
-Notons \((j, d) (j = 0, \cdots, n \, et \, d = 0, \cdots, c)\) un état DP où les articles de \(0\) à j ont déjà été étudié (les décisions de placer les articles de \(0\) à \(j\) dans la boîte ou non ont déjà été reprises ) et entraînent un remplissage partiel de la boîte de \(d\) unités. Notons également par \(((j, d), (j + 1, e))\) un arc reliant les états \((j, d)\) et \((j + 1, e)\). Un tel arc exprime la décision d'emballer ou non l'article \(j + 1\) à partir de l'état actuel \((j, d)\): l'état atteint par l'arc est \((j + 1, d + w_j + 1)\) si l'article \(j + 1\) est emballé, et \((j + 1, d)\) sinon.
-Soit \(A\) l'ensemble de tous les arcs. Comme un remplissage réalisable d’une boîte est représenté par un chemin qui commence à partir du nœud \((0, 0)\) et se termine au nœud \((n + 1, c)\), le BPP consiste à sélectionner le nombre minimum des chemins qui contiennent tous les éléments. 
+        Dans le modèle BPP proposé par \emph{Cambazard et O’Sullivan}, connu sous\\
+        le nom de DP-flow, les états DP sont représentés par un graphique dans \\
+        lequel un chemin qui commence à partir d'un nœud initial et se termine à \\ 
+        un nœud terminal représente un remplissage possible d'une boîte. Notons \\
+        \((j, d) (j = 0, \cdots, n \, et \, d = 0, \cdots, c)\) un état DP où les articles de \(0\) à \(j\) ont déjà \\
+        été étudié (les décisions de placer les articles de \(0\) à \(j\) dans la boîte ou non\\
+        ont déjà été reprises ) et entraînent un remplissage partiel de la boîte de \(d\) \\
+        unités. Notons également par \(((j, d), (j + 1, e))\) un arc reliant les états \((j, d)\) \\
+        et \((j + 1, e)\). Un tel arc exprime la décision d'emballer ou non l'article \(j + 1\) à partir de l'état actuel \((j, d)\): l'état atteint par l'arc est \((j + 1, d + w_j + 1)\) si l'article \(j + 1\) est emballé, et \((j + 1, d)\) sinon.
+        Soit \(A\) l'ensemble de tous les arcs. Comme un remplissage réalisable d’une boîte est représenté par un chemin qui commence à partir du nœud \((0, 0)\) et se termine au nœud \((n + 1, c)\), le BPP consiste à sélectionner le nombre minimum des chemins qui contiennent tous les éléments. \\
+        Pour cette instance BPP, une solution optimale est produite par les deux chemins mis en évidence dans la figure ci-dessous, à savoir \\\([(0,0), (1,4), (2,4), (3,7), (4,7), (5,9), (6,9), (7,9)]\) \\
+        et \([(0,0), (1,0), (2,4), (3,4), (4,7), (5,7), (6,9), (7,9)]\).
+        \begin{figure}[h!]
+            \includegraphics[width=13.5cm]{../figures/DP-flow.png}
+        \end{figure}
+
+        \section{Heuristiques}
+        \subsection{Classification:}
+        Les méthodes approchées  sont classées en plusieurs catégories:
+        \paragraph{Algorithmes ON-LINE:} Ces algorithmes considèrent l’hypothèse que les articles arrivent un à la fois en un ordre connu, chaque article doit être rangé avant de passer à l’article suivant.
+        \\
+        \textbf{Quelques algorithmes on-line:}
+         
+        \begin{enumerate}[a.]
+            \item \textbf{Next Fit (NF):} Lors du rangement de l’article a, NF vérifie s'il tient dans la même boîte que le dernier article (Soit la boîte du dernier article rangé Bj). Si c’est le cas, il place l’article dans la boîte Bj, laissant cette boîte ouverte. Sinon, il ferme la boîte Bj et place l’article a dans une nouvelle boîte Bj+1, qui devient maintenant la boîte ouverte.
+            \\ \emph{Remarque: Il existe des variants pour cet algorithme, permettant d’améliorer ses performances, parmi lesquelles on trouve: } 
+                \begin{itemize}
+                    \item \textbf{Next-KFIT (NFk):} autorise k boîte ouvertes à la fois, c’est à dire qu’il vérifie dans les K boîtes ouvertes s’il y a assez d’espace pour ranger l’article a, sinon il ouvre une nouvelle boîte. Si K=1 on retombe sur l’algorithme NF.
+                \end{itemize}
+            \item Des algorithmes approximatifs FFD, BFD et WFD (qu’on présentera dans la partie Méthodes approximatives) sont appliqués au problème actuel, et chacune des solutions approximatives obtenues est comparée à la borne inférieure \(L_3\).
+                \begin{itemize}
+                    \item Si le nombre de boîtes utilisées par l'une des solutions approximatives est égal à la borne inférieure du nœud actuel, aucune autre recherche n'est effectuée sous ce nœud. 
+                \end{itemize}
+        \end{enumerate}
+
+        \section{Métaheuristiques}
+        \subsection{La recherche tabou: }
+        Une méthode de résolution a été proposée par Fernandes Muritiba Et al.[2] ,qui prend en entrée une population initiale obtenue par une heuristique et applique un opérateur de croisement sur ces solutions .Chaque solution obtenue est améliorée par la suite en utilisant une recherche tabou, qui consiste à  se déplacer dans un espace de recherche contenant des solutions réalisables  partielles où certains articles ne sont pas affectés à des boîtes. L’amélioration consiste de passer d’une solution partielle de valeur K à une solution complète de la même valeur. La fonction objective utilisée est basée sur la somme pondérée des tailles des articles.
+Pour la diversification de l’espace de recherche, On utilise une procédure basée sur un opérateur de croisement.
+        \subsection{L’algorithme ILWOA (Improved Lévy WOA): }
+        L’algorithme WOA (Whale Optimization Algorithm) est basé sur une méthode inspirée de la nature plus exactement d’une stratégie d’alimentation des baleines à bosse, où la recherche des proies représente l’exploration de l’espace de recherche et la libération des bulles représente l’exploitation.
+Une amélioration de cet algorithme a été proposée par Abdel-Basset, M., Manogaran, G., Abdel-Fatah, L. et al [2].Il s’agit de l’utilisation de fonctions logistiques et d’autres méthodes probabilistes pour assurer une convergence plus rapide
+        \subsection{L’algorithme FFA (FireFly Algorithm): }
+        L'algorithme FireFly (FFA) est une métaheuristique génétique, inspirée par le comportement clignotant des lucioles. Le but principal du flash d'une luciole est d'agir comme un système de signal pour attirer d'autres lucioles. Il y a trois règles. La première règle, chaque luciole attire tous les autres lucioles avec des flashs plus faibles. Deuxièmement, l'attractivité est proportionnelle à leur luminosité qui est inversement proportionnelle à leurs distances. Pour deux lucioles clignotantes, la moins brillante se déplacera vers la plus brillante. L'attractivité est proportionnelle à la luminosité et ils diminuent tous les deux à mesure que leur distance augmente. S'il n'y en a pas plus brillant qu'une luciole particulière, il se déplacera de façon aléatoire. Enfin, aucune luciole ne peut attirer la luciole la plus brillante, cette dernière se déplace d’une façon aléatoire. Le FFA est construit par analogie, en appliquant ces trois règles sur une population de solutions initiale pour la faire évoluer en une population contenant la solution approchée.
 
 \end{document}
