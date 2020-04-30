@@ -1,23 +1,16 @@
-\documentclass[12pt]{article}
-
+\documentclass[class=report, crop=false]{standalone}
 \usepackage{amsmath}
 \usepackage{mathtools}
-\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
-
 \usepackage{algorithm}
-
 \usepackage{algorithmic}
-
 \usepackage{graphicx}
-
 \usepackage{hyperref}
-
 \usepackage[utf8]{inputenc}
-
-\title{Les méthodes exactes}
-
+% make sure to keep these two lines the very last in the preamble
+% if you want to add packages add them before not after these two lines
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
 \begin{document}
-\maketitle
 
 Dans ce chapitre,nous allons présenter la conception détaillée des méthodes exactes sur lesquelles notre choix d'implementation s'est porté:
 
@@ -45,10 +38,9 @@ Dans le but de montrer l’applicabilité de ces méthodes, comparer leurs perfo
     \includegraphics[width=\linewidth]{../figures/diagr1.png}
 \end{figure}
 \subsection{Pseudo-Code}
-\begin{algorithm}
-    \caption{Bin packing}
-    
-    \end{algorithm}
+% \begin{algorithm}
+%    \caption{Bin packing}   
+%\end{algorithm}
 \subsubsection*{Evaluation d'un noeud (Borne L1)}
 L’évaluation d’un nœud est calculée en sommant 2 parties, le nombre de boîtes déjà utilisées bcount et une estimation du nombre de boîtes qu’on va ouvrir encore pour contenir les objets restants. Cette estimation est obtenue en divisant la somme des poids restants sumwt sur la capacité d’une boîte. On soustrait de la somme des poids restants, l’espace vide 
 restant dans la dernière boîte ouverte, car ce dernier peut contenir des objets. On obtient ainsi la formule suivante :  
@@ -88,18 +80,17 @@ On definie des classes d'articles suivantes:
 \(BI(I)\)  est donnée par la formule suivante:
 \[BI(I)=max\{L(\alpha),\quad 0 \le \alpha \le C/2\}\]
 Avec
-\[L(\alpha)=|C_1|+|C_2|+max(0, \ceil*{\frac{\sum_{j \in C_3}^{} v_j - (|C_2|*C - \sum_{j \in C_2}^{} v_j) }{C}})\]
+\[L(\alpha)=|C_1|+|C_2|+max(0, \lceil{\frac{\sum_{j \in C_3}^{} v_j - (|C_2|*C - \sum_{j \in C_2}^{} v_j)\rceil }{C}})\]
 \paragraph{Explication de la formule :}
 Etant donnée que les objets des classes $C_1$ et $C_2$ ont un poids supérieur à $C/2$ chacun d'eux sera placé dans une boîte séparée pour le contenir, donc
 $|C_1|+|C_2|$boîtes sont utilisées quelque soit la solution. De plus,aucun objet de l’ensemble $C_3$ ne peut être rangé dans une boîte contenant un objet de $C_1$ ( à cause de la contrainte de capacité). La capacité résiduelle (espace libre) des
 $|C_2|$ boîtes est de : $C^*=|C_2|*c-\sum_{j \in C_2}^{} w_j$
 Donc dans le meilleur des cas, cette capacité résiduelle va être remplie par les objets de $C_3$, et dans ce cas le nombre de nouvelles boîtes qu’on doit ouvrir est de :  
 $\frac{\sum_{j \in C_3 -C^*}^{} w_j}{c}$ ( cette dernière formule utilise le même principe que la borne L1).
-\subsection{Pseudo-Code}
-\begin{algorithm}
-   \caption{Branch and bound amélioré }
-    
-\end{algorithm}
+\subsection{Pseudocode}
+%\begin{algorithm}
+%   \caption{Branch and bound amélioré }   
+%\end{algorithm}
 \section{Recherche exhaustive }
 Dans cette 3ème solution, on a implémenté une recherche exhaustive, qui consiste à parcourir l’ensemble des nœuds et leurs fils, sans aucun élagage de nœuds. Donc on aura le même algorithme que celui du branch and bound, en supprimant l’étape de l’évaluation du nœud pour décider de son élagage.  
 

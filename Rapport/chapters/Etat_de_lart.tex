@@ -1,4 +1,4 @@
-\documentclass[class=article, crop=false]{standalone}
+\documentclass[class=report, crop=false]{standalone}
 \usepackage{mathtools}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \usepackage[shortlabels]{enumitem}
@@ -35,7 +35,7 @@ Afin de rendre le processus de résolution plus rapide, cet algorithme utilise u
     On refait ce processus jusqu'à ce que l’instance résiduelle soit vide (i.e.: tous les articles ont été rangés). A l’itération \(k\), on obtiendra :
     \[L^\prime_K= \displaystyle\sum_{i=1}^{k} n_i + L_2(Ir^k)\] 
     La borne inférieure \(L_3\) est obtenue en appliquant la formule suivante , par la suite :
-    \[L_3=max \{L^\prime_1, L^\prime_2,.....,L^\prime_{kmax}\}\]
+    \[L_3=max \{L^\prime_1, L^\prime_2,\cdots,L^\prime_{kmax}\}\]
     \textbf{Un des algorithmes proposés pour cette méthode est l’algorithme MTP:} 
     \subsubsection*{L’algorithme MTP (Martello and Toth Procédure):}
     Le meilleur algorithme existant pour trouver la solution optimale du problème Bin Packing est celui proposée par  \emph{Martello et Toth (Martello \& Toth 1990a; 1990b)} le principe est le suivant :  
@@ -55,4 +55,12 @@ Les articles sont initialement triés selon des poids décroissants. À chaque n
 \end{enumerate}
 De plus, La principale source d'efficacité de l'algorithme de Martello et Toth est une méthode pour réduire la taille des sous-problèmes restants, appelée \textbf{critère de dominance}.
     \subsection{Programmation Dynamique}
+    La programmation dynamique est une méthode algorithmique pour résoudre des problèmes d'optimisation. Le concept a été introduit au début des années 1950 par Richard Bellman. Elle consiste à résoudre un problème en le décomposant en sous-problèmes, puis à résoudre les sous-problèmes, des plus petits aux plus grands en stockant les résultats intermédiaires.
+    Elle s'appuie sur \emph{le principe d'optimalité de Bellman}: une solution optimale d'un problème s'obtient en combinant des solutions optimales à des sous-problèmes. 
+    Un modèle pseudo-polynomial simple, pour résoudre le problème bin-packing, est obtenu en associant des variables aux décisions prises dans une table de programmation dynamique (DP) classique.
+        \subsubsection*{DP-flow:}
+        Dans le modèle BPP proposé par \emph{Cambazard et O’Sullivan}, connu sous le nom de DP-flow, les états DP sont représentés par un graphique dans lequel un chemin qui commence à partir d'un nœud initial et se termine à un nœud terminal représente un remplissage possible d'une boîte. 
+Notons \((j, d) (j = 0, \cdots, n \, et \, d = 0, \cdots, c)\) un état DP où les articles de \(0\) à j ont déjà été étudié (les décisions de placer les articles de \(0\) à \(j\) dans la boîte ou non ont déjà été reprises ) et entraînent un remplissage partiel de la boîte de \(d\) unités. Notons également par \(((j, d), (j + 1, e))\) un arc reliant les états \((j, d)\) et \((j + 1, e)\). Un tel arc exprime la décision d'emballer ou non l'article \(j + 1\) à partir de l'état actuel \((j, d)\): l'état atteint par l'arc est \((j + 1, d + w_j + 1)\) si l'article \(j + 1\) est emballé, et \((j + 1, d)\) sinon.
+Soit \(A\) l'ensemble de tous les arcs. Comme un remplissage réalisable d’une boîte est représenté par un chemin qui commence à partir du nœud \((0, 0)\) et se termine au nœud \((n + 1, c)\), le BPP consiste à sélectionner le nombre minimum des chemins qui contiennent tous les éléments. 
+
 \end{document}
