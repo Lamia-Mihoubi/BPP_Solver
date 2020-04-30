@@ -1,12 +1,12 @@
 #Dans ce fichier on implemente une recherche exhaustive pour résoudre
 # le problème Bin Packing à une dimension
-
+import sys
 import time
 # DECLARATION DES VARIABLES GLOBALES
 n = 0
 c = 0
 listobj = []
-optcost = 0
+optcost = sys.maxsize
 optlist = []
 
 def permuter(a, b):  # permuter entre 2 objets de la liste
@@ -72,7 +72,7 @@ def run_exhaustive(N,C,list):
     capa_restante = c
     n = N
     listobj = list
-    optcost = n
+    optcost=sys.maxsize
     packBins_EXH(0, sumwts, bins, capa_restante)  # start at index 0
     texec = (time.time() - start_time)
 
