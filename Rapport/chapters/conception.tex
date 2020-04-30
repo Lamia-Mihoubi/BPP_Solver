@@ -2,7 +2,6 @@
 
 \usepackage{amsmath}
 \usepackage{mathtools}
-\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 
 \usepackage{algorithm}
 
@@ -78,7 +77,7 @@ L’algorithme proposé est une fonction récursive packBins ayant comme paramè
             \STATE sauvegarder la solution liste  $opt\_list=liste$. 
         
         \ELSE
-            \STATE continuer le parcours,parcours (monter d’un niveau dans l’arbre).
+            \STATE continuer le parcours (monter d’un niveau dans l’arbre).
        \ENDIF
         
     \ELSE
@@ -145,7 +144,7 @@ On definie des classes d'articles suivantes:
 \(BI(I)\)  est donnée par la formule suivante:
 \[BI(I)=max\{L(\alpha),\quad 0 \le \alpha \le C/2\}\]
 Avec
-\[L(\alpha)=|C_1|+|C_2|+max(0, \ceil*{\frac{\sum_{j \in C_3}^{} v_j - (|C_2|*C - \sum_{j \in C_2}^{} v_j) }{C}})\]
+\[L(\alpha)=|C_1|+|C_2|+max(0, \lceil{\frac{\sum_{j \in C_3}^{} v_j - (|C_2|*C - \sum_{j \in C_2}^{} v_j) }{C}}\rceil)\]
 \paragraph{Explication de la formule :}
 Etant donnée que les objets des classes $C_1$ et $C_2$ ont un poids supérieur à $C/2$ chacun d'eux sera placé dans une boîte séparée pour le contenir, donc
 $|C_1|+|C_2|$boîtes sont utilisées quelque soit la solution. De plus,aucun objet de l’ensemble $C_3$ ne peut être rangé dans une boîte contenant un objet de $C_1$ ( à cause de la contrainte de capacité). La capacité résiduelle (espace libre) des
@@ -222,7 +221,7 @@ Création et initialisation de la table de vérité
     \RETURN m
     \end{algorithmic} 
  \end{algorithm}
- \paragraph{la méthode : get\_truth\_table(capacité, items):}
+ \paragraph{\_pick\_items(m)}
 \subparagraph{paramètres:}
 \begin{itemize}
     \item m : table de vérité
@@ -230,7 +229,7 @@ Création et initialisation de la table de vérité
 \subparagraph{Rôle :}
 Choisir les articles à mettre dans la boîte 
 \begin{algorithm}[H]
-    \caption{get\_truth\_table(capacité, items)}
+    \caption{\_pick\_items(m)}
     \begin{algorithmic} 
     \STATE K = (nombre de lignes de m) - 1 // indice de la dernière ligne
     \STATE Initialiser la liste des indices des articles choisis à la liste vide : picked\_items\_indices = []
