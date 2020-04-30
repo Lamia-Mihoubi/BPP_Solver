@@ -4,6 +4,7 @@
 # et l'utilisation de la borne L2 pour l'élagage des neouds
 
 import math
+import sys
 import time
 import numpy as np
 
@@ -11,7 +12,7 @@ import numpy as np
 n = 0
 c = 0
 listobj = []
-optcost = 0
+optcost = sys.maxsize
 optlist = []
 
 
@@ -66,7 +67,7 @@ def Bound_L2(k):
         J1 = []
         J2 = []
         J3 = []
-        for i in range(k, n):
+        for i in range(k, n-1):
             if (c - j) < listobj[i]:
                 J1.append(listobj[i])
             else:
@@ -82,6 +83,7 @@ def Bound_L2(k):
 
 
 def packBins_BBA(k, sumwts, bcount, capa_restante):
+
     # recherche en profondeur dans un arbre
     # k=ordre de l'objet à etre affecter ( profondeur du noeud)
     # sumwts = somme cumulée des poids des objets restants
@@ -92,17 +94,15 @@ def packBins_BBA(k, sumwts, bcount, capa_restante):
     global listobj
     global n
     global c
-
     if k == n:  # le noeud actuel est une feuille ( solution exacte)
         # verifier si la solution obtenue est meilleure que la solution optimale
         if bcount < optcost:
+
             # mettre à jour la solution optimale
             optcost = bcount
             # sauvegarder la solution dans opt_list
-            optlist=[]
             for i in range(n):
                 optlist.append(listobj[i])
-
     else:  # le noeud actuel est un noeud de décision
         for i in range(k, n):  # pour tout objet restant, essayer ce dernier
             permuter(k, i)  # essayer l'objet
@@ -123,25 +123,33 @@ def packBins_BBA(k, sumwts, bcount, capa_restante):
                 kk = k + 1
                 packBins_BBA(kk, s, b, ca)
             permuter(k, i)  # remettre l'objet
-    return 0
+
+    return optlist
 
 
 # FONCTION QUI APPEL PACKBIN ET RETOURNE LA SOLUTION + LE TEMPS DEXECUTION
 def run_BBA(N, C, list):
     global listobj
-    global optcost
     global c
     global n
-
+    global optlist
+    global listobj
+    global optcost
     start_time = time.time()
     sumwts = sum(list)
     bins = 1
     c = C
     capa_restante = c
     n = N
-    listobj = list
-    optcost = n
-    packBins_BBA(0, sumwts, bins, capa_restante)  # start at index 0
+    optlist=[]
+    optcost = sys.maxsize
+
+    listobj=[]
+    for i in range(n):
+        listobj.append(list[i])
+
+    optlist= packBins_BBA(0, sumwts, bins, capa_restante)  # start at index 0
     texec = (time.time() - start_time)
 
     return optcost, optlist, texec
+
