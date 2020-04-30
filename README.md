@@ -1,12 +1,14 @@
 # BBP Solver:
+**Bachi , Mihoubi ,Moussaoui, Nouali , Saadi.**
 
-## Steps:
-
-- Create a github account.
-- Install git.
-- Create a project directory.
-- Open Git bash in the project directory.
-- Excecute the next commands:
-  - git clone https://github.com/Lamia-Mihoubi/BPP_Solver.git
-  - git checkout -b yourBranchName
-- Let the magic begin!
+## Description des documents : 
+ce repo contient:
+- **Binpacker**  : la classe principale, où on peut instancier un probleme du bin packing et appeler les differentes méthodes implémentées.
+- **Dossier Exact_Methods**: contient l'ensemble des methodes exactes implementées pour le BPP, et qui sont : 
+    - **BB.py** : implemente la methode branch and bound pour resoudre le BPP. 
+    - **BBA.py**: implemente une version améliorée du Branch & Bound. 
+    - **Exhaustive.py**: implemente une recherch exhaustive. 
+    - **DP.py**: résoudre le BPP avec la programmation dynamique. 
+  
+-  **Instances_generator.py**: fournit une fonction qui permet de generer nos propres instances, et les sauvegarder dans des fichier textes.
+ - **Instances_reader.py**: permet de lire un fichier texte d'une instances et récuprer les données (n , c et la liste des objets)
