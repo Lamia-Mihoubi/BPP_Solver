@@ -16,7 +16,7 @@ Afin de rendre le processus de résolution plus rapide, cet algorithme utilise u
     \paragraph{Borne inférieure évidente:} Soient \(C\) la capacité des boîtes utilisés,\\
      \(A\) l’ensemble des articles \(a_i\) de volumes \(v_i\) de l’instance \(I\).
         \[BI(I)=\frac{\displaystyle\sum_{i=1}^{n} v_i}{C}\]
-    \paragraph{Borne de Martello and Toth L2:}  
+    \paragraph{Borne de Martello and Toth \(L_2\):}  
     Soit \(\alpha\) un entier tels que :
     \[0 \le \alpha \le C/2\]
     On definie des classes d'articles suivantes: 
@@ -50,7 +50,7 @@ Les articles sont initialement triés selon des poids décroissants. À chaque n
     \item Des algorithmes approximatifs FFD, BFD et WFD (qu’on présentera dans la partie Méthodes approximatives) sont appliqués au problème actuel, et chacune des solutions approximatives obtenues est comparée à la borne inférieure \(L_3\).
         \begin{itemize}
             \item Si le nombre de boîtes utilisées par l'une des solutions approximatives est égal à la borne inférieure du nœud actuel, aucune autre recherche n'est effectuée sous ce nœud. 
-            \item Si le nombre de boîtes utilisées dans une solution approximative est égal à la borne inférieure L3 du problème d'origine (nœud racine), l'algorithme se termine, renvoyant cette solution comme optimale.
+            \item Si le nombre de boîtes utilisées dans une solution approximative est égal à la borne inférieure \(L_3\) du problème d'origine (nœud racine), l'algorithme se termine, renvoyant cette solution comme optimale.
         \end{itemize}
 \end{enumerate}
 De plus, La principale source d'efficacité de l'algorithme de Martello et Toth est une méthode pour réduire la taille des sous-problèmes restants, appelée \textbf{critère de dominance}.
@@ -100,7 +100,7 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
         \begin{itemize}
             \item \textbf{Almost Worst Fit (AWF): }l’article a est rangé dans la 2ème boîte la plus vide, jusqu’à ce qu’il reste qu’une seule boîte qui peut contenir l’article. Dans ce cas il est placé dans cette boîte. Si l’article ne tient dans aucune boîte existante, il sera placé dans une nouvelle boîte.
         \end{itemize}
-        \subsubsection{Harmonic K (Hk): } Cet algorithme est basé sur une partition de l'intervalle \([0,1]\) en \(K\) sous-intervalles \(I_k\), où  \(I_k=]1k+1;1k]\), à chacun de ces sous-intervalles correspond une seule boîte ouverte, et seuls les articles appartenant à ce sous-intervalle (i.e.: \(v_i / C \in I_k\) avec \(v_i\) le volume d'un article) sont regroupés dans cette boîte. Si un nouvel article arrive et ne rentre pas dans sa boîte ouverte correspondante, la boîte est fermée et une nouvelle boîte est ouverte.
+        \subsubsection{Harmonic K (Hk): } Cet algorithme est basé sur une partition de l'intervalle \([0,1]\) en \(K\) sous-intervalles \(I_k\), où  \(I_k=]\frac{1}{K + 1};\frac{1}{K}]\), à chacun de ces sous-intervalles correspond une seule boîte ouverte, et seuls les articles appartenant à ce sous-intervalle (i.e.: \(v_i / C \in I_k\) avec \(v_i\) le volume d'un article) sont regroupés dans cette boîte. Si un nouvel article arrive et ne rentre pas dans sa boîte ouverte correspondante, la boîte est fermée et une nouvelle boîte est ouverte.
         \\ \textbf{Remarque:} \\
         Il existe des variants pour cet algorithme, permettant d’améliorer ses performances : 
         \renewcommand{\labelitemi}{$\circ$}  
@@ -126,7 +126,7 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
         Les algorithmes dits semi-en ligne (SOL) se situent entre les online et les offline. Ils relâchent la prescription online de manière à permettre quelques opérations supplémentaires où l'algorithme a un peu de connaissance de l'avenir, au moins une des opérations suivantes est autorisée: comme reconditionner un nombre fini d'articles déjà emballés, prétraiter les articles en les commandant en fonction des tailles ou en tamponnant certains articles avant de les emballer. 
         \emph{Quelques algorithmes semi-online:}
         \subsubsection{MMP (Mostly Myopic Helps) : Fully Dynamic Algorithm}
-        Dans cet algo, en partant de l’hypothèse que l'emballage peut être réarrangé arbitrairement pour accueillir les articles arrivant et partant, on suppose :
+        Dans cet algorithme, en partant de l’hypothèse que l'emballage peut être réarrangé arbitrairement pour accueillir les articles arrivant et partant, on suppose :
         \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item l’emballage d’un article se fait en une abstraction totale des articles déjà emballés d’une taille plus petite(c’est à dire, on suppose que leurs places dans les boîtes sont vides, où le nouvel article pourra être affecté dans cet espace, et ces articles de petites tailles pourront être réarrangés).
