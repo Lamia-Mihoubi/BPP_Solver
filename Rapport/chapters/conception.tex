@@ -26,9 +26,10 @@ Dans ce chapitre,nous allons présenter la conception détaillée des méthodes 
 \end{enumerate}
 Dans le but de montrer l’applicabilité de ces méthodes, comparer leurs performances et montrer leurs limites, nous effectuerons des tests empiriques et comparatifs sur des benchmarks d’un coté, et sur des instances générées par notre propre générateur d’instances d’un autre coté.
 \section{Branch and bound}
+\renewcommand{\labelitemi}{$\circ$}
 \begin{itemize}
-    \item L'algorithme Branch-and-Bound (B \&B) que nous avons implémenté tente de ranger un objet à la fois en fonction de l’ordre initial des objets. 
-    \item Au niveau j de l’arbre, B \&B crée un noeuds fils pour chaque boite ouverte et range l’objet j dans cette boîte si c’est possible. il crée aussi un noeuds supplémentaire qui représente l’ouverture d’une nouvelle boîte, et il range l’objet j dans cette boîte.
+    \item L'algorithme Branch-and-Bound (B \& B) que nous avons implémenté tente de ranger un objet à la fois en fonction de l’ordre initial des objets. 
+    \item Au niveau j de l’arbre, B \& B crée un noeuds fils pour chaque boite ouverte et range l’objet j dans cette boîte si c’est possible. il crée aussi un noeuds supplémentaire qui représente l’ouverture d’une nouvelle boîte, et il range l’objet j dans cette boîte.
     \item En pratique, au niveau 1 de l’arbre l’objet 1 est rangé dans la boîte 1 , au niveau 2 l’objet 2 est rangé dans la boîte 1 ou dans une nouvelle boîte 2 ,...etc 
     \item A chaque noeud, on résout un sous problème de taille (n-k) du bin packing, où les k premiers objets ont déjà été emballés.
     \item L’opération du rangement d’un objet i au niveau k consiste à permuter entre les éléments list(K) et list(i). On va avoir comme sortie une liste d’objets ordonnées selon l’ordre de rangement, il suffit ensuite de remplir les boîtes par les objets dans leur nouvel ordre pour générer la solution (l’emplacement de chaque objet dans les boîtes) 

@@ -89,27 +89,67 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
         \subsubsection{Best Fit (BF):} L’article a est rangé dans une des boîtes ouvertes de sorte que le plus petit espace vide soit laissé. Si l’article ne tient dans aucune boîte existante, il sera placé dans une nouvelle boîte. 
         \\ \textbf{Remarque:} \\
         Il existe des variants pour cet algorithme, permettant d’améliorer ses performances : 
+        \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item \textbf{K-Bounded Best Fit (BBFk): } utilise le même principe que Best Fit, sauf qu’il restreint le nombre de boîtes ouvertes à k boîtes. ie : l’article a est rangé dans une des k-boîtes ouvertes de sorte que le plus petit espace vite soit laissé. 
         \end{itemize}
         \subsubsection{Worst Fit (WF): }L’article a est rangé dans la boîte avec le plus grand espace vide, si cette dernière ne peut pas contenir l’article, il sera placé dans une nouvelle boîte.
         \\ \textbf{Remarque:} \\
         Il existe des variants pour cet algorithme, permettant d’améliorer ses performances : 
+        \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item \textbf{Almost Worst Fit (AWF): }l’article a est rangé dans la 2ème boîte la plus vide, jusqu’à ce qu’il reste qu’une seule boîte qui peut contenir l’article. Dans ce cas il est placé dans cette boîte. Si l’article ne tient dans aucune boîte existante, il sera placé dans une nouvelle boîte.
         \end{itemize}
         \subsubsection{Harmonic K (Hk): } Cet algorithme est basé sur une partition de l'intervalle \([0,1]\) en \(K\) sous-intervalles \(I_k\), où  \(I_k=]1k+1;1k]\), à chacun de ces sous-intervalles correspond une seule boîte ouverte, et seuls les articles appartenant à ce sous-intervalle (i.e.: \(v_i / C \in I_k\) avec \(v_i\) le volume d'un article) sont regroupés dans cette boîte. Si un nouvel article arrive et ne rentre pas dans sa boîte ouverte correspondante, la boîte est fermée et une nouvelle boîte est ouverte.
         \\ \textbf{Remarque:} \\
         Il existe des variants pour cet algorithme, permettant d’améliorer ses performances : 
+        \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item \textbf{Simplified HarmonicK (SHk): } se base sur une structure d’intervalle qui est plus compliquée.
         \end{itemize}
         \subsubsection{Autres algorithmes: }
+        \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item \textbf{ABFk: } utilise le principe de rangement du Best Fit avec le principe de fermeture des boîtes du First Fit.
             \item \textbf{AFBk: } utilise le principe de rangement du First Fit avec le principe de fermeture des boîtes du Best Fit.
         \end{itemize}
-        \textbf{Remarque: } Dans le cas où \(K=1\), ces algorithmes sont équivalent à l’algorithme Next Fit. 
+        \textbf{Remarque: } \\
+        Dans le cas où \(K=1\), ces algorithmes sont équivalent à l’algorithme Next Fit. 
+        \subsection{Algorithmes OFF-LINE: }
+        Dans ce type d’algorithmes on a accès à tous les articles avant de commencer le rangement dans les boîtes. 
+        \emph{Quelques algorithmes off-line:}
+        \subsubsection{First Fit Decreasing (FFD) : }
+        Ordonner les articles par ordre décroissant des poids, ensuite appliquer l’algorithme First Fit.
+        \subsubsection{Best Fit Decreasing (BFD) :}
+        Ordonner les articles par ordre décroissant des poids, ensuite appliquer l’algorithme Best Fit
+        \subsection{Algorithmes SEMI-ONLINE :}
+        Les algorithmes dits semi-en ligne (SOL) se situent entre les online et les offline. Ils relâchent la prescription online de manière à permettre quelques opérations supplémentaires où l'algorithme a un peu de connaissance de l'avenir, au moins une des opérations suivantes est autorisée: comme reconditionner un nombre fini d'articles déjà emballés, prétraiter les articles en les commandant en fonction des tailles ou en tamponnant certains articles avant de les emballer. 
+        \emph{Quelques algorithmes semi-online:}
+        \subsubsection{MMP (Mostly Myopic Helps) : Fully Dynamic Algorithm}
+        Dans cet algo, en partant de l’hypothèse que l'emballage peut être réarrangé arbitrairement pour accueillir les articles arrivant et partant, on suppose :
+        \renewcommand{\labelitemi}{$\circ$}  
+        \begin{itemize}
+            \item l’emballage d’un article se fait en une abstraction totale des articles déjà emballés d’une taille plus petite(c’est à dire, on suppose que leurs places dans les boîtes sont vides, où le nouvel article pourra être affecté dans cet espace, et ces articles de petites tailles pourront être réarrangés).
+            \item Regroupement des articles plus petits dans des lots(un groupe d'articles plus petit que \(\epsilon\) peut être déplacé comme un seul article).
+            \item Le nombre d'articles uniques ou de lots de très petits articles qui doivent être réarrangés est délimité par une constante.
+        \end{itemize}
+        Cet algorithme nécessite du temps \(\Theta(\log n)\) par opération (c'est-à-dire pour une insertion ou une suppression d'un article). Il est presque aussi bon que celui des meilleurs algorithmes offlines pratiques.
+        \subsubsection{Harmonic Fit avec (4 ou 6) partitions: }
+        Le HF avec 4 partitions, en utilisant une structure de données appropriée, permet de traiter de grandes collections de petits articles en :
+        \renewcommand{\labelitemi}{$\circ$}  
+        \begin{itemize}
+            \item les groupant et les déplaçant tous à la fois en temps constant
+            \item les classifiant en 4 types par taille
+            \item ne permettant au plus que les déplacements de 3 lots d’articles ou d'un seul article lorsqu'un nouvel article doit être attribué
+        \end{itemize}
+        Le HF avec 6 partitions utilise:
+        \renewcommand{\labelitemi}{$\circ$}  
+        \begin{itemize}
+            \item six types d'articles classés par taille
+            \item au plus 7 mouvements de lots/ article par nouvel article
+        \end{itemize}
+        \subsection{Algorithmes d’Espace Borné (Bounded Space):}
+        les algorithmes décident où un élément doit être emballé sur la base du contenu actuel d'un nombre fini k de bacs, où k est un paramètre de l'algorithme. Notez que FF et BF ne sont pas des algorithmes d'espace bornés, mais NF l'est, avec \(k = 1\).
         \section{Métaheuristiques}
         \subsection{La recherche tabou: }
         Une méthode de résolution a été proposée par Fernandes Muritiba Et al.[2] ,qui prend en entrée une population initiale obtenue par une heuristique et applique un opérateur de croisement sur ces solutions .Chaque solution obtenue est améliorée par la suite en utilisant une recherche tabou, qui consiste à  se déplacer dans un espace de recherche contenant des solutions réalisables  partielles où certains articles ne sont pas affectés à des boîtes. L’amélioration consiste de passer d’une solution partielle de valeur K à une solution complète de la même valeur. La fonction objective utilisée est basée sur la somme pondérée des tailles des articles.
