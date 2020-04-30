@@ -1,10 +1,58 @@
 \documentclass[class=article, crop=false]{standalone}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\usepackage[shortlabels]{enumitem}
+% make sure to keep these two lines the very last in the preamble
+% if you want to add packages add them before not after these two lines
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
 \begin{document}
-    \section{Introduction}
-    Lorem ipsum....
+    Après une étude ciblée des travaux existants sur le problème du Bin Packing, nous avons abouti à une synthèse des méthodes de résolution les plus connues --dans chacune des trois catégories: méthodes exactes, et méthodes approchées: heuristiques et métaheuristiques-- que nous allons exposer dans ce qui suit. 
     \section{Méthodes Exactes}
+    Les méthodes exactes permettent d’avoir des solutions optimales, cependant le temps de calcul peut être très long pour certaines instances du problème. Il n’existe pas un grand nombre de méthodes exactes pour résoudre le problème du Bin Packing , nous allons présenter dans ce qui suit la méthode  MTP ( basée sur le Branch and Bound) et une méthode de programmation dynamique DP-flow.
     \subsection{Branche and Bound}
+    Cette méthode a été  utilisée pour la première fois dans les années \\ cinquante pour résoudre qui a été  modélisé par un programme linéaire en nombres entiers.
+Afin de rendre le processus de résolution plus rapide, cet algorithme utilise une borne inférieure. Plusieurs techniques ont été proposés pour obtenir cette dernière.
+    \paragraph{Borne inférieure évidente:} Soient \(C\) la capacité des boîtes utilisés,\\
+     \(A\) l’ensemble des articles \(a_i\) de volumes \(v_i\) de l’instance \(I\).
+        \[BI(I)=\frac{\displaystyle\sum_{i=1}^{n} v_i}{C}\]
+    \paragraph{Borne de Martello and Toth L2:}  
+    Soit \(\alpha\) un entier tels que :
+    \[0 \le \alpha \le C/2\]
+    On definie des classes d'articles suivantes: 
+    \[C_1 = \{a_i, \quad C-\alpha < v_i\} \]
+    \[C_2 = \{a_i, \quad C/2 < v_i \le C-\alpha\} \]
+    \[C_3 = \{a_i, \quad \alpha < v_i \le C/2\} \]
+    \(BI(I)\)  est donnée par la formule suivante:
+    \[BI(I)=max\{L(\alpha),\quad 0 \le \alpha \le C/2\}\]
+    Avec
+    \[L(\alpha)=|C_1|+|C_2|+max(0, \ceil*{\frac{\sum_{j \in C_3}^{} v_j - (|C_2|*C - \sum_{j \in C_2}^{} v_j) }{C}})\]
+    cette borne est calculé en un temps \(o(nlogn)\).
+    \paragraph{Borne inférieure  \(L_3\):}
+    Une autre technique a été utilisé dans l’algorithme de résolution MTP pour déterminer une borne inférieure.
+    Soient \(n_1\) le nombre de boîtes obtenus après la première application de la technique de réduction MTP qui consiste à réduire l’instance du problème en rangeant l’article le plus petit, soit \(Ir^1\) l’instance résiduelle de l’instance \(I\) après cette première application ie l’ensemble des articles restants après l’opération de réduction
+    \[L^\prime_1=n_1+L_2(Ir^1) \ge L_2(I)\]
+    On refait ce processus jusqu'à ce que l’instance résiduelle soit vide (i.e.: tous les articles ont été rangés). A l’itération \(k\), on obtiendra :
+    \[L^\prime_K= \displaystyle\sum_{i=1}^{k} n_i + L_2(Ir^k)\] 
+    La borne inférieure \(L_3\) est obtenue en appliquant la formule suivante , par la suite :
+    \[L_3=max \{L^\prime_1, L^\prime_2,.....,L^\prime_{kmax}\}\]
+    \textbf{Un des algorithmes proposés pour cette méthode est l’algorithme MTP:} 
+    \subsubsection*{L’algorithme MTP (Martello and Toth Procédure):}
+    Le meilleur algorithme existant pour trouver la solution optimale du problème Bin Packing est celui proposée par  \emph{Martello et Toth (Martello \& Toth 1990a; 1990b)} le principe est le suivant :  
+Les articles sont initialement triés selon des poids décroissants. À chaque nœud de décision, le premier élément libre est attribué, à son tour, aux boîtes existantes qui peuvent le contenir (on parcourt les boîtes par ordre de création) et à une nouvelle boîte. 
+À chaque nœud de l'arbre de recherche 
+\begin{enumerate}[a.]
+    \item Une borne inférieure \(L_3\) de la solution restante est calculée et utilisée pour élaguer le nœud de l'espace de recherche et réduire le problème actuel.
+        \begin{itemize}
+            \item Si la borne inférieure du nœud actuel est supérieure \\
+            à la borne inférieure du problème d’origine (nœud racine), le nœud est supprimé. Sinon (b)
+        \end{itemize}
+    \item Des algorithmes approximatifs FFD, BFD et WFD (qu’on présentera dans la partie Méthodes approximatives) sont appliqués au problème actuel, et chacune des solutions approximatives obtenues est comparée à la borne inférieure \(L_3\).
+        \begin{itemize}
+            \item Si le nombre de boîtes utilisées par l'une des solutions approximatives est égal à la borne inférieure du nœud actuel, aucune autre recherche n'est effectuée sous ce nœud. 
+            \item Si le nombre de boîtes utilisées dans une solution approximative est égal à la borne inférieure L3 du problème d'origine (nœud racine), l'algorithme se termine, renvoyant cette solution comme optimale.
+        \end{itemize}
+\end{enumerate}
+De plus, La principale source d'efficacité de l'algorithme de Martello et Toth est une méthode pour réduire la taille des sous-problèmes restants, appelée \textbf{critère de dominance}.
     \subsection{Programmation Dynamique}
 \end{document}
