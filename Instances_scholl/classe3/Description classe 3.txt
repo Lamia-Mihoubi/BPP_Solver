@@ -1,0 +1,7 @@
+Dans cette classe 
+C : la capacité de la boite prends les valeurs:
+	C=100000
+
+N: le nombre d'objets prends les valeurs : 
+	N=200
+les poids des objets sont générés suivant une loi uniforme 
