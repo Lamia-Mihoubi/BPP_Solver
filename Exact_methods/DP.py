@@ -51,6 +51,7 @@ class Item(object):
 
 # class Bin
 class Bin(object):
+
     def __init__(self, capacity):
         """Initialise une boite
         """
@@ -226,19 +227,6 @@ class Binpacker(object):
         à la demande, c'est à dire que chaque boite peut etre vidée au
         moment où on cherche à la remplir.
         """
-
-        self._items = sorted(self._items)
-        # Premièrement, vérifier si l'une des boites déja ouverte pourra
-        # accueillir un nouvel objet.
-        """for index, old_bin in enumerate(self._bins):
-            if old_bin.utilization == 100.00:
-                continue
-            remaining_space = old_bin.capacity - old_bin.total_weight
-            m = self.get_truth_table(remaining_space, self._items)
-            picked_items = self._pick_items(m)
-            self._move_items_to_bin(picked_items, index)"""
-
-        # S'il nous reste encore des objets à ranger on ouvre une nouvelle boite.
         while len(self._items) > 0:  # tant qu'il nous reste encore un objet à ranger
             m = self.get_truth_table(self._capacity, self._items)
             new_bin = Bin(self._capacity)
@@ -286,5 +274,6 @@ def run_DP(n, c, liste, name_file="names.txt"):
         objets = x.get_items()
         for o in objets:
             sol.append(o.weight)
-        j += 1
-    return j, sol, t_exec
+        j = j + 1
+    return len(packer.bins), sol, t_exec
+
