@@ -2,6 +2,8 @@
 !MethodeExacte.tex
 !MethodeExacte.pdf
 !MethodeExacte_comments.pdf
+!/Méthodes_Heuristiques/*
+!/Instances_scholl/*
 !/chapters/*.tex
 !/figures/*
 !.gitignore

@@ -16,7 +16,7 @@ Afin de rendre le processus de résolution plus rapide, cet algorithme utilise u
     \paragraph{Borne inférieure évidente:} Soient \(C\) la capacité des boîtes utilisés,\\
      \(A\) l’ensemble des articles \(a_i\) de volumes \(v_i\) de l’instance \(I\).
         \[BI(I)=\frac{\displaystyle\sum_{i=1}^{n} v_i}{C}\]
-    \paragraph{Borne de Martello and Toth L2:}  
+    \paragraph{Borne de Martello and Toth \(L_2\):}  
     Soit \(\alpha\) un entier tels que :
     \[0 \le \alpha \le C/2\]
     On definie des classes d'articles suivantes: 
@@ -38,7 +38,7 @@ Afin de rendre le processus de résolution plus rapide, cet algorithme utilise u
     \[L_3=max \{L^\prime_1, L^\prime_2,\cdots,L^\prime_{kmax}\}\]
     \textbf{Un des algorithmes proposés pour cette méthode est l’algorithme MTP:} 
     \subsubsection*{L’algorithme MTP (Martello and Toth Procédure):}
-    Le meilleur algorithme existant pour trouver la solution optimale du problème Bin Packing est celui proposée par  \emph{Martello et Toth (Martello \& Toth 1990a; 1990b)} le principe est le suivant :  
+    Le meilleur algorithme existant pour trouver la solution optimale du problème Bin Packing est celui proposée par  \emph{Martello et Toth (Martello \& Toth 1990a; 1990b)} [1] le principe est le suivant :  
 Les articles sont initialement triés selon des poids décroissants. À chaque nœud de décision, le premier élément libre est attribué, à son tour, aux boîtes existantes qui peuvent le contenir (on parcourt les boîtes par ordre de création) et à une nouvelle boîte. 
 À chaque nœud de l'arbre de recherche 
 \begin{enumerate}[a.]
@@ -50,7 +50,7 @@ Les articles sont initialement triés selon des poids décroissants. À chaque n
     \item Des algorithmes approximatifs FFD, BFD et WFD (qu’on présentera dans la partie Méthodes approximatives) sont appliqués au problème actuel, et chacune des solutions approximatives obtenues est comparée à la borne inférieure \(L_3\).
         \begin{itemize}
             \item Si le nombre de boîtes utilisées par l'une des solutions approximatives est égal à la borne inférieure du nœud actuel, aucune autre recherche n'est effectuée sous ce nœud. 
-            \item Si le nombre de boîtes utilisées dans une solution approximative est égal à la borne inférieure L3 du problème d'origine (nœud racine), l'algorithme se termine, renvoyant cette solution comme optimale.
+            \item Si le nombre de boîtes utilisées dans une solution approximative est égal à la borne inférieure \(L_3\) du problème d'origine (nœud racine), l'algorithme se termine, renvoyant cette solution comme optimale.
         \end{itemize}
 \end{enumerate}
 De plus, La principale source d'efficacité de l'algorithme de Martello et Toth est une méthode pour réduire la taille des sous-problèmes restants, appelée \textbf{critère de dominance}.
@@ -59,7 +59,7 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
     Elle s'appuie sur \emph{le principe d'optimalité de Bellman}: une solution optimale d'un problème s'obtient en combinant des solutions optimales à des sous-problèmes. 
     Un modèle pseudo-polynomial simple, pour résoudre le problème bin-packing, est obtenu en associant des variables aux décisions prises dans une table de programmation dynamique (DP) classique.
         \subsubsection*{DP-flow:}
-        Dans le modèle BPP proposé par \emph{Cambazard et O’Sullivan}, connu sous\\
+        Dans le modèle BPP proposé par \emph{Cambazard et O’Sullivan} [2], connu sous\\
         le nom de DP-flow, les états DP sont représentés par un graphique dans \\
         lequel un chemin qui commence à partir d'un nœud initial et se termine à \\ 
         un nœud terminal représente un remplissage possible d'une boîte. Notons \\
@@ -100,7 +100,7 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
         \begin{itemize}
             \item \textbf{Almost Worst Fit (AWF): }l’article a est rangé dans la 2ème boîte la plus vide, jusqu’à ce qu’il reste qu’une seule boîte qui peut contenir l’article. Dans ce cas il est placé dans cette boîte. Si l’article ne tient dans aucune boîte existante, il sera placé dans une nouvelle boîte.
         \end{itemize}
-        \subsubsection{Harmonic K (Hk): } Cet algorithme est basé sur une partition de l'intervalle \([0,1]\) en \(K\) sous-intervalles \(I_k\), où  \(I_k=]1k+1;1k]\), à chacun de ces sous-intervalles correspond une seule boîte ouverte, et seuls les articles appartenant à ce sous-intervalle (i.e.: \(v_i / C \in I_k\) avec \(v_i\) le volume d'un article) sont regroupés dans cette boîte. Si un nouvel article arrive et ne rentre pas dans sa boîte ouverte correspondante, la boîte est fermée et une nouvelle boîte est ouverte.
+        \subsubsection{Harmonic K (Hk): } Cet algorithme est basé sur une partition de l'intervalle \([0,1]\) en \(K\) sous-intervalles \(I_k\), où  \(I_k=]\frac{1}{K + 1};\frac{1}{K}]\), à chacun de ces sous-intervalles correspond une seule boîte ouverte, et seuls les articles appartenant à ce sous-intervalle (i.e.: \(v_i / C \in I_k\) avec \(v_i\) le volume d'un article) sont regroupés dans cette boîte. Si un nouvel article arrive et ne rentre pas dans sa boîte ouverte correspondante, la boîte est fermée et une nouvelle boîte est ouverte.
         \\ \textbf{Remarque:} \\
         Il existe des variants pour cet algorithme, permettant d’améliorer ses performances : 
         \renewcommand{\labelitemi}{$\circ$}  
@@ -126,7 +126,7 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
         Les algorithmes dits semi-en ligne (SOL) se situent entre les online et les offline. Ils relâchent la prescription online de manière à permettre quelques opérations supplémentaires où l'algorithme a un peu de connaissance de l'avenir, au moins une des opérations suivantes est autorisée: comme reconditionner un nombre fini d'articles déjà emballés, prétraiter les articles en les commandant en fonction des tailles ou en tamponnant certains articles avant de les emballer. 
         \emph{Quelques algorithmes semi-online:}
         \subsubsection{MMP (Mostly Myopic Helps) : Fully Dynamic Algorithm}
-        Dans cet algo, en partant de l’hypothèse que l'emballage peut être réarrangé arbitrairement pour accueillir les articles arrivant et partant, on suppose :
+        Dans cet algorithme [3], en partant de l’hypothèse que l'emballage peut être réarrangé arbitrairement pour accueillir les articles arrivant et partant, on suppose :
         \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item l’emballage d’un article se fait en une abstraction totale des articles déjà emballés d’une taille plus petite(c’est à dire, on suppose que leurs places dans les boîtes sont vides, où le nouvel article pourra être affecté dans cet espace, et ces articles de petites tailles pourront être réarrangés).
@@ -135,14 +135,14 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
         \end{itemize}
         Cet algorithme nécessite du temps \(\Theta(\log n)\) par opération (c'est-à-dire pour une insertion ou une suppression d'un article). Il est presque aussi bon que celui des meilleurs algorithmes offlines pratiques.
         \subsubsection{Harmonic Fit avec (4 ou 6) partitions: }
-        Le HF avec 4 partitions, en utilisant une structure de données appropriée, permet de traiter de grandes collections de petits articles en :
+        Le HF avec 4 partitions [4], en utilisant une structure de données appropriée, permet de traiter de grandes collections de petits articles en :
         \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item les groupant et les déplaçant tous à la fois en temps constant
             \item les classifiant en 4 types par taille
             \item ne permettant au plus que les déplacements de 3 lots d’articles ou d'un seul article lorsqu'un nouvel article doit être attribué
         \end{itemize}
-        Le HF avec 6 partitions utilise:
+        Le HF avec 6 partitions [4] utilise:
         \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item six types d'articles classés par taille
@@ -152,12 +152,11 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
         les algorithmes décident où un élément doit être emballé sur la base du contenu actuel d'un nombre fini k de bacs, où k est un paramètre de l'algorithme. Notez que FF et BF ne sont pas des algorithmes d'espace bornés, mais NF l'est, avec \(k = 1\).
         \section{Métaheuristiques}
         \subsection{La recherche tabou: }
-        Une méthode de résolution a été proposée par Fernandes Muritiba Et al.[2] ,qui prend en entrée une population initiale obtenue par une heuristique et applique un opérateur de croisement sur ces solutions .Chaque solution obtenue est améliorée par la suite en utilisant une recherche tabou, qui consiste à  se déplacer dans un espace de recherche contenant des solutions réalisables  partielles où certains articles ne sont pas affectés à des boîtes. L’amélioration consiste de passer d’une solution partielle de valeur K à une solution complète de la même valeur. La fonction objective utilisée est basée sur la somme pondérée des tailles des articles.
+        Une méthode de résolution a été proposée par Fernandes Muritiba Et al.[5] ,qui prend en entrée une population initiale obtenue par une heuristique et applique un opérateur de croisement sur ces solutions .Chaque solution obtenue est améliorée par la suite en utilisant une recherche tabou, qui consiste à  se déplacer dans un espace de recherche contenant des solutions réalisables  partielles où certains articles ne sont pas affectés à des boîtes. L’amélioration consiste de passer d’une solution partielle de valeur K à une solution complète de la même valeur. La fonction objective utilisée est basée sur la somme pondérée des tailles des articles.
 Pour la diversification de l’espace de recherche, On utilise une procédure basée sur un opérateur de croisement.
         \subsection{L’algorithme ILWOA (Improved Lévy WOA): }
-        L’algorithme WOA (Whale Optimization Algorithm) est basé sur une méthode inspirée de la nature plus exactement d’une stratégie d’alimentation des baleines à bosse, où la recherche des proies représente l’exploration de l’espace de recherche et la libération des bulles représente l’exploitation.
-Une amélioration de cet algorithme a été proposée par Abdel-Basset, M., Manogaran, G., Abdel-Fatah, L. et al [2].Il s’agit de l’utilisation de fonctions logistiques et d’autres méthodes probabilistes pour assurer une convergence plus rapide
+        L’algorithme WOA (Whale Optimization Algorithm) [6] est basé sur une méthode inspirée de la nature plus exactement d’une stratégie d’alimentation des baleines à bosse, où la recherche des proies représente l’exploration de l’espace de recherche et la libération des bulles représente l’exploitation.
+Une amélioration de cet algorithme a été proposée par Abdel-Basset, M., Manogaran, G., Abdel-Fatah, L. et al [7].Il s’agit de l’utilisation de fonctions logistiques et d’autres méthodes probabilistes pour assurer une convergence plus rapide
         \subsection{L’algorithme FFA (FireFly Algorithm): }
-        L'algorithme FireFly (FFA) est une métaheuristique génétique, inspirée par le comportement clignotant des lucioles. Le but principal du flash d'une luciole est d'agir comme un système de signal pour attirer d'autres lucioles. Il y a trois règles. La première règle, chaque luciole attire tous les autres lucioles avec des flashs plus faibles. Deuxièmement, l'attractivité est proportionnelle à leur luminosité qui est inversement proportionnelle à leurs distances. Pour deux lucioles clignotantes, la moins brillante se déplacera vers la plus brillante. L'attractivité est proportionnelle à la luminosité et ils diminuent tous les deux à mesure que leur distance augmente. S'il n'y en a pas plus brillant qu'une luciole particulière, il se déplacera de façon aléatoire. Enfin, aucune luciole ne peut attirer la luciole la plus brillante, cette dernière se déplace d’une façon aléatoire. Le FFA est construit par analogie, en appliquant ces trois règles sur une population de solutions initiale pour la faire évoluer en une population contenant la solution approchée.
-        
+        L'algorithme FireFly (FFA) [8] est une métaheuristique génétique, inspirée par le comportement clignotant des lucioles. Le but principal du flash d'une luciole est d'agir comme un système de signal pour attirer d'autres lucioles. Il y a trois règles. La première règle, chaque luciole attire tous les autres lucioles avec des flashs plus faibles. Deuxièmement, l'attractivité est proportionnelle à leur luminosité qui est inversement proportionnelle à leurs distances. Pour deux lucioles clignotantes, la moins brillante se déplacera vers la plus brillante. L'attractivité est proportionnelle à la luminosité et ils diminuent tous les deux à mesure que leur distance augmente. S'il n'y en a pas plus brillant qu'une luciole particulière, il se déplacera de façon aléatoire. Enfin, aucune luciole ne peut attirer la luciole la plus brillante, cette dernière se déplace d’une façon aléatoire. Le FFA est construit par analogie, en appliquant ces trois règles sur une population de solutions initiale pour la faire évoluer en une population contenant la solution approchée.
 \end{document}
