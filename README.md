@@ -12,4 +12,4 @@ ce repo contient:
   
 -  **Instances_generator.py**: fournit une fonction qui permet de generer nos propres instances, et les sauvegarder dans des fichier textes.
  - **Instances_reader.py**: permet de lire un fichier texte d'une instances et récuprer les données (n , c et la liste des objets)
- -  - **Model.py**: contient les classes Bin et Objet à utiliser par les méthodes
+ - **Model.py**: contient les classes Bin et Objet à utiliser par les méthodes
