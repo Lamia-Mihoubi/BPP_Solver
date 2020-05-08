@@ -1,5 +1,5 @@
 # First-fit Algorithm
-from Functions import Bin
+from Méthodes_Heuristiques.Functions import Bin
 def first_fit(list_items, max_size):
     """ Returns list of bins with input items inside. """
     list_bins = []
