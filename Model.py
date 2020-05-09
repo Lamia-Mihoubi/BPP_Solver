@@ -25,6 +25,8 @@ class Bin(object):
         self._id=id
         self._objects = []
         self._capacity = capacity
+    def __repr__(self):
+        return "(%s,%s)" % (self.occupancy,self._objects)
 
     def set_id(self,id):
         self._id=id
@@ -38,9 +40,14 @@ class Bin(object):
     def capacity(self):  # Retourne la capacité de la boite
         return self._capacity
 
+
     @property
     def total_weight(self):  # Retourne le total des poids des objets dans la boite
         return sum([i.weight for i in self._objects])
+
+    @property
+    def occupancy(self):
+        return self.total_weight * 100 / self.capacity
 
     def capacite_restante(self):  # retourne l'espace restant dans la boite
         return self._capacity - self.total_weight
@@ -69,6 +76,9 @@ class Objet(object):
     @property
     def weight(self):  # Retourne le poids de l'objet
         return self._weight
+
+    def __repr__(self):
+        return "(%s,%s) " % (self.id, self.weight)
 
 
 """
