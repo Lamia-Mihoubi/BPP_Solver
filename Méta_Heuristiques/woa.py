@@ -6,6 +6,25 @@ import Model
 
 import numpy as np
 
+def eval_func(solution, objects, capacity, k=2):
+    weight_sum = 0
+    occup_i = 0
+    occup = []
+    # calculating the occupency of every bin
+    for i in range(solution):
+        occup_i = weight_sum
+        # getting the object of indice i
+        obj = next((obj for obj in objects if obj.id() == i), None)
+        if obj != None:
+            weight_sum += obj.weight()
+        else:
+            print("obj {0} doesn't exist in list {1} ".format(i, objects))
+        # if the capacity of the bin is filled
+        if (capacity < weight_sum)
+            occup.append((occup_i / capacity)**k)
+            weight_sum = 0
+    return sum(occup) / len(objects) 
+
 
 class WhaleOptimization():
     """class implements the whale optimization algorithm as found at
@@ -58,11 +77,7 @@ class WhaleOptimization():
         self._a -= self._a_step
 
     def _init_solutions(self):
-        """initialize solutions uniform randomly in space sols = []
-        for c in self._constraints:
-            sols.append(np.random.uniform(c[0], c[1], size=self.whales))
-
-        sols = np.stack(sols, axis=-1)
+        """initialize solutions uniform randomly in space
         """
         solutions = []
         i = 0
