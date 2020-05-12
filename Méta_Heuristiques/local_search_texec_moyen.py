@@ -10,7 +10,7 @@ def TestMatrix_class1():
     methode=["LS"]
     print("______CLASSE 01 ___________")
     for indication in indications_class1:
-        directory = "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe1"
+        directory = "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe1"
         cpt = 0
         sum = 0
         for filename in os.listdir(directory):
@@ -40,7 +40,7 @@ def TestMatrix_class2():
     methode=["LS"]
     print("______CLASSE 02 ___________")
     for indication in indications_class2:
-        directory = "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe2"
+        directory = "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe2"
         cpt = 0
         sum = 0
         for filename in os.listdir(directory):
@@ -66,12 +66,12 @@ def TestMatrix_class2():
         file.close()
 
 def TestMatrix_class3():
-    directory = "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe3"
+    directory = "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe3"
     file = open("Résultats_local search texec_classe3.txt", "a")
 
     for filename in os.listdir(directory):
         if filename.endswith(".txt") and filename.startswith("H"):
-            n, c, list = Instances_reader.ReadInstance(directory + "\\" + filename)
+            n, c, list = Instances_reader.ReadInstance(directory + "//" + filename)
             t_exec = time.time()
             ls = localsearch()
             SS = ls.ameliorer_Sol(n, c, list)
