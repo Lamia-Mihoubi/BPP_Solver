@@ -37,15 +37,17 @@ les résultats en temps d'exécution sont présentés dans le tableau suivant:
 
 Pour faciliter la lecture des résultats, l’utilisation d’un graphique s’impose. Ci-dessous un histogramme représentant les temps d’exécution en fonction des instances pour chaque heuristique:
 \begin{figure}[H] 
+    \includegraphics[width=\linewidth]{../figures/Temps_exec_heuristics.png}
     \caption{Histogramme des temps d'exécution des heuristiques}
 \end{figure}
 
 \begin{figure}[H] 
+    \includegraphics[width=\linewidth]{../figures/Graphe_M_Exactes.png}
     \caption{Comparaison des temps d'exécution des heuristiques avec les méthodes exactes}
 \end{figure}
 \subsubsection{Analyse des résultats}
 \begin{itemize}
-    \item En augmentant la complexité du problème \emph{( N et C)}, le temps d'exécution des heuristiques augmente, mais tout en restant incomparable avec celui des méthodes exactes.
+    \item En augmentant la complexité du problème \emph{( N et C)}, le temps d'exécution des heuristiques augmente, mais tout en restant incomparable avec celui des méthodes exactes \textbf{\emph{[figure 06]}}.
     \item Toutes les méthodes heuristiques arrivent rapidement à trouver une solution aux instances du problème pour les trois classes d’instances du Benchmark Scholl (moins de 0.012s).
     \item Les performances de NF et NFD sont meilleures que celles des autres méthodes, avec le BF et BFD qui consomment le plus de temps, dans la plupart du temps, pour trouver une solution.
     \item Les heuristiques \emph{FF} et \emph{FFD} s’exécutent en des temps légèrement meilleurs que BF et BFD mais moins rapides que NF et NFD.
@@ -59,12 +61,12 @@ Pour faciliter la lecture des résultats, l’utilisation d’un graphique s’i
 \end{itemize}
 
 \subsection{Analyse des résultats par rapport à la qualité de la solution}
-Pour cela, on utilisera la métrique Worse case Ratio \textbf{[ voir Chapitre 02]} \\
+Pour cela, on utilisera la métrique Worse case Ratio \textbf{[ voir Partie 01]} \\
 
 \textbf{Remarque:} 
 Vu que les instances du benchmark Scholl contiennent des articles déjà ordonnés, les versions \emph{online (NF,FF,BF)} et \emph{offline (NFD, \emph{FF},BFD)} des heuristiques donnent exactement les même résultats ( car la différence entre les deux c’est l’étape d’ordonnancement des articles ). Dans cette partie nous allons nous contenter d’étudier la qualité de la solution des algorithmes \emph{onlines}.\\
 
-Ci-dessous un tableau récapitulatif des ratios obtenus pour chaque heuristique sur l’ensemble des instances du benchmark \textbf{[figure x]} , ainsi qu’une représentation graphique ( en histogramme) de ces résultats \textbf{[figure xx]}:
+Ci-dessous un tableau récapitulatif des ratios obtenus pour chaque heuristique sur l’ensemble des instances du benchmark \textbf{\emph{[figure 07]}} , ainsi qu’une représentation graphique ( en histogramme) de ces résultats \textbf{\emph{[figure 08]}}:
 
 \begin{figure}[H]
     \includegraphics[width=\linewidth]{../figures/tab_ratio_heur.png}
@@ -72,12 +74,14 @@ Ci-dessous un tableau récapitulatif des ratios obtenus pour chaque heuristique 
 \end{figure}
 
 \begin{figure}[H] 
+    \includegraphics[width=\linewidth]{../figures/Ratio_M_heuristiques_intances.png}
     \caption{Histogramme des ratios des heuristiques en fonction des instances}
 \end{figure}
 
 Ci-dessous une représentation graphique (en histogramme) qui représente le ratio de toutes les instances du Benchmark \emph{Scholl}, toutes classes confondues par heuristique (BF,FF et NF): 
 
 \begin{figure}[H] 
+    \includegraphics[width=\linewidth]{../figures/Ratio_M_heuristiques.png}
     \caption{Histogramme des ratios des heuristiques pour tout le benchmark Scholl}
 \end{figure}
 
@@ -88,6 +92,7 @@ Ci-dessous une représentation graphique (en histogramme) qui représente le rat
 \end{itemize}
 
 \subsubsection{Interprétation des résultats}
+La différence dans la qualité de la solution obtenue est due aux nombres de boîtes considérés pour prendre une décision qui est plus large dans First Fit et Best Fit ( toutes les boîtes ouvertes peuvent accueillir l’article), par contre dans Next Fit seulement la dernière boîte peut accueillir l’article.
 
 \subsection{Conclusion}
 En exécutant les heuristiques étudiées ( \emph{FF, NF ,BF} et leurs versions \emph{offline}) sur les instances du benchmark Scholl, on a trouvé que l’heuristique NF est la plus rapide à s’exécuter, mais elle donne la plus mauvaise qualité de solution. Par contre les heuristiques \emph{FF} et \emph{BF} sont moins rapides ( avec \emph{BF} légèrement moins rapide que \emph{FF} )  mais offrent une meilleure qualité.  
