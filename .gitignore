@@ -7,4 +7,5 @@
 !/Instances_scholl/*
 !/chapters/*.tex
 !/figures/*
+!/Rapport/chapters/*
 !.gitignore
