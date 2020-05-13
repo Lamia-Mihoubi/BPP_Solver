@@ -1,4 +1,4 @@
-import FF_FFD as ff
+import FF_FFD_2 as ff
 import BF_BFD as bf
 import NF_NFD as nf
 import Functions as fct
@@ -17,11 +17,11 @@ print("Algorithme Next Fit :    La solution :", fct.emballer(sol,res),"     Nomb
 res1,sol1=nf.next_fit_dec(weights, bin_height)
 print("Algorithme Next Fit Decreasing:    La solution :", fct.emballer(sol1,res),"     Nombre de bins utilisées: " ,res1)
 # First-fit Algorithm
-ff1=ff.first_fit(weights, bin_height)
-print("Algorithme First-Fit: La solution:",ff1,"    Nombre de bins utilisées: ",len(ff1))
-ffd=ff.first_fit_dec(weights, bin_height)
+nn3,ff1=ff.firstFit(weights,n, bin_height)
+print("Algorithme First-Fit: La solution:",fct.emballer(ff1,nn3),"    Nombre de bins utilisées: ",nn3)
+nn4,ffd=ff.first_fit_dec(weights,n, bin_height)
 # First-fit Decreasing Algorithm
-print("Algorithme First-Fit Decreasing: La solution:",ffd,"    Nombre de bins utilisées: ",len(ffd))
+print("Algorithme First-Fit Decreasing: La solution:",fct.emballer(ffd,nn4),"    Nombre de bins utilisées: ",nn4)
 #Best Fit Algorithm
 n2,l2=bf.bestFit(weights, n, bin_height )
 print("Algorithme Best Fit :[item,bin] ",fct.emballer(l2,n2),"     Nombre de bins utilisées: ",n2);
@@ -41,11 +41,11 @@ print("Algorithme Next Fit :    La solution :", fct.emballer(sol3,res3),"     No
 res4,sol4=nf.next_fit_dec(weights1, c)
 print("Algorithme Next Fit Decreasing:    La solution :", fct.emballer(sol4,res4),"     Nombre de bins utilisées: " ,res4)
 # First-fit Algorithm
-ff1=ff.first_fit(weights1, c)
-print("Algorithme First-Fit: La solution:",ff1,"    Nombre de bins utilisées: ",len(ff1))
-ffd1=ff.first_fit_dec(weights1, c)
+nn1,ff1=ff.firstFit(weights1,n1, c)
+print("Algorithme First-Fit: La solution:",fct.emballer(ff1,nn1),"    Nombre de bins utilisées: ",nn1)
+nn2,ffd1=ff.first_fit_dec(weights1,n1, c)
 # First-fit Decreasing Algorithm
-print("Algorithme First-Fit Decreasing: La solution:",ffd1,"    Nombre de bins utilisées: ",len(ffd1))
+print("Algorithme First-Fit Decreasing: La solution:",fct.emballer(ffd1,nn2),"    Nombre de bins utilisées: ",nn2)
 #Best Fit Algorithm
 n22,l22=bf.bestFit(weights1, n1, c)
 print("Algorithme Best Fit : La solution ",fct.emballer(l22,n22),"    Nombre de bins utilisées: ",n22)
