@@ -21,6 +21,7 @@ generator(n,c,grain ,"C:\\Users\\winsido\\Desktop\\bigBin_manyItems_4.txt")
 
 from random import seed
 from random import randint
+from Model import Objet
 
 
 def generator(n, c, grain, save=True, filepath=""):
@@ -38,11 +39,26 @@ def generator(n, c, grain, save=True, filepath=""):
 
 
 def writeInstance(filepath, n, c, liste):  # writes instance to a file
-    file = open(filepath, 'w+')
-    file.write(str(n) + '\n')
-    file.write(str(c) + '\n')
+    file = open(filepath, "w+")
+    file.write(str(n) + "\n")
+    file.write(str(c) + "\n")
     for i in range(n):
-        file.write(str(liste[i]) + '\n')
+        file.write(str(liste[i]) + "\n")
     file.close()
 
+
+def generate_obj_list(n, c, grain):
+    weights = generator(n, c, grain, save=False)
+    objects = []
+    for i in range(len(weights)):
+        obj = Objet(i + 1, weights[i])
+        objects.append(obj)
+    return objects
+
+
+"""
+obj_l = generate_obj_list(10, 5, 2)
+for obj in obj_l:
+    print(obj.__repr__() + "\n")
+"""
 
