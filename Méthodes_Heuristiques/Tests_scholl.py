@@ -1,5 +1,5 @@
 import os
-import FF_FFD as ff
+import FF_FFD_2 as ff
 import BF_BFD as bf
 import NF_NFD as nf
 import Functions as fct
@@ -23,33 +23,34 @@ def run_heuristiques(n,c,list,f):
     if(f==0):
         start_time = time.time()
         res,sol1=nf.nextfit(list, c)
-        t_exec = time.time() - start_time
         sol=fct.emballer(sol1,res)
+        t_exec = time.time() - start_time
     elif (f==1):
         start_time = time.time()
         res,sol1=nf.next_fit_dec(list, c)
-        t_exec = time.time() - start_time
         sol=fct.emballer(sol1,res)
+        t_exec = time.time() - start_time
     elif(f==2):
         start_time = time.time()
-        sol=ff.first_fit(list,c)
-        res=len(sol)
+        res,sol1=ff.firstFit(list,n,c)
+        sol=fct.emballer(sol1,res)
         t_exec = time.time() - start_time
     elif(f==3):
         start_time = time.time()
-        sol=ff.first_fit_dec(list,c)
-        res=len(sol)
+        res,sol1=ff.first_fit_dec(list,n,c)
+        sol=fct.emballer(sol1,res)
         t_exec = time.time() - start_time
     elif(f==4):
         start_time = time.time()
         res,sol1=bf.bestFit(list,n,c)
-        t_exec = time.time() - start_time
         sol=fct.emballer(sol1,res)
+        t_exec = time.time() - start_time
+        
     elif(f==5):
         start_time = time.time()
         res,sol1=bf.best_fit_dec(list,n,c)
-        t_exec = time.time() - start_time
         sol=fct.emballer(sol1,res)
+        t_exec = time.time() - start_time
     
     return (res,sol,t_exec)
 
@@ -344,6 +345,6 @@ def TestMatrix_Standard():
             #print(" {} : BB:  Texec={}".format(filename, t_exec3))
             #print(" {} : EXH:  Texec={}".format(filename, t_exec2))
 
-#TestMatrix_class1()
+TestMatrix_class1()
 #TestMatrix_class2()
-TestMatrix_Standard()
+#TestMatrix_Standard()

@@ -2,12 +2,12 @@ import math
 import os
 import time
 
-import Model
+
 
 from Méthodes_Heuristiques.BF_BFD import best_fit_dec
 from copy import copy, deepcopy
 import Instances_reader
-
+import Model
 
 class localsearch:
     dm = [[]]
