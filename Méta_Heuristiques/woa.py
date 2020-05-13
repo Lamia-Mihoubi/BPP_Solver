@@ -1,17 +1,16 @@
-
 import math
 import random
-
-import Model
-
 import numpy as np
+from decimal import *
+
+from Model import Objet
 
 def eval_func(solution, objects, capacity, k=2):
     weight_sum = 0
     occup_i = 0
     occup = []
     # calculating the occupency of every bin
-    for i in range(solution):
+    for i in solution:
         occup_i = weight_sum
         # getting the object of indice i
         obj = next((obj for obj in objects if obj.id() == i), None)
@@ -20,11 +19,10 @@ def eval_func(solution, objects, capacity, k=2):
         else:
             print("obj {0} doesn't exist in list {1} ".format(i, objects))
         # if the capacity of the bin is filled
-        if (capacity < weight_sum)
+        if (capacity < weight_sum):
             occup.append((occup_i / capacity)**k)
             weight_sum = 0
-    return sum(occup) / len(objects) 
-
+    return 1- (sum(occup) / len(objects)) 
 
 class WhaleOptimization():
     """class implements the whale optimization algorithm as found at
@@ -35,7 +33,7 @@ class WhaleOptimization():
     c = 10;  # capacité
     n = 100;  # nb objets
 
-    def __init__(self, opt_func, constraints, nsols, b, a, a_step, list_of_obj, maximize=False):
+    def __init__(self, opt_func=eval_func, constraints, nsols, b, a, a_step, list_of_obj, maximize=False):
         self._whales = nsols
         self.objects = list_of_obj
         self._opt_func = opt_func
@@ -51,6 +49,23 @@ class WhaleOptimization():
     def get_solutions(self):
         """return solutions"""
         return self._sols
+
+    def LOV(continous_sol):
+        # getting context float precision for float comparision
+        p = getcontext().prec
+        # sorting the solution in descending order
+        sorted_sol = np.sort(continous_sol)[::-1]
+        theta = []
+        discrete_sol = np.zeros(shape=(len(continous_sol),), dtype=int)
+        # create theta: theta[i]=the order of solution[i]
+        for x in continous_sol:
+            i = np.where(np.isclose(sorted_sol, x, atol=10**(-p), rtol=10**(-p)))[0][0]
+
+            theta.append(i)
+        # create result array
+        for i in range(len(theta)):
+            discrete_sol[theta[i]] = i + 1
+        return discrete_sol
 
     def optimize(self):
         """solutions randomly encircle, search or attack"""
