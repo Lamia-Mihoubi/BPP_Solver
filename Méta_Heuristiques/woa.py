@@ -22,7 +22,7 @@ def eval_func(solution, objects, capacity, k=2):
         if (capacity < weight_sum):
             occup.append((occup_i / capacity)**k)
             weight_sum = 0
-    return sum(occup) / len(objects) 
+    return 1- (sum(occup) / len(objects)) 
 
 class WhaleOptimization():
     """class implements the whale optimization algorithm as found at
