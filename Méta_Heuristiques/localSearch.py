@@ -1,10 +1,13 @@
 import math
+import os
+import time
 
-import Model
+
 
 from Méthodes_Heuristiques.BF_BFD import best_fit_dec
 from copy import copy, deepcopy
-
+import Instances_reader
+import Model
 
 class localsearch:
     dm = [[]]
@@ -19,12 +22,12 @@ class localsearch:
             S.append(Model.Bin(i, c))
         for o in liste_obj:
             S[o[1]].ranger_obj(Model.Objet(liste_obj.index(o), o[0]))
+
         # ordonner les boites selon Ws croissant
         S.sort(key=lambda x: x.total_weight, reverse=True)
         # attribuer id des boites selon leur position
         for i in range(Zs):
             S[i].set_id(i)
-
 
         # initialisaiton des variables de controle
         self.iter = 0
@@ -36,29 +39,15 @@ class localsearch:
         improvement = True
 
         while improvement:
-            # print('premier while')
+            # tant qu'on a trouvé une meilleure solution, on boucle encore
             improvement = False
             for j in range(len(S)):  # pour chaque boite j
-                print("la boucle pour")
                 if not improvement:  # tant qu'on a pas trouver une sol realisable
                     self.iter = self.iter + 1
                     # obtenir une nouvelle solution S' (etapes 1-2-3)
                     # (1) eliminer la boite j de S
-
-                    #print(len(S))
-                    #print(self.realisable(S))
-                    # print(len(Sprim))
-                    # Sprim[j] = False
                     # (2) redistribuer ses articles sur les autres boites
                     Sprim = self.redistribute(S, j)
-                    print("apres redistrib")
-                    print(len(Sprim))
-                    #print((S[0].total_weight))
-                    #print((S[1].total_weight))
-
-                    #print(self.realisable(Sprim))
-                    #print(self.realisable(S))
-
                     # (3) mettre a jour la date de modif des boites concernées
                     for i in range(len(S)):
                         for j in range(len(
@@ -67,10 +56,9 @@ class localsearch:
                                 self.chd[S[i].id] = self.iter
 
                     if self.realisable(Sprim):
-                        print("redistribute realisatble")
+                        # ie : apres redistribution on a obtenue une meilleure solution
                         S = deepcopy(Sprim)
                         Zs = len(S)
-                        print(Zs)
                         improvement = True
 
                     else:
@@ -84,7 +72,7 @@ class localsearch:
         return S
 
     def realisable(self, S):
-        if(len(S)==0):
+        if len(S) == 0:
             return False
         for bin in S:
             if bin.total_weight > bin.capacity:
@@ -94,11 +82,9 @@ class localsearch:
     def redistribute(self, S, j):
         Sprim = deepcopy(S)
         if len(S) > 1:
-            print("redistribute")
             Bj = Sprim[j]  # la boite a eliminer et redistribuer
-            print(len(Bj.get_objects))
             for o in range(len(Bj.get_objects)):
-                objet=Bj.get_objects[o]
+                objet = Bj.get_objects[o]
                 done = False
                 for i in range(len(Sprim)):
                     if (i != j) and Sprim[i].capacite_restante() >= objet.weight:
@@ -111,14 +97,14 @@ class localsearch:
         return []
 
     def recherche_locale(self, Sprim):
-        print("recherche locale")
         local_improvement = True
         while not self.realisable(Sprim) and local_improvement:
             local_improvement = False
-            for j in range(len(Sprim)- 1, 0,-1):
+            for j in range(len(Sprim) - 1, 0, -1):
                 while (not local_improvement) and Sprim[j].total_weight <= Sprim[j].capacity:
                     for i in range(j):
                         while not local_improvement:
+                            # parcourir les boites deux a deux et pour chaque couple i  , j redistribuer
                             if self.couple_valide(Sprim, i, j):
                                 self.dm[Sprim[i].id][Sprim[j].id] = self.iter
                                 self.dm[Sprim[j].id][Sprim[i].id] = self.iter
@@ -142,7 +128,7 @@ class localsearch:
 
                                 Sprimij[i].set_obj(obj1)
                                 Sprimij[j].set_obj(obj2)
-
+                                # verifier si la solution obtenue reduit la violation de capacité
                                 if abs(Sprimij[i].total_weight - Sprimij[j].total_weight) \
                                         < abs(Sprim[i].total_weight - Sprim[
                                     j].total_weight):  # on a reduit la violation de capacite
@@ -205,21 +191,15 @@ class localsearch:
         return B1, B2
 
 
+
+
 ls = localsearch()
 n = 20
 c = 10
-list = [5, 4, 7, 3,2,5, 4, 7, 3,2,5, 4, 7, 3,2,5, 4, 7, 3,2,5, 4, 7, 3,2]
+list = [5, 4, 7, 3, 2, 5, 4, 7, 3, 2, 5, 4, 7, 3, 2, 5, 4, 7, 3, 2, 5, 4, 7, 3, 2]
 list.sort(reverse=True)
-ord = [86, 75, 74, 73, 71, 60, 56, 54, 46, 15]
-# print(ls.KDM(list))
-
-SS=ls.ameliorer_Sol(n, c, list)
-print("Solution")
-print(len(SS))
+#ord = [86, 75, 74, 73, 71, 60, 56, 54, 46, 15]
+#print("Solution")
+#print(len(SS))
 #for i in range(len(SS)):
- #   print(SS[i].total_weight)
-
-
-
-
-
+#    print(" poids boite{} = {} ".format(i,SS[i].total_weight))
