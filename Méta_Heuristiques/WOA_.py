@@ -13,7 +13,7 @@ class WOA:
         self,
         objects_list,
         search_agents_nbr=30,
-        max_iter=500,
+        max_iter=100,
         b=1,
         a=2,
         eval_func=occupency,
@@ -33,10 +33,12 @@ class WOA:
         objects_nb = len(self.objects)
         i = 0
         solution = []
+        values=[0 for i in range(objects_nb)]
         while i < objects_nb:
             r = random.randint(0,objects_nb-1)
-            if r not in solution:
+            if(values[r]==0):
                 solution.append(r)
+                values[r]+=1
                 i = i + 1
         return solution
 
@@ -59,7 +61,6 @@ class WOA:
         sol_len=len(sol)
         for i in sol:
             # getting the object of indice i
-#            obj = next((obj for obj in self.objects if obj.id() == i), None)
             obj=self.objects[i]
             if obj != None:
                 weight_sum += obj.weight
