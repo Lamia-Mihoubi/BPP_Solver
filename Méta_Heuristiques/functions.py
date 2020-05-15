@@ -11,12 +11,18 @@ def occupency(solution, objects, capacity, k=2):
     occup_i = 0.0
     occup = []
     # calculating the occupency of every bin
-    for i in solution:
+
+    for i in solution :
+
         occup_i = weight_sum
         # getting the object of indice i
-        obj = next((obj for obj in objects if obj.id() == i), None)
+       # obj = next((obj for obj in objects if obj.id() == i), None)
+
+        obj=objects[i]
+
+
         if obj != None:
-            weight_sum += obj.weight()
+            weight_sum += obj.weight
         else:
             print("obj {0} doesn't exist in list {1} ".format(i, objects))
         # if the capacity of the bin is filled
@@ -39,5 +45,5 @@ def LOV(continous_sol):
         theta.append(i)
     # create result array
     for i in range(len(theta)):
-        discrete_sol[theta[i]] = i + 1
+        discrete_sol[theta[i]] = i
     return discrete_sol

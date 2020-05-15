@@ -34,7 +34,7 @@ class WOA:
         i = 0
         solution = []
         while i < objects_nb:
-            r = random.randint(1, objects_nb)
+            r = random.randint(0,objects_nb-1)
             if r not in solution:
                 solution.append(r)
                 i = i + 1
@@ -46,30 +46,33 @@ class WOA:
             population.append(self.rand_init_sol())
         # removing duplicate solutions:
         population.sort()
+
         return np.array(list(k for k, _ in itertools.groupby(population)))
 
     def init_heuristic(heuristic):
         pass
 
-    def get_bin_nbr(sol):
+    def get_bin_nbr(self,sol,capacity):
         weight_sum = 0.0
         nbr_bins_used = 0
         # calculating the occupency of every bin
+        sol_len=len(sol)
         for i in sol:
             # getting the object of indice i
-            obj = next((obj for obj in self.objects if obj.id() == i), None)
+#            obj = next((obj for obj in self.objects if obj.id() == i), None)
+            obj=self.objects[i]
             if obj != None:
-                weight_sum += obj.weight()
+                weight_sum += obj.weight
             else:
                 print("obj {0} doesn't exist in list {1} ".format(i, objects))
             # if the capacity of the bin is filled
             if capacity < weight_sum:
                 nbr_bins_used += 1
                 if obj != None:
-                    weight_sum = obj.weight()
+                    weight_sum = obj.weight
                 else:
                     print("obj {0} doesn't exist in list {1} ".format(i, objects))
-            elif i == sol[len(sol) - 1]:
+            elif i == sol[sol_len - 1]:
                 nbr_bins_used += 1
 
         return nbr_bins_used
@@ -82,20 +85,20 @@ class WOA:
             a = self.a - i * 2 / self.max_iter
             a2 = -1 + i * (-1) / self.max_iter
             for sol_index in range(pop.shape[0]):
-                r1 = random()
-                r2 = random()
+                r1 = random.random()
+                r2 = random.random()
 
                 A = 2 * a * r1 - a
                 C = 2 * r2
 
-                l = (a2 - 1) * random() + 1
+                l = (a2 - 1) * random.random() + 1
 
-                p = random()
+                p = random.random()
                 if sol_index != leader_index:
                     if p < 0.5:
                         if abs(A) >= 1:
                             rand_leader_index = math.floor(
-                                self.search_agents_nbr * random()
+                                pop.shape[0] * random.random()
                             )
                             x_rand = pop[rand_leader_index]
                             D_x_rand = np.absolute(C * x_rand - pop[sol_index])
@@ -123,21 +126,8 @@ class WOA:
                         )
             # removing any repeated solutions
             pop = np.unique(pop, axis=0)
-
             # evaluating the solutions and picking the best one:
             eval_sols = [self.eval_func(s, self.objects, capacity) for s in pop]
             leader_index = eval_sols.index(min(eval_sols))
 
-        return pop[leader_index], self.get_bin_nbr(pop[leader_index])
-
-
-""" testing ran_init_sol
-obj_l = gen.generate_obj_list(10, 5, 1)
-woa = WOA(obj_l)
-print(woa.rand_init_sol())
-"""
-"""test rand_init_population
-obj_l = gen.generate_obj_list(10, 5, 1)
-woa = WOA(obj_l, search_agents_nbr=3)
-print(woa.rand_init_population())
-"""
+        return pop[leader_index], self.get_bin_nbr(pop[leader_index],capacity)
