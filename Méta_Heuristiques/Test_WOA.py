@@ -21,13 +21,13 @@ def class1_test():
                 "C:\\Users\\dell\\PycharmProjects\\BPP_Solver\\Instances_scholl\\classe1" + "\\" + filename)
             obj_l=Instances_generator.generate_obj_list2(list,n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=10)
+            woa = WOA(obj_l, search_agents_nbr=20)
             sol,nbin=woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
                 filename[0:len(filename)-4] + ":       " + str(t_exec) + "      boites= " + str(nbin) + "       sol=" + str(sol) + "\n")
-            i=i+1
-
+        i = i + 1
+        if (i > 3): break
     file.close()
 
 
@@ -42,7 +42,7 @@ def class2_test():
                 "C:\\Users\\dell\\PycharmProjects\\BPP_Solver\\Instances_scholl\\classe2" + "\\" + filename)
             obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=10)
+            woa = WOA(obj_l, search_agents_nbr=40)
             sol, nbin = woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
@@ -63,7 +63,7 @@ def class3_test():
                 "C:\\Users\\dell\\PycharmProjects\\BPP_Solver\\Instances_scholl\\classe3" + "\\" + filename)
             obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=10)
+            woa = WOA(obj_l, search_agents_nbr=40)
             sol, nbin = woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
@@ -72,5 +72,4 @@ def class3_test():
             i = i + 1
 
     file.close()
-
-class2_test()
+class1_test()
