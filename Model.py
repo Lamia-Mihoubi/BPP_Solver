@@ -55,6 +55,9 @@ class Bin(object):
     def ranger_obj(self, item):  # range l'objet dans la boite.
         self._objects.append(item)
 
+    def ranger_obj2(self,item , index):
+        self._objects[index]=item
+
     def supprimer_obj(self, objet):  # enleve l'objet de la boite
         self._objects.remove(objet)
 
