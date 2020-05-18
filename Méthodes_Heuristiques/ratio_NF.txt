@@ -1,0 +1,9 @@
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe1_N1.txt ratio:  1.4375
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe1_N2.txt ratio:  1.4285714285714286
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe1_N3.txt ratio:  1.3968253968253967
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe1_N4.txt ratio:  1.3964497041420119
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe2_N1.txt ratio:  1.125
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe2_N2.txt ratio:  1.1904761904761905
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe2_N3.txt ratio:  1.1379310344827587
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe2_N4.txt ratio:  1.0985915492957747
+/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Méthodes_Heuristiques/Rédultats_nbr_boites_par_N/NF/NF_Classe3_N3.txt ratio:  1.1785714285714286
