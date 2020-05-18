@@ -2,8 +2,7 @@ import math
 import os
 import time
 
-
-
+from Méta_Heuristiques.get_opt_sol import get_opt_sol
 from Méthodes_Heuristiques.BF_BFD import best_fit_dec
 from copy import copy, deepcopy
 import Instances_reader
@@ -20,6 +19,7 @@ class localsearch:
         S = []
         for i in range(Zs):
             S.append(Model.Bin(i, c))
+
         for o in liste_obj:
             S[o[1]].ranger_obj(Model.Objet(liste_obj.index(o), o[0]))
 
@@ -68,6 +68,7 @@ class localsearch:
                             S = deepcopy(Snv)
                             Zs = len(S)
                             improvement = True
+
 
         return S
 
@@ -136,7 +137,6 @@ class localsearch:
                                     local_improvement = True
                                     self.chd[Sprim[i].id] = self.iter
                                     self.chd[Sprim[j].id] = self.iter
-
         return Sprim
 
     def couple_valide(self, Sprim, i, j):
@@ -191,15 +191,3 @@ class localsearch:
         return B1, B2
 
 
-
-
-ls = localsearch()
-n = 20
-c = 10
-list = [5, 4, 7, 3, 2, 5, 4, 7, 3, 2, 5, 4, 7, 3, 2, 5, 4, 7, 3, 2, 5, 4, 7, 3, 2]
-list.sort(reverse=True)
-#ord = [86, 75, 74, 73, 71, 60, 56, 54, 46, 15]
-#print("Solution")
-#print(len(SS))
-#for i in range(len(SS)):
-#    print(" poids boite{} = {} ".format(i,SS[i].total_weight))
