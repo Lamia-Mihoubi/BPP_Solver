@@ -3,8 +3,6 @@ import random
 import numpy as np
 from decimal import *
 import itertools
-import Chaoticmap as ch
-from Chaoticmap import simulation_chaotic
 
 import Instances_generator as gen
 from functions import occupency, LOV
@@ -14,10 +12,10 @@ class WOA:
     def __init__(
         self,
         objects_list,
-        search_agents_nbr=20,
-        max_iter=10,
+        search_agents_nbr=30,
+        max_iter=100,
         b=1,
-        a=4,
+        a=2,
         eval_func=occupency,
         discretize=LOV,
     ):
@@ -79,59 +77,11 @@ class WOA:
                 nbr_bins_used += 1
 
         return nbr_bins_used
-    def mutation(self,sol):
-
-        ind1=random.randint(0,len(sol)-1)
-        ind2=ind1
-        while(ind1==ind2):
-            ind2 = random.randint(0, len(sol) - 1)
-        #SWAP
-        q=sol[ind2]
-        sol[ind2]=sol[ind1]
-        sol[ind1]=q
-
-        #Displacement
-        print(sol)
-        init_sub = random.randint(1, len(sol) - 1)
-        length_sub = ind1 = random.randint(1, len(sol) - init_sub)
-        tomove = sol[init_sub:init_sub + length_sub]
-        move_pos = random.randint(0, len(sol) - 1)
-        if (init_sub != move_pos):
-
-            if (init_sub > move_pos):
-                a1 = sol[0:move_pos]
-
-                a2 = sol[move_pos:init_sub]
-                a3 = sol[init_sub + length_sub:len(sol)]
-            else:
-
-                a1 = sol[0:init_sub]
-
-                if (init_sub + length_sub - 1 < move_pos):
-                    a2 = sol[init_sub + length_sub:move_pos]
-                    a1 = np.append(a1, a2)
-                a2 = sol[move_pos:len(sol)]
-
-            a1 = np.append(a1, tomove)
-            a1 = np.append(a1, a2)
-            if (init_sub > move_pos):
-                a1 = np.append(a1, a3)
-        if(len(sol)==len(a1)): sol=a1
-        #reversion
-        init_sub = random.randint(0, len(sol) - 1)
-        length_sub =random.randint(0, len(sol) - 1)
-        sol[init_sub:init_sub+length_sub-1]=sol[init_sub:init_sub+length_sub-1][::-1]
-
-        return sol.astype(int)
 
     def optimize(self, capacity):
-        sim=simulation_chaotic(max_iter=self.max_iter)
-        ps=sim.logistic_map(random.random())
         pop = self.rand_init_population()
         eval_sols = [self.eval_func(s, self.objects, capacity) for s in pop]
-        leader_sol=min(eval_sols)
-        leader_index = eval_sols.index(leader_sol)
-        leaders=[]
+        leader_index = eval_sols.index(min(eval_sols))
         for i in range(self.max_iter):
             a = self.a - i * 2 / self.max_iter
             a2 = -1 + i * (-1) / self.max_iter
@@ -140,13 +90,11 @@ class WOA:
                 r2 = random.random()
 
                 A = 2 * a * r1 - a
-                # ILWOA CHANGE:Utiliser la marche aléatoire de levy Pour le C
                 C = 2 * r2
 
                 l = (a2 - 1) * random.random() + 1
-                #ILWOA CHANGE: utiliser chaotic map to initialize p
-                p=ps[i]
-                #p = random.random()
+
+                p = random.random()
                 if sol_index != leader_index:
                     if p < 0.5:
                         if abs(A) >= 1:
@@ -160,7 +108,6 @@ class WOA:
                             # I constrain the solution or something, they use here lower and upper
                             # bounds to define when is the resulting array out of our search
                             # domaine so do we need to define them too here? and how to do it?
-
                             pop[sol_index] = self.discretize(x_rand - A * D_x_rand)
                         else:
                             D_leader = np.absolute(
@@ -172,29 +119,16 @@ class WOA:
 
                     else:  # if p >= 0.5
                         dist_to_leader = np.absolute(pop[leader_index] - pop[sol_index])
-                        pop[sol_index]= self.discretize(
+                        pop[sol_index] = self.discretize(
                             dist_to_leader
                             * math.exp(self.b * l)
                             * math.cos(l * 2 * math.pi)
                             + pop[leader_index]
                         )
-            evaluation=self.eval_func(pop[sol_index],self.objects,capacity)
-
-            if(leader_sol>evaluation):
-
-                leader_sol=evaluation
-            else :
-
-
-                mutation=self.mutation(pop[sol_index])
-                evaluation = self.eval_func(mutation, self.objects, capacity)
-                if (leader_sol > evaluation):
-                   pop[sol_index]=mutation
-                   leader_sol=evaluation
-
+            # removing any repeated solutions
             pop = np.unique(pop, axis=0)
+            # evaluating the solutions and picking the best one:
             eval_sols = [self.eval_func(s, self.objects, capacity) for s in pop]
-            leader_sol=min(eval_sols)
-            leader_index = eval_sols.index(leader_sol)
+            leader_index = eval_sols.index(min(eval_sols))
 
-        return pop[leader_index],self.get_bin_nbr(pop[leader_index],capacity)
+        return pop[leader_index], self.get_bin_nbr(pop[leader_index],capacity)

@@ -49,7 +49,7 @@ def class2_test():
                 filename[0:len(filename) - 4] + ":       " + str(t_exec) + "      boites= " + str(
                     nbin) + "       sol=" + str(sol) + "\n")
             i = i + 1
-            if(i>3):break
+            if (i > 5): break
     file.close()
 
 def class3_test():
@@ -57,10 +57,11 @@ def class3_test():
     file = open("Résultats_Scholl_Classe3_avec_solutions.txt", "a")
     file.write("===================================================================\n")
     i = 0
-    for filename in os.listdir("C:\\Users\\dell\\PycharmProjects\\BPP_Solver\\Instances_scholl\\classe3"):
-        if filename.endswith(".txt"):
-            n, c, list = Instances_reader.ReadInstance(
-                "C:\\Users\\dell\\PycharmProjects\\BPP_Solver\\Instances_scholl\\classe3" + "\\" + filename)
+    directory="C:\\Users\\dell\\PycharmProjects\\BPP_Solver\\Instances_scholl\\classe3"
+    for filename in os.listdir(directory):
+
+        if filename.endswith(".txt") and filename.startswith("HARD"):
+            n, c, list =Instances_reader.ReadInstance(directory + "/" + filename)
             obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
             woa = WOA(obj_l, search_agents_nbr=40)
@@ -70,6 +71,6 @@ def class3_test():
                 filename[0:len(filename) - 4] + ":       " + str(t_exec) + "      boites= " + str(
                     nbin) + "       sol=" + str(sol) + "\n")
             i = i + 1
-
+            if(i>2):break
     file.close()
-class1_test()
+class2_test()
