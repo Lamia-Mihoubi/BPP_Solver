@@ -14,10 +14,10 @@ class WOA:
     def __init__(
         self,
         objects_list,
-        search_agents_nbr=50,
-        max_iter=90,
-        b=0.59,
-        a=2,
+        search_agents_nbr=20,
+        max_iter=40,
+        b=1,
+        a=4,
         eval_func=occupency,
         discretize=LOV,
     ):
