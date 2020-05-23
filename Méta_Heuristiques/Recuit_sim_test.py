@@ -12,7 +12,7 @@ liste3 = []
 liste4 = []
 file = open("Ratio_local_search.txt", "a")
 file.write("===================================================================\n")
-file2=open("Recuit sim.txt","w+")
+file2 = open("Recuit sim.txt", "w+")
 file2.write("===================================================================\n")
 
 ls = localsearch()
@@ -32,7 +32,7 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         Zs, liste_obj = best_fit_dec(list, n, c)
         t_exec = time.time() - t_exec
         t_exec2 = time.time()
-        rss, sol = rs.RS(n, c, list)
+        rss, sol = rs.RS_iteratif(n, c, list)
         t_exec2 = time.time() - t_exec2
         print(filename)
         file2.write(filename+"\n")
@@ -57,14 +57,14 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         if filename.startswith("N4"):
             liste4.append(len(SS) / int(opt))
         # print("{} :\n optimale={}\n obtenue={}\n T_exec={}".format(filename, opt, len(SS), t_exec))
-"""print("ratio Classe1 N1 : {}".format(max(liste1)))
+print("ratio Classe1 N1 : {}".format(max(liste1)))
 print("ratio Classe1 N2 : {}".format(max(liste2)))
 print("ratio Classe1 N3 : {}".format(max(liste3)))
 print("ratio Classe1 N4 : {}".format(max(liste4)))
 file.write("ratio Classe1 N1 : {}\n".format(max(liste1)))
 file.write("ratio Classe1 N2 : {}\n".format(max(liste2)))
 file.write("ratio Classe1 N3 : {}\n".format(max(liste3)))
-file.write("ratio Classe1 N4 : {}\n".format(max(liste4)))"""
+file.write("ratio Classe1 N4 : {}\n".format(max(liste4)))
 file.write("===================================================================\n")
 
 liste1 = []  # ratios de N1
@@ -78,19 +78,18 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
     if filename.endswith(".txt"):
         n, c, list = Instances_reader.ReadInstance(
             "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe2" + "\\" + filename)
-        #t_exec = time.time()
+        # t_exec = time.time()
         SS = ls.ameliorer_Sol(n, c, list)
-        #t_exec = time.time() - t_exec
-        rss, sol = rs.RS(n, c, list)
+        # t_exec = time.time() - t_exec
         opt = get_opt_sol(2, filename)
-        t_exec=time.time()
+        t_exec = time.time()
         Zs, liste_obj = best_fit_dec(list, n, c)
-        t_exec=time.time()-t_exec
+        t_exec = time.time() - t_exec
         t_exec2 = time.time()
-        rss, sol = rs.RS(n, c, list)
+        rss, sol = rs.RS_iteratif(n, c, list)
         t_exec2 = time.time() - t_exec2
         print(filename)
-        file2.write(filename+"\n")
+        file2.write(filename + "\n")
         print("\tSolution {}".format(opt))
         file2.write("\tSolution {}\n".format(opt))
 
@@ -112,9 +111,9 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         if filename.startswith("N4"):
             liste4.append(len(SS) / int(opt))
         # print("{} :\n optimale={}\n obtenue={}\n T_exec={}".format(filename, opt, len(SS), t_exec))
-#print("ratio Classe2 N1 : {}".format(max(liste1)))
-#print("ratio Classe2 N2 : {}".format(max(liste2)))
-#print("ratio Classe2 N3 : {}".format(max(liste3)))
+# print("ratio Classe2 N1 : {}".format(max(liste1)))
+# print("ratio Classe2 N2 : {}".format(max(liste2)))
+# print("ratio Classe2 N3 : {}".format(max(liste3)))
 file.write("ratio Classe2 N1 : {}\n".format(max(liste1)))
 file.write("ratio Classe2 N2 : {}\n".format(max(liste2)))
 file.write("ratio Classe2 N3 : {}\n".format(max(liste3)))
@@ -129,18 +128,18 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
     if filename.endswith(".txt") and filename.startswith("H"):
         n, c, list = Instances_reader.ReadInstance(
             "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe3" + "\\" + filename)
-        #SS = ls.ameliorer_Sol(n, c, list)
+        # SS = ls.ameliorer_Sol(n, c, list)
 
         t_exec = time.time()
         Zs, liste_obj = best_fit_dec(list, n, c)
         t_exec = time.time() - t_exec
         opt = get_opt_sol(3, filename)
-        #liste1.append(len(SS) / int(opt))
+        # liste1.append(len(SS) / int(opt))
         t_exec2 = time.time()
-        rss, sol = rs.RS(n, c, list)
+        rss, sol = rs.RS_iteratif(n, c, list)
         t_exec2 = time.time() - t_exec2
         print(filename)
-        file2.write(filename+"\n")
+        file2.write(filename + "\n")
         print("\tSolution {}".format(opt))
         file2.write("\tSolution {}\n".format(opt))
 
@@ -153,8 +152,8 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         if rss < Zs:
             print("Recuit simulé a trouvé une meilleure solution")
 
-#print("ratio Classe3  : {}".format(max(liste1)))
-#file.write("ratio Classe3 : {}\n".format(max(liste1)))
+# print("ratio Classe3  : {}".format(max(liste1)))
+# file.write("ratio Classe3 : {}\n".format(max(liste1)))
 file.write("===================================================================\n")
 file.close()
 file2.close()

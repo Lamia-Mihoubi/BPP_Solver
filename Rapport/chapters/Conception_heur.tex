@@ -1,16 +1,19 @@
 \documentclass[class=article, crop=false]{standalone}
 \usepackage{mathtools}
 \usepackage{amsmath}
-\usepackage{import}
 \usepackage{float}
+\usepackage{algorithmic}
+\usepackage[ruled]{algorithm2e}
 \setcounter{section}{0}
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
 \begin{document}
 \section{Introduction}
 Les heuristiques sont des méthodes spécifiques qui exploitent au mieux la structure du 
 problème dans le but de trouver une solution raisonnable (non nécessairement optimale) en un temps réduit. 
 L’utilisation de ce type d’algorithmes s'impose car les méthodes de résolution exactes sont 
 de complexité exponentielle, et échouent à trouver la solution pour des instances de tailles moyennes voir petites,
- comme on la constater lors du chapitre précédant . 
+ comme on la constater lors du chapitre précédant. 
 L'usage des heuristiques est donc pertinent pour surmonter ces limites.\\
 
 Dans ce chapitre, nous allons présenter la conception détaillée des heuristiques sur lesquelles notre choix d’implémentation s’est porté et qui sont:
@@ -23,7 +26,7 @@ Dans ce chapitre, nous allons présenter la conception détaillée des heuristiq
     \item Best Fit Decreasing (BFD)\\
 \end{enumerate}
 
-Dans le but d’explorer ces méthodes, comparer leurs performances, montrer leurs avantages et découvrir leurs limites , nous effectuerons des tests empiriques et comparatifs sur les mêmes  benchmarks utilisés pour les tests des méthodes exactes.( Benchmark Scholl)
+Dans le but d’explorer ces méthodes, comparer leurs performances, montrer leurs avantages et découvrir leurs limites, nous effectuerons des tests empiriques et comparatifs sur les mêmes  benchmarks utilisés pour les tests des méthodes exactes ( Benchmark Scholl).
 \newpage
 \section{Next Fit (NF)}
 \subsection{principe}
@@ -91,7 +94,7 @@ Ranger chaque article courant dans la première boîte, entre celles déjà ouve
 
 \section{First Fit Descreasing (FFD)}
 \subsection{principe}
-Le FFD est une amélioration de l’algorithme First-Fit . Cet algorithme ordonne les poids dans le sens décroissant puis lui applique l’algorithme FF.
+Le FFD est une amélioration de l’algorithme First-Fit. Cet algorithme ordonne les poids dans le sens décroissant puis lui applique l’algorithme FF.
 \begin{itemize}
     \item L’algorithme First Fit peut être implémenté en O(nlog n ) en utilisant les arbres de recherche binaires 
 \end{itemize}
@@ -137,7 +140,7 @@ Ranger chaque article courant dans la boîte la mieux remplie, entre celles déj
 
 \section{Best Fit Decreasing (BFD)}
 \subsection{principe}
-Le BFD est une amélioration de l’algorithme Best-Fit . Cet algorithme ordonne les poids dans le sens décroissant puis applique l’algorithme BF.
+Le BFD est une amélioration de l’algorithme Best-Fit. Cet algorithme ordonne les poids dans le sens décroissant puis applique l’algorithme BF.
 
 \subsection{Pseudo-Code}
 

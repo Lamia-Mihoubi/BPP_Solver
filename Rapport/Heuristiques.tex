@@ -8,7 +8,9 @@
 \usepackage[ruled]{algorithm2e}
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
-
+\usepackage[backend=biber]{biblatex}
+\addbibresource{refs.bib}
+\usepackage[nottoc,numbib]{tocbibind}
 % make sure to keep these two lines the very last in the preamble
 % if you want to add packages add them before not after these two lines
 \usepackage[subpreambles=true]{standalone}
@@ -27,11 +29,15 @@
 \begin{document}
 \maketitle
 \tableofcontents
-\part{Worse case Analysis}
+\part{Worst Case Analysis}
 \import{chapters/}{worse_case_analysis}
 \newpage
 \part{Méthodes Heuristiques}
 \import{chapters/}{Conception_heur}
 \import{chapters/}{tests_heur}
-
+\addcontentsline{toc}{section}{Références}
+\begin{refsection}[refs.bib]
+    \nocite{*}
+    \printbibliography[]
+    \end{refsection}
 \end{document}
