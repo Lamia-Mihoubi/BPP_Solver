@@ -1,5 +1,6 @@
 import math
 import random
+import scipy
 import numpy as np
 from decimal import *
 import itertools
@@ -15,10 +16,10 @@ class WOA:
         self,
         objects_list,
         capacity,
-        search_agents_nbr=20,
-        max_iter=40,
-        b=1,
-        a=4,
+        search_agents_nbr=50,
+        max_iter=50,
+        b=1.5,
+        a=2,
         eval_func=occupency,
         discretize=LOV,
     ):
@@ -46,8 +47,11 @@ class WOA:
                 i = i + 1
         return solution
 
-    def rand_init_population(self):
+    def rand_init_population(self,capacity):
         population = []
+        add=self.init_heuristic( capacity)
+        print(self.get_bin_nbr(add,capacity))
+        population.append(add)
         for i in range(self.search_agents_nbr):
             population.append(self.rand_init_sol())
         # removing duplicate solutions:
@@ -55,8 +59,53 @@ class WOA:
 
         return np.array(list(k for k, _ in itertools.groupby(population)))
 
-    def init_heuristic(self, heuristic):
-        pass
+    def init_heuristic(self,c):
+        # Initialize result (Count of bins)
+        res = 0
+        sol = []
+        ind_sol = []
+        n=len(self.objects)
+        # Create an array to store remaining space in bins
+        # there can be at most n bins
+        bin_rem = [0] * n
+        # Place items one by one
+        for i in range(n):
+
+            # Find the first bin that can accommodate
+            # weight[i]
+            j = 0
+
+            # Initialize minimum space left and index
+            # of best bin
+            min = c + 1
+            bi = 0
+
+            for j in range(res):
+                if (bin_rem[j] >= self.objects[i].weight and bin_rem[j] - self.objects[i].weight < min):
+                    bi = j
+
+                    min = bin_rem[j] - self.objects[i].weight
+
+                # If no bin could accommodate weight[i],
+            # create a new bin
+            if (min == c + 1):
+                bin_rem[res] = c -self.objects[i].weight
+                sol.append([i, res])
+
+                res += 1
+            else:  # Assign the item to best bin
+                bin_rem[bi] -= self.objects[i].weight
+                sol.append([i, bi])
+
+        sol.sort(key=lambda tup: tup[1])
+        zipped = sol
+
+        unzipped_object = zip(*zipped)
+
+        unzipped_list = list(unzipped_object)
+
+        return list(unzipped_list[0])
+
 
     def get_bin_nbr(self,sol,capacity):
         weight_sum = 0.0
@@ -82,6 +131,7 @@ class WOA:
 
         return nbr_bins_used
     def mutation(self,sol):
+
         ind1=random.randint(0,len(sol)-1)
         ind2=ind1
         while(ind1==ind2):
@@ -90,30 +140,51 @@ class WOA:
         q=sol[ind2]
         sol[ind2]=sol[ind1]
         sol[ind1]=q
-        ''''
+
         #Displacement
-        init_sub=random.randint(1,len(sol)-1)
-        length_sub=ind1=random.randint(0,len(sol)-1)
-        move_pos=random.randint(0,len(sol)-1)
-        a1=sol[0:move_pos-1]
-        a2=sol[move_pos:init_sub-1]
-        tomove=sol[init_sub:init_sub+length_sub-1]
-        a3=sol[init_sub+length_sub:len(sol)-1]
-        sol=np.append(a1,tomove)
-        sol=np.append(sol,a2)
-        sol = np.append(sol,a3)
-'''
+
+        init_sub = random.randint(1, len(sol) - 1)
+        length_sub = ind1 = random.randint(1, len(sol) - init_sub)
+        tomove = sol[init_sub:init_sub + length_sub]
+        move_pos = random.randint(0, len(sol) - 1)
+        if (init_sub != move_pos):
+
+            if (init_sub > move_pos):
+                a1 = sol[0:move_pos]
+
+                a2 = sol[move_pos:init_sub]
+                a3 = sol[init_sub + length_sub:len(sol)]
+            else:
+
+                a1 = sol[0:init_sub]
+
+                if (init_sub + length_sub < move_pos):
+                    a2 = sol[init_sub + length_sub:move_pos]
+
+                    a1 = np.append(a1, a2)
+
+                    a2 = sol[move_pos:len(sol)]
+                else:
+                    a2 = sol[init_sub + length_sub:len(sol)]
+
+            a1 = np.append(a1, tomove)
+            a1 = np.append(a1, a2)
+            if (init_sub > move_pos):
+                a1 = np.append(a1, a3)
+            sol=a1
         #reversion
         init_sub = random.randint(0, len(sol) - 1)
-        length_sub =random.randint(0, len(sol) - 1)
-        sol[init_sub:init_sub+length_sub-1]=sol[init_sub:init_sub+length_sub-1][::-1]
+        length_sub =random.randint(1, len(sol) - 1)
+        sol[init_sub:init_sub+length_sub]=sol[init_sub:init_sub+length_sub][::-1]
 
-        return sol
+        return sol.astype(int)
 
-    def optimize(self, capacity):
+    def optimize(self, capacity,beta=1.5):
         sim=simulation_chaotic(max_iter=self.max_iter)
-        ps=sim.logistic_map(random.random())
-        pop = self.rand_init_population()
+        ps=sim.logistic_map(0.9)
+        cs=sim.levy(self.max_iter,beta)
+        pop = self.rand_init_population(capacity)
+
         eval_sols = [self.eval_func(s, self.objects, capacity) for s in pop]
         leader_sol=min(eval_sols)
         leader_index = eval_sols.index(leader_sol)
@@ -127,7 +198,7 @@ class WOA:
 
                 A = 2 * a * r1 - a
                 # ILWOA CHANGE:Utiliser la marche aléatoire de levy Pour le C
-                C = 2 * r2
+                C = cs[i]
 
                 l = (a2 - 1) * random.random() + 1
                 #ILWOA CHANGE: utiliser chaotic map to initialize p
@@ -165,14 +236,17 @@ class WOA:
                             + pop[leader_index]
                         )
             evaluation=self.eval_func(pop[sol_index],self.objects,capacity)
+            print(self.get_bin_nbr(pop[sol_index], capacity))
 
             if(leader_sol>evaluation):
-
+                print("mut")
                 leader_sol=evaluation
             else :
                 mutation=self.mutation(pop[sol_index])
+
                 evaluation = self.eval_func(mutation, self.objects, capacity)
                 if (leader_sol > evaluation):
+                   print("mut")
                    pop[sol_index]=mutation
                    leader_sol=evaluation
 
@@ -190,7 +264,7 @@ class WOA:
         self.a = params[3]
         sim=simulation_chaotic(max_iter=self.max_iter)
         ps=sim.logistic_map(random.random())
-        pop = self.rand_init_population()
+        pop = self.rand_init_population(self.capacity)
         eval_sols = [self.eval_func(s, self.objects, self.capacity) for s in pop]
         leader_sol=min(eval_sols)
         leader_index = eval_sols.index(leader_sol)

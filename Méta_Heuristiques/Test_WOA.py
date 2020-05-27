@@ -1,4 +1,4 @@
-from WOA_ import WOA
+from Méta_Heuristiques.WOA_ import WOA
 import Instances_reader
 import Instances_generator
 import time
@@ -36,7 +36,7 @@ def class1_test():
             )
             obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=30)
+            woa = WOA(objects_list=obj_l,capacity=c, search_agents_nbr=30)
             sol, nbin, _ = woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
@@ -65,7 +65,7 @@ def class2_test():
             )
             obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=30)
+            woa = WOA(objects_list=obj_l,capacity=c, search_agents_nbr=30)
             sol, nbin, _ = woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
@@ -94,7 +94,7 @@ def class3_test():
             )
             obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=30)
+            woa = WOA(objects_list=obj_l,capacity=c, search_agents_nbr=30)
             sol, nbin, _ = woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
