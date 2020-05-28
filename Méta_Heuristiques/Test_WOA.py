@@ -1,33 +1,55 @@
-from WOA_ import WOA
+from Méta_Heuristiques.WOA_ import WOA
 import Instances_reader
 import Instances_generator
 import time
 import os
 
-liste1 = [] #ratios de N1
+liste1 = []  # ratios de N1
 liste2 = []
 liste3 = []
 liste4 = []
+
+
 def class1_test():
     print("__________CLASSE 01 ________________")
     file = open("Résultats_Scholl_Classe1_avec_solutions.txt", "a")
     file.write("===================================================================\n")
-    indications_class1 = ["N1C1", "N1C2", "N1C3", "N2C1", "N2C2", "N2C3", "N3C1", "N3C2", "N3C3", "N4C1", "N4C2",
-                              "N4C3"]
-    i=0
-    for filename in os.listdir("/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe1"):
+    indications_class1 = [
+        "N1C1",
+        "N1C2",
+        "N1C3",
+        "N2C1",
+        "N2C2",
+        "N2C3",
+        "N3C1",
+        "N3C2",
+        "N3C3",
+        "N4C1",
+        "N4C2",
+        "N4C3",
+    ]
+    i = 0
+    for filename in os.listdir("../Instances_scholl/classe1"):
         if filename.endswith(".txt"):
             n, c, list = Instances_reader.ReadInstance(
-                "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe1" + "/" + filename)
-            obj_l=Instances_generator.generate_obj_list2(list,n)
+                "../Instances_scholl/classe1" + "/" + filename
+            )
+            obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=30)
-            sol,nbin=woa.optimize(c)
+            woa = WOA(objects_list=obj_l,capacity=c, search_agents_nbr=30)
+            sol, nbin, _ = woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
-                filename[0:len(filename)-4] + ":       " + str(t_exec) + "      boites= " + str(nbin) + "       sol=" + str(sol) + "\n")
+                filename[0 : len(filename) - 4]
+                + ":       "
+                + str(t_exec)
+                + "      boites= "
+                + str(nbin)
+                + "       sol="
+                + str(sol)
+                + "\n"
+            )
         i = i + 1
-        if (i > 3): break
     file.close()
 
 
@@ -36,42 +58,60 @@ def class2_test():
     file = open("Résultats_Scholl_Classe2_avec_solutions.txt", "a")
     file.write("===================================================================\n")
     i = 0
-    for filename in os.listdir("/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe2"):
+    for filename in os.listdir("../Instances_scholl/classe2"):
         if filename.endswith(".txt"):
             n, c, list = Instances_reader.ReadInstance(
-                "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe2" + "/" + filename)
+                "../Instances_scholl/classe2" + "/" + filename
+            )
             obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=30)
-            sol, nbin = woa.optimize(c)
+            woa = WOA(objects_list=obj_l,capacity=c, search_agents_nbr=30)
+            sol, nbin, _ = woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
-                filename[0:len(filename) - 4] + ":       " + str(t_exec) + "      boites= " + str(
-                    nbin) + "       sol=" + str(sol) + "\n")
+                filename[0 : len(filename) - 4]
+                + ":       "
+                + str(t_exec)
+                + "      boites= "
+                + str(nbin)
+                + "       sol="
+                + str(sol)
+                + "\n"
+            )
             i = i + 1
-            if(i>3):break
     file.close()
+
 
 def class3_test():
     print("__________CLASSE 03 ________________")
     file = open("Résultats_Scholl_Classe3_avec_solutions.txt", "a")
     file.write("===================================================================\n")
     i = 0
-    for filename in os.listdir("/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe3"):
+    for filename in os.listdir("../Instances_scholl/classe3"):
         if filename.endswith(".txt"):
             n, c, list = Instances_reader.ReadInstance(
-                "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe3" + "/" + filename)
+                "../Instances_scholl/classe3" + "/" + filename
+            )
             obj_l = Instances_generator.generate_obj_list2(list, n)
             start_time = time.time()
-            woa = WOA(obj_l, search_agents_nbr=30)
-            sol, nbin = woa.optimize(c)
+            woa = WOA(objects_list=obj_l,capacity=c, search_agents_nbr=30)
+            sol, nbin, _ = woa.optimize(c)
             t_exec = time.time() - start_time
             file.write(
-                filename[0:len(filename) - 4] + ":       " + str(t_exec) + "      boites= " + str(
-                    nbin) + "       sol=" + str(sol) + "\n")
+                filename[0 : len(filename) - 4]
+                + ":       "
+                + str(t_exec)
+                + "      boites= "
+                + str(nbin)
+                + "       sol="
+                + str(sol)
+                + "\n"
+            )
             i = i + 1
 
     file.close()
+
+
 class1_test()
 class2_test()
 class3_test()
