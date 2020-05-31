@@ -135,4 +135,11 @@ Une solution \(x(t)\) appartient au domaine de recherche tant qu’elle respecte
 \subsubsection{La fonction objectif :}
 Afin de pouvoir évaluer les solutions, Nous avons opté pour la fonction suivante proposée par \emph{Hyde et al} [add ref here], au lieu du nombre de boîtes utilisées, parce que avec cette dernière pour plusieurs solutions on peut avoir la même évaluation ce qui peut engendrer la stagnation de l’algorithme.
 \[ F_{min} = 1 - \frac{\sum_{1}^{n} (occup_i / c)^k}{n}\]
+Avec:
+\begin{itemize}
+    \item \(n\) nombre de boites utilisées.
+    \item \(ocup_i\) total des poids des objets rangés dans l’ième.
+    \item \(c\) capacité des boites.
+    
+\end{itemize}
 \end{document}
