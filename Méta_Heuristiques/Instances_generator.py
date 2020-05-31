@@ -55,7 +55,6 @@ def generate_obj_list(n, c, grain):
         objects.append(obj)
     return objects
 def generate_obj_list2(list,n):
-
     objects = []
     for i in range(n):
         obj = Objet(i + 1, int(list[i]))

@@ -49,9 +49,9 @@ class WOA:
 
     def rand_init_population(self,capacity):
         population = []
-        add=self.init_heuristic( capacity)
-        print(self.get_bin_nbr(add,capacity))
-        population.append(add)
+        # add=self.init_heuristic(capacity)
+        # print(self.get_bin_nbr(add,capacity))
+        # population.append(add)
         for i in range(self.search_agents_nbr):
             population.append(self.rand_init_sol())
         # removing duplicate solutions:
@@ -257,11 +257,11 @@ class WOA:
             leaders.append(leader_sol)
         return pop[leader_index], self.get_bin_nbr(pop[leader_index],capacity), leaders
 
-    def optimize_param(self, params):
-        self.search_agents_nbr = params[0] 
-        self.max_iter = params[1]
-        self.b = params[2]
-        self.a = params[3]
+    def optimize_param(self, nb_whales, max_iter, b, a):
+        self.search_agents_nbr = nb_whales 
+        self.max_iter = max_iter
+        self.b = b
+        self.a = a
         sim=simulation_chaotic(max_iter=self.max_iter)
         ps=sim.logistic_map(random.random())
         pop = self.rand_init_population(self.capacity)

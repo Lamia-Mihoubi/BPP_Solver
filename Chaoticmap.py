@@ -10,12 +10,7 @@ class simulation_chaotic:
     def __init__(
             self,
             max_iter,
-            biotic_potential=3.9364481997283227
-
-
-,
-
-
+            biotic_potential=3.9364481997283227,
     ):
         self.max_iter = max_iter
         self.biotic_potential=biotic_potential
