@@ -18,28 +18,29 @@ class RS:
     c = 0
     list = []
 
-    def RS_iteratif(self, n, c, list, Tinit=30, T0=0.1, R=200, alpha=0.925):
+    def RS_iteratif(self, n, c, list, Tinit=30, T0=0.1, R=1000, alpha=0.925):
         Sols = []
         vals = []
         deltaF, nb, sol = self.RS(n, c, list, Tinit, T0, R, alpha, init=True)
         Sols.append(sol)
         vals.append(nb)
-        Tinit = min(100, abs(int(np.mean(deltaF) / math.log(0.8, 2))))
-        print(Tinit)
+        Tinit = (abs(int(np.mean(deltaF) / math.log(0.8, 2))))
+        #print(Tinit)
         for i in range(10):
             # print(vals)
             nb, sol = self.RS(n, c, list, Tinit, T0, R, alpha)
             Sols.append(sol)
             vals.append(nb)
-        print(vals)
+        # print(vals)
         return min(vals), Sols[vals.index(min(vals))]
 
     def RS(self, n, c, list, Tinit, T0, R, alpha, init=False):
+        t_exec = time.time()
         deltaF = []
         self.n = n
         self.c = c
         self.list = list
-        R = min(1000, int(n))
+        R = min(R, int(n))
         # alpha = (1-1/n)
         # T0=Tinit/math.log(n,2)
         # Tinit= n
@@ -61,7 +62,7 @@ class RS:
         Tmoy = (Tinit + T0) / 2  # la barriere entre le regime haute temperature et basse temperature
 
         """tant que le seuil de temperature n'est pas atteint, recherche locale avec la temperature T"""
-        while T > T0:
+        while T > T0 and time.time() - t_exec < 60:
             improve = False
             cpt = 0
             proba = -1
@@ -69,7 +70,6 @@ class RS:
             """repeter le processus de recherche locale R fois """
             for i in range(R):
                 """generer aléatoirement une solution voisine de S"""
-                v = random.uniform(0, 1)
                 if T > Tmoy:
                     """Mode High temperature => Type1"""
                     Sprim = self.generer_voisin1(S)
@@ -97,9 +97,9 @@ class RS:
                         S = deepcopy(Sprim)
                         if len(Sprim) < len(Best):
                             Best = deepcopy(Sprim)
-                if cpt >= int(R / 2):
+                if cpt >= 20:
                     break
-            if not improve and proba < 0.01:
+            if not improve and proba < 0.1:
                 break
             """diminution de la temperature"""
             T = T * alpha
@@ -181,7 +181,7 @@ class RS:
             for o in range(len(S[b].get_objects)):
                 sum = sum + S[b].get_objects[o].weight
             sum = sum ** 2
-            f = f + sum
+            f = (f + sum) /self.c
         return f
 
 

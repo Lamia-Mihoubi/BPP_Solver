@@ -12,7 +12,7 @@ def TestMatrix_class1():
 
     print("______CLASSE 01 ___________")
     for indication in indications_class1:
-        directory = "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe1"
+        directory = "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe1"
         cpt = 0
         sum = [0, 0]
         bins = [0, 0]
@@ -49,7 +49,7 @@ def TestMatrix_class2():
 
     print("______CLASSE 02 ___________")
     for indication in indications_class1:
-        directory = "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe2"
+        directory = "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe2"
         cpt = 0
         sum = [0, 0]
         bins = [0, 0]
@@ -82,14 +82,14 @@ def TestMatrix_class3():
     print("______CLASSE 03 ___________")
     rs = RS()
 
-    directory = "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe2"
+    directory = "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe2"
     methode = ["RS", "FFD"]
     cpt = 0
     sum = [0, 0]
     bins = [0, 0]
     for filename in os.listdir(directory):
         if filename.endswith(".txt") and filename.startswith("H"):
-            n, c, list = Instances_reader.ReadInstance(directory + "/" + filename)
+            n, c, list = Instances_reader.ReadInstance(directory + "//" + filename)
             t_exec = time.time()
             Sol = FF_FFD.first_fit(list, c)
             t_exec = time.time() - t_exec

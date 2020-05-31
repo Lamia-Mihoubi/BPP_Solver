@@ -13,7 +13,7 @@ from Méthodes_Heuristiques.FF_FFD import first_fit_dec, first_fit
 from Méthodes_Heuristiques.NF_NFD import nextfit
 
 
-class RS:
+class RS1:
     n = 0
     c = 0
     list = []
