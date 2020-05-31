@@ -17,24 +17,28 @@ class RS:
     n = 0
     c = 0
     list = []
-
-    def RS_iteratif(self, n, c, list, Tinit=30, T0=0.1, R=1000, alpha=0.925):
+    """Call RS Iteratif and give on the param "S" la solution initiale """
+    """le résultat des de la forme: nombre de boite used+  liste[Bin]"""
+    def RS_iteratif(self, n, c, list, S=None, Tinit=30, T0=0.1, R=1000, alpha=0.925):
+        if S is None:
+            S = []
         Sols = []
         vals = []
-        deltaF, nb, sol = self.RS(n, c, list, Tinit, T0, R, alpha, init=True)
+        deltaF, nb, sol = self.RS(n, c, list, S, Tinit, T0, R, alpha, init=True)
         Sols.append(sol)
         vals.append(nb)
+
         Tinit = (abs(int(np.mean(deltaF) / math.log(0.8, 2))))
-        #print(Tinit)
+        # print(Tinit)
         for i in range(10):
             # print(vals)
-            nb, sol = self.RS(n, c, list, Tinit, T0, R, alpha)
+            nb, sol = self.RS(n, c, list,S, Tinit, T0, R, alpha)
             Sols.append(sol)
             vals.append(nb)
-        # print(vals)
+        #print(vals)
         return min(vals), Sols[vals.index(min(vals))]
 
-    def RS(self, n, c, list, Tinit, T0, R, alpha, init=False):
+    def RS(self, n, c, list, S, Tinit, T0, R, alpha, init=False):
         t_exec = time.time()
         deltaF = []
         self.n = n
@@ -45,15 +49,17 @@ class RS:
         # T0=Tinit/math.log(n,2)
         # Tinit= n
         """Solution initiale générée aléatoirement """
-        random.shuffle(list)
-        liste_obj = first_fit(list, c)
-        Zs = len(liste_obj)
-        S = []
-        for i in range(Zs):
-            S.append(Model.Bin(i, c))
-            for j in range(len(liste_obj[i])):
-                S[i].ranger_obj(Model.Objet(i + j, liste_obj[i][j]))
-
+        if not S:
+            random.shuffle(list)
+            liste_obj = first_fit(list, c)
+            Zs = len(liste_obj)
+            S = []
+            for i in range(Zs):
+                S.append(Model.Bin(i, c))
+                for j in range(len(liste_obj[i])):
+                    S[i].ranger_obj(Model.Objet(i + j, liste_obj[i][j]))
+        #print("solu inti")
+        #print(len(S))
         """ initialisaiton des parametres"""
         Best = deepcopy(S)
         # Tinit=self.Temperature_initiale()
@@ -76,6 +82,7 @@ class RS:
                 else:
                     """Mode Low temperature => Type2"""
                     Sprim = self.generer_voisin2(S)
+                    #print(len(Sprim))
                 if init:
                     deltaF.append(self.F(S) - self.F(Sprim))
 
@@ -181,7 +188,7 @@ class RS:
             for o in range(len(S[b].get_objects)):
                 sum = sum + S[b].get_objects[o].weight
             sum = sum ** 2
-            f = (f + sum) /self.c
+            f = (f + sum) / self.c
         return f
 
 
