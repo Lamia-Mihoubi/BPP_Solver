@@ -1,0 +1,166 @@
+[
+    {
+      "key": "BB",
+      "label": "Branch and Bound",
+      "nb": "2",
+      "texec":"0.01",
+      "boites": [
+        {
+          "idbin": "01",
+          "objects":[
+              {
+                "poid":"5"
+              },
+              {
+                "poid":"6"
+              },
+              {
+                "poid":"5"
+              },
+              {
+                "poid":"3"
+              },
+              {
+                "poid":"5"
+              }
+          ]
+        },
+        {
+            "idbin": "02",
+            "objects":[
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"6"
+                },
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"3"
+                },
+                {
+                  "poid":"5"
+                }
+            ]
+          }
+      ]
+    },
+    {
+        "key": "DP",
+        "label": "Programmation dynamique",
+        "nb": "7",
+        "texec":"0.01",
+        "boites": [
+          {
+            "idbin": "1",
+            "objects":[
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"6"
+                },
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"3"
+                },
+                {
+                  "poid":"5"
+                }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "AG",
+        "label": "Algorithme genetique",
+        "nb": "2",
+        "texec":"0.01",
+        "boites": [
+          {
+            "idbin": "01",
+            "objects":[
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"6"
+                },
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"3"
+                },
+                {
+                  "poid":"5"
+                }
+            ]
+          },
+          {
+            "idbin": "02",
+            "objects":[
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"6"
+                },
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"3"
+                },
+                {
+                  "poid":"5"
+                }
+            ]
+          },
+          {
+            "idbin": "03",
+            "objects":[
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"6"
+                },
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"3"
+                },
+                {
+                  "poid":"5"
+                }
+            ]
+          },
+          {
+            "idbin": "04",
+            "objects":[
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"6"
+                },
+                {
+                  "poid":"5"
+                },
+                {
+                  "poid":"3"
+                },
+                {
+                  "poid":"5"
+                }
+            ]
+          }
+    
+         ]
+        }]
