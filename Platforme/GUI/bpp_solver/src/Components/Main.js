@@ -53,7 +53,7 @@ class Main extends React.Component{
       
         
     }}
-    class MainCont extends React.Component{ 
+    export class MainCont extends React.Component{ 
           
     render(){
         const s= this.props.panelIndex 
@@ -64,7 +64,7 @@ class Main extends React.Component{
         ]; 
         const correctPanel = panels[s];
         return (
-            <div className="panel-box">
+            <div >
             {correctPanel}
             </div>
         );
@@ -73,6 +73,9 @@ class Main extends React.Component{
     const drawerWidth = 240
     
     const styles = theme => ({
+      main:{
+        backgroundColor:'#020F59'
+      },
         root: {
             display: 'flex',
           },
@@ -99,5 +102,9 @@ class Main extends React.Component{
           
           }
     })  
+
+
+
+
 export default withStyles(styles)(Main);
     
