@@ -379,7 +379,7 @@ def next_generation(population, popSize, k, n, c, liste):  # le k de selection
     return newpopulation
 
 
-def main(nbGen, k, popSize, n, c, liste):  # le k de selection
+def main( n, c, liste,nbGen=200, k=20, popSize=10):  # le k de selection
     # n,c,liste =ReadInstance("N1C1W1_D.txt")
     population = generation_ff(liste, c, popSize)
     bestfit, found = evaluation(population, liste, c, n)
