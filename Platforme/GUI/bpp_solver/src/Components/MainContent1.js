@@ -8,6 +8,7 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import lists from '../data/resultats.json'
+import Instance from './Instance'
 // the variable "lists" should be filled with results that we'll get from backend 
 // once the validation btn is clicked we send a request and we save the answer on lists
 // in this version im using a json data file to get results from it 
@@ -213,10 +214,12 @@ class MainContent1 extends React.Component{
             content= <ShowResults n='5' c='10' sol_opt ='1' solutions={lists} handleretour={this.handleretour} ></ShowResults>
        } 
         return(
-            <Container className={classes.root}>     
+            <Container className={classes.root}>
+                 
             <Typography variant="h3" className={classes.pagetitle} gutterBottom>
                 Construire Votre propre Instance 
             </Typography>  
+            <Instance></Instance>  
             <div className={classes.empty}></div>    
             {content}
             
