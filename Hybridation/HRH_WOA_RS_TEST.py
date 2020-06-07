@@ -9,27 +9,30 @@ rs = RS()
 
 print("__________CLASSE 01 ________________")
 for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe1"):
-    if filename.endswith(".txt") :
+    if filename.endswith(".txt"):
         n, c, list = Instances_reader.ReadInstance(
             "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe1" + "\\" + filename)
         print(filename)
         opt = get_opt_sol(1, filename)
         print("\tSolution {}".format(opt))
-        sol = HRH_WOA_RS.hrh_woa_rs(n,c,list)
-
-
+        t_exec = time.time()
+        sol = HRH_WOA_RS.hrh_woa_rs(n, c, list)
+        t_exec = time.time() - t_exec
+        print("\t Texec: {}".format(t_exec))
 
 print("__________CLASSE 02 ________________")
 
 for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe2"):
-    if filename.endswith(".txt") :
+    if filename.endswith(".txt"):
         n, c, list = Instances_reader.ReadInstance(
             "C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe2" + "\\" + filename)
         print(filename)
         opt = get_opt_sol(2, filename)
         print("\tSolution {}".format(opt))
-        sol = HRH_WOA_RS.hrh_woa_rs(n,c,list)
-
+        t_exec = time.time()
+        sol = HRH_WOA_RS.hrh_woa_rs(n, c, list)
+        t_exec = time.time() - t_exec
+        print("\t Texec: {}".format(t_exec))
 
 print("__________CLASSE 03 ________________")
 for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe3"):
@@ -39,4 +42,7 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         print(filename)
         opt = get_opt_sol(3, filename)
         print("\tSolution {}".format(opt))
-        sol = HRH_WOA_RS.hrh_woa_rs(n,c,list)
+        t_exec = time.time()
+        sol = HRH_WOA_RS.hrh_woa_rs(n, c, list)
+        t_exec = time.time() - t_exec
+        print("\t Texec: {}".format(t_exec))

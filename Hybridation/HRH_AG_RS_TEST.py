@@ -17,7 +17,10 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         print(filename)
         opt = get_opt_sol(1, filename)
         print("\tSolution {}".format(opt))
+        t_exec=time.time()
         sol = HRH_AG_RS.hrh_ag_rs(n,c,list)
+        t_exec=time.time()-t_exec
+        print("\tTexec: {}".format(t_exec))
 
 
 
@@ -30,8 +33,10 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         print(filename)
         opt = get_opt_sol(2, filename)
         print("\tSolution {}".format(opt))
+        t_exec = time.time()
         sol = HRH_AG_RS.hrh_ag_rs(n, c, list)
-
+        t_exec = time.time() - t_exec
+        print("\tTexec: {}".format(t_exec))
 
 print("__________CLASSE 03 ________________")
 for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_scholl\\classe3"):
@@ -41,4 +46,7 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         print(filename)
         opt = get_opt_sol(3, filename)
         print("\tSolution {}".format(opt))
+        t_exec = time.time()
         sol = HRH_AG_RS.hrh_ag_rs(n, c, list)
+        t_exec = time.time() - t_exec
+        print("\tTexec: {}".format(t_exec))

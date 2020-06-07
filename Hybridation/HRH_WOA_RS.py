@@ -16,17 +16,13 @@ def hrh_woa_rs(n, c, list):
     """get result and transform it """
     Sol=[Model.Bin(0,c)]
     for i in range (len(sol)):
-        done = False
-        for j in range (len(Sol)):
-            if Sol[j].capacite_restante()>= liste[sol[i]].weight:
-                Sol[j].ranger_obj(liste[sol[i]])
-                done = True
-                break
-        if not done:
-            Sol.append(Model.Bin(len(Sol),c))
+        if Sol[-1].capacite_restante() >= liste[sol[i]].weight:
+            Sol[-1].ranger_obj(liste[sol[i]])
+        else:
+            Sol.append(Model.Bin(len(Sol), c))
             Sol[-1].ranger_obj(liste[sol[i]])
 
-    print("\tWOA: {} {}".format(len(Sol),nb))
+    print("\tWOA: {} ".format(nb))
 
     """execute RS"""
     rs = RS()
