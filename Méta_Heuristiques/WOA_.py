@@ -9,7 +9,7 @@ from Chaoticmap import simulation_chaotic
 from Méthodes_Heuristiques import Functions as fct
 
 import Instances_generator as gen
-from functions import occupency, LOV
+from .functions import occupency,LOV
 
 
 class WOA:
@@ -124,7 +124,7 @@ class WOA:
                 bin.append(obj.weight)
 
             else:
-                print("obj {0} doesn't exist in list {1} ".format(i, objects))
+                print("obj {0} doesn't exist in list {1} ".format(i, self.objects))
             # if the capacity of the bin is filled
             if capacity < weight_sum:
                 nbr_bins_used += 1
@@ -136,9 +136,8 @@ class WOA:
 
                     weight_sum = obj.weight
                 else:
-                    print("obj {0} doesn't exist in list {1} ".format(i, objects))
-            elif i == sol[sol_len - 1]:
-                nbr_bins_used += 1
+                    print("obj {0} doesn't exist in list {1} ".format(i, self.objects))
+        nbr_bins_used += 1
 
         return nbr_bins_used
     def mutation(self,sol):
@@ -251,13 +250,13 @@ class WOA:
 
 
             if(leader_sol>evaluation):
-                print("mut1")
+                #print("mut1")
                 leader_sol=evaluation
             else :
                 mutation=self.mutation(pop[sol_index])
                 evaluation = self.eval_func(mutation, self.objects, capacity)
                 if (leader_sol > evaluation):
-                   print("mut2")
+                   #print("mut2")
                    pop[sol_index]=mutation
                    leader_sol=evaluation
 
@@ -265,5 +264,6 @@ class WOA:
             eval_sols = [self.eval_func(s, self.objects, capacity) for s in pop]
             leader_sol=min(eval_sols)
             leader_index = eval_sols.index(leader_sol)
-        print(pop[leader_index])
+        #print(pop[leader_index])
         return pop[leader_index],self.get_bin_nbr(pop[leader_index],capacity,opt=1)
+

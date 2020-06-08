@@ -34,10 +34,11 @@ class ChooseMthd extends React.Component{
             WOA_b:8.96, 
             WOA_max_iter:117,
             WOA_nb_whales:30,
-            ILWOA_a:10,
-            ILWOA_b:8.96, 
-            ILWOA_max_iter:117,
-            ILWOA_nb_whales:30,
+            ILWOA_nb_agents:10,
+            ILWOA_beta:1.5,
+            ILWOA_a:20,
+            ILWOA_b:7.36, 
+            ILWOA_max_iter:30,
             AG_popSize:10,
             AG_K:20,
             AG_nb_gen:200
@@ -70,14 +71,14 @@ class ChooseMthd extends React.Component{
             WOA_b:8.96, 
             WOA_max_iter:117,
             WOA_nb_whales:30,
-            ILWOA_a:10,
-            ILWOA_b:8.96, 
-            ILWOA_max_iter:117,
-            ILWOA_nb_whales:30,
+            ILWOA_nb_agents:10,
+            ILWOA_beta:1.5,
+            ILWOA_a:20,
+            ILWOA_b:7.36, 
+            ILWOA_max_iter:30,
             AG_popSize:10,
             AG_K:20,
-            AG_nb_gen:200
-             
+            AG_nb_gen:200        
         });        
     }
     render(){
@@ -218,9 +219,9 @@ class ChooseMthd extends React.Component{
                                         }}
                                         >
                                         <option aria-label="None" value="" />
-                                        <option value={10}>30</option>
-                                        <option value={20}>500</option>
-                                        <option value={30}>1000</option>
+                                        <option value={100}>100</option>
+                                        <option value={200}>200</option>
+                                        <option value={300}>300</option>
                                         </Select>                                     
 
                                 </FormControl>
@@ -236,10 +237,10 @@ class ChooseMthd extends React.Component{
                                         }}
                                         >
                                         <option aria-label="None" value="" />
-                                        <option value={10}>0.925</option>
-                                        <option value={20}>0.90</option>
-                                        <option value={30}>0.85</option>
-                                        <option value={30}>0.8</option>
+                                        <option value={10}>10</option>
+                                        <option value={20}>20</option>
+                                        <option value={0.85}>0.85</option>
+                                        <option value={0.8}>0.8</option>
                                         </Select>
                                 </FormControl> 
                                 <FormControl className={classes.formControl} >
@@ -254,10 +255,10 @@ class ChooseMthd extends React.Component{
                                         }}
                                         >
                                         <option aria-label="None" value="" />
-                                        <option value={10}>0.925</option>
-                                        <option value={20}>0.90</option>
-                                        <option value={30}>0.85</option>
-                                        <option value={30}>0.8</option>
+                                        <option value={10}>10</option>
+                                        <option value={20}>20</option>
+                                        <option value={30}>30</option>
+                                        <option value={30}>40</option>
                                         </Select>
                                 </FormControl>        
                             </FormGroup>
@@ -286,8 +287,8 @@ class ChooseMthd extends React.Component{
                                         }}
                                         >
                                         <option aria-label="None" value="" />
-                                        <option value={10}>30</option>
-                                        <option value={20}>500</option>
+                                        <option value={8.96}>8.96</option>
+                                        <option value={7.64}>7.64</option>
                                         <option value={30}>1000</option>
                                         </Select>                                     
 
@@ -322,8 +323,8 @@ class ChooseMthd extends React.Component{
                                         }}
                                         >
                                         <option aria-label="None" value="" />
-                                        <option value={10}>0.925</option>
-                                        <option value={20}>0.90</option>
+                                        <option value={117}>117</option>
+                                        <option value={271}>271</option>
                                         <option value={30}>0.85</option>
                                         <option value={30}>0.8</option>
                                         </Select>
@@ -342,8 +343,8 @@ class ChooseMthd extends React.Component{
                                         <option aria-label="None" value="" />
                                         <option value={10}>0.925</option>
                                         <option value={20}>0.90</option>
-                                        <option value={30}>0.85</option>
-                                        <option value={30}>0.8</option>
+                                        <option value={28}>28</option>
+                                        <option value={30}>30</option>
                                         </Select>
                                 </FormControl>            
                             </FormGroup>
@@ -373,7 +374,7 @@ class ChooseMthd extends React.Component{
                                         }}
                                         >
                                         <option aria-label="None" value="" />
-                                        <option value={10}>30</option>
+                                        <option value={7.36}>7.36</option>
                                         <option value={20}>500</option>
                                         <option value={30}>1000</option>
                                         </Select>                                     
@@ -383,7 +384,7 @@ class ChooseMthd extends React.Component{
                                         <InputLabel htmlFor="ILWOA_a">a</InputLabel>
                                         <Select
                                         native
-                                        value={this.state.WOA_a}
+                                        value={this.state.ILWOA_a}
                                         onChange={handleChangeparams}
                                         inputProps={{
                                             name: 'ILWOA_a',
@@ -409,30 +410,49 @@ class ChooseMthd extends React.Component{
                                         }}
                                         >
                                         <option aria-label="None" value="" />
-                                        <option value={10}>0.925</option>
-                                        <option value={20}>0.90</option>
-                                        <option value={30}>0.85</option>
-                                        <option value={30}>0.8</option>
+                                        <option value={10}>10</option>
+                                        <option value={20}>20</option>
+                                        <option value={30}>30</option>
+                                        <option value={30}>35</option>
                                         </Select>
-                                </FormControl>
+                                </FormControl>  
                                 <FormControl className={classes.formControl} >
-                                        <InputLabel htmlFor="ILWOA_nb_whales">nb whales</InputLabel>
+                                        <InputLabel htmlFor="ILWOA_nb_agents">nb agents</InputLabel>
                                         <Select
                                         native
-                                        value={this.state.ILWOA_nb_whales}
+                                        value={this.state.ILWOA_nb_agents}
                                         onChange={handleChangeparams}
                                         inputProps={{
-                                            name: 'ILWOA_nb_whales',
-                                            id: 'ILWOA_nb_whales',
+                                            name: 'ILWOA_nb_agents',
+                                            id: 'ILWOA_nb_agents',
                                         }}
                                         >
                                         <option aria-label="None" value="" />
-                                        <option value={10}>0.925</option>
-                                        <option value={20}>0.90</option>
-                                        <option value={30}>0.85</option>
-                                        <option value={30}>0.8</option>
+                                        <option value={10}>10</option>
+                                        <option value={20}>20</option>
+                                        <option value={30}>30</option>
+                                        <option value={40}>40</option>
                                         </Select>
                                 </FormControl>
+                                <FormControl className={classes.formControl} >
+                                        <InputLabel htmlFor="ILWOA_beta">beta</InputLabel>
+                                        <Select
+                                        native
+                                        value={this.state.ILWOA_beta}
+                                        onChange={handleChangeparams}
+                                        inputProps={{
+                                            name: 'ILWOA_beta',
+                                            id: 'ILWOA_beta',
+                                        }}
+                                        >
+                                        <option aria-label="None" value="" />
+                                        <option value={0.33}>0.33</option>
+                                        <option value={0.5}>0.5</option>
+                                        <option value={1.5}>1.5</option>
+                                        <option value={2}>2</option>
+                                        </Select>
+                                </FormControl>
+                                
                                     
                             </FormGroup>
                            
