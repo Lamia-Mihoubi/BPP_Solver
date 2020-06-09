@@ -5,13 +5,19 @@ import random
 import Model
 from Model import Bin
 from Model import Objet
+import sys
+import os
+cwd = os.getcwd()
+#print(cwd)
+sys.path.append("C:\\Users\\winsido\\Documents\\GitHub\\BPP_Solver\\Méta_Heuristiques")
 from Méta_Heuristiques.Recuit_Sim import RS
+from Instances_reader import ReadInstance
 
 
-def AG_hyb1(n, c, list):
-    """heuristics + RS (haut niveau) """
-    """execute ag"""
-    ag = main(500, 25, 10,n, c, list)
+
+def ag_rs_rs(n,c,list):
+    """rs inside AG, suivie d'un RS"""
+    ag = main(500, 25, 10, n, c, list)
     sol = solution(ag[0])
 
     """get result and transform it to a list of Bins"""
@@ -20,110 +26,26 @@ def AG_hyb1(n, c, list):
         bins.append(Model.Bin(i, c))
         for j in range(len(sol[0][i])):
             bins[i].ranger_obj(Model.Objet(sol[0][i][j] - 1, list[sol[0][i][j] - 1]))
-    # print("\tAG: {}".format(len(bins)))
+    print("\tAG_RS: {}".format(len(bins)))
     """execute RS"""
     rs = RS()
-    nb, result = rs.RS(n, c, list, bins)
-    print("\tAG2_RS: {}".format(nb))
+    nb, result = rs.RS_iteratif(n, c, list, bins)
+    print("\tAG_RS*2: {}".format(nb))
     return result
 
 
-def bestFit(list_items, max_size):
-    # Initialize result (Count of bins)
-    c=max_size
-    res = 0
-    sol = []
-    ind_sol = []
-    n = len(list_items)
-    # Create an array to store remaining space in bins
-    # there can be at most n bins
-    bin_rem = [0] * n
-    # Place items one by one
+def makeObjects(filepath):
+    liste = []
+    file1 = open(filepath, 'r')
+    n = int(file1.readline())
+    c = int(file1.readline())
     for i in range(n):
-
-        # Find the first bin that can accommodate
-        # weight[i]
-        j = 0;
-
-        # Initialize minimum space left and index
-        # of best bin
-        min = c + 1
-        bi = 0
-
-        for j in range(res):
-            if (bin_rem[j] >= list_items[i].weight and bin_rem[j] - list_items[i].weight < min):
-                bi = j
-
-                min = bin_rem[j] - list_items[i].weight
-
-                # If no bin could accommodate weight[i],
-            # create a new bin
-        if (min == c + 1):
-            bin_rem[res] = c - list_items[i].weight
-            sol.append([i, res])
-            res += 1
-        else:  # Assign the item to best bin
-            bin_rem[bi] -= list_items[i].weight
-            sol.append([i, bi])
-
-    sol.sort(key=lambda tup: tup[1])
-    zipped = sol
-
-    list1, list2 = zip(*sol)
-    # unzipped_object = zip(*zipped)
-    j = 0
-    res = []
-    solution = []
-    for i in range(len(list2)):
-        if list2[i] != j:
-            solution.append(res)
-            res = []
-            res.append(Objet(i, list1[i]))
-            j = list2[i]
-        else:
-            res.append(Objet(i, list1[i]))
-            j = list2[i]
-    solution.append(res)
-
-    return solution, len(solution)
-
-
-def nextFit(list_items, max_size):
-    c=max_size
-    res = 0
-    rem = c
-    sol = []
-    n = len(list_items)
-    for i in range(n):
-        if rem >= list_items[i].weight:
-            rem = rem - list_items[i].weight
-
-        else:
-            res += 1
-            rem = c - list_items[i].weight
-        sol.append([list_items[i].weight, res])
-
-    sol.sort(key=lambda tup: tup[1])
-    zipped = sol
-
-    list1, list2 = zip(*sol)
-    # unzipped_object = zip(*zipped)
-    j = 0
-    res = []
-    solution = []
-    for i in range(len(list2)):
-        if list2[i] != j:
-            solution.append(res)
-            res = []
-            res.append(Objet(i, list1[i]))
-            j = list2[i]
-        else:
-            res.append(Objet(i, list1[i]))
-            j = list2[i]
-    solution.append(res)
-
-    return solution, len(solution)
-
+        obj = file1.readline()
+        liste.append(int(obj))
+    listObjects = []
+    for i in range(len(liste)):
+        listObjects.append(Objet(i+1,liste[i]))
+    return n,c,listObjects
 
 crossOverProb = 85  # 0.85 cross-over probability, 85% chance
 mutationProb = 10  # 0.1 mutation probability, 10% chance
@@ -311,12 +233,7 @@ def generation_ff(listeItems, c, popSize):
     # popSize=int((2**(longueur))/(2**(longueur-5)))
     for i in range(popSize):
         liste1 = renameItems(listeItems1)
-        if i % 3 == 0:
-            liste2, n = first_fit(liste1, c)
-        if i % 3 == 1:
-            liste2, n = bestFit(liste1, c)
-        if i % 3 == 2:
-            liste2, n = nextFit(liste1, c)
+        liste2, n = first_fit(liste1, c)
 
         # ------représenter la solution par la représentation chromosomique-------
         liste3 = itemsInBox((liste2))
@@ -502,7 +419,32 @@ def evaluation(population, listeWeight, c, nb_elt):
 def next_generation(population, popSize, k, n, c, liste):  # le k de selection
     parents = selection(k, popSize, population)
     newpopulation = crossover_mutation(parents, popSize, n, liste, c)
-    return newpopulation
+    populationMuted = []
+    for i in newpopulation :
+        populationMuted.append(solution(i))
+    RSresult=[]
+    for j in populationMuted :
+        copie=[]
+        copie=j[0]
+        #print(j)
+        binList=[]
+        last=0
+        for i in range(len(copie)) :
+            boite =Bin(i+1,c)
+            for k in range(len(copie[i])):
+                thingy=copie[i]
+                objecte = Objet(thingy[k],liste[thingy[k]-1])
+                boite.ranger_obj(objecte)
+            last+=k
+            binList.append(boite)
+        classrs = RS()
+        rs, listeBins=classrs.RS_iteratif(n, c, j[0], S=binList, Tinit=30, T0=0.1, R=1000, alpha=0.925)
+        solutionlist=[]
+        for a in listeBins:
+            solutionlist.append(a.get_objects)
+        final =itemsInBox(solutionlist)
+        RSresult.append(chromoTo(final, rs))
+    return newpopulation #RSresult
 
 
 def main(nbGen, k, popSize, n, c, liste):  # le k de selection
@@ -538,14 +480,13 @@ def countFreq(arr, n):
     index_max = [i for i, x in enumerate(counts) if x == max(counts)]
     return arr.index(arr[index_max[0]]), counts[index_max[0]]
 
-
-# retourne l'indice du premier max cell0 et le max cell0
-
 """
+# retourne l'indice du premier max cell0 et le max cell0
 n = 5
 c = 10
-liste = [1, 1, 9, 4, 9, 7, 3, 2, 2, 9]
-sol = main(500, 25, 10, n, c, liste)
+list = [1, 1, 9, 4, 9, 7, 3, 2, 2, 9]
+#n,c,liste = ReadInstance("C:\\Users\\winsido\\Documents\\GitHub\\BPP_Solver\\Instances_scholl\\classe1\\N1C1W1_D.txt")
+sol = main(3, 2, 10, n, c, list)
 sol1, n1 = solution(sol[0])
 print(n1)
 """

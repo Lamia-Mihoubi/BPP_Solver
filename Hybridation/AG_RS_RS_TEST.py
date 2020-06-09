@@ -3,7 +3,7 @@ import Instances_reader
 import time
 import os
 from Méta_Heuristiques.get_opt_sol import get_opt_sol
-from Hybridation import HLRH_AG
+from Hybridation import AG_RS_RS
 from Méta_Heuristiques.Recuit_Sim import RS
 
 rs = RS()
@@ -17,7 +17,7 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         opt = get_opt_sol(1, filename)
         print("\tSolution {}".format(opt))
         t_exec=time.time()
-        sol = HLRH_AG.AG_hyb1(n,c,list)
+        sol = AG_RS_RS.ag_rs_rs(n,c,list)
         t_exec=time.time()-t_exec
         print("\tTexec: {}".format(t_exec))
 
@@ -33,7 +33,7 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         opt = get_opt_sol(2, filename)
         print("\tSolution {}".format(opt))
         t_exec = time.time()
-        sol = HLRH_AG.AG_hyb1(n,c,list)
+        sol = AG_RS_RS.ag_rs_rs(n,c,list)
         t_exec = time.time() - t_exec
         print("\tTexec: {}".format(t_exec))
 
@@ -46,6 +46,6 @@ for filename in os.listdir("C:\\Users\\BACHI\\Desktop\\OPT_project\\Instances_sc
         opt = get_opt_sol(3, filename)
         print("\tSolution {}".format(opt))
         t_exec = time.time()
-        sol = HLRH_AG.AG_hyb1(n,c,list)
+        sol = AG_RS_RS.ag_rs_rs(n,c,list)
         t_exec = time.time() - t_exec
         print("\tTexec: {}".format(t_exec))
