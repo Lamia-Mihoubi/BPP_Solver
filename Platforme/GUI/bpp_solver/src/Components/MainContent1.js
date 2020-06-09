@@ -185,17 +185,19 @@ class MainContent1 extends React.Component{
         super(props)
         this.state={
             display_choosemthd: 1 ,
-            display_showresults:0 
+            display_showresults:0 ,
+            time: "zerow",
         }
         this.handleValider= this.handleValider.bind(this)
         this.handleretour= this.handleretour.bind(this)
     }
 
-    handleValider(){
+    handleValider(timee){
 
         this.setState({
             display_choosemthd:0,
-            display_showresults:1
+            display_showresults:1,
+            time : timee,
         });        
     }
     handleretour(){
@@ -217,7 +219,7 @@ class MainContent1 extends React.Component{
             <Container className={classes.root}>
                  
             <Typography variant="h3" className={classes.pagetitle} gutterBottom>
-                Construire Votre propre Instance 
+                Construire Votre propre Instance
             </Typography>  
             <Instance></Instance>  
             <div className={classes.empty}></div>    

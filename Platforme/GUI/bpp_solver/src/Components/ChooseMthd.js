@@ -46,10 +46,25 @@ class ChooseMthd extends React.Component{
         this.ValiderClick=this.ValiderClick.bind(this)
         this.reinitClick = this.reinitClick.bind(this)
     }
-    ValiderClick(){
+    async ValiderClick(){
+        // get selected data
         //send request first
-        this.props.handleValider()
-    }
+        
+        const response= await fetch('/resultats',{
+            headers: {
+                'Content-Type': 'application/json'
+              }, 
+              method: 'POST',
+              body: JSON.stringify({
+                'n':'55'
+              })
+        })
+        const jsonres = await response.json();
+            //this.props.handleValider(jsonres['n']);
+    
+            this.props.handleValider("");
+    
+    };
     reinitClick(){
         //recopy the same initialisaiton of the constructor here 
         this.setState({
