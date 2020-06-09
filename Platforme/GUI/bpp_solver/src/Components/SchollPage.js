@@ -259,7 +259,31 @@ class SchollPage extends React.Component{
         const classes=this.props;
         let content ;
         if(this.state.display_choosemthd){
-            content= <ChooseMthd handleValider={this.handleValider}></ChooseMthd>
+            content= <div><Card className="card-style2"/*className={classes.typo}*/>
+            <CardContent>
+                <h1>Utiliser les Instances du Benchmark Scholl </h1> 
+                <div className="input-group">
+                <div className="custom-file">
+                    <input
+                    type="file"
+                    className="custom-file-input"
+                    id="inputGroupFile01"
+                    color="teal lighten-2"
+                    aria-describedby="inputGroupFileAddon01"
+                    onChange={ (e) => this.handleChange(e.target.files) } />
+                    />
+                    <label className="custom-file-label" id="label-file" htmlFor="inputGroupFile01"color="teal lighten-2">
+                    Choisissez un fichier
+                    </label>
+                </div>
+                </div>
+                <div >
+                    <select onChange={this.getinstance} button onClick={this.initS} className="browser-default custom-select" id="select-ops">
+                        <option>Choisissez une instance</option>
+                    </select>
+                </div>
+            </CardContent> 
+        </Card><ChooseMthd handleValider={this.handleValider}></ChooseMthd></div>
        }
        if(this.state.display_showresults){
             content= <ShowResults n='5' c='10' sol_opt ='1' solutions={lists2} handleretour={this.handleretour} ></ShowResults>
@@ -267,31 +291,6 @@ class SchollPage extends React.Component{
         return(
 
             <Container className="container-style2">
-            <Card className="card-style2"/*className={classes.typo}*/>
-                <CardContent>
-                    <h1>Utiliser les Instances du Benchmark Scholl </h1> 
-                    <div className="input-group">
-                    <div className="custom-file">
-                        <input
-                        type="file"
-                        className="custom-file-input"
-                        id="inputGroupFile01"
-                        color="teal lighten-2"
-                        aria-describedby="inputGroupFileAddon01"
-                        onChange={ (e) => this.handleChange(e.target.files) } />
-                        />
-                        <label className="custom-file-label" id="label-file" htmlFor="inputGroupFile01"color="teal lighten-2">
-                        Choisissez un fichier
-                        </label>
-                    </div>
-                    </div>
-                    <div >
-                        <select onChange={this.getinstance} button onClick={this.initS} className="browser-default custom-select" id="select-ops">
-                            <option>Choisissez une instance</option>
-                        </select>
-                    </div>
-                </CardContent> 
-            </Card>
             <div className={classes.empty}></div>    
             {content}
             </Container>

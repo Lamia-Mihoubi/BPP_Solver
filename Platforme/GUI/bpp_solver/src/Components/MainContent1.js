@@ -210,7 +210,7 @@ class MainContent1 extends React.Component{
         const classes=this.props;
         let content ;
         if(this.state.display_choosemthd){
-            content= <ChooseMthd handleValider={this.handleValider}></ChooseMthd>
+            content=<div> <Instance></Instance><ChooseMthd handleValider={this.handleValider}></ChooseMthd> </div> 
        }
        if(this.state.display_showresults){
             content= <ShowResults n='5' c='10' sol_opt ='1' solutions={lists} handleretour={this.handleretour} ></ShowResults>
@@ -221,7 +221,7 @@ class MainContent1 extends React.Component{
             <Typography variant="h3" className={classes.pagetitle} gutterBottom>
                 Construire Votre propre Instance
             </Typography>  
-            <Instance></Instance>  
+             
             <div className={classes.empty}></div>    
             {content}
             

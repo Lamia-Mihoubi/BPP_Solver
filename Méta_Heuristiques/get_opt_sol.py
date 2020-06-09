@@ -8,7 +8,7 @@ def get_opt_sol(classe, nomfich):
         n = "n" + nomfich[1]
     else:
         n = "n3"
-    directory = "../opt_whole"
+    directory = "./opt_whole"
     for filename in os.listdir(directory):
         if filename.endswith(c + ".txt") and filename.startswith(n):
             file = open(directory + "/" + filename, 'r')
