@@ -1,16 +1,15 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container'
-
+import FormNC from './FormNC'
 
 class MainContent1 extends React.Component{
-    
+
     render(){
         return(
             <Container >
-                <Typography /*className={classes.typo}*/>
-                   <h1>Here we geenrate aleatoirement des instances and show les resultats</h1> 
-                </Typography>
+                <h1>Générer une instance aléatoire</h1>
+                <FormNC props />
             </Container>
             
             );
