@@ -26,7 +26,7 @@ def hrh_woa_rs(n, c, list):
 
     """execute RS"""
     rs = RS()
-    nb,result= rs.RS_iteratif(n,c,list,Sol)
+    nb,result= rs.RS(n,c,list,Sol)
     print("\tWOA_RS: {}".format(nb))
 
 """

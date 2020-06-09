@@ -20,7 +20,7 @@ def hrh_ag_rs(n, c, list):
     print("\tAG: {}".format(len(bins)))
     """execute RS"""
     rs= RS()
-    nb ,result= rs.RS_iteratif(n,c,list,bins)
+    nb ,result= rs.RS(n,c,list,bins)
     print("\tAG_RS: {}".format(nb))
 
     return result

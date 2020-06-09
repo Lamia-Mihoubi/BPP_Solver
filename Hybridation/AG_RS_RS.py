@@ -17,7 +17,7 @@ from Instances_reader import ReadInstance
 
 def ag_rs_rs(n,c,list):
     """rs inside AG, suivie d'un RS"""
-    ag = main(500, 25, 10, n, c, list)
+    ag = main(5, 25, 10, n, c, list)
     sol = solution(ag[0])
 
     """get result and transform it to a list of Bins"""
@@ -438,7 +438,7 @@ def next_generation(population, popSize, k, n, c, liste):  # le k de selection
             last+=k
             binList.append(boite)
         classrs = RS()
-        rs, listeBins=classrs.RS_iteratif(n, c, j[0], S=binList, Tinit=30, T0=0.1, R=1000, alpha=0.925)
+        rs, listeBins=classrs.RS(n, c, j[0], S=binList, Tinit=30, T0=0.1, R=1000, alpha=0.925)
         solutionlist=[]
         for a in listeBins:
             solutionlist.append(a.get_objects)

@@ -16,7 +16,7 @@ def woa_rs_rs(n,c,list):
         liste.append(Model.Objet(i, list[i]))
     """execute woa"""
     woa = WOASA2(liste,c)
-    sol, nb = woa.optimize()
+    sol, nb = woa.optimize(max_iter=5)
     """get result and transform it """
     Sol = [Model.Bin(0, c)]
     for i in range(len(sol)):
@@ -30,7 +30,7 @@ def woa_rs_rs(n,c,list):
 
     """execute RS"""
     rs = RS.RS()
-    nb, result = rs.RS(n, c, list, Sol,R=10)
+    nb, result = rs.RS(n, c, list, Sol)
     print("\tWOA_RS2: {}".format(nb))
 
 class WOASA2:
@@ -182,7 +182,7 @@ class WOASA2:
                             # bounds to define when is the resulting array out of our search
                             # domaine so do we need to define them too here? and how to do it?
 
-                            pop[sol_index] = self.discretize(x_rand - A * D_x_rand)
+                            pop[sol_index] = self.discretize(x - A * D_x_rand)
                         else:
                             S = self.create_bins(pop[leader_index])
                             _, x1 = rec_sim.RS(len(self.objects), self.capacity, liste, S=S)

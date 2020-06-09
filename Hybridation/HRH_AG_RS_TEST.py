@@ -10,10 +10,10 @@ from Méthodes_Heuristiques import FF_FFD
 rs = RS()
 
 print("__________CLASSE 01 ________________")
-for filename in os.listdir("/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe1"):
+for filename in os.listdir("C:\\Users\BACHI\\PycharmProjects\\OPT_PROJET\\BPP_Solver\\Instances_scholl\\classe1plus"):
     if filename.endswith(".txt") :
         n, c, list = Instances_reader.ReadInstance(
-            "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe1" + "/" + filename)
+            "C:\\Users\BACHI\\PycharmProjects\\OPT_PROJET\\BPP_Solver\\Instances_scholl\\classe1plus" + "/" + filename)
         print(filename)
         opt = get_opt_sol(1, filename)
         print("\tSolution {}".format(opt))
@@ -26,10 +26,10 @@ for filename in os.listdir("/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/
 
 print("__________CLASSE 02 ________________")
 
-for filename in os.listdir("/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe2"):
-    if filename.endswith(".txt") :
+for filename in os.listdir("C:\\Users\BACHI\\PycharmProjects\\OPT_PROJET\\BPP_Solver\\Instances_scholl\\classe2plus"):
+    if filename.endswith(".txt")  :
         n, c, list = Instances_reader.ReadInstance(
-            "/home/nsarah/Documents/2CS-SIQ3-S2/2019-2020/OPT/TP/GitHub/BPP_Solver/Instances_scholl/classe2" + "/" + filename)
+            "C:\\Users\BACHI\\PycharmProjects\\OPT_PROJET\\BPP_Solver\\Instances_scholl\\classe2plus" + "/" + filename)
         print(filename)
         opt = get_opt_sol(2, filename)
         print("\tSolution {}".format(opt))
