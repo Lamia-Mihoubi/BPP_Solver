@@ -1,0 +1,5 @@
+create instace: {"nb_articles":4,"capacite":"10","objets":["5","3","8","9"]},
+
+select the scoll instance: {"classe":"1","name_file":"N1C2W2_E"},
+
+upload file: {"name_file":"N1C2W1_B.txt"}]
