@@ -45,10 +45,12 @@ class Instance extends Component{
           const nbreitems=document.querySelector('.NBartics')
           console.log(nbreitems.value)
           this.capacite.value=document.querySelector('.cap').value
-          if(this.nbitems.value<nbreitems.value){
+          if(parseInt(this.nbitems.value)<parseInt(nbreitems.value)){
                 const a =document.querySelector('#idd')
                 console.log(this.capacite.value)
-              if(this.capacite.value>= a.value){
+                console.log(typeof a.value)
+              if(parseInt(this.capacite.value) >= parseInt(a.value)){
+                console.log(a.value)
                 this.nbitems.value=this.nbitems.value + 1
                 // Find a <table> element with id="myTable":
                 let table = document.querySelector('.table1');
@@ -63,6 +65,9 @@ class Instance extends Component{
                 // Add some text to the new cells:
                 cell1.innerHTML = this.nbitems.value; 
                 cell2.innerHTML = a.value
+                a.value=""
+                a.defaultValue=""
+                console.log(a)
               }
             
             }
@@ -74,8 +79,8 @@ class Instance extends Component{
                     objects[i-1]=table.rows[i].cells[1].innerHTML
                 }
                 const problem={
-                    nb_articles:this.nbitems,
-                    capacite:this.capacite,
+                    nb_articles:this.nbitems.value,
+                    capacite:this.capacite.value,
                     objets:objects
                 }
                 console.log(JSON.stringify(problem))

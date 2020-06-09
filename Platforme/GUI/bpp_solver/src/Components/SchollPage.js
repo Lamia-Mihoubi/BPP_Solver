@@ -253,7 +253,10 @@ class SchollPage extends React.Component{
     {
         let ch=document.querySelector('#label-file')
         ch.textContent=selectorFiles[0].name
-        console.log(selectorFiles[0].name);
+        let file={
+          name_file:selectorFiles[0].name
+        }
+        console.log(JSON.stringify(file));
     }
     render(){
         const classes=this.props;
