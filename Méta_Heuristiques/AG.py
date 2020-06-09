@@ -414,11 +414,10 @@ def countFreq(arr, n):
 
 
 # retourne l'indice du premier max cell0 et le max cell0
-"""
-n = 5
-c = 10
-list = [1, 1, 9, 4, 9, 7, 3, 2, 2, 9]
-sol = main(500, 25, 10, n, c, list)
-sol1, n1 = solution(sol[0])
-print(n1)
-"""
+
+#n = 10
+#c = 10
+#list = [1, 1, 9, 4, 9, 7, 3, 2, 2, 9,5]
+#sol = main(500, 25, 10, n, c, list)
+#sol1, n1 = solution(sol[0])
+#print(n1,sol1)

@@ -1,0 +1,50 @@
+HARD2.txt
+	Solution 56
+	AG: 60
+	AG_RS: 60
+	Texec: 26.855119943618774
+HARD6.txt
+	Solution 57
+	AG: 60
+	AG_RS: 60
+	Texec: 18.75373864173889
+HARD3.txt
+	Solution 55
+	AG: 59
+	AG_RS: 59
+	Texec: 15.690210819244385
+HARD8.txt
+	Solution 57
+	AG: 60
+	AG_RS: 60
+	Texec: 16.52594804763794
+HARD1.txt
+	Solution 57
+	AG: 60
+	AG_RS: 60
+	Texec: 17.196350574493408
+HARD7.txt
+	Solution 55
+	AG: 59
+	AG_RS: 59
+	Texec: 14.895661115646362
+HARD9.txt
+	Solution 56
+	AG: 60
+	AG_RS: 60
+	Texec: 20.18794584274292
+HARD4.txt
+	Solution 57
+	AG: 60
+	AG_RS: 60
+	Texec: 19.90063738822937
+HARD5.txt
+	Solution 56
+	AG: 59
+	AG_RS: 59
+	Texec: 17.67828130722046
+HARD0.txt
+	Solution 56
+	AG: 59
+	AG_RS: 59
+	Texec: 50.99421501159668

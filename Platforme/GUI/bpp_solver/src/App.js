@@ -10,7 +10,7 @@ import MainContent1 from './Components/MainContent1'
 import SideMenu from './Components/SideMenu'
 import Samples from './Components/Samples'
 import SchollPage from './Components/SchollPage'
- import Main from './Components/Main'
+import Main from './Components/Main'
 function App(){
   
     return (

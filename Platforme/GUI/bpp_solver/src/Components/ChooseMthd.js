@@ -563,7 +563,7 @@ const styles = theme => ({
       },
     formControl:{
         margin: theme.spacing(1),
-        minWidth: 120,
+        minWidth: 100,
     },
     formLabel:{
         margin:theme.spacing(1)

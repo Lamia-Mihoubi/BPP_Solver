@@ -1,0 +1,251 @@
+N2C1W2_D.txt
+	Solution 74
+	AG: 74
+	AG_RS: 74
+	Texec: 8.975879907608032
+N4C2W4_D.txt
+	Solution 295
+	AG: 295
+	AG_RS: 295
+	Texec: 159.75378227233887
+N2C1W2_C.txt
+	Solution 68
+	AG: 68
+	AG_RS: 68
+	Texec: 7.779988050460815
+N4C1W2_H.txt
+	Solution 315
+	AG: 315
+	AG_RS: 315
+	Texec: 307.67110109329224
+N2C2W1_B.txt
+	Solution 50
+	AG: 50
+	AG_RS: 50
+	Texec: 7.290508270263672
+N1C1W2_K.txt
+	Solution 35
+	AG: 35
+	AG_RS: 35
+	Texec: 2.988658905029297
+N2C3W1_B.txt
+	Solution 35
+	AG: 35
+	AG_RS: 35
+	Texec: 9.191905498504639
+N4C2W4_F.txt
+	Solution 304
+	AG: 304
+	AG_RS: 304
+	Texec: 185.93524646759033
+N2C2W1_F.txt
+	Solution 49
+	AG: 49
+	AG_RS: 49
+	Texec: 8.524619340896606
+N1C2W2_E.txt
+	Solution 33
+	AG: 33
+	AG_RS: 33
+	Texec: 1.9277825355529785
+N4C3W1_J.txt
+	Solution 169
+	AG: 169
+	AG_RS: 169
+	Texec: 66.71174645423889
+N3C3W1_B.txt
+	Solution 71
+	AG: 71
+	AG_RS: 71
+	Texec: 86.31523108482361
+N3C3W1_D.txt
+	Solution 63
+	AG: 63
+	AG_RS: 63
+	Texec: 32.04596471786499
+N4C1W4_R.txt
+	Solution 370
+	AG: 370
+	AG_RS: 370
+	Texec: 222.52811336517334
+N3C1W4_B.txt
+	Solution 149
+	AG: 149
+	AG_RS: 149
+	Texec: 40.1701979637146
+N1C3W1_A.txt
+	Solution 16
+	AG: 17
+	AG_RS: 17
+	Texec: 2.1845850944519043
+N2C1W4_I.txt
+	Solution 73
+	AG: 73
+	AG_RS: 73
+	Texec: 11.181526899337769
+N4C3W1_C.txt
+	Solution 166
+	AG: 166
+	AG_RS: 166
+	Texec: 417.4772574901581
+N3C2W2_O.txt
+	Solution 107
+	AG: 107
+	AG_RS: 107
+	Texec: 39.425785541534424
+N1C3W2_H.txt
+	Solution 23
+	AG: 23
+	AG_RS: 23
+	Texec: 3.2984139919281006
+N1C2W1_F.txt
+	Solution 22
+	AG: 22
+	AG_RS: 22
+	Texec: 3.142482042312622
+N2C2W4_G.txt
+	Solution 61
+	AG: 61
+	AG_RS: 61
+	Texec: 8.289111852645874
+N2C2W4_B.txt
+	Solution 60
+	AG: 60
+	AG_RS: 60
+	Texec: 10.554092407226562
+N2C1W4_D.txt
+	Solution 82
+	AG: 82
+	AG_RS: 82
+	Texec: 10.059216022491455
+N1C1W4_D.txt
+	Solution 38
+	AG: 38
+	AG_RS: 38
+	Texec: 3.1645750999450684
+N3C2W4_C.txt
+	Solution 132
+	AG: 132
+	AG_RS: 132
+	Texec: 28.406171798706055
+N4C3W1_I.txt
+	Solution 167
+	AG: 168
+	AG_RS: 168
+	Texec: 271.0797874927521
+N3C2W2_A.txt
+	Solution 107
+	AG: 107
+	AG_RS: 107
+	Texec: 41.84325456619263
+N1C3W1_B.txt
+	Solution 16
+	AG: 16
+	AG_RS: 16
+	Texec: 3.5829105377197266
+N3C1W1_D.txt
+	Solution 108
+	AG: 108
+	AG_RS: 108
+	Texec: 64.35574698448181
+N2C2W2_J.txt
+	Solution 56
+	AG: 56
+	AG_RS: 56
+	Texec: 7.2574238777160645
+N4C1W1_K.txt
+	Solution 253
+	AG: 253
+	AG_RS: 253
+	Texec: 469.26606464385986
+N4C3W1_D.txt
+	Solution 158
+	AG: 158
+	AG_RS: 158
+	Texec: 364.997677564621
+N1C1W1_D.txt
+	Solution 28
+	AG: 28
+	AG_RS: 28
+	Texec: 3.143256425857544
+N3C2W1_G.txt
+	Solution 87
+	AG: 88
+	AG_RS: 88
+	Texec: 68.9009428024292
+N3C1W1_G.txt
+	Solution 111
+	AG: 111
+	AG_RS: 111
+	Texec: 67.84628319740295
+N1C2W1_B.txt
+	Solution 26
+	AG: 26
+	AG_RS: 26
+	Texec: 2.2963993549346924
+N4C1W4_A.txt
+	Solution 368
+	AG: 368
+	AG_RS: 368
+	Texec: 265.4799950122833
+N1C1W1_F.txt
+	Solution 27
+	AG: 27
+	AG_RS: 27
+	Texec: 8.118619203567505
+N3C1W2_B.txt
+	Solution 126
+	AG: 126
+	AG_RS: 126
+	Texec: 86.16938138008118
+N4C2W2_S.txt
+	Solution 273
+	AG: 273
+	AG_RS: 273
+	Texec: 352.8565013408661
+N2C2W2_T.txt
+	Solution 56
+	AG: 56
+	AG_RS: 56
+	Texec: 16.39078974723816
+N3C1W2_E.txt
+	Solution 132
+	AG: 132
+	AG_RS: 132
+	Texec: 71.22326040267944
+N1C2W4_C.txt
+	Solution 30
+	AG: 30
+	AG_RS: 30
+	Texec: 3.4794704914093018
+N4C2W2_A.txt
+	Solution 253
+	AG: 253
+	AG_RS: 253
+	Texec: 518.7887096405029
+N1C3W2_G.txt
+	Solution 23
+	AG: 23
+	AG_RS: 23
+	Texec: 3.7779808044433594
+N2C3W1_A.txt
+	Solution 35
+	AG: 35
+	AG_RS: 35
+	Texec: 20.007557153701782
+N1C3W1_C.txt
+	Solution 17
+	AG: 18
+	AG_RS: 18
+	Texec: 2.2232253551483154
+N1C2W2_L.txt
+	Solution 30
+	AG: 30
+	AG_RS: 30
+	Texec: 2.6765689849853516
+N1C1W2_D.txt
+	Solution 31
+	AG: 31
+	AG_RS: 31
+	Texec: 4.231828212738037
+

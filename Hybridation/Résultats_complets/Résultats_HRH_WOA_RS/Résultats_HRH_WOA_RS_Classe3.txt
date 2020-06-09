@@ -1,0 +1,51 @@
+HARD2.txt
+	Solution 56
+	WOA: 60 
+	WOA_RS: 60
+	 Texec: 41.57297396659851
+HARD6.txt
+	Solution 57
+	WOA: 60 
+	WOA_RS: 60
+	 Texec: 39.17404651641846
+HARD3.txt
+	Solution 55
+	WOA: 59 
+	WOA_RS: 59
+	 Texec: 49.99034142494202
+HARD8.txt
+	Solution 57
+	WOA: 60 
+	WOA_RS: 60
+	 Texec: 36.62614107131958
+HARD1.txt
+	Solution 57
+	WOA: 60 
+	WOA_RS: 59
+	 Texec: 48.56658697128296
+HARD7.txt
+	Solution 55
+	WOA: 59 
+	WOA_RS: 59
+	 Texec: 40.60480999946594
+HARD9.txt
+	Solution 56
+	WOA: 60 
+	WOA_RS: 59
+	 Texec: 45.849663734436035
+HARD4.txt
+	Solution 57
+	WOA: 60 
+	WOA_RS: 60
+	 Texec: 44.267030000686646
+HARD5.txt
+	Solution 56
+	WOA: 59 
+	WOA_RS: 59
+	 Texec: 34.00612831115723
+HARD0.txt
+	Solution 56
+	WOA: 59 
+	WOA_RS: 59
+	 Texec: 153.2509424686432
+
