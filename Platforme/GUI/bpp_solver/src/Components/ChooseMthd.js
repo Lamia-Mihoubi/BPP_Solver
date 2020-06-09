@@ -16,6 +16,9 @@ class ChooseMthd extends React.Component{
     constructor(props) {
         super(props)
         this.state={
+            n : 5,
+            c:10 , 
+            list : [],
             checked_BB:0,
             checked_DP: 0, 
             checked_BF:0,
@@ -48,21 +51,20 @@ class ChooseMthd extends React.Component{
     }
     async ValiderClick(){
         // get selected data
-        //send request first
-        
+        const state_JSON = JSON.stringify(this.state);
+                //send request 
+
         const response= await fetch('/resultats',{
             headers: {
                 'Content-Type': 'application/json'
               }, 
               method: 'POST',
-              body: JSON.stringify({
-                'n':'55'
-              })
+              body: state_JSON
         })
         const jsonres = await response.json();
-            //this.props.handleValider(jsonres['n']);
+            this.props.handleValider(jsonres.BB['t_exec']);
     
-            this.props.handleValider("");
+            //this.props.handleValider("");
     
     };
     reinitClick(){

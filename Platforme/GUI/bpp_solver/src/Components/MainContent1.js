@@ -217,7 +217,7 @@ class MainContent1 extends React.Component{
         return(
             <Container className={classes.root}>     
             <Typography variant="h3" className={classes.pagetitle} gutterBottom>
-                Construire Votre propre Instance
+               Construire Votre propre Instance
             </Typography>  
             <div className={classes.empty}></div>    
             {content}
