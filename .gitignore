@@ -1,7 +1,6 @@
-!.gitignore
 .*
-/tunning/
-
+!/tunning/
+!.gitignore
 !Méta_Heuristiques.*
 !Méthodes_Heuristiques.*
 !Exact_methods.*
@@ -9,6 +8,7 @@
 !Model.py
 !Rapport.*
 !Platforme.*
+/Platforme/GUI/bpp_solver/node_modules
 /Rapport/Heuristiques.toc
 /Rapport/Heuristiques.synctex.gz
 /Rapport/Heuristiques.sta
