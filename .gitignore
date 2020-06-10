@@ -1,4 +1,5 @@
-.gitignore
+!Platforme.* 
+Plateforme/GUI/bpp_solver/node_moduels
 .*
 /tunning/
 
