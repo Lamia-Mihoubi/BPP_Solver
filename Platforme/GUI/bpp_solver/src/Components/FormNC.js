@@ -60,10 +60,10 @@ render()
             <form onSubmit={this.handleSubmit} >
                 <Grid container spacing={3}>
                 <Grid item xs={10} sm={3}>
-                    <TextField  variant="outlined"  label="Nombre d'objets " size="small" value={this.state.n} onChange={this.handleChange2}/>
+                    <TextField  required variant="outlined"  type="number" label="Nombre d'objets " size="small" value={this.state.n} onChange={this.handleChange2}/>
                 </Grid>
                 <Grid item xs={10} sm={3}>
-                    <TextField variant="outlined"  label="Capacité des boites " size="small" value={this.state.c} onChange={this.handleChange1} />
+                    <TextField required variant="outlined" type="number" label="Capacité des boites " size="small"  value={this.state.c} onChange={this.handleChange1} />
                 </Grid>
                 
                 <Grid item xs={12}>
@@ -86,8 +86,8 @@ render()
          </ExpansionPanelSummary>
          <ExpansionPanelDetails>
          <List height={200} width={200} itemSize={46} >
-        {this.state.objects.map( (d) => { 
-            return(
+             {this.state.objects.map( (d) => { 
+                 return(
            <ListItem>{d}</ListItem>
             ) })}
          </List>
