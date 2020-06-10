@@ -16,6 +16,9 @@ class ChooseMthd extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      n: 5,
+      c: 10,
+      list: [],
       checked_BB: 0,
       checked_DP: 0,
       checked_BF: 0,
@@ -46,9 +49,23 @@ class ChooseMthd extends React.Component {
     this.ValiderClick = this.ValiderClick.bind(this);
     this.reinitClick = this.reinitClick.bind(this);
   }
-  ValiderClick() {
-    //send request first
-    this.props.handleValider();
+  async ValiderClick() {
+    // get selected data
+    const state_JSON = JSON.stringify(this.state);
+    //send request
+
+    const response = await fetch("/resultats", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: state_JSON,
+    });
+    const jsonres = await response.json();
+    console.log(jsonres.WOA.solution);
+    this.props.handleValider(jsonres.WOA.solution);
+
+    //this.props.handleValider("");
   }
   reinitClick() {
     //recopy the same initialisaiton of the constructor here
@@ -552,7 +569,7 @@ const styles = (theme) => ({
   drawerPaper: {},
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120,
+    minWidth: 100,
   },
   formLabel: {
     margin: theme.spacing(1),
