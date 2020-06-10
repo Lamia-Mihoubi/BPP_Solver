@@ -21,7 +21,7 @@ class Binpacker(object):
         self.n = n
         self.c = c
         self.listobj = list
-        self.optcost=self.wfd()
+        self.optcost = self.wfd()
 
     def permuter(self, a, b):  # permuter entre 2 objets de la liste
         x = 0
@@ -30,8 +30,8 @@ class Binpacker(object):
         self.listobj[b] = x
 
     def wfd(self):
-        self.optlist=[]
-        listobj=self.listobj
+        self.optlist = []
+        listobj = self.listobj
         for i in range(len(listobj)):
             self.optlist.append(listobj[i])
         # ordonne la liste optlist
@@ -54,11 +54,11 @@ class Binpacker(object):
         return lastbin + 1
 
     def Bound_L2(self, k):
-        listobj=self.listobj
-        n=self.n
-        c=self.c
-        optcost=self.optcost
-        optlist=self.optlist
+        listobj = self.listobj
+        n = self.n
+        c = self.c
+        optcost = self.optcost
+        optlist = self.optlist
 
         # recuperer les poids qui sont inferieurs a C/2
         V = np.unique(listobj)
@@ -90,10 +90,10 @@ class Binpacker(object):
         # sumwts = somme cumulée des poids des objets restants
         # bcount= somme cumulée du nombre de boîtes utiliséés jusqu'a ce noeud
         # cap_restante= espace libre restant dans la boîte ouverte
-        optcost=self.optcost
-        listobj=self.listobj
-        n=self.n
-        c=self.c
+        optcost = self.optcost
+        listobj = self.listobj
+        n = self.n
+        c = self.c
 
         if k == n:  # le noeud actuel est une feuille ( solution exacte)
             # verifier si la solution obtenue est meilleure que la solution optimale
@@ -128,16 +128,31 @@ class Binpacker(object):
 
         return self.optlist
 
-
     # FONCTION QUI APPEL PACKBIN ET RETOURNE LA SOLUTION + LE TEMPS DEXECUTION
-    def run_BBA(self,N,C, list):
+    def run_BBA(self, N, C, list):
 
         start_time = time.time()
         sumwts = sum(list)
         bins = 1
-        self.init(N,C,list)
+        self.init(N, C, list)
         self.packBins_BBA(0, sumwts, bins, C)  # start at index 0
         texec = (time.time() - start_time)
         opt = self.optcost
-        lis=self.optlist
+        lis = self.optlist
         return opt, lis, texec
+
+    def BBA2SOL(self,list,c):
+        bins = [[]]
+        for objet in list:
+            if (c - sum(bins[-1])) >= objet:  # espace suffisant pour objet dans bin
+                bins[-1].append(objet)
+            else:  # aucune booite n'est suffisante pr ranger objet , create a new bin
+                bins.append([objet])
+        return bins
+
+
+rs = Binpacker()
+nb, list, texec = (rs.run_BBA(5, 10, [1, 5, 3, 4, 2]))
+bins= rs.BBA2SOL(list,10)
+print(nb) # result == 2
+print (bins) # result == [[5, 4], [3, 2, 1]]
