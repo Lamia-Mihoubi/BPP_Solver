@@ -5,6 +5,7 @@ import numpy as np
 from decimal import *
 import itertools
 import Chaoticmap as ch
+import Model
 from Chaoticmap import simulation_chaotic
 from Méthodes_Heuristiques import Functions as fct
 
@@ -120,7 +121,7 @@ class WOA:
             # getting the object of indice i
             obj=self.objects[i]
             if obj != None:
-                weight_sum += obj.weight
+                weight_sum =  weight_sum + obj.weight
                 bin.append(obj.weight)
 
             else:

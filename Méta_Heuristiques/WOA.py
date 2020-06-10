@@ -5,7 +5,7 @@ from decimal import *
 import itertools
 
 import Instances_generator as gen
-from functions import occupency, LOV
+from Méta_Heuristiques.functions import occupency, LOV
 
 
 class WOA:
@@ -67,18 +67,18 @@ class WOA:
             if obj != None:
                 weight_sum += obj.weight
             else:
-                print("obj {0} doesn't exist in list {1} ".format(i, objects))
+                print("obj {0} doesn't exist in list {1} ".format(i, self.objects))
             # if the capacity of the bin is filled
             if capacity < weight_sum:
                 nbr_bins_used += 1
                 if obj != None:
                     weight_sum = obj.weight
                 else:
-                    print("obj {0} doesn't exist in list {1} ".format(i, objects))
+                    print("obj {0} doesn't exist in list {1} ".format(i, self.objects))
             elif i == sol[sol_len - 1]:
                 nbr_bins_used += 1
 
-        return nbr_bins_used
+        return nbr_bins_used+1
 
 
     def optimize(self, nb_whales, max_iter, b, a):

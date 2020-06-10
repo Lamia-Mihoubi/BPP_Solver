@@ -38,7 +38,7 @@ class RS:
         #print(vals)
         return min(vals), Sols[vals.index(min(vals))]
 
-    def RS(self, n, c, list, S, Tinit, T0, R, alpha, init=False):
+    def RS(self, n, c, list, S, Tinit=30, T0=0.1, R=1000, alpha=0.925, init=False):
         t_exec = time.time()
         deltaF = []
         self.n = n
@@ -190,6 +190,17 @@ class RS:
             sum = sum ** 2
             f = (f + sum) / self.c
         return f
+
+
+    def RS2WOA(self, sol):
+        # Transforme une solution obtenue par RS au format utilisé par WOA
+        woa_sol = []
+        for i in range(len(sol)):
+            zipped = sol[i].get_objects
+            for j in range(len(zipped)):
+                woa_sol.append(zipped[j].id - 1)
+
+        return np.array(woa_sol)
 
 
 """
