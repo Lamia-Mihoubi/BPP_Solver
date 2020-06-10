@@ -1,5 +1,5 @@
 from Méta_Heuristiques.Recuit_Sim import RS
-from Méta_Heuristiques.WOA_ import WOA
+from Méta_Heuristiques.WOA import WOA
 import Model
 """in this version we have an hybrid version of WOA with Recuit simulé 
 the result of WOA is ameliorated by a local search (RS) """
@@ -11,8 +11,8 @@ def hrh_woa_rs(n, c, list):
     for i in range(len(list)):
         liste.append(Model.Objet(i,list[i]))
     """execute woa"""
-    woa = WOA(liste)
-    sol, nb= woa.optimize(c, 0)
+    woa = WOA(liste,c)
+    sol, nb= woa.optimize()
     """get result and transform it """
     Sol=[Model.Bin(0,c)]
     for i in range (len(sol)):
