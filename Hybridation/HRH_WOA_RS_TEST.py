@@ -12,7 +12,7 @@ print("__________CLASSE 01 ________________")
 for filename in os.listdir("C:\\Users\BACHI\\PycharmProjects\\OPT_PROJET\\BPP_Solver\\Instances_scholl\\classe1"):
     if filename.endswith(".txt"):
         n, c, list = Instances_reader.ReadInstance(
-            "C:\\Users\BACHI\\PycharmProjects\\OPT_PROJET\\BPP_Solver\\Instances_scholl\\classe1plus" + "/" + filename)
+            "C:\\Users\BACHI\\PycharmProjects\\OPT_PROJET\\BPP_Solver\\Instances_scholl\\classe1" + "/" + filename)
         print(filename)
         opt = get_opt_sol(1, filename)
         print("\tSolution {}".format(opt))

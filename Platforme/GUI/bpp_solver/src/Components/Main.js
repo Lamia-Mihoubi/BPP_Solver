@@ -15,7 +15,7 @@ class Main extends React.Component{
     constructor(props) {
         super(props)
         this.state={
-            panelIndex : 1
+            panelIndex : 0
         }
         this.handler = this.handler.bind(this)
 

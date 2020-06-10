@@ -152,7 +152,7 @@ class Binpacker(object):
 
 
 rs = Binpacker()
-nb, list, texec = (rs.run_BBA(5, 10, [1, 5, 3, 4, 2]))
+nb, list, texec = (rs.run_BBA(5, 10, [1, 1, 9, 4, 9, 7, 3, 2, 2, 9]))
 bins= rs.BBA2SOL(list,10)
 print(nb) # result == 2
 print (bins) # result == [[5, 4], [3, 2, 1]]

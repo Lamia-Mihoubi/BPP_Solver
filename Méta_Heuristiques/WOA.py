@@ -81,7 +81,7 @@ class WOA:
         return nbr_bins_used+1
 
 
-    def optimize(self, nb_whales, max_iter, b, a):
+    def optimize(self, nb_whales=50, max_iter=50, b=1.5, a=2):
         self.search_agents_nbr = nb_whales 
         self.max_iter = max_iter
         self.b = b
@@ -141,4 +141,4 @@ class WOA:
             leader_sol=min(eval_sols)
             leader_index = eval_sols.index(leader_sol)
             leaders.append(leader_sol)
-        return self.get_bin_nbr(pop[leader_index],self.capacity)
+        return pop[leader_index], self.get_bin_nbr(pop[leader_index],self.capacity)
