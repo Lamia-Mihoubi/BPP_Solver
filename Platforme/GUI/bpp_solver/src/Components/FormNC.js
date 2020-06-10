@@ -6,10 +6,9 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { makeStyles } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import { FixedSizeList } from 'react-window';
+import List from '@material-ui/core/List'
+
 import data from '../data/instance.json'
 class FormNC extends React.Component
 {   constructor(props)
@@ -22,45 +21,37 @@ class FormNC extends React.Component
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange1 = this.handleChange1.bind(this);
         this.handleChange2 = this.handleChange2.bind(this);
-        this.renderRow=this.renderRow.bind(this)
-    }
+     }
  
-    renderRow() {
-       return( this.state.objects.map(d=>(
-           <ListItem>{d}</ListItem>
-       ) )
-       )
-    }
+   
     handleChange1(event)
      {    this.setState({c: event.target.value}); 
      }
      handleChange2(event)
      {    this.setState({n: event.target.value}); 
      }
-    handleSubmit(event) {
+    async handleSubmit(event) {
        //c'est la win nebe3tou la rqt
-        alert('Le n a été soumis : ' + this.state.n);
+        //alert('Le n a été soumis : ' + this.state.n);
         event.preventDefault();
         var data = {
             "n": this.state.n,
             "c": this.state.c
          }
          
-         fetch("https://....", {
+         const response = await fetch("/random", {
             method: "POST",
             headers: { 'Accept': 'application/json','Content-Type': 'application/json',},
             body:  JSON.stringify(data)
          })
-         .then(function(response){ 
-          return response.json();   
-         })
-         .then(function(data){ 
-         console.log(data)
-         this.setState({objects:data})
-         });
+         const res = await response.json();
+         
+         this.setState({objects:res})  ;
+         alert(this.state.objects);
       }
 render()
 {
+    
     return(
         <React.Fragment>
         
@@ -93,9 +84,12 @@ render()
           Instance générée
          </ExpansionPanelSummary>
          <ExpansionPanelDetails>
-         <FixedSizeList height={200} width={200} itemSize={46} itemCount={1}>
-        {this.renderRow}
-         </FixedSizeList>
+         <List height={200} width={200} itemSize={46} >
+        {this.state.objects.map( (d) => { 
+            return(
+           <ListItem>{d}</ListItem>
+            ) })}
+         </List>
          </ExpansionPanelDetails>
        </ExpansionPanel> 
         </Box>

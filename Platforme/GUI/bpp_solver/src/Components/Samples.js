@@ -11,7 +11,7 @@ class MainContent1 extends React.Component{
             <Container >
                 <h1>Générer une instance aléatoire</h1>
                 <FormNC props />
-                <ChooseMthd handleValider={this.handleValider}></ChooseMthd>
+                <ChooseMthd pagenum={2} handleValider={this.handleValider}></ChooseMthd>
             </Container>
             
             );

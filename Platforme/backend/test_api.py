@@ -18,63 +18,33 @@ def get_resultat():
     #get les differents champs 
     n= _req['n']
     c= _req['c']
-    list=_req['list'] # here i guess you should transform it to a simple liste d'entier (to give to methods)
+    liste=_req['list'] # here i guess you should transform it to a simple liste d'entier (to give to methods)
     #we still havn't implemented the list sending part , so u can do ur tests with a static list here
     #list=[5,2,1,5,8] 
 
-    if(_req['checked_BB']): #true if user checked Branch and Bound
-        #execute BB 
-        #get results (list de boites+ t_exec)
-        result= result+{"BB": {"t_exec": 5}}
-    if(_req['checked_DP']):
-        #execute DP 
-        print('')
 
-    if(_req['checked_BF']):
-        #execute BF
-        print('')
-    if(_req['checked_BFD']):
-        #execute BFD
-        print('')
-    if(_req['checked_FF']):
-        #execute FF
-        print('')
-    if(_req['checked_FFD']):
-        #execute FFD
-        print('')
-    if(_req['checked_NF']): 
-        #execute NF
-        print('')
-    if(_req['checked_NFD']):
-        #execute NFD
-        print('')
-    if(_req['checked_AG']):
-        #execute AG
-        print('')
-    if(_req['checked_WOA']):
-        #execute WOA
-        print('')
-
-    if(_req['checked_ILWOA']):
-        #execute ILWOA
-        print('')
-    if(_req['checked_RS']):
-        #execute RS
-        print('')
-
-
-
-    return ("") # return a json respecting the format of resultats.json 
+    return ({
+        "o1": liste[0]
+    }) # return a json respecting the format of resultats.json 
 
 #here the react app will send you n + c , you should return a list of int ( objects) 
 #using random generator
 @app.route('/random',methods=['POST'])
 def random_gen():
-    return ''
+    _req=request.get_json()
+    n=_req['n']
+    c=_req['c']
+    return jsonify([n,c])
 
 #here the react app gives you the name of the instance + list of methods 
 #you should return the results ( same format que get_resultat ()+ solution optimale)
 @app.route('/benchmark',methods=['POST'])
 def benchmark_sol():
-    return ''
+    _req = request.get_json()
+    n= _req['classe']
+    F= _req['filename']
+
+    return ({
+        "Fname": n+F,
+    })
 

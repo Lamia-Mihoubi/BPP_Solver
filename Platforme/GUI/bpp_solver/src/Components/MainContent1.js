@@ -186,18 +186,18 @@ class MainContent1 extends React.Component{
         this.state={
             display_choosemthd: 1 ,
             display_showresults:0 ,
-            time: "zerow",
+            solutions:'',
         }
         this.handleValider= this.handleValider.bind(this)
         this.handleretour= this.handleretour.bind(this)
     }
 
-    handleValider(timee){
-
+    handleValider(solution){
+      // set a variable list on the state ( for dynamic UI results)
         this.setState({
             display_choosemthd:0,
             display_showresults:1,
-            time : timee,
+            solutions:solution,
         });        
     }
     handleretour(){
@@ -210,9 +210,10 @@ class MainContent1 extends React.Component{
         const classes=this.props;
         let content ;
         if(this.state.display_choosemthd){
-            content=<div> <Instance></Instance><ChooseMthd handleValider={this.handleValider}></ChooseMthd> </div> 
+            content=<div> <ChooseMthd pagenum={1} handleValider={this.handleValider}></ChooseMthd> </div> 
        }
        if(this.state.display_showresults){
+         // when backend is done change to solutions={this.state.solutions}
             content= <ShowResults n='5' c='10' sol_opt ='1' solutions={lists} handleretour={this.handleretour} ></ShowResults>
        } 
         return(

@@ -4,16 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import { withStyles } from '@material-ui/core/styles';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import FormLabel from '@material-ui/core/FormLabel';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import Button from '@material-ui/core/Button';
-import { render } from '@testing-library/react';
-import { MDBInput } from 'mdbreact';
 import './inputPage.css';
 import { MDBContainer, MDBInputGroup, MDBBtn } from "mdbreact";
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
@@ -83,14 +73,16 @@ class Instance extends Component{
                     capacite:this.capacite.value,
                     objets:objects
                 }
+                this.props.sendpb(this.nbitems.value,this.capacite.value,objects);
                 console.log(JSON.stringify(problem))
             }
       }
     render(){
+        const { classes } = this.props; 
         return(
             
-            <Container className="container-style">
-                <Card className="card-style"/*className={classes.root}*/>
+            <Container  width={1} /*className={classes.root}*/>
+                <Card width={1} className={classes.root}>
                     <CardHeader 
                         title="Entrez les paramètres de l'instance"
                     />
@@ -140,4 +132,13 @@ class Instance extends Component{
     }
 }
 
-export default Instance;
+const styles = theme => ({
+    root: {
+        //backgroundColor: '#020F59',
+        margin: theme.spacing(3),
+        width: "69vw",
+        marginLeft : "-2vw"
+      },
+      
+})  
+export default withStyles(styles)(Instance);
