@@ -23,7 +23,7 @@ class FormNC extends React.Component
         this.handleChange2 = this.handleChange2.bind(this);
      }
  
-   
+
     handleChange1(event)
      {    this.setState({c: event.target.value}); 
      }
@@ -47,6 +47,7 @@ class FormNC extends React.Component
          const res = await response.json();
          
          this.setState({objects:res})  ;
+         this.props.sendpb(this.state.n,this.state.c, res);
          alert(this.state.objects);
       }
 render()

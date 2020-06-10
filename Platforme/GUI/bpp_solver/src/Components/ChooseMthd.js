@@ -14,6 +14,8 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import Instance from './Instance'
 import PickFile from './PickFile'
+import FormNC from './FormNC'
+
 class ChooseMthd extends React.Component{
     constructor(props) {
         super(props)
@@ -60,7 +62,7 @@ class ChooseMthd extends React.Component{
             n:n,
             c:c,
             list: list, 
-        })
+        });
     }
     set_class_file(classe, filename){
         this.setState({
@@ -73,7 +75,7 @@ class ChooseMthd extends React.Component{
         // get selected data
         const state_JSON = JSON.stringify(this.state);
                 //send request 
-        if(page==1){
+        if(page==1 | page==2){
         const response= await fetch('/resultats',{
             headers: {
                 'Content-Type': 'application/json'
@@ -597,6 +599,8 @@ class ChooseMthd extends React.Component{
         if(page==2){
              return (
              <div>
+                 <h1>Générer une instance aléatoire</h1>
+                 <FormNC props sendpb={this.set_n_c_list} />
                 {methodss}
             </div>
             )
