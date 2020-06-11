@@ -215,7 +215,7 @@ class MainContent1 extends React.Component{
        }
        if(this.state.display_showresults){
          // when backend is done change to solutions={this.state.solutions}
-            content= <ShowResults n='5' c='10' sol_opt ='1' solutions={lists} handleretour={this.handleretour} ></ShowResults>
+            content= <ShowResults n='5' c='10' sol_opt ='1' solutions={this.state.solutions} handleretour={this.handleretour} ></ShowResults>
        } 
         return(
             <Container className={classes.root}>

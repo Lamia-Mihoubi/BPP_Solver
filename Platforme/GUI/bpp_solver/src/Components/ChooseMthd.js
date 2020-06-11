@@ -86,6 +86,7 @@ class ChooseMthd extends React.Component{
         const jsonres = await response.json();
             // get the result and sent the json answer direct 
             //window.alert(jsonres['n']); //for test
+            //alert(jsonres)
             this.props.handleValider(jsonres);
         }
 
