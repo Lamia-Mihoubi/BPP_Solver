@@ -4,16 +4,13 @@
 
 !Méta_Heuristiques.*
 !Méthodes_Heuristiques.*
+!Hybridation/
 !Exact_methods.*
 !BPP_Solver.py
 !Model.py
-!Rapport.*
 
-/Rapport/Heuristiques.toc
-/Rapport/Heuristiques.synctex.gz
-/Rapport/Heuristiques.sta
-/Rapport/Heuristiques.log
-/Rapport/Heuristiques.fls
-/Rapport/Heuristiques.fdb_latexmk
-/Rapport/Heuristiques.aux
+!Platforme.*
+Platforme/GUI/bpp_solver/node_modules
+
+
 /tunning/Instances/
