@@ -51,7 +51,7 @@ class MainContent1 extends React.Component {
           n="5"
           c="10"
           sol_opt="1"
-          solutions={this.state.lists}
+          solutions={this.state.solutions}
           handleretour={this.handleretour}
         ></ShowResults>
       );

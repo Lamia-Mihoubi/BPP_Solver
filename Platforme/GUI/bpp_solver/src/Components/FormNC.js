@@ -50,7 +50,7 @@ class FormNC extends React.Component {
 
     this.setState({ objects: res.liste });
     this.props.sendpb(this.state.n, this.state.c, res.liste);
-    alert(this.state.objects);
+    //alert(this.state.objects);
   }
   render() {
     return (
