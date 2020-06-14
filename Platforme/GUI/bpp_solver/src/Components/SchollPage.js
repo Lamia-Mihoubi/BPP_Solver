@@ -5,172 +5,6 @@ import ChooseMthd from "./ChooseMthd";
 import { withStyles } from "@material-ui/core/styles";
 import ShowResults from "./ShowResults";
 
-const lists2 = [
-  {
-    key: "BB",
-    label: "Branch and Bound",
-    nb: "2",
-    texec: "0.01",
-    boites: [
-      {
-        idbin: "01",
-        objects: [
-          {
-            poid: "5",
-          },
-          {
-            poid: "6",
-          },
-          {
-            poid: "5",
-          },
-          {
-            poid: "3",
-          },
-          {
-            poid: "5",
-          },
-        ],
-      },
-      {
-        idbin: "02",
-        objects: [
-          {
-            poid: "5",
-          },
-          {
-            poid: "6",
-          },
-          {
-            poid: "5",
-          },
-          {
-            poid: "3",
-          },
-          {
-            poid: "5",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    key: "DP",
-    label: "Programmation dynamique",
-    nb: "7",
-    texec: "0.01",
-    boites: [
-      {
-        idbin: "1",
-        objects: [
-          {
-            poid: "5",
-          },
-          {
-            poid: "6",
-          },
-          {
-            poid: "5",
-          },
-          {
-            poid: "3",
-          },
-          {
-            poid: "5",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    key: "AG",
-    label: "Algorithme genetique",
-    nb: "2",
-    texec: "0.01",
-    boites: [
-      {
-        idbin: "01",
-        objects: [
-          {
-            poid: "5",
-          },
-          {
-            poid: "6",
-          },
-          {
-            poid: "5",
-          },
-          {
-            poid: "3",
-          },
-          {
-            poid: "5",
-          },
-        ],
-      },
-      {
-        idbin: "02",
-        objects: [
-          {
-            poid: "5",
-          },
-          {
-            poid: "6",
-          },
-          {
-            poid: "5",
-          },
-          {
-            poid: "3",
-          },
-          {
-            poid: "5",
-          },
-        ],
-      },
-      {
-        idbin: "03",
-        objects: [
-          {
-            poid: "5",
-          },
-          {
-            poid: "6",
-          },
-          {
-            poid: "5",
-          },
-          {
-            poid: "3",
-          },
-          {
-            poid: "5",
-          },
-        ],
-      },
-      {
-        idbin: "04",
-        objects: [
-          {
-            poid: "5",
-          },
-          {
-            poid: "6",
-          },
-          {
-            poid: "5",
-          },
-          {
-            poid: "3",
-          },
-          {
-            poid: "5",
-          },
-        ],
-      },
-    ],
-  },
-];
 
 class SchollPage extends React.Component {
   constructor(props) {
@@ -228,9 +62,7 @@ class SchollPage extends React.Component {
     return (
       <Container>
        
-        <Typography variant="h3" className={classes.pagetitle} gutterBottom>
-        Utiliser les Instances du Benchmark Scholl
-            </Typography>  
+        
         <div className={classes.empty}></div>
         {content}
       </Container>
@@ -244,7 +76,6 @@ const styles = (theme) => ({
   drawerPaper: {},
   pagetitle: {
     margin: theme.spacing(1),
-    minWidth: 120,
   },
   empty: {
     height: "9vw",

@@ -71,14 +71,17 @@ class PickFile extends Component{
 
         return (
             <div>
+              <Typography variant="h3" className={classes.pagetitle} gutterBottom>
+        Utiliser le Benchmark Scholl
+            </Typography>  
               
             <Card width={1} className={classes.root}>
-            <CardHeader  title="Choisir une instance du banchemark"/>
+            <CardHeader  title="Choisir une instance du Benchmark"/>
             <CardContent>
                
                 <div >
                     <select variant="outlined" onChange={this.getinstance} button onClick={this.initS} className="browser-default custom-select" id="select-ops">
-                        <option>Choisissez une instance</option>
+                        <option>Choisir une instance</option>
                     </select>
                 </div>
             </CardContent>
@@ -92,7 +95,7 @@ const styles = theme => ({
   root: {
         
     margin: theme.spacing(3),
-    width: "70vw",
+    width: "67vw",
     marginLeft : "1.51cm"
 
   },
@@ -102,6 +105,7 @@ const styles = theme => ({
     pagetitle:{
         margin: theme.spacing(1),
         minWidth: 120,
+        marginLeft : "1.51cm",
     },
     empty:{
         height:'9vw',

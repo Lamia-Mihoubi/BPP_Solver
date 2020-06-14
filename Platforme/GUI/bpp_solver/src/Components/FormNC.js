@@ -19,9 +19,9 @@ class FormNC extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      n: 0,
-      c: 1,
-      objects: [0, 12, 23],
+      n: 10,
+      c: 10,
+      objects: [],
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange1 = this.handleChange1.bind(this);
@@ -62,6 +62,10 @@ class FormNC extends React.Component {
     return (
      
          <Container  width={1} /*className={classes.root}*/>
+          <Typography variant="h3" className={classes.pagetitle} gutterBottom>
+           Générer une instance aléatoire
+          </Typography>
+      
                 <Card width={1} className={classes.root}>
                     <CardHeader title="Entrez les paramètres de l'instance" />
                         <CardContent>
@@ -129,7 +133,7 @@ const styles = theme => ({
   root: {
         
     margin: theme.spacing(3),
-    width: "70vw",
+    width: "67vw",
     marginLeft : "1cm"
 
   },

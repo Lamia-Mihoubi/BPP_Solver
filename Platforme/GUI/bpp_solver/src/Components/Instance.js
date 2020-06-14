@@ -100,6 +100,9 @@ class Instance extends Component{
         return(
             
             <Container  width={1} /*className={classes.root}*/>
+              <Typography variant="h3" className={classes.pagetitle} gutterBottom>
+               Construire votre propre Instance
+              </Typography>
                 <Card width={1} className={classes.root}>
                     <CardHeader 
                         title="Entrez les paramètres de l'instance"
@@ -193,7 +196,7 @@ const styles = theme => ({
     root: {
         
         margin: theme.spacing(3),
-        width: "70vw",
+        width: "67vw",
         marginLeft : "1cm"
 
       },

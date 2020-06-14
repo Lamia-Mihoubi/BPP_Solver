@@ -615,7 +615,6 @@ class ChooseMthd extends React.Component {
     if (page == 2) {
       return (
         <div>
-          <h1>Générer une instance aléatoire</h1>
           <FormNC props sendpb={this.set_n_c_list} />
           {methodss}
         </div>
@@ -636,7 +635,7 @@ const styles = (theme) => ({
   root: {
         
     margin: theme.spacing(3),
-    width: "70vw",
+    width: "67vw",
     marginLeft : "0.5cm"
 
   },

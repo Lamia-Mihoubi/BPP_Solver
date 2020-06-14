@@ -17,8 +17,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 class ShowResults extends React.Component{
     constructor(props) {
-        // should have a list of items , each item contains : nom methode, nb boites, solution ( liste de listes d'entiers)
-        // should set a dynamic number of cards 
         super(props)
         this.retourClick=this.retourClick.bind(this);
     }
@@ -29,34 +27,14 @@ retourClick(){
         const { solutions,classes } = this.props;        
         return(
         <Container  className={classes.root}>
-        <Grid container direction="row" spacing={20}>
-                <Card className={classes.ncard}>
-                <CardContent >
-                    <Typography className={classes.title} variant="h5" component="h2">
-                   N = {this.props.n}
-                    </Typography>                    
-                </CardContent>               
-            </Card>
-            
-            <Card className={classes.ccard}>
-                <CardContent  >
-                    <Typography className={classes.title} variant="h5" component="h2">
-                   C = {this.props.c}
-                    </Typography>                    
-                </CardContent>               
-            </Card>
-            <Card className={classes.optsol}>
-                <CardContent  >
-                    <Typography className={classes.title} variant="h5" component="h2">
-                   Solution optimale = {this.props.sol_opt}
-                    </Typography>                    
-                </CardContent>               
-            </Card>
-        </Grid>
         <div className={classes.emptyheight}></div>
         {solutions.map(({key,label,texec,nb,boites}) =>{
             return(
                 <div>
+            <Typography variant="h4" className={classes.pagetitle} gutterBottom>
+                Résultats 
+            </Typography>  
+            <div>{''}</div>
                <Card  key={key}>
                    <CardContent>
                        <CardHeader textsize ='5'
@@ -169,10 +147,10 @@ const styles = theme => ({
       textfield:{
           marginRight: 15,
           marginBottom: 20,
-          //backgroundColor: "#3DADF2"          
+          backgroundColor: "#e898ac"          
       },
       btn:{
-          backgroundColor:'#3DADF2'
+          backgroundColor:'#002845'
       }
       
 })  
