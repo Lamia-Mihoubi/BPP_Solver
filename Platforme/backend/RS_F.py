@@ -127,8 +127,17 @@ class RS:
 
         if init:
             return deltaF, len(Best), Best
-        else:
-            return len(Best), Best
+        else:            
+            boxes=[]
+            for i in Best :
+                boxes.append(i.get_objects)
+            list_boxes=[]
+            for j in boxes :
+                box=[]
+                for a in j :
+                    box.append(a.weight)
+                list_boxes.append(box)
+            return len(Best), list_boxes
 
     def generer_voisin1(self, SS):  # regime haute temperature
         S = deepcopy(SS)

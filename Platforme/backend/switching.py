@@ -29,6 +29,8 @@ from AG_F import mainAG
 from WOA import callWOA
 from ILWOA import callILWOA
 from DP import DP
+from HRH_AG_RS_F import  hrh_ag_rs
+
 def to_json(cle,tag,optcost,temps,boxes) :
     solution={}
     boites=[]
@@ -191,5 +193,15 @@ def switch(dic) :
         dictio_RS = to_json("RS","Recuit Simulé",optcost_RS,texec_RS,optlist_RS)
         variable.append(dictio_RS)
         ######################################################################
+    if dic['checked_Hyb1'] != 0 :
+        start_time_Hyb1 = time.time()
+        
+        optcost_Hyb1,optlist_Hyb1= hrh_ag_rs(n,c,list2)
+        
+        texec_Hyb1 = (time.time() - start_time_Hyb1)
+        dictio_Hyb1 = to_json("Hyb1","Hybridation HRH AG+RS",optcost_Hyb1,texec_Hyb1,optlist_Hyb1)
+        variable.append(dictio_Hyb1)
+    ######################################################################
+    
     return variable
 

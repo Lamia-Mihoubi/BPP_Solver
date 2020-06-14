@@ -580,16 +580,7 @@ class ChooseMthd extends React.Component {
               }
               label="Hybridation HRH AG avec RS      "
             />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={this.state.checked_Hyb2}
-                  onChange={handleChange}
-                  name="checked_Hyb2"
-                />
-              }
-              label="Hybridation HRH ILWOA avec RS"
-            />
+            
           </CardContent>
         </Card>
 
