@@ -19,16 +19,38 @@ class ShowResults extends React.Component{
     constructor(props) {
         super(props)
         this.retourClick=this.retourClick.bind(this);
+        this.ecart_show=this.ecart_show.bind(this);
+        this.state={
+            ecart: -1,
+        }
     }
+    
 retourClick(){
     this.props.handleretour()
 }
+ecart_show(ecart,classes){
+    let ecart_field= ''
+    if(this.props.ecart){
+        ecart_field = (
+            <TextField className={classes.textfield}
+                                    id="filled-read-only-input"
+                                    label="Ecart"
+                                    defaultValue={ecart}
+                                    InputProps={{
+                                        readOnly: true,
+                                    }}
+                                    variant="filled"
+                                /> 
+                        )  }  
+    return ecart_field;  
+}
     render(){
-        const { solutions,classes } = this.props;        
+        const { solutions,classes } = this.props; 
+        
         return(
         <Container  className={classes.root}>
         <div className={classes.emptyheight}></div>
-        {solutions.map(({key,label,texec,nb,boites}) =>{
+        {solutions.map(({key,label,texec,nb,ecart,boites}) =>{
             return(
                 <div>
             <Typography variant="h4" className={classes.pagetitle} gutterBottom>
@@ -58,6 +80,7 @@ retourClick(){
                             }}
                             variant="filled"
                         />
+                        {this.ecart_show(ecart,classes)}
                         <div className={classes.listSol}>
                             <label className={classes.text_contenu}>Contenu des boîtes</label>
                             <List component="nav"  >
@@ -91,7 +114,7 @@ retourClick(){
     }
 }
 
-    
+  
 const styles = theme => ({
     root: {
         //backgroundColor: '#020F59',

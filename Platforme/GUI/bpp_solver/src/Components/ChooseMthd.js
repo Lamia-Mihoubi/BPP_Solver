@@ -85,6 +85,7 @@ class ChooseMthd extends React.Component {
         method: "POST",
         body: state_JSON,
       });
+      
       const jsonres = await response.json();
       // get the result and sent the json answer direct
       //window.alert(jsonres['n']); //for test

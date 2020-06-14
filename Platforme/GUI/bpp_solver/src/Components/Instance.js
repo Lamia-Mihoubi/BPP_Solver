@@ -14,6 +14,11 @@ import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Divider from '@material-ui/core/Divider';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 class Instance extends Component{
     state = {
@@ -22,13 +27,19 @@ class Instance extends Component{
       constructor(props) {
         super(props);
         this.state = {
-          n: 0,
-          c: 1} 
+          n: 10,
+          c: 10,
+        open: false,} 
           this.ajouterItem=this.ajouterItem.bind(this)
           this.handleChange1 = this.handleChange1.bind(this);
           this.handleChange2 = this.handleChange2.bind(this);
+          this.handleClose = this.handleClose.bind(this);
         }
-      
+        handleClose(){
+          this.setState({
+            open:false,
+          })
+        }
         handleChange1(event) {
           this.setState({ c: event.target.value });
         }
@@ -76,6 +87,11 @@ class Instance extends Component{
                 a.value=""
                 a.defaultValue=""
                 console.log(a)
+              }
+              else {
+                this.setState({
+                  open: true,
+                })
               }
             
             }
@@ -164,6 +180,24 @@ class Instance extends Component{
                                 />
                         </MDBContainer>
                         <br/>
+                        <Dialog
+                          open={this.state.open}
+                          aria-labelledby="alert-dialog-title"
+                          aria-describedby="alert-dialog-description"
+                        >
+                          <DialogTitle id="alert-dialog-title">{"Violation des contraintes du Bin Packing"}</DialogTitle>
+                              <DialogContent>
+                                <DialogContentText id="alert-dialog-description">
+                                  Veuillez introduire un poids valide. 
+                                  Le poids d'un objet ne doit jamais dépasser la capacité de la boîte. 
+                                </DialogContentText>
+                              </DialogContent>
+                              <DialogActions>
+                                <Button onClick={this.handleClose} color="primary">
+                                  OK
+                                </Button> 
+                                </DialogActions>
+                        </Dialog>
                         <ExpansionPanel>
                                     <ExpansionPanelSummary
                                       expandIcon={<ExpandMoreIcon />}

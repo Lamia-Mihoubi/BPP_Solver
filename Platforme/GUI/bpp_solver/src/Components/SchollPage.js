@@ -71,6 +71,7 @@ class SchollPage extends React.Component {
             </Grid>
           </Grid>
         <ShowResults
+          ecart= {true}
           solutions={this.state.solutions}
           handleretour={this.handleretour}
         ></ShowResults>
