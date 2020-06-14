@@ -71,8 +71,9 @@ class PickFile extends Component{
 
         return (
             <div>
+              
             <Card width={1} className={classes.root}>
-            <CardHeader  title="Utiliser les Instances du Benchmark Scholl"/>
+            <CardHeader  title="Choisir une instance du banchemark"/>
             <CardContent>
                
                 <div >
