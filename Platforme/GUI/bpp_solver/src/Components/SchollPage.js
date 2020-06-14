@@ -201,9 +201,11 @@ class SchollPage extends React.Component {
   render() {
     const classes = this.props;
     let content;
+    
     if (this.state.display_choosemthd) {
       content = (
         <div>
+          
           <ChooseMthd
             pagenum={3}
             handleValider={this.handleValider}
@@ -225,6 +227,10 @@ class SchollPage extends React.Component {
     }
     return (
       <Container>
+       
+        <Typography variant="h3" className={classes.pagetitle} gutterBottom>
+        Utiliser les Instances du Benchmark Scholl
+            </Typography>  
         <div className={classes.empty}></div>
         {content}
       </Container>

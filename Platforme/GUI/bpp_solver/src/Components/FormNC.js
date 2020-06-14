@@ -1,4 +1,9 @@
 import React, { Fragment } from "react";
+import './inputPage.css';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
+import { withStyles } from '@material-ui/core/styles';
 import { Container, TextField, Button, Grid, Box } from "@material-ui/core";
 import { spacing } from "@material-ui/system";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
@@ -50,64 +55,84 @@ class FormNC extends React.Component {
 
     this.setState({ objects: res.liste });
     this.props.sendpb(this.state.n, this.state.c, res.liste);
-    //alert(this.state.objects);
+  
   }
   render() {
+    const { classes } = this.props; 
     return (
-      <React.Fragment>
-        <Box m={2} p={2}>
-          <form onSubmit={this.handleSubmit}>
-            <Grid container spacing={3}>
-              <Grid item xs={10} sm={3}>
-                <TextField
-                  required
-                  variant="outlined"
-                  type="number"
-                  label="Nombre d'objets "
-                  size="small"
-                  value={this.state.n}
-                  onChange={this.handleChange2}
-                />
-              </Grid>
-              <Grid item xs={10} sm={3}>
-                <TextField
-                  required
-                  variant="outlined"
-                  type="number"
-                  label="Capacité des boites "
-                  size="small"
-                  value={this.state.c}
-                  onChange={this.handleChange1}
-                />
-              </Grid>
+     
+         <Container  width={1} /*className={classes.root}*/>
+                <Card width={1} className={classes.root}>
+                    <CardHeader title="Entrez les paramètres de l'instance" />
+                        <CardContent>
+                                <form onSubmit={this.handleSubmit}>
+                                    <Grid container spacing={3}>
+                                      <Grid item xs={10} sm={3}>
+                                        <TextField
+                                          required
+                                          variant="outlined"
+                                          type="number"
+                                          label="Nombre d'objets "
+                                          size="small"
+                                          value={this.state.n}
+                                          onChange={this.handleChange2}
+                                          InputProps={{ inputProps: { min: 0, max: 10 } }}
+                                        />
+                                      </Grid>
+                                      <Grid item xs={10} sm={3}>
+                                        <TextField
+                                          
+                                          required
+                                          variant="outlined"
+                                          type="number"
+                                          label="Capacité des boites "
+                                          size="small"
+                                          value={this.state.c}
+                                          onChange={this.handleChange1}
+                                          InputProps={{ inputProps: { min: 0, max: 10 } }}
+                                        />
+                                      </Grid>
 
-              <Grid item xs={12}>
-                <Button variant="contained" color="primary" type="submit">
-                  Générer
-                </Button>
-              </Grid>
-            </Grid>
-          </form>
-          <br></br>
-          <ExpansionPanel>
-            <ExpansionPanelSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              Instance générée
-            </ExpansionPanelSummary>
-            <ExpansionPanelDetails>
-              <List height={200} width={200} itemSize={46}>
-                {this.state.objects.map((d) => {
-                  return <ListItem>{d}</ListItem>;
-                })}
-              </List>
-            </ExpansionPanelDetails>
-          </ExpansionPanel>
-        </Box>
-      </React.Fragment>
+                                      <Grid item xs={12}>
+                                        <Button variant="contained" color="primary" type="submit">
+                                          Générer
+                                        </Button>
+                                      </Grid>
+                                    </Grid>
+                                </form>
+                                  <br></br>
+                                  <ExpansionPanel>
+                                    <ExpansionPanelSummary
+                                      expandIcon={<ExpandMoreIcon />}
+                                      aria-controls="panel1a-content"
+                                      id="panel1a-header"
+                                    >
+                                      Instance générée
+                                    </ExpansionPanelSummary>
+                                    <ExpansionPanelDetails>
+                                      <List height={200} width={200} itemSize={46}>
+                                        {this.state.objects.map((d) => {
+                                          return <ListItem>{d}</ListItem>;
+                                        })}
+                                      </List>
+                                    </ExpansionPanelDetails>
+                                  </ExpansionPanel>
+                          </CardContent>
+                 </Card>
+          </Container>
+            
     );
   }
 }
-export default FormNC;
+
+const styles = theme => ({
+  root: {
+        
+    margin: theme.spacing(3),
+    width: "70vw",
+    marginLeft : "1cm"
+
+  },
+  
+})  
+export default withStyles(styles)(FormNC);

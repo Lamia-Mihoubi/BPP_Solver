@@ -71,26 +71,13 @@ class PickFile extends Component{
 
         return (
             <div>
-            <Card className={classes.root}>
+              
+            <Card width={1} className={classes.root}>
+            <CardHeader  title="Choisir une instance du banchemark"/>
             <CardContent>
-                <h1>Utiliser les Instances du Benchmark Scholl </h1> 
-                <div className="input-group">
-                <div className="custom-file">
-                    <input
-                    type="file"
-                    className="custom-file-input"
-                    id="inputGroupFile01"
-                    color="teal lighten-2"
-                    aria-describedby="inputGroupFileAddon01"
-                    onChange={ (e) => this.handleChange(e.target.files) } />
-                    
-                    <label className="custom-file-label" id="label-file" htmlFor="inputGroupFile01"color="teal lighten-2">
-                    Choisissez un fichier
-                    </label>
-                </div>
-                </div>
+               
                 <div >
-                    <select onChange={this.getinstance} button onClick={this.initS} className="browser-default custom-select" id="select-ops">
+                    <select variant="outlined" onChange={this.getinstance} button onClick={this.initS} className="browser-default custom-select" id="select-ops">
                         <option>Choisissez une instance</option>
                     </select>
                 </div>
@@ -102,12 +89,13 @@ class PickFile extends Component{
 }
 
 const styles = theme => ({
-    root: {
-        //backgroundColor: '#020F59',
-        margin: theme.spacing(3),
-        width: "69vw",
-       
-      },
+  root: {
+        
+    margin: theme.spacing(3),
+    width: "70vw",
+    marginLeft : "1.51cm"
+
+  },
       drawerPaper: {
        
       },

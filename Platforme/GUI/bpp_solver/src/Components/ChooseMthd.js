@@ -154,7 +154,7 @@ class ChooseMthd extends React.Component {
     };
     const methodss = (
       <Container className={classes.root}>
-        <Card /*className={classes.root}*/>
+        <Card className={classes.root}>
           <CardHeader
             textsize="13"
             title={"Choisir la méthode de résolution"}
@@ -634,7 +634,11 @@ class ChooseMthd extends React.Component {
 
 const styles = (theme) => ({
   root: {
-    //backgroundColor: '#020F59',
+        
+    margin: theme.spacing(3),
+    width: "70vw",
+    marginLeft : "0.5cm"
+
   },
   drawerPaper: {},
   formControl: {
