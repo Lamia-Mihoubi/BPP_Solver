@@ -286,9 +286,11 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
+                    <option value={50}>50</option>
                     <option value={100}>100</option>
                     <option value={200}>200</option>
                     <option value={300}>300</option>
+                    <option value={500}>500</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -305,8 +307,8 @@ class ChooseMthd extends React.Component {
                     <option aria-label="None" value="" />
                     <option value={10}>10</option>
                     <option value={20}>20</option>
-                    <option value={0.85}>0.85</option>
-                    <option value={0.8}>0.8</option>
+                    <option value={25}>25</option>
+                    <option value={30}>30</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -321,6 +323,7 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
+                    <option value={5}>5</option>
                     <option value={10}>10</option>
                     <option value={20}>20</option>
                     <option value={30}>30</option>

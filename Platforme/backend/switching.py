@@ -154,7 +154,7 @@ def switch(dic) :
     if dic['checked_AG'] != 0 :
         start_time_AG = time.time()
         
-        optcost_AG,optlist_AG=mainAG(dic['AG_nb_gen'],dic['AG_K'], dic['AG_popSize'], n, c, list2)
+        optcost_AG,optlist_AG=mainAG(int(dic['AG_nb_gen']),int(dic['AG_K']),int( dic['AG_popSize']), n, c, list2)
         
         texec_AG = (time.time() - start_time_AG)
         dictio_AG = to_json("AG","Algorithme Génétique",optcost_AG,texec_AG,optlist_AG)
@@ -164,7 +164,7 @@ def switch(dic) :
     if dic['checked_WOA'] != 0 :
         start_time_WOA = time.time()
         
-        optcost_WOA,optlist_WOA = callWOA(n,c, list2, nb_whales=dic['WOA_nb_whales'],max_iter=dic['WOA_max_iter'], b=dic['WOA_b'], a=dic['WOA_a'])
+        optcost_WOA,optlist_WOA = callWOA(n,c, list2, nb_whales=int(dic['WOA_nb_whales']),max_iter=int(dic['WOA_max_iter']), b=float(dic['WOA_b']), a=float(dic['WOA_a']))
         cost_WOA,liste_WOA = formate(optcost_WOA,optlist_WOA)
         
         texec_WOA = (time.time() - start_time_WOA)
@@ -175,7 +175,7 @@ def switch(dic) :
     if dic['checked_ILWOA'] != 0 :
         start_time_ILWOA = time.time()
         
-        optcost_ILWOA,optlist_ILWOA = callILWOA(n,c, list2,nb_whales=dic['ILWOA_nb_agents'],max_iter=dic['ILWOA_max_iter'], b=dic['ILWOA_b'], a=dic['ILWOA_a'], beta=dic['ILWOA_beta'])
+        optcost_ILWOA,optlist_ILWOA = callILWOA(n,c, list2,nb_whales=int(dic['ILWOA_nb_agents']),max_iter=dic['ILWOA_max_iter'], b=float(dic['ILWOA_b']), a=float(dic['ILWOA_a']), beta=float(dic['ILWOA_beta']))
         cost_ILWOA,liste_ILWOA = formate(optcost_ILWOA,optlist_ILWOA)
         
         texec_ILWOA = (time.time() - start_time_ILWOA)
@@ -187,7 +187,7 @@ def switch(dic) :
         start_time_RS = time.time()
         
         classrs = RS()
-        optcost_RS,optlist_RS=classrs.RS_iteratif(n, c, list2,R=dic['RS_nb_iter'],alpha=dic['RS_alpha'])
+        optcost_RS,optlist_RS=classrs.RS_iteratif(n, c, list2,R=int(dic['RS_nb_iter']),alpha=float(dic['RS_alpha']))
         
         texec_RS = (time.time() - start_time_RS)
         dictio_RS = to_json("RS","Recuit Simulé",optcost_RS,texec_RS,optlist_RS)

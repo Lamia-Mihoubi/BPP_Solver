@@ -60,7 +60,7 @@ class Binpacker(object):
         optlist = self.optlist
 
         # recuperer les poids qui sont inferieurs a C/2
-        V = np.unique(self.listobj)
+        V = np.unique(listobj)
         V = V[V < (c / 2)]
         L = []
 

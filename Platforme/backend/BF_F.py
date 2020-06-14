@@ -11,7 +11,7 @@ def bestFit(N, C, liste):
 
         # Find the first bin that can accommodate
         # weight[i]
-        j = 0;
+        j = 0
 
         # Initialize minimum space left and index
         # of best bin
