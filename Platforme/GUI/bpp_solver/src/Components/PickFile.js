@@ -83,7 +83,7 @@ class PickFile extends Component{
                     color="teal lighten-2"
                     aria-describedby="inputGroupFileAddon01"
                     onChange={ (e) => this.handleChange(e.target.files) } />
-                    />
+                    
                     <label className="custom-file-label" id="label-file" htmlFor="inputGroupFile01"color="teal lighten-2">
                     Choisissez un fichier
                     </label>

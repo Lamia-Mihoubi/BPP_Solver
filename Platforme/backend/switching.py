@@ -174,7 +174,7 @@ def switch(dic) :
         start_time_ILWOA = time.time()
         
         optcost_ILWOA,optlist_ILWOA = callILWOA(n,c, list2,nb_whales=dic['ILWOA_nb_agents'],max_iter=dic['ILWOA_max_iter'], b=dic['ILWOA_b'], a=dic['ILWOA_a'], beta=dic['ILWOA_beta'])
-        cost_ILWOA,liste_ILWOA = formate(optcost_WOA,optlist_WOA)
+        cost_ILWOA,liste_ILWOA = formate(optcost_ILWOA,optlist_ILWOA)
         
         texec_ILWOA = (time.time() - start_time_ILWOA)
         dictio_ILWOA = to_json("ILWOA","Improved Whale Optimization Algorithm",cost_ILWOA,texec_ILWOA,liste_ILWOA)
