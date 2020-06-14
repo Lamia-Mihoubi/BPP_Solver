@@ -80,7 +80,7 @@ class FormNC extends React.Component {
                                           size="small"
                                           value={this.state.n}
                                           onChange={this.handleChange2}
-                                          InputProps={{ inputProps: { min: 0, max: 10 } }}
+                                          InputProps={{ inputProps: { min: 1 } }}
                                         />
                                       </Grid>
                                       <Grid item xs={10} sm={3}>
@@ -93,7 +93,7 @@ class FormNC extends React.Component {
                                           size="small"
                                           value={this.state.c}
                                           onChange={this.handleChange1}
-                                          InputProps={{ inputProps: { min: 0, max: 10 } }}
+                                          InputProps={{ inputProps: { min: 1 } }}
                                         />
                                       </Grid>
 
