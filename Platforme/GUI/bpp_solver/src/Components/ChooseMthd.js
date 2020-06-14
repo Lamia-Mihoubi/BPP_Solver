@@ -37,6 +37,8 @@ class ChooseMthd extends React.Component {
       checked_WOA: 0,
       checked_ILWOA: 0,
       checked_RS: 0,
+      checked_Hyb1: 0,
+      checked_Hyb2: 0,
       RS_nb_iter: 1000,
       RS_alpha: 0.925,
       WOA_a: 10,
@@ -98,11 +100,9 @@ class ChooseMthd extends React.Component {
         method: "POST",
         body: state_JSON,
       });
-      //window.alert(state_JSON);
+      
       const jsonres = await response.json();
-      // get the result and sent the json answer direct
-      //window.alert(jsonres);
-      this.props.handleValider(jsonres);
+      this.props.handleValider(jsonres['res'],jsonres['n'],jsonres['c'],jsonres['opt']);
     }
     //this.props.handleValider("");
   }
@@ -121,6 +121,8 @@ class ChooseMthd extends React.Component {
       checked_WOA: 0,
       checked_ILWOA: 0,
       checked_RS: 0,
+      checked_Hyb1: 0,
+      checked_Hyb2: 0,
       RS_nb_iter: 1000,
       RS_alpha: 0.925,
       WOA_a: 10,
@@ -565,18 +567,28 @@ class ChooseMthd extends React.Component {
               </FormControl>
             </FormGroup>
             <FormLabel component="legend" className={classes.formLabel}>
-              Hybrid methods
+              Méthodes Hybrides
             </FormLabel>
 
             <FormControlLabel
               control={
                 <Checkbox
-                  //checked={this.state.checked_ILWOA}
-                  //onChange={handleChange}
-                  name="checked_ILWOA"
+                  checked={this.state.checked_Hyb1}
+                  onChange={handleChange}
+                  name="checked_Hyb1"
                 />
               }
-              label="Our Hybrid Method "
+              label="Hybridation HRH AG avec RS      "
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={this.state.checked_Hyb2}
+                  onChange={handleChange}
+                  name="checked_Hyb2"
+                />
+              }
+              label="Hybridation HRH ILWOA avec RS"
             />
           </CardContent>
         </Card>
