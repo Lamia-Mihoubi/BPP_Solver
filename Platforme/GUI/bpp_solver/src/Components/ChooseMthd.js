@@ -15,11 +15,14 @@ import Button from "@material-ui/core/Button";
 import Instance from "./Instance";
 import PickFile from "./PickFile";
 import FormNC from "./FormNC";
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 class ChooseMthd extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      open:0,
       n: 0,
       c: 0,
       list: [],
@@ -76,6 +79,9 @@ class ChooseMthd extends React.Component {
     const page = this.props.pagenum; // pour savoir quelle page we're in et donc quelle requete envoyer
     // get selected data
     const state_JSON = JSON.stringify(this.state);
+    this.setState({
+      open:1,
+    })
     //send request
     if ((page == 1) | (page == 2)) {
       const response = await fetch("/resultats", {
@@ -90,6 +96,9 @@ class ChooseMthd extends React.Component {
       // get the result and sent the json answer direct
       //window.alert(jsonres['n']); //for test
       //alert(jsonres)
+      this.setState({
+        open:0,
+      })
       this.props.handleValider(jsonres);
     }
 
@@ -103,6 +112,9 @@ class ChooseMthd extends React.Component {
       });
       
       const jsonres = await response.json();
+      this.setState({
+        open:0,
+      })
       this.props.handleValider(jsonres['res'],jsonres['n'],jsonres['c'],jsonres['opt']);
     }
     //this.props.handleValider("");
@@ -584,7 +596,9 @@ class ChooseMthd extends React.Component {
               }
               label="Hybridation HRH AG avec RS      "
             />
-            
+            <Backdrop className={classes.backdrop} open={this.state.open}  >
+        <CircularProgress color="inherit" />
+      </Backdrop>
           </CardContent>
         </Card>
 
@@ -606,6 +620,7 @@ class ChooseMthd extends React.Component {
         >
           Résoudre l'instance
         </Button>
+        
       </Container>
     );
 
@@ -656,6 +671,10 @@ const styles = (theme) => ({
   },
   btn: {
     margin: theme.spacing(5),
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
   },
 });
 export default withStyles(styles)(ChooseMthd);
