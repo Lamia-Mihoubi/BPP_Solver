@@ -75,6 +75,7 @@ class ChooseMthd extends React.Component {
       filename: filename,
     });
   }
+ 
   async ValiderClick() {
     const page = this.props.pagenum; // pour savoir quelle page we're in et donc quelle requete envoyer
     // get selected data
@@ -602,15 +603,7 @@ class ChooseMthd extends React.Component {
           </CardContent>
         </Card>
 
-        <Button
-          className={classes.btn}
-          onClick={this.reinitClick}
-          variant="contained"
-          size="large"
-          color="primary"
-        >
-          Réinitialiser
-        </Button>
+         
         <Button
           className={classes.btn}
           onClick={this.ValiderClick}
