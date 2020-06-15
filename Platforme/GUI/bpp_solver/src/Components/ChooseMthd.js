@@ -15,15 +15,15 @@ import Button from "@material-ui/core/Button";
 import Instance from "./Instance";
 import PickFile from "./PickFile";
 import FormNC from "./FormNC";
-import Backdrop from '@material-ui/core/Backdrop';
-import CircularProgress from '@material-ui/core/CircularProgress';
+import Backdrop from "@material-ui/core/Backdrop";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 class ChooseMthd extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       page_num: 0,
-      open:0,
+      open: 0,
       n: 0,
       c: 0,
       list: [],
@@ -75,15 +75,15 @@ class ChooseMthd extends React.Component {
       filename: filename,
     });
   }
- 
+
   async ValiderClick() {
     const page = this.props.pagenum; // pour savoir quelle page we're in et donc quelle requete envoyer
     this.setState({ page_num: page });
     // get selected data
     const state_JSON = JSON.stringify(this.state);
     this.setState({
-      open:1,
-    })
+      open: 1,
+    });
     //send request
     if ((page == 1) | (page == 2)) {
       const response = await fetch("/resultats", {
@@ -93,14 +93,14 @@ class ChooseMthd extends React.Component {
         method: "POST",
         body: state_JSON,
       });
-      
+
       const jsonres = await response.json();
       // get the result and sent the json answer direct
       //window.alert(jsonres['n']); //for test
       //alert(jsonres)
       this.setState({
-        open:0,
-      })
+        open: 0,
+      });
       this.props.handleValider(jsonres);
     }
 
@@ -112,12 +112,17 @@ class ChooseMthd extends React.Component {
         method: "POST",
         body: state_JSON,
       });
-      
+
       const jsonres = await response.json();
       this.setState({
-        open:0,
-      })
-      this.props.handleValider(jsonres['res'],jsonres['n'],jsonres['c'],jsonres['opt']);
+        open: 0,
+      });
+      this.props.handleValider(
+        jsonres["res"],
+        jsonres["n"],
+        jsonres["c"],
+        jsonres["opt"]
+      );
     }
     //this.props.handleValider("");
   }
@@ -474,7 +479,6 @@ class ChooseMthd extends React.Component {
                     <option value={1.5}>1.5</option>
                     <option value={2}>2</option>
                     <option value={4}>4</option>
-                    
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -597,13 +601,12 @@ class ChooseMthd extends React.Component {
               }
               label="Hybridation HRH AG avec RS      "
             />
-            <Backdrop className={classes.backdrop} open={this.state.open}  >
-        <CircularProgress color="inherit" />
-      </Backdrop>
+            <Backdrop className={classes.backdrop} open={this.state.open}>
+              <CircularProgress color="inherit" />
+            </Backdrop>
           </CardContent>
         </Card>
 
-         
         <Button
           className={classes.btn}
           onClick={this.ValiderClick}
@@ -613,7 +616,6 @@ class ChooseMthd extends React.Component {
         >
           Résoudre l'instance
         </Button>
-        
       </Container>
     );
 
@@ -648,11 +650,9 @@ class ChooseMthd extends React.Component {
 
 const styles = (theme) => ({
   root: {
-        
     margin: theme.spacing(3),
     width: "67vw",
-    marginLeft : "0.5cm"
-
+    marginLeft: "0.5cm",
   },
   drawerPaper: {},
   formControl: {
@@ -667,7 +667,7 @@ const styles = (theme) => ({
   },
   backdrop: {
     zIndex: theme.zIndex.drawer + 1,
-    color: '#fff',
+    color: "#fff",
   },
 });
 export default withStyles(styles)(ChooseMthd);

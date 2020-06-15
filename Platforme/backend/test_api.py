@@ -11,6 +11,7 @@ import numpy
 import switching as sw
 from Instances_generator import generator
 from Instances_reader import ReadInstance
+from get_opt_sol import get_opt_sol
 
 app = Flask(__name__)
 # here the react will give n +c + list of objects + list of methods with their params 
@@ -45,5 +46,6 @@ def benchmark_sol():
     _req['c'] = c
     _req['list'] = liste
     res=(sw.switch((_req)))
-    return ({'res':res,'n':nbr,'c':c, 'opt':10})
+    opt = get_opt_sol(n,F+".txt")
+    return ({'res':res,'n':nbr,'c':c, 'opt':opt})
 
