@@ -60,7 +60,7 @@ class Binpacker(object):
         optlist = self.optlist
 
         # recuperer les poids qui sont inferieurs a C/2
-        V = np.unique(self.listobj)
+        V = np.unique(listobj)
         V = V[V < (c / 2)]
         L = []
 
@@ -141,8 +141,12 @@ class Binpacker(object):
     def BBA2SOL(self,list,c):
         bins = [[]]
         for objet in list:
-            if (c - sum(bins[-1])) >= objet:  # espace suffisant pour objet dans bin
-                bins[-1].append(objet)
-            else:  # aucune booite n'est suffisante pr ranger objet , create a new bin
+            done= False
+            for b in bins:
+                if (c - sum(b)) >= objet:  # espace suffisant pour objet dans bin
+                    b.append(objet)
+                    done=True
+                    break
+            if not done: 
                 bins.append([objet])
         return bins

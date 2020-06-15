@@ -15,12 +15,15 @@ import Button from "@material-ui/core/Button";
 import Instance from "./Instance";
 import PickFile from "./PickFile";
 import FormNC from "./FormNC";
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 class ChooseMthd extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       page_num: 0,
+      open:0,
       n: 0,
       c: 0,
       list: [],
@@ -38,6 +41,7 @@ class ChooseMthd extends React.Component {
       checked_WOA: 0,
       checked_ILWOA: 0,
       checked_RS: 0,
+      checked_Hyb1: 0,
       RS_nb_iter: 1000,
       RS_alpha: 0.925,
       WOA_a: 10,
@@ -46,9 +50,9 @@ class ChooseMthd extends React.Component {
       WOA_nb_whales: 30,
       ILWOA_nb_agents: 10,
       ILWOA_beta: 1.5,
-      ILWOA_a: 20,
-      ILWOA_b: 7.36,
-      ILWOA_max_iter: 30,
+      ILWOA_a: 2,
+      ILWOA_b: 1.5,
+      ILWOA_max_iter: 10,
       AG_popSize: 10,
       AG_K: 20,
       AG_nb_gen: 200,
@@ -71,11 +75,15 @@ class ChooseMthd extends React.Component {
       filename: filename,
     });
   }
+ 
   async ValiderClick() {
     const page = this.props.pagenum; // pour savoir quelle page we're in et donc quelle requete envoyer
     this.setState({ page_num: page });
     // get selected data
     const state_JSON = JSON.stringify(this.state);
+    this.setState({
+      open:1,
+    })
     //send request
     if ((page == 1) | (page == 2)) {
       const response = await fetch("/resultats", {
@@ -85,10 +93,14 @@ class ChooseMthd extends React.Component {
         method: "POST",
         body: state_JSON,
       });
+      
       const jsonres = await response.json();
       // get the result and sent the json answer direct
       //window.alert(jsonres['n']); //for test
       //alert(jsonres)
+      this.setState({
+        open:0,
+      })
       this.props.handleValider(jsonres);
     }
 
@@ -100,11 +112,12 @@ class ChooseMthd extends React.Component {
         method: "POST",
         body: state_JSON,
       });
-      //window.alert(state_JSON);
+      
       const jsonres = await response.json();
-      // get the result and sent the json answer direct
-      //window.alert(jsonres);
-      this.props.handleValider(jsonres);
+      this.setState({
+        open:0,
+      })
+      this.props.handleValider(jsonres['res'],jsonres['n'],jsonres['c'],jsonres['opt']);
     }
     //this.props.handleValider("");
   }
@@ -123,6 +136,8 @@ class ChooseMthd extends React.Component {
       checked_WOA: 0,
       checked_ILWOA: 0,
       checked_RS: 0,
+      checked_Hyb1: 0,
+      checked_Hyb2: 0,
       RS_nb_iter: 1000,
       RS_alpha: 0.925,
       WOA_a: 10,
@@ -131,8 +146,8 @@ class ChooseMthd extends React.Component {
       WOA_nb_whales: 30,
       ILWOA_nb_agents: 10,
       ILWOA_beta: 1.5,
-      ILWOA_a: 20,
-      ILWOA_b: 7.36,
+      ILWOA_a: 4,
+      ILWOA_b: 1.5,
       ILWOA_max_iter: 30,
       AG_popSize: 10,
       AG_K: 20,
@@ -156,7 +171,7 @@ class ChooseMthd extends React.Component {
     };
     const methodss = (
       <Container className={classes.root}>
-        <Card /*className={classes.root}*/>
+        <Card className={classes.root}>
           <CardHeader
             textsize="13"
             title={"Choisir la méthode de résolution"}
@@ -285,9 +300,11 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
+                    <option value={50}>50</option>
                     <option value={100}>100</option>
                     <option value={200}>200</option>
                     <option value={300}>300</option>
+                    <option value={500}>500</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -304,8 +321,8 @@ class ChooseMthd extends React.Component {
                     <option aria-label="None" value="" />
                     <option value={10}>10</option>
                     <option value={20}>20</option>
-                    <option value={0.85}>0.85</option>
-                    <option value={0.8}>0.8</option>
+                    <option value={25}>25</option>
+                    <option value={30}>30</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -320,6 +337,7 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
+                    <option value={5}>5</option>
                     <option value={10}>10</option>
                     <option value={20}>20</option>
                     <option value={30}>30</option>
@@ -354,7 +372,7 @@ class ChooseMthd extends React.Component {
                     <option aria-label="None" value="" />
                     <option value={8.96}>8.96</option>
                     <option value={7.64}>7.64</option>
-                    <option value={30}>1000</option>
+                    <option value={1.5}>1.5</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -369,10 +387,9 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={10}>10</option>
+                    <option value={4}>4</option>
                     <option value={20}>20</option>
-                    <option value={30}>30</option>
-                    <option value={30}>35</option>
+                    <option value={10}>10</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -389,8 +406,8 @@ class ChooseMthd extends React.Component {
                     <option aria-label="None" value="" />
                     <option value={117}>117</option>
                     <option value={271}>271</option>
-                    <option value={30}>0.85</option>
-                    <option value={30}>0.8</option>
+                    <option value={50}>50</option>
+                    <option value={5}>5</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -405,8 +422,8 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={10}>0.925</option>
-                    <option value={20}>0.90</option>
+                    <option value={10}>10</option>
+                    <option value={20}>20</option>
                     <option value={28}>28</option>
                     <option value={30}>30</option>
                   </Select>
@@ -437,9 +454,9 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={7.36}>7.36</option>
-                    <option value={20}>500</option>
-                    <option value={30}>1000</option>
+                    <option value={1.5}>1.5</option>
+                    <option value={2}>2</option>
+                    <option value={4}>4</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -454,10 +471,10 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={10}>10</option>
-                    <option value={20}>20</option>
-                    <option value={30}>30</option>
-                    <option value={30}>35</option>
+                    <option value={1.5}>1.5</option>
+                    <option value={2}>2</option>
+                    <option value={4}>4</option>
+                    
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -475,7 +492,7 @@ class ChooseMthd extends React.Component {
                     <option value={10}>10</option>
                     <option value={20}>20</option>
                     <option value={30}>30</option>
-                    <option value={30}>35</option>
+                    <option value={50}>50</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -493,7 +510,7 @@ class ChooseMthd extends React.Component {
                     <option value={10}>10</option>
                     <option value={20}>20</option>
                     <option value={30}>30</option>
-                    <option value={40}>40</option>
+                    <option value={50}>50</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -567,31 +584,26 @@ class ChooseMthd extends React.Component {
               </FormControl>
             </FormGroup>
             <FormLabel component="legend" className={classes.formLabel}>
-              Hybrid methods
+              Méthodes Hybrides
             </FormLabel>
 
             <FormControlLabel
               control={
                 <Checkbox
-                  //checked={this.state.checked_ILWOA}
-                  //onChange={handleChange}
-                  name="checked_ILWOA"
+                  checked={this.state.checked_Hyb1}
+                  onChange={handleChange}
+                  name="checked_Hyb1"
                 />
               }
-              label="Our Hybrid Method "
+              label="Hybridation HRH AG avec RS      "
             />
+            <Backdrop className={classes.backdrop} open={this.state.open}  >
+        <CircularProgress color="inherit" />
+      </Backdrop>
           </CardContent>
         </Card>
 
-        <Button
-          className={classes.btn}
-          onClick={this.reinitClick}
-          variant="contained"
-          size="large"
-          color="primary"
-        >
-          Réinitialiser
-        </Button>
+         
         <Button
           className={classes.btn}
           onClick={this.ValiderClick}
@@ -601,6 +613,7 @@ class ChooseMthd extends React.Component {
         >
           Résoudre l'instance
         </Button>
+        
       </Container>
     );
 
@@ -617,7 +630,6 @@ class ChooseMthd extends React.Component {
     if (page == 2) {
       return (
         <div>
-          <h1>Générer une instance aléatoire</h1>
           <FormNC props sendpb={this.set_n_c_list} />
           {methodss}
         </div>
@@ -636,7 +648,11 @@ class ChooseMthd extends React.Component {
 
 const styles = (theme) => ({
   root: {
-    //backgroundColor: '#020F59',
+        
+    margin: theme.spacing(3),
+    width: "67vw",
+    marginLeft : "0.5cm"
+
   },
   drawerPaper: {},
   formControl: {
@@ -648,6 +664,10 @@ const styles = (theme) => ({
   },
   btn: {
     margin: theme.spacing(5),
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
   },
 });
 export default withStyles(styles)(ChooseMthd);

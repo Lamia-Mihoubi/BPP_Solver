@@ -39,17 +39,7 @@ class RS:
         #print(vals)
         rs= min(vals)
         SS= Sols[vals.index(min(vals))]
-        boxes=[]
-        for i in SS :
-            boxes.append(i.get_objects)
-        list_boxes=[]
-        for j in boxes :
-            box=[]
-            for a in j :
-                box.append(a.weight)
-            list_boxes.append(box)
-        return rs, list_boxes
-
+        return rs, SS
     def RS(self, n, c, list, S, Tinit=30, T0=0.1, R=1000, alpha=0.95, init=False):
         t_exec = time.time()
         deltaF = []
@@ -124,11 +114,19 @@ class RS:
                 break
             """diminution de la temperature"""
             T = T * alpha
-
+        boxes=[]
+        for i in Best :
+            boxes.append(i.get_objects)
+        list_boxes=[]
+        for j in boxes :
+            box=[]
+            for a in j :
+                box.append(a.weight)
+            list_boxes.append(box)
         if init:
-            return deltaF, len(Best), Best
-        else:
-            return len(Best), Best
+            return deltaF, len(Best), list_boxes
+        else:      
+            return len(Best), list_boxes
 
     def generer_voisin1(self, SS):  # regime haute temperature
         S = deepcopy(SS)

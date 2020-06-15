@@ -43,8 +43,7 @@ def Chromosome(object):
             # print("objet{}, boite{}".format(i+1,b+1))
         liste1 = [x for x in resultat if x != []]  # elimination es boites vides
 
-        return liste1, len(
-            liste1)  # lastb+1 = nombre de boites utilisée #la listee : liste des boites avec leurs objets dedans
+        return liste1, lastB+1 # lastb+1 = nombre de boites utilisée #la listee : liste des boites avec leurs objets dedans
 
 
 def renameItems(liste):
@@ -396,7 +395,7 @@ def mainAG(nbGen, k, popSize, n, c, liste):  # le k de selection
         for i in range(len(bin)):
             bin[i]= liste[bin[i]-1]
    
-    return nF,solF
+    return len(solF),solF
 
 
 def countFreq(arr, n):

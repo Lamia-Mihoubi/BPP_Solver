@@ -45,5 +45,5 @@ def benchmark_sol():
     _req['c'] = c
     _req['list'] = liste
     res=(sw.switch((_req)))
-    return (jsonify(res))
+    return ({'res':res,'n':nbr,'c':c, 'opt':10})
 

@@ -70,7 +70,7 @@ class Main extends React.Component{
         );
     }
     }
-    const drawerWidth = 240
+    const drawerWidth = 260
     
     const styles = theme => ({
       main:{
@@ -83,8 +83,8 @@ class Main extends React.Component{
             position: 'relative',
             whiteSpace: 'nowrap',
             width: drawerWidth,
-            paddingTop: theme.spacing(4),
-            paddingBottom: theme.spacing(4),
+            paddingTop: theme.spacing(0),
+            paddingBottom: theme.spacing(0),
             background: '#535454',
             color: '#fff',
           },

@@ -1,5 +1,5 @@
 import React,{Component } from 'react';
-import Container from '@material-ui/core/Container'
+import { Container, TextField, Button, Grid, Box } from "@material-ui/core";
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
@@ -7,12 +7,45 @@ import { withStyles } from '@material-ui/core/styles';
 import './inputPage.css';
 import { MDBContainer, MDBInputGroup, MDBBtn } from "mdbreact";
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
-
+import { spacing } from "@material-ui/system";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Divider from '@material-ui/core/Divider';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 class Instance extends Component{
     state = {
         value: 0
       }
+      constructor(props) {
+        super(props);
+        this.state = {
+          n: 10,
+          c: 10,
+        open: false,} 
+          this.ajouterItem=this.ajouterItem.bind(this)
+          this.handleChange1 = this.handleChange1.bind(this);
+          this.handleChange2 = this.handleChange2.bind(this);
+          this.handleClose = this.handleClose.bind(this);
+        }
+        handleClose(){
+          this.setState({
+            open:false,
+          })
+        }
+        handleChange1(event) {
+          this.setState({ c: event.target.value });
+        }
+        handleChange2(event) {
+          this.setState({ n: event.target.value });
+        }
     
       decrease = () => {
           if(this.state.value>0){
@@ -25,21 +58,17 @@ class Instance extends Component{
         this.setState({ value: this.state.value + 1 });
       }
       nbitems={
-          value:0
-      }
-      capacite={
-          value:0
-      }
+        value:0
+    }
       ajouterItem=()=>{
-          console.log("pfff")
-          const nbreitems=document.querySelector('.NBartics')
-          console.log(nbreitems.value)
-          this.capacite.value=document.querySelector('.cap').value
-          if(parseInt(this.nbitems.value)<parseInt(nbreitems.value)){
+      
+       
+          
+          
+          //this.capacite.value=document.querySelector('.cap').value
+          if(parseInt(this.state.n)>parseInt(this.nbitems.value)){
                 const a =document.querySelector('#idd')
-                console.log(this.capacite.value)
-                console.log(typeof a.value)
-              if(parseInt(this.capacite.value) >= parseInt(a.value)){
+              if(parseInt(this.state.c) >= parseInt(a.value)){
                 console.log(a.value)
                 this.nbitems.value=this.nbitems.value + 1
                 // Find a <table> element with id="myTable":
@@ -59,9 +88,14 @@ class Instance extends Component{
                 a.defaultValue=""
                 console.log(a)
               }
+              else {
+                this.setState({
+                  open: true,
+                })
+              }
             
             }
-            if(this.nbitems.value==nbreitems.value){
+            if(this.state.n==this.nbitems.value){
                 let table = document.querySelector('.table1');
                 document.querySelector('#btn-add').disabled=true
                 let objects=[]
@@ -69,11 +103,11 @@ class Instance extends Component{
                     objects[i-1]=table.rows[i].cells[1].innerHTML
                 }
                 const problem={
-                    nb_articles:this.nbitems.value,
-                    capacite:this.capacite.value,
+                    nb_articles:this.state.n,
+                    capacite:this.state.c,
                     objets:objects
                 }
-                this.props.sendpb(this.nbitems.value,this.capacite.value,objects);
+                this.props.sendpb(this.state.n,this.state.c,objects);
                 console.log(JSON.stringify(problem))
             }
       }
@@ -82,31 +116,61 @@ class Instance extends Component{
         return(
             
             <Container  width={1} /*className={classes.root}*/>
+              <Typography variant="h3" className={classes.pagetitle} gutterBottom>
+               Construire votre propre Instance
+              </Typography>
                 <Card width={1} className={classes.root}>
                     <CardHeader 
                         title="Entrez les paramètres de l'instance"
                     />
+
                     <CardContent>
-                        <MDBContainer>
-                            <MDBInputGroup className="NBartics"
-                                material
-                                containerClassName="mb-1 mt-0"
-                                hint="Nombre d'articles"
-                                />
-                            <MDBInputGroup className="cap"
-                                material
-                                containerClassName="mb-1 mt-0"
-                                hint="Capacité"
-                                />
-                            <MDBInputGroup className="ajouter_art"
+                    <Grid container spacing={3} m={5}>
+                                      <Grid item xs={10} sm={3}>
+                                        <TextField
+                                          required
+                                          variant="outlined"
+                                          type="number"
+                                          label="Nombre d'objets "
+                                          size="small"
+                                          value={this.state.n}
+                                          onChange={this.handleChange2}
+                                          InputProps={{ inputProps: { min: 0, max: 10 } }}
+                                        />
+                                      </Grid>
+                                      <Grid item xs={10} sm={3}>
+                                        <TextField
+                                          
+                                          required
+                                          variant="outlined"
+                                          type="number"
+                                          label="Capacité des boites "
+                                          size="small"
+                                          value={this.state.c}
+                                          onChange={this.handleChange1}
+                                          InputProps={{ inputProps: { min: 0, max: 10 } }}
+                                        />
+                                      </Grid>
+                                </Grid>
+                                <br></br>
+                                <Divider variant="middle" />
+                                <br></br>
+                                <div >
+                                <p className={classes.ajouter}>
+                                        Ajouter un article
+                                </p>
+                                </div>
+                                
+                   <MDBContainer m={3}>
+                            <MDBInputGroup 
                                 id="idd"
                                 material
                                 containerClassName="mb-1 mt-0"
-                                hint="Ajouter Article"
+                                hint="Poids de l'article"
                                 append={
                                     <MDBBtn 
                                     id="btn-add"
-                                    color="teal lighten-2"
+                                    color="pink lighten-3"
                                     className="m-0 px-3 py-2 z-depth-0"
                                     onClick={this.ajouterItem}
                                     >
@@ -115,15 +179,45 @@ class Instance extends Component{
                                 }
                                 />
                         </MDBContainer>
-                        <MDBTable className="table1">
+                        <br/>
+                        <Dialog
+                          open={this.state.open}
+                          aria-labelledby="alert-dialog-title"
+                          aria-describedby="alert-dialog-description"
+                        >
+                          <DialogTitle id="alert-dialog-title">{"Violation des contraintes du Bin Packing"}</DialogTitle>
+                              <DialogContent>
+                                <DialogContentText id="alert-dialog-description">
+                                  Veuillez introduire un poids valide. 
+                                  Le poids d'un objet ne doit jamais dépasser la capacité de la boîte. 
+                                </DialogContentText>
+                              </DialogContent>
+                              <DialogActions>
+                                <Button onClick={this.handleClose} color="primary">
+                                  OK
+                                </Button> 
+                                </DialogActions>
+                        </Dialog>
+                        <ExpansionPanel>
+                                    <ExpansionPanelSummary
+                                      expandIcon={<ExpandMoreIcon />}
+                                      aria-controls="panel1a-content"
+                                      id="panel1a-header"
+                                    >
+                                      Instance générée
+                                    </ExpansionPanelSummary>
+                                    <ExpansionPanelDetails>
+                                    <MDBTable className="table1">
                             <MDBTableHead>
                                 <tr>
                                 <th>ID</th>
                                 <th>Poids</th>
                                 </tr>
                             </MDBTableHead>
-                            
-                        </MDBTable>
+                            </MDBTable>
+                                    </ExpansionPanelDetails>
+                                  </ExpansionPanel>
+
                     </CardContent>
                 </Card>
             </Container>
@@ -134,11 +228,20 @@ class Instance extends Component{
 
 const styles = theme => ({
     root: {
-        //backgroundColor: '#020F59',
+        
         margin: theme.spacing(3),
-        width: "69vw",
-        marginLeft : "-2vw"
+        width: "67vw",
+        marginLeft : "1cm"
+
       },
-      
+    ajouter:
+    {
+        color: "#6E6F74", 
+        fontSize: "19px",
+         fontFamily: 'Arial',
+         fontWeight: "bold",
+         paddingBottom: "10px",
+    }
+
 })  
 export default withStyles(styles)(Instance);
