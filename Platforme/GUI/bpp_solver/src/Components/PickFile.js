@@ -34,6 +34,7 @@ class PickFile extends Component{
           filename: val.split(' ')[3]
         })
         console.log(JSON.stringify(file))
+         
         this.props.sendfilename(val.split(' ')[1], val.split(' ')[3])
       }
       initS=()=>{

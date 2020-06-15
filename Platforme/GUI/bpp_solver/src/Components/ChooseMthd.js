@@ -105,7 +105,7 @@ class ChooseMthd extends React.Component {
     }
 
     if (page == 3) {
-      const response = await fetch("/benchmark", {
+       const response = await fetch("/benchmark", {
         headers: {
           "Content-Type": "application/json",
         },
