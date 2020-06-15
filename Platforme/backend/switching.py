@@ -31,8 +31,8 @@ from ILWOA import callILWOA
 from DP import DP
 from HRH_AG_RS_F import  hrh_ag_rs
 import numpy as np
-import matplotlib.pyplot as plt
-
+import copy
+from copy import copy
 def to_json(cle,tag,optcost,temps,boxes) :
     solution={}
     boites=[]
@@ -85,8 +85,8 @@ def switch(dic) :
         
     if dic['checked_DP'] != 0 :
         start_time_DP = time.time()
-        
-        optcost_DP , optlist_DP = DP(n, c, list2)        
+        li = copy(list2)
+        optcost_DP , optlist_DP = DP(n, c, li)        
         texec_DP = (time.time() - start_time_DP)
         dictio_DP=to_json("DP","Dynamic Programming",optcost_DP,texec_DP,optlist_DP)
         variable.append(dictio_DP)
@@ -94,7 +94,8 @@ def switch(dic) :
         
     if dic['checked_BF'] != 0 :
         start_time_BF = time.time()
-        optcost_BF,optlist_BF=bestFit(n, c, list2)
+        li = copy(list2)
+        optcost_BF,optlist_BF=bestFit(n, c, li)
         
         texec_BF = (time.time() - start_time_BF)
         
@@ -104,8 +105,8 @@ def switch(dic) :
         
     if dic['checked_BFD'] != 0 :
         start_time_BFD = time.time()
-        
-        optcost_BFD,optlist_BFD=best_fit_dec(n, c, list2)
+        li = copy(list2)
+        optcost_BFD,optlist_BFD=best_fit_dec(n, c, li )
         
         texec_BFD = (time.time() - start_time_BFD)
         
@@ -115,8 +116,8 @@ def switch(dic) :
         
     if dic['checked_FF'] != 0 :
         start_time_FF = time.time()
-        
-        optcost_FF,optlist_FF=first_fit(n, c, list2)
+        li = copy(list2)
+        optcost_FF,optlist_FF=first_fit(n, c, li )
         
         texec_FF = (time.time() - start_time_FF)
         dictio_FF = to_json("FF","First Fit",optcost_FF,texec_FF,optlist_FF)
@@ -125,8 +126,8 @@ def switch(dic) :
         
     if dic['checked_FFD'] != 0 :
         start_time_FFD = time.time()
-        
-        optcost_FFD,optlist_FFD=first_fit_dec(n, c, list2)
+        li = copy(list2)
+        optcost_FFD,optlist_FFD=first_fit_dec(n, c, li )
         
         texec_FFD = (time.time() - start_time_FFD)
         dictio_FFD = to_json("FFD","First Fit Decreasing",optcost_FFD,texec_FFD,optlist_FFD)
@@ -135,8 +136,8 @@ def switch(dic) :
         
     if dic['checked_NF'] != 0 :
         start_time_NF = time.time()
-        
-        optcost_NF,optlist_NF=nextfit(n, c, list2)
+        li = copy(list2)
+        optcost_NF,optlist_NF=nextfit(n, c, li )
         
         texec_NF = (time.time() - start_time_NF)
         dictio_NF = to_json("NF","Next Fit",optcost_NF,texec_NF,optlist_NF)
@@ -145,8 +146,8 @@ def switch(dic) :
         
     if dic['checked_NFD'] != 0 :
         start_time_NFD = time.time()
-        
-        optcost_NFD,optlist_NFD=next_fit_dec(n, c, list2)
+        li = copy(list2)
+        optcost_NFD,optlist_NFD=next_fit_dec(n, c, li )
         
         texec_NFD = (time.time() - start_time_NFD)
         dictio_NFD = to_json("NFD","Next Fit Decreasing",optcost_NFD,texec_NFD,optlist_NFD)
@@ -155,8 +156,8 @@ def switch(dic) :
         
     if dic['checked_AG'] != 0 :
         start_time_AG = time.time()
-        
-        optcost_AG,optlist_AG=mainAG(int(dic['AG_nb_gen']),int(dic['AG_K']),int( dic['AG_popSize']), n, c, list2)
+        li = copy(list2)
+        optcost_AG,optlist_AG=mainAG(int(dic['AG_nb_gen']),int(dic['AG_K']),int( dic['AG_popSize']), n, c, li)
         
         texec_AG = (time.time() - start_time_AG)
         dictio_AG = to_json("AG","Algorithme Génétique",optcost_AG,texec_AG,optlist_AG)
@@ -165,8 +166,8 @@ def switch(dic) :
         
     if dic['checked_WOA'] != 0 :
         start_time_WOA = time.time()
-        
-        optcost_WOA,optlist_WOA = callWOA(n,c, list2, nb_whales=int(dic['WOA_nb_whales']),max_iter=int(dic['WOA_max_iter']), b=float(dic['WOA_b']), a=float(dic['WOA_a']))
+        li = copy(list2)
+        optcost_WOA,optlist_WOA = callWOA(n,c, li, nb_whales=int(dic['WOA_nb_whales']),max_iter=int(dic['WOA_max_iter']), b=float(dic['WOA_b']), a=float(dic['WOA_a']))
         cost_WOA,liste_WOA = formate(optcost_WOA,optlist_WOA)
         
         texec_WOA = (time.time() - start_time_WOA)
@@ -176,8 +177,8 @@ def switch(dic) :
         
     if dic['checked_ILWOA'] != 0 :
         start_time_ILWOA = time.time()
-        
-        optcost_ILWOA,optlist_ILWOA = callILWOA(n,c, list2,nb_whales=int(dic['ILWOA_nb_agents']),max_iter=dic['ILWOA_max_iter'], b=float(dic['ILWOA_b']), a=float(dic['ILWOA_a']), beta=float(dic['ILWOA_beta']))
+        li = copy(list2)
+        optcost_ILWOA,optlist_ILWOA = callILWOA(n,c, li,nb_whales=int(dic['ILWOA_nb_agents']),max_iter=dic['ILWOA_max_iter'], b=float(dic['ILWOA_b']), a=float(dic['ILWOA_a']), beta=float(dic['ILWOA_beta']))
         cost_ILWOA,liste_ILWOA = formate(optcost_ILWOA,optlist_ILWOA)
         
         texec_ILWOA = (time.time() - start_time_ILWOA)
@@ -187,9 +188,9 @@ def switch(dic) :
         
     if dic['checked_RS'] != 0 :
         start_time_RS = time.time()
-        
+        li = copy(list2)
         classrs = RS()
-        optcost_RS,optlist_RS=classrs.RS_iteratif(n, c, list2,R=int(dic['RS_nb_iter']),alpha=float(dic['RS_alpha']))
+        optcost_RS,optlist_RS=classrs.RS_iteratif(n, c, li,R=int(dic['RS_nb_iter']),alpha=float(dic['RS_alpha']))
         
         texec_RS = (time.time() - start_time_RS)
         dictio_RS = to_json("RS","Recuit Simulé",optcost_RS,texec_RS,optlist_RS)
@@ -197,8 +198,8 @@ def switch(dic) :
         ######################################################################
     if dic['checked_Hyb1'] != 0 :
         start_time_Hyb1 = time.time()
-        
-        optcost_Hyb1,optlist_Hyb1= hrh_ag_rs(n,c,list2)
+        li = copy(list2)
+        optcost_Hyb1,optlist_Hyb1= hrh_ag_rs(n,c,li)
         
         texec_Hyb1 = (time.time() - start_time_Hyb1)
         dictio_Hyb1 = to_json("Hyb1","Hybridation HRH AG+RS",optcost_Hyb1,texec_Hyb1,optlist_Hyb1)
@@ -206,12 +207,4 @@ def switch(dic) :
     ######################################################################
     
     return variable
-def gen_graphs(MethodNames,temps,bins):
-    height = [3, 12, 5, 18, 45]
-    bars = ('A', 'B', 'C', 'D', 'E')
-    y_pos = np.arange(len(bars))
-    plt.bar(y_pos, height, color=['black', 'red', 'green', 'blue', 'cyan'])
-    plt.xticks(y_pos, bars)
-    #plt.show()
-
 
