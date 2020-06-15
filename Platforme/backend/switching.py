@@ -80,7 +80,7 @@ def switch(dic) :
         texec_BB = (time.time() - start_time_BB)
         if int(dic['classe']) != 0:
             ecart =0
-        dictio_BB=to_json("BB","Branch and Bound",nb,texec_BB,bins)
+        dictio_BB=to_json("BB","Branch and Bound",nb,texec_BB,bins,ecart=ecart)
         variable.append(dictio_BB)
        #######################################################################
     
@@ -91,7 +91,7 @@ def switch(dic) :
         texec_DP = (time.time() - start_time_DP)
         if int(dic['classe']) != 0:
             ecart =0
-        dictio_DP=to_json("DP","Dynamic Programming",optcost_DP,texec_DP,optlist_DP)
+        dictio_DP=to_json("DP","Dynamic Programming",optcost_DP,texec_DP,optlist_DP,ecart=ecart)
         variable.append(dictio_DP)
         ######################################################################
         
