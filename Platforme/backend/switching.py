@@ -105,7 +105,7 @@ def switch(dic) :
     if dic['checked_BFD'] != 0 :
         start_time_BFD = time.time()
         
-        optcost_BFD,optlist_BFD=bestFit(n, c, list2)
+        optcost_BFD,optlist_BFD=best_fit_dec(n, c, list2)
         
         texec_BFD = (time.time() - start_time_BFD)
         
