@@ -30,6 +30,8 @@ from WOA import callWOA
 from ILWOA import callILWOA
 from DP import DP
 from HRH_AG_RS_F import  hrh_ag_rs
+import numpy as np
+import matplotlib.pyplot as plt
 
 def to_json(cle,tag,optcost,temps,boxes) :
     solution={}
@@ -204,4 +206,12 @@ def switch(dic) :
     ######################################################################
     
     return variable
+def gen_graphs(MethodNames,temps,bins):
+    height = [3, 12, 5, 18, 45]
+    bars = ('A', 'B', 'C', 'D', 'E')
+    y_pos = np.arange(len(bars))
+    plt.bar(y_pos, height, color=['black', 'red', 'green', 'blue', 'cyan'])
+    plt.xticks(y_pos, bars)
+    #plt.show()
+
 
