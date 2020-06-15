@@ -41,7 +41,6 @@ class ChooseMthd extends React.Component {
       checked_ILWOA: 0,
       checked_RS: 0,
       checked_Hyb1: 0,
-      checked_Hyb2: 0,
       RS_nb_iter: 1000,
       RS_alpha: 0.925,
       WOA_a: 10,
@@ -50,8 +49,8 @@ class ChooseMthd extends React.Component {
       WOA_nb_whales: 30,
       ILWOA_nb_agents: 10,
       ILWOA_beta: 1.5,
-      ILWOA_a: 20,
-      ILWOA_b: 7.36,
+      ILWOA_a: 4,
+      ILWOA_b: 1.5,
       ILWOA_max_iter: 30,
       AG_popSize: 10,
       AG_K: 20,
@@ -145,8 +144,8 @@ class ChooseMthd extends React.Component {
       WOA_nb_whales: 30,
       ILWOA_nb_agents: 10,
       ILWOA_beta: 1.5,
-      ILWOA_a: 20,
-      ILWOA_b: 7.36,
+      ILWOA_a: 4,
+      ILWOA_b: 1.5,
       ILWOA_max_iter: 30,
       AG_popSize: 10,
       AG_K: 20,
@@ -453,9 +452,9 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={7.36}>7.36</option>
-                    <option value={20}>500</option>
-                    <option value={30}>1000</option>
+                    <option value={1.5}>1.5</option>
+                    <option value={2}>2</option>
+                    <option value={4}>4</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -470,10 +469,10 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={10}>10</option>
-                    <option value={20}>20</option>
-                    <option value={30}>30</option>
-                    <option value={30}>35</option>
+                    <option value={1.5}>1.5</option>
+                    <option value={2}>2</option>
+                    <option value={4}>4</option>
+                    
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -491,7 +490,7 @@ class ChooseMthd extends React.Component {
                     <option value={10}>10</option>
                     <option value={20}>20</option>
                     <option value={30}>30</option>
-                    <option value={30}>35</option>
+                    <option value={50}>50</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -509,7 +508,7 @@ class ChooseMthd extends React.Component {
                     <option value={10}>10</option>
                     <option value={20}>20</option>
                     <option value={30}>30</option>
-                    <option value={40}>40</option>
+                    <option value={50}>50</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>

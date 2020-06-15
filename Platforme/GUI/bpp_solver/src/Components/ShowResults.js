@@ -50,12 +50,13 @@ ecart_show(ecart,classes){
         return(
         <Container  className={classes.root}>
         <div className={classes.emptyheight}></div>
+        <Typography variant="h4" className={classes.pagetitle} gutterBottom>
+                Résultats 
+            </Typography>
         {solutions.map(({key,label,texec,nb,ecart,boites}) =>{
             return(
                 <div>
-            <Typography variant="h4" className={classes.pagetitle} gutterBottom>
-                Résultats 
-            </Typography>  
+              
             <div>{''}</div>
                <Card  key={key}>
                    <CardContent>
