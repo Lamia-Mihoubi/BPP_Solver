@@ -371,7 +371,7 @@ class ChooseMthd extends React.Component {
                     <option aria-label="None" value="" />
                     <option value={8.96}>8.96</option>
                     <option value={7.64}>7.64</option>
-                    <option value={30}>1000</option>
+                    <option value={1.5}>1.5</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -386,10 +386,9 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={10}>10</option>
+                    <option value={4}>4</option>
                     <option value={20}>20</option>
-                    <option value={30}>30</option>
-                    <option value={30}>35</option>
+                    <option value={10}>10</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -406,8 +405,8 @@ class ChooseMthd extends React.Component {
                     <option aria-label="None" value="" />
                     <option value={117}>117</option>
                     <option value={271}>271</option>
-                    <option value={30}>0.85</option>
-                    <option value={30}>0.8</option>
+                    <option value={50}>50</option>
+                    <option value={5}>5</option>
                   </Select>
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -422,8 +421,8 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
-                    <option value={10}>0.925</option>
-                    <option value={20}>0.90</option>
+                    <option value={10}>10</option>
+                    <option value={20}>20</option>
                     <option value={28}>28</option>
                     <option value={30}>30</option>
                   </Select>
