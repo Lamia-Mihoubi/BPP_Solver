@@ -459,6 +459,7 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
+                    <option value={1}>1</option>
                     <option value={1.5}>1.5</option>
                     <option value={2}>2</option>
                     <option value={4}>4</option>

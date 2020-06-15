@@ -40,6 +40,9 @@ def random_gen():
 def benchmark_sol():
     _req = request.get_json()
     n = _req['classe']
+    if(n!=1 and n!=2):
+        n=3
+    _req['classe'] = n
     F = _req['filename']
     nbr, c, liste = ReadInstance(os.path.join('Instances', F+'.txt'))
     _req['n'] = nbr
