@@ -20,6 +20,7 @@ class ChooseMthd extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      page_num: 0,
       n: 0,
       c: 0,
       list: [],
@@ -72,6 +73,7 @@ class ChooseMthd extends React.Component {
   }
   async ValiderClick() {
     const page = this.props.pagenum; // pour savoir quelle page we're in et donc quelle requete envoyer
+    this.setState({ page_num: page });
     // get selected data
     const state_JSON = JSON.stringify(this.state);
     //send request
