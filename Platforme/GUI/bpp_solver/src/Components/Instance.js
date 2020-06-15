@@ -170,7 +170,7 @@ class Instance extends Component{
                                 append={
                                     <MDBBtn 
                                     id="btn-add"
-                                    color="teal lighten-2"
+                                    color="pink lighten-3"
                                     className="m-0 px-3 py-2 z-depth-0"
                                     onClick={this.ajouterItem}
                                     >
