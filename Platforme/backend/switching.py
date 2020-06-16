@@ -33,7 +33,7 @@ from HRH_AG_RS_F import  hrh_ag_rs
 import numpy as np
 import copy
 from copy import copy
-def to_json(cle,tag,optcost,temps,ecart=-1,boxes) :
+def to_json(cle,tag,optcost,temps,ecart=-1,boxes=[]) :
     solution={}
     boites=[]
     for i in range(len(boxes)) :
@@ -171,8 +171,8 @@ def switch(dic) :
         ecart = -1
         if dic['classe'] != 0:
             sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_NFD - sol_opt)/sol_opt*100
-        dictio_NFD = to_json("NFD","Next Fit Decreasing",optcost_NFD,texec_NFD, ecart=ecart,optlist_NFD)
+            ecart = (int(optcost_NFD) - sol_opt)/sol_opt*100
+        dictio_NFD = to_json("NFD","Next Fit Decreasing",optcost_NFD,texec_NFD, ecart,optlist_NFD)
         variable.append(dictio_NFD)
         ######################################################################
         
