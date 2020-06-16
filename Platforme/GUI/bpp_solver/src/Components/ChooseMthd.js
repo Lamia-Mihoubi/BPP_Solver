@@ -195,16 +195,7 @@ class ChooseMthd extends React.Component {
                 }
                 label="Branch and Bound"
               />
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    checked={this.state.checked_DP}
-                    onChange={handleChange}
-                    name="checked_DP"
-                  />
-                }
-                label="Programmation dynamique"
-              />
+              
             </FormGroup>
             <FormLabel className={classes.formLabel} component="legend">
               Heuristiques

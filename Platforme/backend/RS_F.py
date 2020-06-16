@@ -31,7 +31,7 @@ class RS:
 
         Tinit = (abs(int(np.mean(deltaF) / math.log(0.8, 2))))
         # print(Tinit)
-        for i in range(10):
+        for i in range(1):
             # print(vals)
             nb, sol = self.RS(n, c, list,S, Tinit, T0, R, alpha)
             Sols.append(sol)
