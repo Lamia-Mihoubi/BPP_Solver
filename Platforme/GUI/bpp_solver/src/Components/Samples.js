@@ -1,9 +1,5 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-import FormNC from "./FormNC";
 import ChooseMthd from "./ChooseMthd";
-import lists from "../data/resultats.json";
 import ShowResults from "./ShowResults";
 class MainContent1 extends React.Component {
   constructor(props) {
