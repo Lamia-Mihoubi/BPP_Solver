@@ -8,7 +8,6 @@
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
 \begin{document}
-\section{Introduction}
 Le Whale Optimization Algorithm est une nouvelle métaheuristique introduite en 2016 par Mirjalili et Lewis basée sur l’intelligence en essaim. Cet algorithme est inspiré d’une stratégie d’alimentation des baleines à bosse connue sous le nom de L'alimentation au filet à bulles. Une tactique qui leur permet d’attraper le plus de poissons possibles en un seul coup. Après avoir détecté ses proies, la baleine libère des bulles en nageant dans un mouvement spirale vers la surface pour encercler la proie pour la capturer.
 Les bulles libérées peuvent prendre 2 formes : une forme de cercles rétrécissants \textbf{\emph{[figure 01]}} ou une forme spirale \textbf{\emph{[figure 02]}}. 
 Dans cet algorithme, La recherche des proies représente l’exploration de l’espace de recherche et La libération des bulles représente l’exploitation.
@@ -158,6 +157,18 @@ Les algorithmes ont été développés en utilisant le langage de programmation 
     \item Le nombre maximal d’itérations: \(max\_iter\).
     \item La constante de l’encerclement spirale \(b\).
     \item La constante \(a\) qui détermine le degré d’exploration de l’espace de recherche.
+\end{itemize}
+\subsection{Temps d'exécution: }
+\subsection{Qualité de solution: }
+\subsubsection{Ratio: }
+\subsubsection{Comparaison avec la solution optimale: }
+\subsection{Analyses des résultats: }
+\begin{itemize}
+    \item WOA permet d'obtenir un ratio inférieur à 1.4 pour les benchmark Scholl, et un ratio de 1 pour les instances de la classe 2 de taille N1.
+    \item Parmis les trois classes WOA est plus performant dans le cas des instances difficiles (classe 3: C3) et la classe 2.
+    \item Le calibrage automatique permet généralement d’améliorer la qualité de la solution très légèrement sauf pour le cas des instances de la classe C2 de tailles N1 et N4 ou la configuration manuelle donne de meilleurs résultats.
+    \item Le calibrage automatique permet de réduire le temps d’exécution significativement surtout pour les instances de grande taille (N4) et les instances de la classe 3 (instances difficiles).
+    \item Avec une configuration optimale des paramètres le temps de résolution des instances les plus difficiles et/ou volumineuse ne dépasse pas 8s.
 \end{itemize}
 
 

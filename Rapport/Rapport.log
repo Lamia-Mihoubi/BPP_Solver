@@ -1,0 +1,3150 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.28)  22 JUN 2020 00:49
+entering extended mode
+**c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/Rapport.tex
+(c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/Rapport.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06> ("C:\Program Files\MiKTeX 2.9\tex/latex/base\report.cls"
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2020/02/28 3.41 The Babel package
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
+File: switch.def 2020/02/28 3.41 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/babel-french\french.ldf
+Language: french 2020/01/30 v3.5g French support from the babel system
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2020/02/28 3.41 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen137
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
+\bbl@readstream=\read2
+\bbl@dirlevel=\count177
+)
+Package babel Info: \l@acadian = using hyphenrules for french
+(babel)             (\language22) on input line 91.
+Package babel Info: \l@canadien = using hyphenrules for french
+(babel)             (\language22) on input line 92.
+\FB@nonchar=\count178
+Package babel Info: Making : an active character on input line 419.
+Package babel Info: Making ; an active character on input line 420.
+Package babel Info: Making ! an active character on input line 421.
+Package babel Info: Making ? an active character on input line 422.
+\FBguill@level=\count179
+\FBold@everypar=\toks18
+\FB@Mht=\dimen138
+\mc@charclass=\count180
+\mc@charfam=\count181
+\mc@charslot=\count182
+\std@mcc=\count183
+\dec@mcc=\count184
+\c@FBcaption@count=\count185
+\listindentFB=\dimen139
+\descindentFB=\dimen140
+\labelindentFB=\dimen141
+\labelwidthFB=\dimen142
+\leftmarginFB=\dimen143
+\parindentFFN=\dimen144
+\FBfnindent=\dimen145
+)) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/carlisle\scalefnt.sty) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count186
+\calc@Bcount=\count187
+\calc@Adimen=\dimen146
+\calc@Bdimen=\dimen147
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count188
+\calc@Cskip=\skip51
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen148
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen149
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count189
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count190
+\leftroot@=\count191
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count192
+\DOTSCASE@=\count193
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count194
+\c@MaxMatrixCols=\count195
+\dotsspace@=\muskip16
+\c@parentequation=\count196
+\dspbrk@lvl=\count197
+\tag@help=\toks20
+\row@=\count198
+\column@=\count199
+\maxfields@=\count266
+\andhelp@=\toks21
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks22
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count267
+\l_MT_multwidth_dim=\dimen157
+\origjot=\skip55
+\l_MT_shortvdotswithinadjustabove_dim=\dimen158
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen159
+\l_MT_above_intertext_sep=\dimen160
+\l_MT_below_intertext_sep=\dimen161
+\l_MT_above_shortintertext_sep=\dimen162
+\l_MT_below_shortintertext_sep=\dimen163
+\xmathstrut@box=\box47
+\xmathstrut@dim=\dimen164
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip56
+\enit@outerparindent=\dimen165
+\enit@toks=\toks24
+\enit@inbox=\box48
+\enit@count@id=\count268
+\enitdp@description=\count269
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count270
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count271
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count272
+\c@listtotal=\count273
+\c@listcount=\count274
+\c@liststart=\count275
+\c@liststop=\count276
+\c@citecount=\count277
+\c@citetotal=\count278
+\c@multicitecount=\count279
+\c@multicitetotal=\count280
+\c@instcount=\count281
+\c@maxnames=\count282
+\c@minnames=\count283
+\c@maxitems=\count284
+\c@minitems=\count285
+\c@citecounter=\count286
+\c@maxcitecounter=\count287
+\c@savedcitecounter=\count288
+\c@uniquelist=\count289
+\c@uniquename=\count290
+\c@refsection=\count291
+\c@refsegment=\count292
+\c@maxextratitle=\count293
+\c@maxextratitleyear=\count294
+\c@maxextraname=\count295
+\c@maxextradate=\count296
+\c@maxextraalpha=\count297
+\c@abbrvpenalty=\count298
+\c@highnamepenalty=\count299
+\c@lownamepenalty=\count300
+\c@maxparens=\count301
+\c@parenlevel=\count302
+\blx@tempcnta=\count303
+\blx@tempcntb=\count304
+\blx@tempcntc=\count305
+\blx@maxsection=\count306
+\blx@maxsegment@0=\count307
+\blx@notetype=\count308
+\blx@parenlevel@text=\count309
+\blx@parenlevel@foot=\count310
+\blx@sectionciteorder@0=\count311
+\blx@entrysetcounter=\count312
+\labelnumberwidth=\skip57
+\labelalphawidth=\skip58
+\biblabelsep=\skip59
+\bibitemsep=\skip60
+\bibnamesep=\skip61
+\bibinitsep=\skip62
+\bibparsep=\skip63
+\bibhang=\skip64
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language78
+\c@mincomprange=\count313
+\c@maxcomprange=\count314
+\c@mincompwidth=\count315
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count316
+\c@savedafterword=\count317
+\c@annotator=\count318
+\c@savedannotator=\count319
+\c@author=\count320
+\c@savedauthor=\count321
+\c@bookauthor=\count322
+\c@savedbookauthor=\count323
+\c@commentator=\count324
+\c@savedcommentator=\count325
+\c@editor=\count326
+\c@savededitor=\count327
+\c@editora=\count328
+\c@savededitora=\count329
+\c@editorb=\count330
+\c@savededitorb=\count331
+\c@editorc=\count332
+\c@savededitorc=\count333
+\c@foreword=\count334
+\c@savedforeword=\count335
+\c@holder=\count336
+\c@savedholder=\count337
+\c@introduction=\count338
+\c@savedintroduction=\count339
+\c@namea=\count340
+\c@savednamea=\count341
+\c@nameb=\count342
+\c@savednameb=\count343
+\c@namec=\count344
+\c@savednamec=\count345
+\c@translator=\count346
+\c@savedtranslator=\count347
+\c@shortauthor=\count348
+\c@savedshortauthor=\count349
+\c@shorteditor=\count350
+\c@savedshorteditor=\count351
+\c@labelname=\count352
+\c@savedlabelname=\count353
+\c@institution=\count354
+\c@savedinstitution=\count355
+\c@lista=\count356
+\c@savedlista=\count357
+\c@listb=\count358
+\c@savedlistb=\count359
+\c@listc=\count360
+\c@savedlistc=\count361
+\c@listd=\count362
+\c@savedlistd=\count363
+\c@liste=\count364
+\c@savedliste=\count365
+\c@listf=\count366
+\c@savedlistf=\count367
+\c@location=\count368
+\c@savedlocation=\count369
+\c@organization=\count370
+\c@savedorganization=\count371
+\c@origlocation=\count372
+\c@savedoriglocation=\count373
+\c@origpublisher=\count374
+\c@savedorigpublisher=\count375
+\c@publisher=\count376
+\c@savedpublisher=\count377
+\c@language=\count378
+\c@savedlanguage=\count379
+\c@origlanguage=\count380
+\c@savedoriglanguage=\count381
+\c@pageref=\count382
+\c@savedpageref=\count383
+\shorthandwidth=\skip65
+\shortjournalwidth=\skip66
+\shortserieswidth=\skip67
+\shorttitlewidth=\skip68
+\shortauthorwidth=\skip69
+\shorteditorwidth=\skip70
+\locallabelnumberwidth=\skip71
+\locallabelalphawidth=\skip72
+\localshorthandwidth=\skip73
+\localshortjournalwidth=\skip74
+\localshortserieswidth=\skip75
+\localshorttitlewidth=\skip76
+\localshortauthorwidth=\skip77
+\localshorteditorwidth=\skip78
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-compat.def"
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count384
+\c@textcitetotal=\count385
+\c@textcitemaxnames=\count386
+\c@biburlbigbreakpenalty=\count387
+\c@biburlbreakpenalty=\count388
+\c@biburlnumpenalty=\count389
+\c@biburlucpenalty=\count390
+\c@biburllcpenalty=\count391
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count392
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\numeric.bbx"
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count393
+\c@bbx:relatedtotal=\count394
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/cbx\numeric.cbx"
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
+File: biblatex.cfg 
+)) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/tocbibind\tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/standalone\standalone.sty"
+Package: standalone 2018/03/26 v1.3a Package to include TeX sub-files with preambles
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\shellesc.sty"
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex" ("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count395
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/currfile\currfile.sty
+Package: currfile 2015/04/23 v0.7c Provides the file path elements of the current input file
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/filehook\filehook.sty
+Package: filehook 2020/02/03 v0.7 Hooks for input files
+)
+\c@currfiledepth=\count396
+)
+\sa@out=\write4
+ (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.sta) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/gincltex\gincltex.sty (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/svn-prov\svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/collectbox\collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box49
+)
+\tc@llx=\dimen166
+\tc@lly=\dimen167
+\tc@urx=\dimen168
+\tc@ury=\dimen169
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen170
+\adjbox@Height=\dimen171
+\adjbox@Depth=\dimen172
+\adjbox@Totalheight=\dimen173
+\adjbox@pwidth=\dimen174
+\adjbox@pheight=\dimen175
+\adjbox@pdepth=\dimen176
+\adjbox@ptotalheight=\dimen177
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count397
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box50
+\sift@deathcycles=\count398
+\@vwid@loff=\dimen178
+\@vwid@roff=\dimen179
+))
+\gincltex@box=\box51
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/filemod\filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times (expandable; minimal)
+)) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count399
+\@quotereset=\count400
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count401
+\l__pdf_internal_box=\box52
+) (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.aux)
+\openout1 = `Rapport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+ ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count402
+\scratchdimen=\dimen180
+\scratchbox=\box53
+\nofMPsegments=\count403
+\nofMParguments=\count404
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count405
+\MPscratchDim=\dimen181
+\MPnumerator=\count406
+\makeMPintoPDFobject=\count407
+\everyMPtoPDFconversion=\toks28
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+)
+LaTeX Info: Redefining \degres on input line 30.
+LaTeX Info: Redefining \dots on input line 30.
+Package french.ldf Info: Setting StandardItemizeEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 30.
+Package french.ldf Info: Setting StandardEnumerateEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 30.
+LaTeX Info: Redefining \up on input line 30.
+Package biblatex Info: Trying to load language 'french'...
+Package biblatex Info: ... file 'french.lbx' found.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\french.lbx"
+File: french.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `Rapport.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Rapport.bbl' not found.
+
+No file Rapport.bbl.
+Package biblatex Info: Reference section=0 on input line 30.
+Package biblatex Info: Reference segment=0 on input line 30.
+(c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.sta (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count408
+\float@exts=\toks29
+\float@box=\box54
+\@float@everytoks=\toks30
+\@floatcapt=\box55
+)
+\@float@every@algorithm=\toks31
+\c@algorithm=\count409
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count410
+\c@ALC@line=\count411
+\c@ALC@rem=\count412
+\c@ALC@depth=\count413
+\ALC@tlm=\skip79
+\algorithmicindent=\skip80
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen182
+\Hy@linkcounter=\count414
+\Hy@pagecounter=\count415
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count416
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count417
+LaTeX Info: Redefining \nolinkurl on input line 5157.
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen183
+Package auxhook Info: \AddLineBeginMainAux comes a little late,
+(auxhook)             because the main .aux file is already opened on input line 5540.
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count418
+\Field@Width=\dimen184
+\Fld@charsize=\dimen185
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/atbegshi\atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+\AtBeginShipoutBox=\box56
+)
+\Hy@abspage=\count419
+\c@Item=\count420
+\c@Hfootnote=\count421
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/atveryend\atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count422
+\c@bookmark@seq@number=\count423
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip81
+)
+Package hyperref Info: Link coloring OFF on input line 9.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count424
+)
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
+\@outlinefile=\write5
+\openout5 = `Rapport.out'.
+
+ (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithm2e\algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count425
+\algocf@hangindent=\skip82
+
+C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithm2e\algorithm2e.sty:1485: Undefined control sequence.
+<argument> \SetAlgoLined 
+                         
+l.1485 ...etcount,titlenotnumbered,lined,shortend}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithm2e\algorithm2e.sty:1485: Undefined control sequence.
+<argument> \SetAlgoShortEnd 
+                            
+l.1485 ...etcount,titlenotnumbered,lined,shortend}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+LaTeX Info: Redefining \xspace on input line 44.
+) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/relsize\relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip83
+\skiplinenumber=\skip84
+\skiprule=\skip85
+\skiphlne=\skip86
+\skiptext=\skip87
+\skiplength=\skip88
+\algomargin=\skip89
+\skipalgocfslide=\skip90
+\algowidth=\dimen186
+\inoutsize=\dimen187
+\inoutindent=\dimen188
+\interspacetitleruled=\dimen189
+\interspacealgoruled=\dimen190
+\interspacetitleboxruled=\dimen191
+\algocf@ruledwidth=\skip91
+\algocf@inoutbox=\box57
+\algocf@inputbox=\box58
+\AlCapSkip=\skip92
+\AlCapHSkip=\skip93
+\algoskipindent=\skip94
+\algocf@nlbox=\box59
+\algocf@hangingbox=\box60
+\algocf@untilbox=\box61
+\algocf@skipuntil=\skip95
+\algocf@capbox=\box62
+\algocf@lcaptionbox=\skip96
+\algoheightruledefault=\skip97
+\algoheightrule=\skip98
+\algotitleheightruledefault=\skip99
+\algotitleheightrule=\skip100
+\c@algocfline=\count426
+\c@algocfproc=\count427
+\c@algocf=\count428
+\algocf@algoframe=\box63
+\algocf@algobox=\box64
+
+
+C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithm2e\algorithm2e.sty:2746: LaTeX Error: Command \algorithm already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2746 }
+        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithm2e\algorithm2e.sty:2754: LaTeX Error: Command \algorithm* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2754 }
+        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithm2e\algorithm2e.sty:2761: LaTeX Error: Command \listofalgorithms already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2761 }
+        %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+))
+\openout4 = `Rapport.sta'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/TRETEC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+\tf@toc=\write6
+\openout6 = `Rapport.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33     \chapter
+                 *{Introduction} [1
+
+] [2
+
+] [3
+
+] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Description_BPP.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 8.
+
+) [4] [5
+
+] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Etat_de_lart.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 11.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 13.
+
+[6] [7]
+<chapters/../figures/DP-flow.png, id=71, 377.91188pt x 197.23688pt>
+File: chapters/../figures/DP-flow.png Graphic file (type png)
+<use chapters/../figures/DP-flow.png>
+Package pdftex.def Info: chapters/../figures/DP-flow.png  used on input line 75.
+(pdftex.def)             Requested size: 384.1122pt x 200.47469pt.
+ [8] [9 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/DP-flow.png>] [10] [11] [12]) [13] [14] [15
+
+]
+Chapitre 1.
+(c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/conception.tex [16
+
+]
+<chapters/../figures/diagr1.png, id=141, 511.9125pt x 83.5622pt>
+File: chapters/../figures/diagr1.png Graphic file (type png)
+<use chapters/../figures/diagr1.png>
+Package pdftex.def Info: chapters/../figures/diagr1.png  used on input line 44.
+(pdftex.def)             Requested size: 390.0pt x 63.6622pt.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 66.
+ [17 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/diagr1.png>] [18]
+<chapters/../figures/formule1.png, id=183, 314.67563pt x 85.82062pt>
+File: chapters/../figures/formule1.png Graphic file (type png)
+<use chapters/../figures/formule1.png>
+Package pdftex.def Info: chapters/../figures/formule1.png  used on input line 109.
+(pdftex.def)             Requested size: 227.62204pt x 62.07887pt.
+<chapters/../figures/example1.png, id=184, 471.26062pt x 143.78719pt>
+File: chapters/../figures/example1.png Graphic file (type png)
+<use chapters/../figures/example1.png>
+Package pdftex.def Info: chapters/../figures/example1.png  used on input line 114.
+(pdftex.def)             Requested size: 284.52756pt x 86.8127pt.
+<chapters/../figures/diag2.png, id=185, 472.01344pt x 319.1925pt>
+File: chapters/../figures/diag2.png Graphic file (type png)
+<use chapters/../figures/diag2.png>
+Package pdftex.def Info: chapters/../figures/diag2.png  used on input line 121.
+(pdftex.def)             Requested size: 390.0pt x 263.73643pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/formule1.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/example1.png>] [20 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/diag2.png>]
+Underfull \hbox (badness 2990) in paragraph at lines 154--155
+[] []\T1/cmr/m/n/12 Appliquer WFD sur l'ins-tance pour ini-tia-li-ser le co�t op-ti-mal :
+ []
+
+[21] [22] [23]
+Overfull \hbox (29.63397pt too wide) in paragraph at lines 255--255
+ []\T1/cmr/bx/n/12 la m�-thode : _move_items_to_bin(list_of_items_indices, bin_index)[] 
+ []
+
+[24]
+<chapters/../figures/tabit1.png, id=300, 436.63126pt x 106.14656pt>
+File: chapters/../figures/tabit1.png Graphic file (type png)
+<use chapters/../figures/tabit1.png>
+Package pdftex.def Info: chapters/../figures/tabit1.png  used on input line 294.
+(pdftex.def)             Requested size: 284.52756pt x 69.16936pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--297
+ []\T1/cmr/bx/n/12 premi�re it�-ra-tion :[] \T1/cmr/m/n/12 Construc-tion de la table de v�-rit� :
+ []
+
+<chapters/../figures/tabit2.png, id=301, 440.39531pt x 84.315pt>
+File: chapters/../figures/tabit2.png Graphic file (type png)
+<use chapters/../figures/tabit2.png>
+Package pdftex.def Info: chapters/../figures/tabit2.png  used on input line 307.
+(pdftex.def)             Requested size: 284.52756pt x 54.47473pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--308
+ []\T1/cmr/bx/n/12 deuxi�me it�-ra-tion :[] \T1/cmr/m/n/12 Construc-tion de la table de v�-rit� :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--308
+
+ []
+
+[25 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tabit1.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tabit2.png>]) [26]
+Chapitre 2.
+(c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Tests.tex
+<chapters/../figures/tab1.png, id=327, 486.31688pt x 167.87718pt>
+File: chapters/../figures/tab1.png Graphic file (type png)
+<use chapters/../figures/tab1.png>
+Package pdftex.def Info: chapters/../figures/tab1.png  used on input line 15.
+(pdftex.def)             Requested size: 384.1122pt x 132.5959pt.
+<chapters/../figures/graph1.png, id=328, 412.54124pt x 234.8775pt>
+File: chapters/../figures/graph1.png Graphic file (type png)
+<use chapters/../figures/graph1.png>
+Package pdftex.def Info: chapters/../figures/graph1.png  used on input line 18.
+(pdftex.def)             Requested size: 384.1122pt x 218.69543pt.
+ [27
+
+] [28 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab1.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph1.png>]
+<chapters/../figures/tab2.png, id=345, 493.0922pt x 124.96687pt>
+File: chapters/../figures/tab2.png Graphic file (type png)
+<use chapters/../figures/tab2.png>
+Package pdftex.def Info: chapters/../figures/tab2.png  used on input line 40.
+(pdftex.def)             Requested size: 384.1122pt x 97.35173pt.
+ [29]
+<chapters/../figures/graph2.png, id=356, 356.83313pt x 216.81pt>
+File: chapters/../figures/graph2.png Graphic file (type png)
+<use chapters/../figures/graph2.png>
+Package pdftex.def Info: chapters/../figures/graph2.png  used on input line 47.
+(pdftex.def)             Requested size: 384.1122pt x 233.39702pt.
+<chapters/../figures/graph3.png, id=357, 362.10281pt x 216.81pt>
+File: chapters/../figures/graph3.png Graphic file (type png)
+<use chapters/../figures/graph3.png>
+Package pdftex.def Info: chapters/../figures/graph3.png  used on input line 51.
+(pdftex.def)             Requested size: 384.1122pt x 229.99283pt.
+ [30 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab2.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph2.png>]) [31 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph3.png>] [32
+
+] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/worse_case_analysis.tex
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+) [33] [34
+
+]
+Chapitre 3.
+(c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+[35
+
+]
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: Extra }, or forgotten \endgroup.
+\@algocf@finish ...ideskip \egroup \hfill \egroup 
+                                                  \ifthenelse {\boolean {alg...
+l.64 \end{algorithm}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: Extra }, or forgotten \endgroup.
+\@algocf@finish ... {\skipalgocfslide }}{}\egroup 
+                                                  \end {lrbox}\algocf@maketh...
+l.64 \end{algorithm}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: LaTeX Error: \begin{algorithm} on input line 58 ended by \end{lrbox}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \end{algorithm}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (407.62482pt too wide) in paragraph at lines 64--64
+[][] 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.64 \end{algorithm}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: LaTeX Error: \begin{document} on input line 10 ended by \end{algocf}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \end{algorithm}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: LaTeX Error: \begin{document} ended by \end{algocf@algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \end{algorithm}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.64 \end{algorithm}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \end{algorithm}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:64: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.64 \end{algorithm}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+<chapters/../figures/NF NFD better(1).png, id=400, 626.34pt x 534.99875pt>
+File: chapters/../figures/NF NFD better(1).png Graphic file (type png)
+<use chapters/../figures/NF NFD better(1).png>
+Package pdftex.def Info: chapters/../figures/NF NFD better(1).png  used on input line 67.
+(pdftex.def)             Requested size: 390.0pt x 333.13255pt.
+[36] [37 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/NF NFD better(1).png>]
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: Extra }, or forgotten \endgroup.
+\@algocf@finish ...ideskip \egroup \hfill \egroup 
+                                                  \ifthenelse {\boolean {alg...
+l.109 \end{algorithm}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: Extra }, or forgotten \endgroup.
+\@algocf@finish ... {\skipalgocfslide }}{}\egroup 
+                                                  \end {lrbox}\algocf@maketh...
+l.109 \end{algorithm}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: LaTeX Error: \begin{algorithm} on input line 103 ended by \end{lrbox}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (407.62482pt too wide) in paragraph at lines 109--109
+[][] 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.109 \end{algorithm}
+                     
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: LaTeX Error: \begin{document} ended by \end{algocf}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.109 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: LaTeX Error: \begin{document} ended by \end{algocf@algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.109 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:109: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.109 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:111: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.111 \begin{figure}[H]
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:111: Undefined control sequence.
+\@setminipage ->\@minipagetrue \everypar 
+                                         {\@minipagefalse \everypar {}}
+l.111 \begin{figure}[H]
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:111: Undefined control sequence.
+\@setminipage ...rypar {\@minipagefalse \everypar 
+                                                  {}}
+l.111 \begin{figure}[H]
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:112: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.112     \includegraphics
+                          [width=\linewidth]{../figures/FF FFD.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<chapters/../figures/FF FFD.png, id=430, 529.98pt x 524.96124pt>
+File: chapters/../figures/FF FFD.png Graphic file (type png)
+<use chapters/../figures/FF FFD.png>
+Package pdftex.def Info: chapters/../figures/FF FFD.png  used on input line 112.
+(pdftex.def)             Requested size: 390.0pt x 386.31049pt.
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:113: Undefined control sequence.
+<argument> \Hy@tempa 
+                     \@captype 
+l.113     \caption{Exemple FF et FFD}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:115: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.115 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[38]
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:116: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.116 \section{Best Fit (BF)}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (78.77078pt too wide) in paragraph at lines 116--116
+[]\T1/cmr/bx/n/17.28 Best
+ []
+
+
+Overfull \hbox (66.60597pt too wide) in paragraph at lines 116--116
+\T1/cmr/bx/n/17.28 Fit
+ []
+
+
+Overfull \hbox (81.92719pt too wide) in paragraph at lines 116--116
+\T1/cmr/bx/n/17.28 (BF) 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:116: Undefined control sequence.
+\@afterheading ->\@nobreaktrue \everypar 
+                                         {\if@nobreak \@nobreakfalse \clubpe...
+l.116 \section{Best Fit (BF)}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:117: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.117 \subsection{principe}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (104.68613pt too wide) in paragraph at lines 117--117
+[]\T1/cmr/bx/n/14.4 principe 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:117: Undefined control sequence.
+\@afterheading ->\@nobreaktrue \everypar 
+                                         {\if@nobreak \@nobreakfalse \clubpe...
+l.117 \subsection{principe}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:118: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.118 R
+       anger chaque article courant dans la boîte la mieux remplie, entre c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (54.33252pt too wide) in paragraph at lines 118--120
+[]\T1/cmr/m/n/12 Ranger
+ []
+
+
+Overfull \hbox (35.24138pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 chaque
+ []
+
+
+Overfull \hbox (14.3576pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 ar-
+ []
+
+
+Overfull \hbox (21.53638pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 ticle
+ []
+
+
+Overfull \hbox (21.53639pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 cou-
+ []
+
+
+Overfull \hbox (21.2101pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 rant
+ []
+
+
+Overfull \hbox (23.55951pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 dans
+ []
+
+
+Overfull \hbox (9.13664pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 la
+ []
+
+
+Overfull \hbox (25.77841pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 bo�te
+ []
+
+
+Overfull \hbox (9.13664pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 la
+ []
+
+
+Overfull \hbox (30.99936pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 mieux
+ []
+
+
+Overfull \hbox (23.49428pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 rem-
+ []
+
+
+Overfull \hbox (21.53638pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 plie,
+ []
+
+
+Overfull \hbox (25.77846pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 entre
+ []
+
+
+Overfull \hbox (26.82259pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 celles
+ []
+
+
+Overfull \hbox (21.21011pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 d�j�
+ []
+
+
+Overfull \hbox (16.31546pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 ou-
+ []
+
+
+Overfull \hbox (33.34879pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 vertes,
+ []
+
+
+Overfull \hbox (15.98912pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 qui
+ []
+
+
+Overfull \hbox (23.16795pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 peut
+ []
+
+
+Overfull \hbox (8.48404pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 le
+ []
+
+
+Overfull \hbox (30.99937pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 conte-
+ []
+
+
+Overfull \hbox (14.35759pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 nir
+ []
+
+
+Overfull \hbox (11.81236pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 si-
+ []
+
+
+Overfull \hbox (18.92593pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 non
+ []
+
+
+Overfull \hbox (16.31546pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 ou-
+ []
+
+
+Overfull \hbox (18.5996pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 vrir
+ []
+
+
+Overfull \hbox (18.27333pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 une
+ []
+
+
+Overfull \hbox (22.84164pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 nou-
+ []
+
+
+Overfull \hbox (22.84163pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 velle
+ []
+
+
+Overfull \hbox (25.77841pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 bo�te
+ []
+
+
+Overfull \hbox (9.78929pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 et
+ []
+
+
+Overfull \hbox (12.39975pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 on
+ []
+
+
+Overfull \hbox (8.48404pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 le
+ []
+
+
+Overfull \hbox (28.0626pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 range
+ []
+
+
+Overfull \hbox (15.66286pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 de-
+ []
+
+
+Overfull \hbox (26.82259pt too wide) in paragraph at lines 118--120
+\T1/cmr/m/n/12 dans. 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:120: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.120     \item
+                L’algorithme Best Fit implémenté a une complexité de O(...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[39 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/FF FFD.png>]
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:120: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\@minipagefalse \global \...
+l.120     \item L
+                 ’algorithme Best Fit implémenté a une complexité de O(...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:120: Undefined control sequence.
+\@item ...se \clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi }\if@noitemarg \@noi...
+l.120     \item L
+                 ’algorithme Best Fit implémenté a une complexité de O(...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:120: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.120     \item L
+                 ’algorithme Best Fit implémenté a une complexité de O(...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:121: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.121 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:121: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.121 \end{itemize}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:122: Undefined control sequence.
+\par ...epar \clubpenalty \@clubpenalty \everypar 
+                                                  {}\par \@endpefalse 
+l.122 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:123: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.123 \subsection{Pseudo-Code}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (103.44446pt too wide) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/14.4 Pseudo-
+ []
+
+
+Overfull \hbox (84.18211pt too wide) in paragraph at lines 123--123
+\T1/cmr/bx/n/14.4 Code 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:123: Undefined control sequence.
+\@afterheading ->\@nobreaktrue \everypar 
+                                         {\if@nobreak \@nobreakfalse \clubpe...
+l.123 \subsection{Pseudo-Code}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:124: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.124 \begin{algorithm}[H]
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:124: Undefined control sequence.
+\@setminipage ->\@minipagetrue \everypar 
+                                         {\@minipagefalse \everypar {}}
+l.124 \begin{algorithm}[H]
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:124: Undefined control sequence.
+\@setminipage ...rypar {\@minipagefalse \everypar 
+                                                  {}}
+l.124 \begin{algorithm}[H]
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:125: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.125     \caption{Best Fit}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:125: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.125     \caption{Best Fit}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:127: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.127 ...FOR{Tous les articles i = 1, 2,. . . , n}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:127: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.127 ...FOR{Tous les articles i = 1, 2,. . . , n}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:127: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.127 ...FOR{Tous les articles i = 1, 2,. . . , n}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:128: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.128 ...  \FOR{Tous les boîtes j = 1, 2,. . . m}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:128: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.128 ...  \FOR{Tous les boîtes j = 1, 2,. . . m}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:128: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.128 ...  \FOR{Tous les boîtes j = 1, 2,. . . m}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:129: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.129 ...F{l'article i s'inscrit dans la boîte j}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:129: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.129 ...F{l'article i s'inscrit dans la boîte j}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:129: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.129 ...F{l'article i s'inscrit dans la boîte j}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:130: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.130               \STATE
+                           Calculer la capacité restante dans la boîte j u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:130: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.130               \STATE
+                           Calculer la capacité restante dans la boîte j u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:130: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.130               \STATE
+                           Calculer la capacité restante dans la boîte j u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:131: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.131              \ENDIF
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\par ...epar \clubpenalty \@clubpenalty \everypar 
+                                                  {}\par \@endpefalse 
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:132: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.132         \ENDFOR
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:133: Undefined control sequence.
+\par ...epar \clubpenalty \@clubpenalty \everypar 
+                                                  {}\par \@endpefalse 
+l.133         \STATE
+                     Ranger l’article i dans la boîte j, où j est la bo�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:133: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.133         \STATE
+                     Ranger l’article i dans la boîte j, où j est la bo�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:133: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.133         \STATE
+                     Ranger l’article i dans la boîte j, où j est la bo�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:133: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.133         \STATE
+                     Ranger l’article i dans la boîte j, où j est la bo�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:134: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.134 ...ne peut être rangé dans aucune boîte)}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:134: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.134 ...ne peut être rangé dans aucune boîte)}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:134: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.134 ...ne peut être rangé dans aucune boîte)}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:135: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.135             \STATE
+                         Créer une nouvelle boîte et ranger l’article i ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:135: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.135             \STATE
+                         Créer une nouvelle boîte et ranger l’article i ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:135: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.135             \STATE
+                         Créer une nouvelle boîte et ranger l’article i ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:136: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.136         \ENDIF
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\par ...epar \clubpenalty \@clubpenalty \everypar 
+                                                  {}\par \@endpefalse 
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:137: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.137     \ENDFOR
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:138: Undefined control sequence.
+\par ...epar \clubpenalty \@clubpenalty \everypar 
+                                                  {}\par \@endpefalse 
+l.138     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:138: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.138     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:138: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.138     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:138: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.138     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:138: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.138     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:139: Undefined control sequence.
+\par ...epar \clubpenalty \@clubpenalty \everypar 
+                                                  {}\par \@endpefalse 
+l.139 \end{algorithm}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:139: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.139 \end{algorithm}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:140: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.140 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[40]
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:141: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.141 \section{Best Fit Decreasing (BFD)}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (78.77078pt too wide) in paragraph at lines 141--141
+[]\T1/cmr/bx/n/17.28 Best
+ []
+
+
+Overfull \hbox (66.60597pt too wide) in paragraph at lines 141--141
+\T1/cmr/bx/n/17.28 Fit
+ []
+
+
+Overfull \hbox (71.41696pt too wide) in paragraph at lines 141--141
+\T1/cmr/bx/n/17.28 De-
+ []
+
+
+Overfull \hbox (82.26431pt too wide) in paragraph at lines 141--141
+\T1/cmr/bx/n/17.28 crea-
+ []
+
+
+Overfull \hbox (74.67761pt too wide) in paragraph at lines 141--141
+\T1/cmr/bx/n/17.28 sing
+ []
+
+
+Overfull \hbox (96.21266pt too wide) in paragraph at lines 141--141
+\T1/cmr/bx/n/17.28 (BFD) 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:141: Undefined control sequence.
+\@afterheading ->\@nobreaktrue \everypar 
+                                         {\if@nobreak \@nobreakfalse \clubpe...
+l.141 \section{Best Fit Decreasing (BFD)}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:142: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.142 \subsection{principe}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (104.68613pt too wide) in paragraph at lines 142--142
+[]\T1/cmr/bx/n/14.4 principe 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:142: Undefined control sequence.
+\@afterheading ->\@nobreaktrue \everypar 
+                                         {\if@nobreak \@nobreakfalse \clubpe...
+l.142 \subsection{principe}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:143: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.143 L
+       e BFD est une amélioration de l’algorithme Best-Fit. Cet algorithm...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (30.18565pt too wide) in paragraph at lines 143--144
+[]\T1/cmr/m/n/12 Le
+ []
+
+
+Overfull \hbox (24.95639pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 BFD
+ []
+
+
+Overfull \hbox (14.42287pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 est
+ []
+
+
+Overfull \hbox (18.27333pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 une
+ []
+
+
+Overfull \hbox (24.79951pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 am�-
+ []
+
+
+Overfull \hbox (16.31543pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 lio-
+ []
+
+
+Overfull \hbox (14.3576pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 ra-
+ []
+
+
+Overfull \hbox (20.23116pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 tion
+ []
+
+
+Overfull \hbox (11.74715pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 de
+ []
+
+
+Overfull \hbox (19.5785pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 l'al-
+ []
+
+
+Overfull \hbox (15.66284pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 go-
+ []
+
+
+Overfull \hbox (33.93616pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 rithme
+ []
+
+
+Overfull \hbox (26.65738pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 Best-
+ []
+
+
+Overfull \hbox (18.76065pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 Fit.
+ []
+
+
+Overfull \hbox (18.27333pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 Cet
+ []
+
+
+Overfull \hbox (13.05235pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 al-
+ []
+
+
+Overfull \hbox (15.66284pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 go-
+ []
+
+
+Overfull \hbox (33.93616pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 rithme
+ []
+
+
+Overfull \hbox (14.3576pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 or-
+ []
+
+
+Overfull \hbox (30.67308pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 donne
+ []
+
+
+Overfull \hbox (13.11761pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 les
+ []
+
+
+Overfull \hbox (27.14888pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 poids
+ []
+
+
+Overfull \hbox (23.55951pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 dans
+ []
+
+
+Overfull \hbox (8.48404pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 le
+ []
+
+
+Overfull \hbox (21.0143pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 sens
+ []
+
+
+Overfull \hbox (15.66286pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 d�-
+ []
+
+
+Overfull \hbox (27.47519pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 crois-
+ []
+
+
+Overfull \hbox (21.27534pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 sant
+ []
+
+
+Overfull \hbox (20.94902pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 puis
+ []
+
+
+Overfull \hbox (16.31546pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 ap-
+ []
+
+
+Overfull \hbox (30.99934pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 plique
+ []
+
+
+Overfull \hbox (19.5785pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 l'al-
+ []
+
+
+Overfull \hbox (15.66284pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 go-
+ []
+
+
+Overfull \hbox (33.93616pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 rithme
+ []
+
+
+Overfull \hbox (19.24805pt too wide) in paragraph at lines 143--144
+\T1/cmr/m/n/12 BF. 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:144: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.144 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[41]
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:145: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.145 \subsection{Pseudo-Code}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (103.44446pt too wide) in paragraph at lines 145--145
+[]\T1/cmr/bx/n/14.4 Pseudo-
+ []
+
+
+Overfull \hbox (84.18211pt too wide) in paragraph at lines 145--145
+\T1/cmr/bx/n/14.4 Code 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:145: Undefined control sequence.
+\@afterheading ->\@nobreaktrue \everypar 
+                                         {\if@nobreak \@nobreakfalse \clubpe...
+l.145 \subsection{Pseudo-Code}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:148: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.148     \caption
+                  {Best Fit Decreasing }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:148: Undefined control sequence.
+\@setminipage ->\@minipagetrue \everypar 
+                                         {\@minipagefalse \everypar {}}
+l.148     \caption
+                  {Best Fit Decreasing }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:148: Undefined control sequence.
+\@setminipage ...rypar {\@minipagefalse \everypar 
+                                                  {}}
+l.148     \caption
+                  {Best Fit Decreasing }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:148: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.148     \caption{Best Fit Decreasing }
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:148: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.148     \caption{Best Fit Decreasing }
+                                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:150: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.150         \STATE
+                     Triez les articles par ordre décroissant
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:150: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.150         \STATE
+                     Triez les articles par ordre décroissant
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:150: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.150         \STATE
+                     Triez les articles par ordre décroissant
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:151: Undefined control sequence.
+\@item ...\fi \global \@inlabeltrue \fi \everypar 
+                                                  {\global \@minipagefalse \...
+l.151         \STATE
+                     Appliquer Best-Fit à la liste triée
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:151: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.151         \STATE
+                     Appliquer Best-Fit à la liste triée
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:151: Undefined control sequence.
+\@item ...box \@labels \penalty \z@ \fi \everypar 
+                                                  {}}\global \@nobreakfalse ...
+l.151         \STATE
+                     Appliquer Best-Fit à la liste triée
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:152: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.152     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:152: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.152     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:152: Undefined control sequence.
+\@doendpe ...rypar {}\par \@endpefalse }\everypar 
+                                                  {{\setbox \z@ \lastbox }\e...
+l.152     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:152: Undefined control sequence.
+\@doendpe ...ar {{\setbox \z@ \lastbox }\everypar 
+                                                  {}\@endpefalse }
+l.152     \end{algorithmic}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.153 \end{algorithm}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: Extra }, or forgotten \endgroup.
+\@algocf@finish ...ideskip \egroup \hfill \egroup 
+                                                  \ifthenelse {\boolean {alg...
+l.153 \end{algorithm}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: Extra }, or forgotten \endgroup.
+\@algocf@finish ... {\skipalgocfslide }}{}\egroup 
+                                                  \end {lrbox}\algocf@maketh...
+l.153 \end{algorithm}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: LaTeX Error: \begin{algorithm} on input line 147 ended by \end{lrbox}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (407.62482pt too wide) in paragraph at lines 153--153
+[][] 
+ []
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.153 \end{algorithm}
+                     
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: LaTeX Error: \begin{document} ended by \end{algocf}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.153 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: LaTeX Error: \begin{document} ended by \end{algocf@algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.153 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \end{algorithm}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:153: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.153 \end{algorithm}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:156: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.156 \begin{figure}[H]
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:156: Undefined control sequence.
+\@setminipage ->\@minipagetrue \everypar 
+                                         {\@minipagefalse \everypar {}}
+l.156 \begin{figure}[H]
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:156: Undefined control sequence.
+\@setminipage ...rypar {\@minipagefalse \everypar 
+                                                  {}}
+l.156 \begin{figure}[H]
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:157: Undefined control sequence.
+<everypar> ...clubpenalty \@clubpenalty \everypar 
+                                                  {}\fi 
+l.157     \includegraphics
+                          [width=\linewidth]{../figures/BF BFD.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<chapters/../figures/BF BFD.png, id=481, 427.5975pt x 524.96124pt>
+File: chapters/../figures/BF BFD.png Graphic file (type png)
+<use chapters/../figures/BF BFD.png>
+Package pdftex.def Info: chapters/../figures/BF BFD.png  used on input line 157.
+(pdftex.def)             Requested size: 390.0pt x 478.80487pt.
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:158: Undefined control sequence.
+<argument> \Hy@tempa 
+                     \@captype 
+l.158     \caption{Exemple BF et BFD}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:160: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.160 \newpage
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[42]
+c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex:160: Undefined control sequence.
+\@arrayparboxrestore ...parskip \z@skip \everypar 
+                                                  {}\linewidth \hsize \@tota...
+l.160 \newpage
+              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[43 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/BF BFD.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+ (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+
+
+Package rerunfilecheck Warning: File `Rapport.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Rapport.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  EED6FA667636C015DA2F2FF2DD6DB21C;3732.
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Rapport
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'Rapport.run.xml'.
+\openout1 = `Rapport.run.xml'.
+
+ ) ) 
+Here is how much of TeX's memory you used:
+ 18553 strings out of 480934
+ 313403 string characters out of 2909679
+ 882268 words of memory out of 3000000
+ 33784 multiletter control sequences out of 15000+200000
+ 551134 words of font info for 69 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 52i,9n,50p,1231b,1749s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti2074.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.pdf (44 pages, 548348 bytes).
+PDF statistics:
+ 1054 PDF objects out of 1200 (max. 8388607)
+ 300 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+

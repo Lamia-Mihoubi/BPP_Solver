@@ -1,0 +1,54 @@
+\BOOKMARK [0][-]{chapter*.2}{Introduction}{}% 1
+\BOOKMARK [-1][-]{part.1}{I Pr\351sentation du Probl\350me de Bin Packing \(BPP\): }{}% 2
+\BOOKMARK [0][-]{section.0.1}{Domaines d'Application:}{part.1}% 3
+\BOOKMARK [1][-]{section.0.2}{Formulation Math\351matique}{section.0.1}% 4
+\BOOKMARK [-1][-]{part.2}{II Etat de l'Art: }{}% 5
+\BOOKMARK [0][-]{section.0.3}{M\351thodes Exactes}{part.2}% 6
+\BOOKMARK [1][-]{subsection.0.3.1}{Branche and Bound}{section.0.3}% 7
+\BOOKMARK [2][-]{subsection.0.3.2}{Programmation Dynamique}{subsection.0.3.1}% 8
+\BOOKMARK [1][-]{section.0.4}{Heuristiques}{section.0.3}% 9
+\BOOKMARK [2][-]{subsection.0.4.1}{Algorithmes ON-LINE:}{section.0.4}% 10
+\BOOKMARK [2][-]{subsection.0.4.2}{Algorithmes OFF-LINE: }{section.0.4}% 11
+\BOOKMARK [2][-]{subsection.0.4.3}{Algorithmes SEMI-ONLINE :}{section.0.4}% 12
+\BOOKMARK [2][-]{subsection.0.4.4}{Algorithmes d\220Espace Born\351 \(Bounded Space\):}{section.0.4}% 13
+\BOOKMARK [1][-]{section.0.5}{M\351taheuristiques}{section.0.3}% 14
+\BOOKMARK [2][-]{subsection.0.5.1}{La recherche tabou: }{section.0.5}% 15
+\BOOKMARK [2][-]{subsection.0.5.2}{L\220algorithme ILWOA \(Improved L\351vy WOA\): }{section.0.5}% 16
+\BOOKMARK [2][-]{subsection.0.5.3}{L\220algorithme FFA \(FireFly Algorithm\): }{section.0.5}% 17
+\BOOKMARK [-1][-]{part.3}{III M\351thodes Exactes: }{}% 18
+\BOOKMARK [0][-]{chapter.1}{Conception: }{part.3}% 19
+\BOOKMARK [1][-]{section.1.1}{Branch and bound}{chapter.1}% 20
+\BOOKMARK [2][-]{subsection.1.1.1}{Pseudo-Code}{section.1.1}% 21
+\BOOKMARK [1][-]{section.1.2}{Branch and bound am\351lior\351}{chapter.1}% 22
+\BOOKMARK [2][-]{subsection.1.2.1}{Pseudo-Code}{section.1.2}% 23
+\BOOKMARK [1][-]{section.1.3}{Recherche exhaustive }{chapter.1}% 24
+\BOOKMARK [1][-]{section.1.4}{La programmation dynamique }{chapter.1}% 25
+\BOOKMARK [2][-]{subsection.1.4.1}{Pseudo-Code}{section.1.4}% 26
+\BOOKMARK [0][-]{chapter.2}{Test et R\351sultats: }{part.3}% 27
+\BOOKMARK [1][-]{section.2.1}{Instances g\351n\351r\351es : }{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.1.1}{Analyse des r\351sultats:}{section.2.1}% 29
+\BOOKMARK [2][-]{subsection.2.1.2}{Interpr\351tation des r\351sultats:}{section.2.1}% 30
+\BOOKMARK [1][-]{section.2.2}{Scholl Benchmark:}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.1}{Analyse des r\351sultats:}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.2}{Conclusion}{section.2.2}% 33
+\BOOKMARK [-1][-]{part.4}{IV Worst Case Analysis: }{}% 34
+\BOOKMARK [-1][-]{part.5}{V M\351thodes Heuristiques: }{}% 35
+\BOOKMARK [0][-]{chapter.3}{Conception: }{part.5}% 36
+\BOOKMARK [1][-]{section.3.1}{Next Fit \(NF\)}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.1.1}{principe}{section.3.1}% 38
+\BOOKMARK [2][-]{subsection.3.1.2}{Pseudo-Code}{section.3.1}% 39
+\BOOKMARK [1][-]{section.3.2}{Next Fit Decreasing \(NFD\)}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.2.1}{principe}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.2}{Pseudo-Code}{section.3.2}% 42
+\BOOKMARK [1][-]{section.3.3}{First Fit \(FF\)}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.1}{principe}{section.3.3}% 44
+\BOOKMARK [2][-]{subsection.3.3.2}{Pseudo-Code}{section.3.3}% 45
+\BOOKMARK [1][-]{section.3.4}{First Fit Descreasing \(FFD\)}{chapter.3}% 46
+\BOOKMARK [2][-]{subsection.3.4.1}{principe}{section.3.4}% 47
+\BOOKMARK [2][-]{subsection.3.4.2}{Pseudo-Code}{section.3.4}% 48
+\BOOKMARK [1][-]{section.3.5}{Best Fit \(BF\)}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.5.1}{principe}{section.3.5}% 50
+\BOOKMARK [2][-]{subsection.3.5.2}{Pseudo-Code}{section.3.5}% 51
+\BOOKMARK [1][-]{section.3.6}{Best Fit Decreasing \(BFD\)}{chapter.3}% 52
+\BOOKMARK [2][-]{subsection.3.6.1}{principe}{section.3.6}% 53
+\BOOKMARK [2][-]{subsection.3.6.2}{Pseudo-Code}{section.3.6}% 54
