@@ -3,8 +3,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/Inbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
+
 import { withStyles } from "@material-ui/core/styles";
 import logo from '../pinklogo.png'; // Tell webpack this JS file uses this image
 import QueueIcon from '@material-ui/icons/Queue';

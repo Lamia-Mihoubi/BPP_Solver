@@ -39,8 +39,10 @@ def random_gen():
 @app.route('/benchmark',methods=['POST'])
 def benchmark_sol():
     _req = request.get_json()
-    n = _req['classe']
+    n = int(_req['classe'])
+    
     F = _req['filename']
+    
     nbr, c, liste = ReadInstance(os.path.join('Instances', F+'.txt'))
     _req['n'] = nbr
     _req['c'] = c

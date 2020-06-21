@@ -105,7 +105,7 @@ class ChooseMthd extends React.Component {
     }
 
     if (page == 3) {
-      const response = await fetch("/benchmark", {
+       const response = await fetch("/benchmark", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -195,16 +195,7 @@ class ChooseMthd extends React.Component {
                 }
                 label="Branch and Bound"
               />
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    checked={this.state.checked_DP}
-                    onChange={handleChange}
-                    name="checked_DP"
-                  />
-                }
-                label="Programmation dynamique"
-              />
+              
             </FormGroup>
             <FormLabel className={classes.formLabel} component="legend">
               Heuristiques
@@ -459,6 +450,7 @@ class ChooseMthd extends React.Component {
                     }}
                   >
                     <option aria-label="None" value="" />
+                    <option value={1}>1</option>
                     <option value={1.5}>1.5</option>
                     <option value={2}>2</option>
                     <option value={4}>4</option>

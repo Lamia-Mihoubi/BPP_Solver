@@ -1,13 +1,12 @@
 import React,{Component } from 'react';
-import { Container, TextField, Button, Grid, Box } from "@material-ui/core";
+import { Container, TextField, Button, Grid } from "@material-ui/core";
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import { withStyles } from '@material-ui/core/styles';
 import './inputPage.css';
 import { MDBContainer, MDBInputGroup, MDBBtn } from "mdbreact";
-import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
-import { spacing } from "@material-ui/system";
+import { MDBTable,  MDBTableHead } from 'mdbreact';
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";

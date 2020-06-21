@@ -33,7 +33,8 @@ from HRH_AG_RS_F import  hrh_ag_rs
 import numpy as np
 import copy
 from copy import copy
-def to_json(cle,tag,optcost,temps,ecart=-1,boxes=[]) :
+def to_json(cle,tag,optcost,temps,boxes,ecart=-1) :
+    ecart = round(ecart,2)
     solution={}
     boites=[]
     for i in range(len(boxes)) :
@@ -72,23 +73,29 @@ def switch(dic) :
     n= int(dic['n'])
     c= int(dic['c'])
     if dic['checked_BB'] != 0 :
+        
+        li = copy(list2)
         start_time_BB = time.time()
         rs = Binpacker()
-        nb, listebb= (rs.run_BBA(n, c,list2 ))
+        nb, listebb= (rs.run_BBA(n, c,li ))
         bins= rs.BBA2SOL(listebb,c)      
         
+
         texec_BB = (time.time() - start_time_BB)
-        
-        dictio_BB=to_json("BB","Branch and Bound",nb,texec_BB,bins)
+        ecart =0
+        dictio_BB=to_json("BB","Branch and Bound",nb,texec_BB,bins,ecart=ecart)
         variable.append(dictio_BB)
+        print("BB finished")
        #######################################################################
     
     if dic['checked_DP'] != 0 :
         start_time_DP = time.time()
+        
         li = copy(list2)
         optcost_DP , optlist_DP = DP(n, c, li)        
         texec_DP = (time.time() - start_time_DP)
-        dictio_DP=to_json("DP","Dynamic Programming",optcost_DP,texec_DP,optlist_DP)
+        ecart =0
+        dictio_DP=to_json("DP","Dynamic Programming",optcost_DP,texec_DP,optlist_DP,ecart=ecart)
         variable.append(dictio_DP)
         ######################################################################
         
@@ -99,11 +106,12 @@ def switch(dic) :
         
         texec_BF = (time.time() - start_time_BF)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_BF - sol_opt)/sol_opt*100
-        dictio_BF=to_json("BF","Best Fit",optcost_BF,texec_BF,ecart,optlist_BF)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_BF - int(sol_opt))/int(sol_opt)*100
+        dictio_BF=to_json("BF","Best Fit",optcost_BF,texec_BF,optlist_BF,ecart=ecart)
         variable.append(dictio_BF)
+        print("BF finished")
         ######################################################################
         
     if dic['checked_BFD'] != 0 :
@@ -113,11 +121,12 @@ def switch(dic) :
         
         texec_BFD = (time.time() - start_time_BFD)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_BFD - sol_opt)/sol_opt*100
-        dictio_BFD = to_json("BFD","Best Fit Decreasing",optcost_BFD,texec_BFD, ecart,optlist_BFD)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_BFD - int(sol_opt))/int(sol_opt)*100
+        dictio_BFD = to_json("BFD","Best Fit Decreasing",optcost_BFD,texec_BFD,optlist_BFD,ecart=ecart)
         variable.append(dictio_BFD)
+        print("BFD finished")
         ######################################################################
         
     if dic['checked_FF'] != 0 :
@@ -127,11 +136,12 @@ def switch(dic) :
         
         texec_FF = (time.time() - start_time_FF)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_FF - sol_opt)/sol_opt*100
-        dictio_FF = to_json("FF","First Fit",optcost_FF,texec_FF, ecart,optlist_FF)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_FF - int(sol_opt))/int(sol_opt)*100
+        dictio_FF = to_json("FF","First Fit",optcost_FF,texec_FF, optlist_FF,ecart=ecart)
         variable.append(dictio_FF)
+        print("FF finished")
         ######################################################################
         
     if dic['checked_FFD'] != 0 :
@@ -141,11 +151,12 @@ def switch(dic) :
         
         texec_FFD = (time.time() - start_time_FFD)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_FFD - sol_opt)/sol_opt*100
-        dictio_FFD = to_json("FFD","First Fit Decreasing",optcost_FFD,texec_FFD, ecart,optlist_FFD)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_FFD - int(sol_opt))/int(sol_opt)*100
+        dictio_FFD = to_json("FFD","First Fit Decreasing",optcost_FFD,texec_FFD,optlist_FFD,ecart=ecart)
         variable.append(dictio_FFD)
+        print("FFD finished")
         ######################################################################
         
     if dic['checked_NF'] != 0 :
@@ -155,11 +166,12 @@ def switch(dic) :
         
         texec_NF = (time.time() - start_time_NF)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_NF - sol_opt)/sol_opt*100
-        dictio_NF = to_json("NF","Next Fit",optcost_NF,texec_NF, ecart,optlist_NF)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_NF - int(sol_opt))/int(sol_opt)*100
+        dictio_NF = to_json("NF","Next Fit",optcost_NF,texec_NF, optlist_NF, ecart=ecart)
         variable.append(dictio_NF)
+        print("NF finished")
         ######################################################################
         
     if dic['checked_NFD'] != 0 :
@@ -169,11 +181,12 @@ def switch(dic) :
         
         texec_NFD = (time.time() - start_time_NFD)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (int(optcost_NFD) - sol_opt)/sol_opt*100
-        dictio_NFD = to_json("NFD","Next Fit Decreasing",optcost_NFD,texec_NFD, ecart,optlist_NFD)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_NFD - int(sol_opt))/int(sol_opt)*100
+        dictio_NFD = to_json("NFD","Next Fit Decreasing",optcost_NFD,texec_NFD,optlist_NFD,ecart=ecart)
         variable.append(dictio_NFD)
+        print('NFD finished')
         ######################################################################
         
     if dic['checked_AG'] != 0 :
@@ -183,11 +196,12 @@ def switch(dic) :
         
         texec_AG = (time.time() - start_time_AG)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_AG - sol_opt)/sol_opt*100
-        dictio_AG = to_json("AG","Algorithme Génétique",optcost_AG,texec_AG, ecart,optlist_AG)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_AG - int(sol_opt))/int(sol_opt)*100
+        dictio_AG = to_json("AG","Algorithme Génétique",optcost_AG,texec_AG, optlist_AG,ecart=ecart)
         variable.append(dictio_AG)
+        print("AG finished")
         ######################################################################
         
     if dic['checked_WOA'] != 0 :
@@ -198,11 +212,12 @@ def switch(dic) :
         
         texec_WOA = (time.time() - start_time_WOA)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (cost_WOA - sol_opt)/sol_opt*100
-        dictio_WOA = to_json("WOA","Whale Optimization Algorithm",cost_WOA,texec_WOA, ecart,liste_WOA)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_WOA - int(sol_opt))/int(sol_opt)*100
+        dictio_WOA = to_json("WOA","Whale Optimization Algorithm",cost_WOA,texec_WOA, liste_WOA,ecart=ecart)
         variable.append(dictio_WOA)
+        print("WOA finished")
         ######################################################################
         
     if dic['checked_ILWOA'] != 0 :
@@ -213,11 +228,12 @@ def switch(dic) :
         
         texec_ILWOA = (time.time() - start_time_ILWOA)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (cost_ILWOA - sol_opt)/sol_opt*100
-        dictio_ILWOA = to_json("ILWOA","Improved Whale Optimization Algorithm",cost_ILWOA,texec_ILWOA, ecart,liste_ILWOA)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_ILWOA - int(sol_opt))/int(sol_opt)*100
+        dictio_ILWOA = to_json("ILWOA","Improved Whale Optimization Algorithm",cost_ILWOA,texec_ILWOA, liste_ILWOA,ecart=ecart)
         variable.append(dictio_ILWOA)
+        print("ILWOA finished")
         ######################################################################
         
     if dic['checked_RS'] != 0 :
@@ -228,11 +244,12 @@ def switch(dic) :
         
         texec_RS = (time.time() - start_time_RS)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_RS - sol_opt)/sol_opt*100
-        dictio_RS = to_json("RS","Recuit Simulé",optcost_RS,texec_RS, ecart,optlist_RS)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_RS - int(sol_opt))/int(sol_opt)*100
+        dictio_RS = to_json("RS","Recuit Simulé",optcost_RS,texec_RS, optlist_RS,ecart=ecart)
         variable.append(dictio_RS)
+        print("RS finished ")
         ######################################################################
     if dic['checked_Hyb1'] != 0 :
         start_time_Hyb1 = time.time()
@@ -241,11 +258,12 @@ def switch(dic) :
         
         texec_Hyb1 = (time.time() - start_time_Hyb1)
         ecart = -1
-        if dic['classe'] != 0:
-            sol_opt = get_opt_sol(dic['classe'], dic['filename']+".txt")
-            ecart = (optcost_Hyb1 - sol_opt)/sol_opt*100
-        dictio_Hyb1 = to_json("Hyb1","Hybridation HRH AG+RS",optcost_Hyb1,texec_Hyb1, ecart,optlist_Hyb1)
+        if int(dic['classe']) != 0:
+            sol_opt = get_opt_sol(int(dic['classe']), dic['filename']+".txt")
+            ecart = (optcost_Hyb1 - int(sol_opt))/int(sol_opt)*100
+        dictio_Hyb1 = to_json("Hyb1","Hybridation HRH AG+RS",optcost_Hyb1,texec_Hyb1, optlist_Hyb1,ecart=ecart)
         variable.append(dictio_Hyb1)
+        print("Hyb finished")
         ######################################################################
         
     

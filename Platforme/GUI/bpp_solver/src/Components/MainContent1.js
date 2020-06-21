@@ -3,12 +3,7 @@ import Container from '@material-ui/core/Container'
 import { withStyles } from '@material-ui/core/styles';
 import ChooseMthd from './ChooseMthd'
 import ShowResults from './ShowResults'
-import Typography from '@material-ui/core/Typography'
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardContent from '@material-ui/core/CardContent';
-import lists from '../data/resultats.json'
-import Instance from './Instance'
+
 
 // the variable "lists" should be filled with results that we'll get from backend 
 // once the validation btn is clicked we send a request and we save the answer on lists

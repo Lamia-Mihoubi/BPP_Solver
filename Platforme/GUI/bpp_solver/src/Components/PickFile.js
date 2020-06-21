@@ -1,15 +1,10 @@
 import { Component } from "react";
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container'
-import { makeStyles } from '@material-ui/core/styles'
-import { MDBContainer, MDBInputGroup, MDBBtn } from "mdbreact";
-import ChooseMthd from './ChooseMthd';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import { withStyles } from '@material-ui/core/styles';
-import ShowResults from './ShowResults'
 import listefiles from '../data/instances_scholl'
 
 
@@ -34,6 +29,7 @@ class PickFile extends Component{
           filename: val.split(' ')[3]
         })
         console.log(JSON.stringify(file))
+         
         this.props.sendfilename(val.split(' ')[1], val.split(' ')[3])
       }
       initS=()=>{
