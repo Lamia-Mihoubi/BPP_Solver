@@ -142,4 +142,25 @@ Avec:
     \item \(c\) capacité des boites.
     
 \end{itemize}
+\section{Test et Résultats: }
+Dans cette partie nous allons tester les performances de la métaheuristique WOA sur les instances du benchmark Scholl. Ensuite nous allons effectuer une comparaison des résultats obtenus avec les résultats optimaux. Nous utiliserons pour chacune des trois classes du benchmark Scholl deux configurations de paramètres; la première configuration est obtenue par tâtonnement après plusieurs essais manuels, la deuxième par calibrage automatiques des paramètres utilisant le package irace qui implémente l’algorithme I/F-Race (voir chapitre XX).
+Pour pouvoir étudier les performances de WOA, notre étude se portera sur 2 axes:
+\begin{itemize}
+    \item Temps d'exécution.
+    \item Qualité de la solution  (ratio et comparaisons avec les solutions optimales)
+\end{itemize}
+
+\paragraph{Remarque: }
+Les algorithmes ont été développés en utilisant le langage de programmation python, et exécutés sur un DELL Inspiron15 [Intel® Core™ i7-8550U CPU @ 1.80GHz×8, 8Go] en utilisant Visual Studio Code.
+\subsection{Rappel des paramètres de WOA: }
+\begin{itemize}
+    \item La taille de la population: \(nb\_whales\).
+    \item Le nombre maximal d’itérations: \(max\_iter\).
+    \item La constante de l’encerclement spirale \(b\).
+    \item La constante \(a\) qui détermine le degré d’exploration de l’espace de recherche.
+\end{itemize}
+
+
+
+
 \end{document}
