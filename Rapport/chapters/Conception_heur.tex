@@ -1,9 +1,9 @@
 \documentclass[class=article, crop=false]{standalone}
 \usepackage{mathtools}
 \usepackage{amsmath}
-\usepackage{float}
 \usepackage{algorithmic}
-\usepackage[ruled]{algorithm2e}
+\usepackage{algorithm}
+\usepackage{float}
 \setcounter{section}{0}
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
@@ -35,8 +35,8 @@ Si l’article tient dans la même boite que l’article précédent, il est pla
     \item NF est un algorithme simple d’une complexité de O(n). 
 \end{itemize}
 
-\subsection{Pseudo-Code}
-\begin{algorithm}[H]
+\subsection{Pseudocode}
+\begin{algorithm}[!h]
     \caption{Next Fit}
     \begin{algorithmic}
     \FOR{Tous les articles i = 1, 2,. . . , n}
@@ -48,18 +48,17 @@ Si l’article tient dans la même boite que l’article précédent, il est pla
     \ENDFOR
     \end{algorithmic}
 \end{algorithm}
-
 \section{Next Fit Decreasing (NFD)}
 \subsection{principe}
 Le NFD est une amélioration de l’algorithme Next-Fit. Cet algorithme ordonne es articles par
  ordre décroissant des poids,puis applique l’algorithme NF.
 
-\subsection{Pseudo-Code}
-\begin{algorithm}
+\subsection{Pseudocode:}
+\begin{algorithm}[!h]
     \caption{Next Fit Decreasing }
     \begin{algorithmic}
-        \STATE Triez les articles par ordre décroissant
-        \STATE Appliquer Next-Fit à la liste triée
+        \STATE Triez les articles par ordre décroissant\;
+        \STATE Appliquer Next-Fit à la liste triée\;
     \end{algorithmic}
 \end{algorithm}
 
@@ -74,19 +73,19 @@ Ranger chaque article courant dans la première boîte, entre celles déjà ouve
     \item L’algorithme First Fit implémenté a une complexité de O(n²). 
 \end{itemize}
 
-\subsection{Pseudo-Code}
-\begin{algorithm}[H]
+\subsection{Pseudocode}
+\begin{algorithm}[!h]
     \caption{First Fit}
     \begin{algorithmic}
     \FOR{Tous les articles i = 1, 2,. . . , n}
         \FOR{Tous les boîtes j = 1, 2,. . . m}
             \IF{l'article i s'inscrit dans la boîte j}
-              \STATE Ranger l’article i dans la boîte j
-              \STATE Quitter la boucle ( passer à l'article suivant)
+              \STATE Ranger l’article i dans la boîte j\;
+              \STATE Quitter la boucle ( passer à l'article suivant)\;
              \ENDIF 
         \ENDFOR
         \IF{l’article i ne rentre dans aucune boîte disponible}
-            \STATE Créer une nouvelle boîte et ranger l’article i dedans
+            \STATE Créer une nouvelle boîte et ranger l’article i dedans\;
         \ENDIF
     \ENDFOR
     \end{algorithmic}
@@ -99,12 +98,12 @@ Le FFD est une amélioration de l’algorithme First-Fit. Cet algorithme ordonne
     \item L’algorithme First Fit peut être implémenté en O(nlog n ) en utilisant les arbres de recherche binaires 
 \end{itemize}
 
-\subsection{Pseudo-Code}
-\begin{algorithm}
+\subsection{Pseudocode}
+\begin{algorithm}[!h]
     \caption{First Fit Decreasing }
     \begin{algorithmic}
-        \STATE Triez les articles par ordre décroissant
-        \STATE Appliquer First-Fit à la liste triée 
+        \STATE Triez les articles par ordre décroissant\;
+        \STATE Appliquer First-Fit à la liste triée \;
     \end{algorithmic}
 \end{algorithm}
 
@@ -120,8 +119,8 @@ Ranger chaque article courant dans la boîte la mieux remplie, entre celles déj
     \item L’algorithme Best Fit implémenté a une complexité de O(n²).
 \end{itemize}
 
-\subsection{Pseudo-Code}
-\begin{algorithm}[H]
+\subsection{Pseudocode}
+\begin{algorithm}[!h]
     \caption{Best Fit}
     \begin{algorithmic}
     \FOR{Tous les articles i = 1, 2,. . . , n}
@@ -142,9 +141,9 @@ Ranger chaque article courant dans la boîte la mieux remplie, entre celles déj
 \subsection{principe}
 Le BFD est une amélioration de l’algorithme Best-Fit. Cet algorithme ordonne les poids dans le sens décroissant puis applique l’algorithme BF.
 
-\subsection{Pseudo-Code}
+\subsection{Pseudocode}
 
-\begin{algorithm}
+\begin{algorithm}[!h]
     \caption{Best Fit Decreasing }
     \begin{algorithmic}
         \STATE Triez les articles par ordre décroissant

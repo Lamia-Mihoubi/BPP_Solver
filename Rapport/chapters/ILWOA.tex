@@ -2,18 +2,13 @@
 
 \usepackage{amsmath}
 \usepackage{mathtools}
-\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
-\usepackage{mathtools}
-\usepackage{algorithm}
-
-\usepackage{algorithmic}
 
 \usepackage{enumitem}
 
 \usepackage{amssymb}
-\usepackage{algorithmic}
-\usepackage[ruled]{algorithm2e}
+\usepackage{algorithm}
 
+\usepackage{algorithmic}
 \usepackage{graphicx}
 
 \usepackage{hyperref}
@@ -68,32 +63,36 @@ Cette phase est composée de 3 opérations exécutées séquentiellement comme l
 \end{figure}
 \subsection{Pseudocode:}
 \begin{algorithm}[H]
-    \SetAlgoLined
-    \KwResult{Nombre de boîte utilisées.}
-    Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
-    Évaluer les solutions de la population initiale\;
-    X* = la meilleure solution actuelle\;
-    \newline \While{\(t < max\_iter\)}{
-        \For{solution \(\in\) population}{
-            Mettre à jour a, A, C avec le vol de levy, l et p avec la fonction logistique\;
-           \newline \eIf{\(r  < 0,5\)}{
-                \eIf{\(|A| < 1\)}{
-                    Mettre à jour la solution par Eq.(1)\;
-                }{
-                    Sélectionnez une solution aléatoire \(X_r\)\;
-                    Mettre à jour la solution par Eq.(2)\;
-                }
-            }{
-                Mettre à jour la solution par l'Eq.(3)\;
-            }
-        }
-        Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
-        \newline Appliquer la discretisation par LOV\;
-        \newline Évaluer la nouvelle solution\;
-        \newline Mettre à jour X* s'il existe une meilleure solution Sinon lancer la phase de mutation\;
-        \newline Evaluer la nouvelle solution,màj de la meilleure solution
-        t = t + 1\;
-     }
     \caption{Improved Whale Optimization Algorithm}
-    \end{algorithm}
+    \begin{algorithmic}
+        \STATE Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
+        \STATE Évaluer les solutions de la population initiale\;
+        \STATE X* = la meilleure solution actuelle\;
+        \WHILE{\(t < max\_iter\)}
+            \FOR{solution \(\in\) population}
+                \STATE Mettre à jour a, A, C avec le vol de levy, l et p avec la fonction logistique\;
+                \IF{\(r  < 0,5\)}
+                    \IF{\(|A| < 1\)}
+                        \STATE Mettre à jour la solution par Eq.(1)\;
+                    \ELSE
+                        \STATE Sélectionnez une solution aléatoire \(X_r\)\;
+                        \STATE Mettre à jour la solution par Eq.(2)\;
+                    \ENDIF
+                \ELSE 
+                    \STATE Mettre à jour la solution par l'Eq.(3)\;
+                \ENDIF
+            \ENDFOR
+            \STATE Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
+            \STATE Appliquer la discretisation par LOV\;
+            \STATE Évaluer la nouvelle solution\;
+            \STATE Mettre à jour X* s'il existe une meilleure solution Sinon lancer la phase de mutation\;
+            \STATE Evaluer la nouvelle solution,màj de la meilleure solution
+            \STATE t = t + 1\;
+        \ENDWHILE
+    \end{algorithmic}
+\end{algorithm}
 \end{document}
+
+        
+     
+    
