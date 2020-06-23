@@ -1,526 +1,590 @@
-PWD c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.tex
-OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.log
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel-french\french.ldf
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel-french\french.ldf
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1200.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\standalone\standalone.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\standalone\standalone.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\shellesc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\shellesc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\shellesc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\currfile\currfile.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\currfile\currfile.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\filehook\filehook.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\filehook\filehook.sty
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\gincltex\gincltex.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\gincltex\gincltex.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\gincltex\gincltex.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\svn-prov\svn-prov.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\svn-prov\svn-prov.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\filemod\filemod-expmin.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\filemod\filemod-expmin.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\import\import.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\import\import.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.aux
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.aux
-OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.aux
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\french.lbx
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\french.lbx
-OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.bcf
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.bbl
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.bbl
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.bbl
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pdfescape\pdfescape.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pdfescape\pdfescape.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hycolor\hycolor.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hycolor\hycolor.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\letltxmacro\letltxmacro.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\letltxmacro\letltxmacro.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\auxhook\auxhook.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\auxhook\auxhook.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\intcalc\intcalc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\intcalc\intcalc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bitset\bitset.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bitset\bitset.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bigintcalc\bigintcalc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bigintcalc\bigintcalc.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\atveryend\atveryend.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\atveryend\atveryend.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\uniquecounter\uniquecounter.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\uniquecounter\uniquecounter.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\refcount\refcount.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\refcount\refcount.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\generic\gettitlestring\gettitlestring.sty
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.pdf
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2074.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1440.tfm
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2488.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx2488.tfm
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.toc
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.toc
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1200.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.toc
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Description_BPP.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Description_BPP.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Description_BPP.tex
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1728.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1728.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0800.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0600.tfm
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Etat_de_lart.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Etat_de_lart.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Etat_de_lart.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\conception.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\conception.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\conception.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Tests.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Tests.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Tests.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Conception_heur.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Conception_heur.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Conception_heur.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1200.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1000.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1000.tfm
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\tests_heur.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\tests_heur.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\tests_heur.tex
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcbx1200.tfm
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbi1200.tfm
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\RecuitSim.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\RecuitSim.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\RecuitSim.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\WOA.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\WOA.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\WOA.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\ILWOA.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\ILWOA.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\ILWOA.tex
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.aux
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.run.xml
-OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.run.xml
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1440.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1440.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
-INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy6.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy6.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msam10.pfb
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msam10.pfb
+PWD c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.tex
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.log
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\babel-french\french.ldf
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\babel-french\french.ldf
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\babel\txtbabel.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\carlisle\scalefnt.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\carlisle\scalefnt.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mathtools.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mathtools.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\tocbibind\tocbibind.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\tocbibind\tocbibind.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\standalone\standalone.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\standalone\standalone.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\shellesc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\shellesc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\shellesc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\currfile\currfile.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\currfile\currfile.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\filehook\filehook.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\filehook\filehook.sty
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.sta
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.sta
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\gincltex\gincltex.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\gincltex\gincltex.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\gincltex\gincltex.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\svn-prov\svn-prov.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\svn-prov\svn-prov.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\filemod\filemod-expmin.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\filemod\filemod-expmin.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\import\import.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\import\import.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.aux
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.aux
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.aux
+INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\french.lbx
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\french.lbx
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.bcf
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.bbl
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.bbl
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.bbl
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.sta
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.sta
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\float\float.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\float\float.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithmic.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithmic.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.pdf
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.sta
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2074.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1440.tfm
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2488.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx2488.tfm
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.toc
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.toc
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1200.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.toc
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Description_BPP.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Description_BPP.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Description_BPP.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1728.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1728.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0800.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0600.tfm
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Etat_de_lart.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Etat_de_lart.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Etat_de_lart.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabit2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1200.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1000.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\BF BFD.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\tests_heur.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\tests_heur.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\tests_heur.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcbx1200.tfm
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part4.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Temps_exec_heuristics.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Graphe_M_Exactes.png
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbi1200.tfm
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_ratio_heur.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques_intances.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\RecuitSim.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\RecuitSim.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\RecuitSim.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS_SWAP.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab temps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\texec rs(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs figures.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\rs tab ratio.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\RS\ratio RS.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\WOA.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\WOA.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\WOA.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ILWOA.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ILWOA.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ILWOA.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\logisticvsothers.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic01.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic01.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic01.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic01.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic01.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic02.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic02.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic02.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic02.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic02.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic03.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic03.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic03.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic03.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic03.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic04.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic04.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic04.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic04.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic04.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic05.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic05.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic05.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic05.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic05.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic06.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic06.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic06.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic06.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic06.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic07.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic07.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic07.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic07.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic07.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic08.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic08.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic08.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic08.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic08.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic09.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic09.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic09.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic09.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic09.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic10.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic10.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic10.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic10.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic10.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic11.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic11.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic11.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic11.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\pic11.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.aux
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.run.xml
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.run.xml
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1440.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1440.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msam10.pfb
