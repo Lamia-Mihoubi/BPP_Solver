@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  23 JUN 2020 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  23 JUN 2020 18:54
 entering extended mode
 **c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/Rapport.tex
 (c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/Rapport.tex
@@ -457,105 +457,132 @@ Package: filehook 2020/02/03 v0.7 Hooks for input files
 \c@currfiledepth=\count398
 )
 \sa@out=\write4
- (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/gincltex\gincltex.sty" ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/svn-prov\svn-prov.sty"
-Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
-)
-Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjustbox.sty"
-Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjcalc.sty"
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\trimclip.sty"
-Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/collectbox\collectbox.sty"
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box49
-)
-\tc@llx=\dimen173
-\tc@lly=\dimen174
-\tc@urx=\dimen175
-\tc@ury=\dimen176
-Package trimclip Info: Using driver 'tc-pdftex.def'.
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\tc-pdftex.def"
-File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
-))
-\adjbox@Width=\dimen177
-\adjbox@Height=\dimen178
-\adjbox@Depth=\dimen179
-\adjbox@Totalheight=\dimen180
-\adjbox@pwidth=\dimen181
-\adjbox@pheight=\dimen182
-\adjbox@pdepth=\dimen183
-\adjbox@ptotalheight=\dimen184
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpage.sty"
-Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count399
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\varwidth.sty"
-Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box50
-\sift@deathcycles=\count400
-\@vwid@loff=\dimen185
-\@vwid@roff=\dimen186
-))
-\gincltex@box=\box51
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/filemod\filemod-expmin.sty"
-Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times (expandable; minimal)
-)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/import\import.sty"
-Package: import 2020/04/01  v 6.2
-)
+ (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta)
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:555: Extra }, or forgotten \endgroup.
+l.555   }
+         %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:601: Argument of \standaloneignore has an extra }.
+<inserted text> 
+                \par 
+l.601 ...tandaloneignore\space}{\standaloneignore}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:601: Paragraph ended before \standaloneignore was complete.
+<to be read again> 
+                   \par 
+l.601 ...tandaloneignore\space}{\standaloneignore}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:644: LaTeX Error: Command \sa already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.644 }
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:718: Use of \sa doesn't match its definition.
+l.718         {\sa@f
+                    ramegobbleopt}{\sa@framegobbleargs}}{}%
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:718: Use of \sa doesn't match its definition.
+l.718         {\sa@framegobbleopt}{\sa@f
+                                        ramegobbleargs}}{}%
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing } inserted.
+<inserted text> 
+                }
+l.733 \let\sa@orig@document\document
+                                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count401
-\@quotereset=\count402
+\@quotelevel=\count399
+\@quotereset=\count400
 ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count403
-\l__pdf_internal_box=\box52
+\l__kernel_color_stack_int=\count401
+\l__pdf_internal_box=\box49
 ) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.aux)
 \openout1 = `Rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 733.
+LaTeX Font Info:    ... okay on input line 733.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 733.
+LaTeX Font Info:    ... okay on input line 733.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 733.
+LaTeX Font Info:    ... okay on input line 733.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 733.
+LaTeX Font Info:    ... okay on input line 733.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 733.
+LaTeX Font Info:    ... okay on input line 733.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 733.
+LaTeX Font Info:    ... okay on input line 733.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 733.
+LaTeX Font Info:    ... okay on input line 733.
  ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count404
-\scratchdimen=\dimen187
-\scratchbox=\box53
-\nofMPsegments=\count405
-\nofMParguments=\count406
+\scratchcounter=\count402
+\scratchdimen=\dimen173
+\scratchbox=\box50
+\nofMPsegments=\count403
+\nofMParguments=\count404
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count407
-\MPscratchDim=\dimen188
-\MPnumerator=\count408
-\makeMPintoPDFobject=\count409
+\MPscratchCnt=\count405
+\MPscratchDim=\dimen174
+\MPnumerator=\count406
+\makeMPintoPDFobject=\count407
 \everyMPtoPDFconversion=\toks28
 ) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
-LaTeX Info: Redefining \degres on input line 30.
-LaTeX Info: Redefining \dots on input line 30.
+LaTeX Info: Redefining \degres on input line 733.
+LaTeX Info: Redefining \dots on input line 733.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 30.
+(french.ldf)             reported on input line 733.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 30.
-LaTeX Info: Redefining \up on input line 30.
+(french.ldf)             reported on input line 733.
+LaTeX Info: Redefining \up on input line 733.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'french'...
@@ -569,650 +596,170 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `Rapport.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Rapport.bbl' found.
- (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.bbl)
-Package biblatex Info: Reference section=0 on input line 30.
-Package biblatex Info: Reference segment=0 on input line 30.
- (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorithm.sty"
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count410
-\float@exts=\toks29
-\float@box=\box54
-\@float@everytoks=\toks30
-\@floatcapt=\box55
-)
-\@float@every@algorithm=\toks31
-\c@algorithm=\count411
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorithmic.sty"
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count412
-\c@ALC@line=\count413
-\c@ALC@rem=\count414
-\c@ALC@depth=\count415
-\ALC@tlm=\skip79
-\algorithmicindent=\skip80
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty"
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfescape.sty"
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.sty"
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltxmacro.sty"
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.sty"
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-\@linkdim=\dimen189
-\Hy@linkcounter=\count416
-\Hy@pagecounter=\count417
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.sty"
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\etexcmds.sty"
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count418
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count419
-LaTeX Info: Redefining \nolinkurl on input line 5157.
-LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen190
-Package auxhook Info: \AddLineBeginMainAux comes a little late,
-(auxhook)             because the main .aux file is already opened on input line 5540.
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.sty"
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigintcalc.sty"
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
-))
-\Fld@menulength=\count420
-\Field@Width=\dimen191
-\Fld@charsize=\dimen192
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring OFF on input line 6450.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegshi.sty"
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-\AtBeginShipoutBox=\box56
-)
-\Hy@abspage=\count421
-\c@Item=\count422
-\c@Hfootnote=\count423
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend\atveryend.sty"
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-)
-\Fld@listcount=\count424
-\c@bookmark@seq@number=\count425
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\rerunfilecheck.sty"
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\uniquecounter.sty"
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
-)
-\Hy@SectionHShift=\skip81
-)
-Package hyperref Info: Link coloring OFF on input line 9.
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.sty"
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count426
-)
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
- (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.out)
-\@outlinefile=\write5
-\openout5 = `Rapport.out'.
+Package biblatex Info: ... file 'Rapport.bbl' not found.
 
-)
-\openout4 = `Rapport.sta'.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
- ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{C:/Users/BACHI/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.96 ...ne {4.1}Pseudo-Code}{24}{subsection.0.4.1}
-                                                  % [1
-
-] [2])
-\tf@toc=\write6
-\openout6 = `Rapport.toc'.
-
- [3] [4
-
-] [5
-
-] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/Description_BPP.tex
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 9.
-
-) [6] [7
-
-] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/Etat_de_lart.texpdfTeX warning (ext4): destination with the same identifier (name{section.0.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.13     \section{MÃ©thodes Exactes}
+No file Rapport.bbl.
+Package biblatex Info: Reference section=0 on input line 733.
+Package biblatex Info: Reference segment=0 on input line 733.
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Undefined control sequence.
+\@begindocumenthook ...lonepreambles \relax \ifsa 
+                                                  @sortsubpreambles \let \sa...
+l.733 \let\sa@orig@document\document
                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 13.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 15.
-
-[8] [9]
-<chapters/../figures/DP-flow.png, id=490, 377.91188pt x 197.23688pt>
-File: chapters/../figures/DP-flow.png Graphic file (type png)
-<use chapters/../figures/DP-flow.png>
-Package pdftex.def Info: chapters/../figures/DP-flow.png  used on input line 77.
-(pdftex.def)             Requested size: 384.1122pt x 200.47469pt.
- [10]pdfTeX warning (ext4): destination with the same identifier (name{section.0.2}) has been already used, duplicate ignored
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing \endcsname inserted.
 <to be read again> 
-                   \relax 
-l.80         \section{Heuristiques}
-                                    [11 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/DP-flow.png>] [12] [13] [14]) [15] [16] [17
+                   \let 
+l.733 \let\sa@orig@document\document
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/conception.texpdfTeX warning (ext4): destination with the same identifier (name{section.0.1}) has been already used, duplicate ignored
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing \endcsname inserted.
 <to be read again> 
-                   \relax 
-l.36 \section{Branch and bound}
-                               
+                   \let 
+l.733 \let\sa@orig@document\document
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 36.
-
-<chapters/../figures/diagr1.png, id=539, 511.9125pt x 83.5622pt>
-File: chapters/../figures/diagr1.png Graphic file (type png)
-<use chapters/../figures/diagr1.png>
-Package pdftex.def Info: chapters/../figures/diagr1.png  used on input line 46.
-(pdftex.def)             Requested size: 390.0pt x 63.6622pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.1.1}) has been already used, duplicate ignored
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing \endcsname inserted.
 <to be read again> 
-                   \relax 
-l.48 \subsection{Pseudo-Code}
-                             
+                   \let 
+l.733 \let\sa@orig@document\document
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 48.
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Extra \endcsname.
+\@ifl@ter ...@ifl@t@r \csname ver@#2.#1\endcsname 
+                                                  
+l.733 \let\sa@orig@document\document
+                                    
+I'm ignoring this, since I wasn't doing a \csname.
 
-[18 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/diagr1.png>]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 68.
- [19]pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.1.2}) has been already used, duplicate ignored
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing \endcsname inserted.
 <to be read again> 
-                   \relax 
-l.106 ...section{Evaluation d'un noeud (Borne L1)}
-                                                   [20]
-<chapters/../figures/formule1.png, id=588, 314.67563pt x 85.82062pt>
-File: chapters/../figures/formule1.png Graphic file (type png)
-<use chapters/../figures/formule1.png>
-Package pdftex.def Info: chapters/../figures/formule1.png  used on input line 111.
-(pdftex.def)             Requested size: 227.62204pt x 62.07887pt.
-<chapters/../figures/example1.png, id=589, 471.26062pt x 143.78719pt>
-File: chapters/../figures/example1.png Graphic file (type png)
-<use chapters/../figures/example1.png>
-Package pdftex.def Info: chapters/../figures/example1.png  used on input line 116.
-(pdftex.def)             Requested size: 284.52756pt x 86.8127pt.
-<chapters/../figures/diag2.png, id=590, 472.01344pt x 319.1925pt>
-File: chapters/../figures/diag2.png Graphic file (type png)
-<use chapters/../figures/diag2.png>
-Package pdftex.def Info: chapters/../figures/diag2.png  used on input line 123.
-(pdftex.def)             Requested size: 390.0pt x 263.73643pt.
+                   \let 
+l.733 \let\sa@orig@document\document
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: You have requested, on input line 733, version
+               `' of package \let ,
+               but only version
+               `\ver@ \let .sty\endcsname '
+               is available.
 
-pdfTeX warning (ext4): destination with the same identifier (name{section.0.2}) has been already used, duplicate ignored
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing \endcsname inserted.
 <to be read again> 
-                   \relax 
-l.125 \section{Branch and bound amÃ©liorÃ©}
-                                           pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.2.1}) has been already used, duplicate ignored
+                   \sa 
+l.733 \let\sa@orig@document\document
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing \endcsname inserted.
 <to be read again> 
-                   \relax 
-l.131 ...section{Evaluation d'un noeud (Borne L2)}
-                                                   [21 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/formule1.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/example1.png>] [22 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/diag2.png>]pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.2.2}) has been already used, duplicate ignored
+                   \sa 
+l.733 \let\sa@orig@document\document
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing \endcsname inserted.
 <to be read again> 
-                   \relax 
-l.152 \subsection{Pseudo-Code}
-                              
-Underfull \hbox (badness 2990) in paragraph at lines 156--157
-[] []\T1/cmr/m/n/12 Appliquer WFD sur l'ins-tance pour ini-tia-li-ser le coût op-ti-mal :
+                   \sa 
+l.733 \let\sa@orig@document\document
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Extra \endcsname.
+\@ifl@ter ...@ifl@t@r \csname ver@#2.#1\endcsname 
+                                                  
+l.733 \let\sa@orig@document\document
+                                    
+I'm ignoring this, since I wasn't doing a \csname.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Missing \endcsname inserted.
+<to be read again> 
+                   \sa 
+l.733 \let\sa@orig@document\document
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+LaTeX Warning: You have requested, on input line 733, version
+               `' of package \sa ,
+               but only version
+               `\ver@ \sa .sty\endcsname '
+               is available.
+
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty:733: Extra \fi.
+\@begindocumenthook ...epackagewithoutoptions \fi 
+                                                  \InputIfFileExists {\jobna...
+l.733 \let\sa@orig@document\document
+                                    
+I'm ignoring this; it doesn't match any \if.
+
+(c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta
+c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta:2: Missing $ inserted.
+<inserted text> 
+                $
+l.2 \subpreamble{chapters/Description_
+                                      BPP.tex}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta:2: Extra }, or forgotten $.
+l.2 \subpreamble{chapters/Description_BPP.tex}
+                                              
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/import\import.sty"
+C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/import\import.sty:44: Missing $ inserted.
+<inserted text> 
+                $
+l.44 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (2.9533pt too wide) in paragraph at lines 733--44
+[]\T1/cmr/m/n/12 gobble @sort-sub-preambles orig@usepackage . .@use-pa-cka-ge-wi-thou-top-tions
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{section.0.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.160 \section{Recherche exhaustive }
-                                      [23] [24] [25]
-Overfull \hbox (29.63397pt too wide) in paragraph at lines 257--257
- []\T1/cmr/bx/n/12 la mé-thode : _move_items_to_bin(list_of_items_indices, bin_index)[] 
- []
-
-[26]
-<chapters/../figures/tabit1.png, id=698, 436.63126pt x 106.14656pt>
-File: chapters/../figures/tabit1.png Graphic file (type png)
-<use chapters/../figures/tabit1.png>
-Package pdftex.def Info: chapters/../figures/tabit1.png  used on input line 296.
-(pdftex.def)             Requested size: 284.52756pt x 69.16936pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--299
- []\T1/cmr/bx/n/12 première ité-ra-tion :[] \T1/cmr/m/n/12 Construc-tion de la table de vé-rité :
- []
-
-<chapters/../figures/tabit2.png, id=699, 440.39531pt x 84.315pt>
-File: chapters/../figures/tabit2.png Graphic file (type png)
-<use chapters/../figures/tabit2.png>
-Package pdftex.def Info: chapters/../figures/tabit2.png  used on input line 309.
-(pdftex.def)             Requested size: 284.52756pt x 54.47473pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--310
- []\T1/cmr/bx/n/12 deuxième ité-ra-tion :[] \T1/cmr/m/n/12 Construc-tion de la table de vé-rité :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--310
-
- []
-
-[27 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tabit1.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tabit2.png>]) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/Tests.tex
-<chapters/../figures/tab1.png, id=719, 486.31688pt x 167.87718pt>
-File: chapters/../figures/tab1.png Graphic file (type png)
-<use chapters/../figures/tab1.png>
-Package pdftex.def Info: chapters/../figures/tab1.png  used on input line 16.
-(pdftex.def)             Requested size: 384.1122pt x 132.5959pt.
-<chapters/../figures/graph1.png, id=720, 412.54124pt x 234.8775pt>
-File: chapters/../figures/graph1.png Graphic file (type png)
-<use chapters/../figures/graph1.png>
-Package pdftex.def Info: chapters/../figures/graph1.png  used on input line 19.
-(pdftex.def)             Requested size: 384.1122pt x 218.69543pt.
- [28] [29 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab1.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/graph1.png>]
-<chapters/../figures/tab2.png, id=737, 493.0922pt x 124.96687pt>
-File: chapters/../figures/tab2.png Graphic file (type png)
-<use chapters/../figures/tab2.png>
-Package pdftex.def Info: chapters/../figures/tab2.png  used on input line 41.
-(pdftex.def)             Requested size: 384.1122pt x 97.35173pt.
- [30]
-<chapters/../figures/BBA_TEXEC_N.PNG, id=748, 359.09157pt x 203.25937pt>
-File: chapters/../figures/BBA_TEXEC_N.PNG Graphic file (type png)
-<use chapters/../figures/BBA_TEXEC_N.PNG>
-Package pdftex.def Info: chapters/../figures/BBA_TEXEC_N.PNG  used on input line 48.
-(pdftex.def)             Requested size: 384.1122pt x 217.43884pt.
-<chapters/../figures/BBA_TEXEC_C.PNG, id=749, 365.11406pt x 220.57407pt>
-File: chapters/../figures/BBA_TEXEC_C.PNG Graphic file (type png)
-<use chapters/../figures/BBA_TEXEC_C.PNG>
-Package pdftex.def Info: chapters/../figures/BBA_TEXEC_C.PNG  used on input line 52.
-(pdftex.def)             Requested size: 384.1122pt x 232.0606pt.
- [31 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab2.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/BBA_TEXEC_N.PNG>]) [32 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/BBA_TEXEC_C.PNG>] [33
-
-] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/worse_case_analysis.tex
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-) [34] [35
-
-] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/Conception_heur.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--18
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-[36]pdfTeX warning (ext4): destination with the same identifier (name{section.0.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31 \section{Next Fit (NF)}
-                            
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 31.
-
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.1.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.32 \subsection{principe}
-                          
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 32.
-
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.1.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.38 \subsection{Pseudocode}
-                            pdfTeX warning (ext4): destination with the same identifier (name{section.0.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.51 \section{Next Fit Decreasing (NFD)}
-                                        pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.52 \subsection{principe}
-                          pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.2.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.56 \subsection{Pseudocode:}
-                             
-<chapters/../figures/NF NFD better(1).png, id=791, 626.34pt x 534.99875pt>
-File: chapters/../figures/NF NFD better(1).png Graphic file (type png)
-<use chapters/../figures/NF NFD better(1).png>
-Package pdftex.def Info: chapters/../figures/NF NFD better(1).png  used on input line 66.
-(pdftex.def)             Requested size: 390.0pt x 333.13255pt.
- [37]pdfTeX warning (ext4): destination with the same identifier (name{section.0.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.69 \section{First Fit (FF)}
-                             pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.3.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.70 \subsection{principe}
-                          pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.3.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.76 \subsection{Pseudocode}
-                            
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-pdfTeX warning (ext4): destination with the same identifier (name{section.0.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.94 \section{First Fit Descreasing (FFD)}
-                                          pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.95 \subsection{principe}
-                           [38 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/NF NFD better(1).png>]
-<chapters/../figures/FF FFD.png, id=816, 529.98pt x 524.96124pt>
-File: chapters/../figures/FF FFD.png Graphic file (type png)
-<use chapters/../figures/FF FFD.png>
-Package pdftex.def Info: chapters/../figures/FF FFD.png  used on input line 111.
-(pdftex.def)             Requested size: 390.0pt x 386.31049pt.
- [39]pdfTeX warning (ext4): destination with the same identifier (name{section.0.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.115 \section{Best Fit (BF)}
-                             pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.5.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.116 \subsection{principe}
-                           pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.5.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.122 \subsection{Pseudocode}
-                             
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[40 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/FF FFD.png>]
-<chapters/../figures/BF BFD.png, id=842, 427.5975pt x 524.96124pt>
-File: chapters/../figures/BF BFD.png Graphic file (type png)
-<use chapters/../figures/BF BFD.png>
-Package pdftex.def Info: chapters/../figures/BF BFD.png  used on input line 156.
-(pdftex.def)             Requested size: 390.0pt x 478.80487pt.
- [41] [42 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/BF BFD.png>]) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/tests_heur.tex
-Overfull \hbox (13.29288pt too wide) in paragraph at lines 11--13
-\T1/cmr/m/n/12 rithmes im-plé-men-tés : \T1/cmr/m/it/12 Next-Fit(NF), Next-Fit De-crea-sing(NFD), First-Fit(FF),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
-<chapters/../figures/tab_part1.png, id=869, 342.5297pt x 97.11281pt>
-File: chapters/../figures/tab_part1.png Graphic file (type png)
-<use chapters/../figures/tab_part1.png>
-Package pdftex.def Info: chapters/../figures/tab_part1.png  used on input line 29.
-(pdftex.def)             Requested size: 390.0pt x 110.57933pt.
-<chapters/../figures/tab_part2.png, id=870, 344.03531pt x 98.61844pt>
-File: chapters/../figures/tab_part2.png Graphic file (type png)
-<use chapters/../figures/tab_part2.png>
-Package pdftex.def Info: chapters/../figures/tab_part2.png  used on input line 30.
-(pdftex.def)             Requested size: 390.0pt x 111.79414pt.
-<chapters/../figures/tab_part3.png, id=871, 344.03531pt x 114.4275pt>
-File: chapters/../figures/tab_part3.png Graphic file (type png)
-<use chapters/../figures/tab_part3.png>
-Package pdftex.def Info: chapters/../figures/tab_part3.png  used on input line 31.
-(pdftex.def)             Requested size: 390.0pt x 129.71536pt.
-<chapters/../figures/tab_part4.png, id=872, 344.78813pt x 98.61844pt>
-File: chapters/../figures/tab_part4.png Graphic file (type png)
-<use chapters/../figures/tab_part4.png>
-Package pdftex.def Info: chapters/../figures/tab_part4.png  used on input line 32.
-(pdftex.def)             Requested size: 390.0pt x 111.55188pt.
-[43]
-<chapters/../figures/Temps_exec_heuristics.png, id=878, 702.625pt x 451.6875pt>
-File: chapters/../figures/Temps_exec_heuristics.png Graphic file (type png)
-<use chapters/../figures/Temps_exec_heuristics.png>
-Package pdftex.def Info: chapters/../figures/Temps_exec_heuristics.png  used on input line 39.
-(pdftex.def)             Requested size: 390.0pt x 250.72398pt.
- [44 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_part1.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_part2.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_part3.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_part4.png>]
-<chapters/../figures/Graphe_M_Exactes.png, id=888, 757.83125pt x 659.46375pt>
-File: chapters/../figures/Graphe_M_Exactes.png Graphic file (type png)
-<use chapters/../figures/Graphe_M_Exactes.png>
-Package pdftex.def Info: chapters/../figures/Graphe_M_Exactes.png  used on input line 44.
-(pdftex.def)             Requested size: 390.0pt x 339.38109pt.
- [45 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/Temps_exec_heuristics.png>]
-Overfull \hbox (12.45625pt too wide) in paragraph at lines 52--53
-[]\T1/cmr/m/n/12 Les heu-ris-tiques \T1/cmr/m/it/12 FF \T1/cmr/m/n/12 et \T1/cmr/m/it/12 FFD \T1/cmr/m/n/12 s'exé-cutent en des temps lé-gè-re-ment meilleurs
- []
-
-[46 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/Graphe_M_Exactes.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
-
- []
-
-<chapters/../figures/tab_ratio_heur.png, id=903, 375.65344pt x 209.28188pt>
-File: chapters/../figures/tab_ratio_heur.png Graphic file (type png)
-<use chapters/../figures/tab_ratio_heur.png>
-Package pdftex.def Info: chapters/../figures/tab_ratio_heur.png  used on input line 71.
-(pdftex.def)             Requested size: 390.0pt x 217.29033pt.
-[47]
-<chapters/../figures/Ratio_M_heuristiques_intances.png, id=909, 642.4pt x 398.48875pt>
-File: chapters/../figures/Ratio_M_heuristiques_intances.png Graphic file (type png)
-<use chapters/../figures/Ratio_M_heuristiques_intances.png>
-Package pdftex.def Info: chapters/../figures/Ratio_M_heuristiques_intances.png  used on input line 76.
-(pdftex.def)             Requested size: 390.0pt x 241.92857pt.
-<chapters/../figures/Ratio_M_heuristiques.png, id=910, 634.37pt x 390.45876pt>
-File: chapters/../figures/Ratio_M_heuristiques.png Graphic file (type png)
-<use chapters/../figures/Ratio_M_heuristiques.png>
-Package pdftex.def Info: chapters/../figures/Ratio_M_heuristiques.png  used on input line 83.
-(pdftex.def)             Requested size: 390.0pt x 240.05623pt.
- [48 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_ratio_heur.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/Ratio_M_heuristiques_intances.png>] [49 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/Ratio_M_heuristiques.png>]) [50] [51
-
-] [52]
-Chapitre 1.
-(c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/RecuitSim.tex [53
-
-]
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 56.
-
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 57.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-[54]
-<chapters/../figures/RS_SWAP.png, id=971, 519.44063pt x 325.215pt>
-File: chapters/../figures/RS_SWAP.png Graphic file (type png)
-<use chapters/../figures/RS_SWAP.png>
-Package pdftex.def Info: chapters/../figures/RS_SWAP.png  used on input line 94.
-(pdftex.def)             Requested size: 390.0pt x 244.17365pt.
- [55] [56 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS_SWAP.png>] [57]
-<chapters/../figures/RS/rs tab temps.PNG, id=988, 287.57437pt x 194.22563pt>
-File: chapters/../figures/RS/rs tab temps.PNG Graphic file (type png)
-<use chapters/../figures/RS/rs tab temps.PNG>
-Package pdftex.def Info: chapters/../figures/RS/rs tab temps.PNG  used on input line 141.
-(pdftex.def)             Requested size: 287.57367pt x 194.22514pt.
-<chapters/../figures/RS/texec rs(1).png, id=989, 511.9125pt x 280.04625pt>
-File: chapters/../figures/RS/texec rs(1).png Graphic file (type png)
-<use chapters/../figures/RS/texec rs(1).png>
-Package pdftex.def Info: chapters/../figures/RS/texec rs(1).png  used on input line 147.
-(pdftex.def)             Requested size: 390.0pt x 213.3544pt.
-<chapters/../figures/RS/rs figures.PNG, id=990, 413.29407pt x 456.20438pt>
-File: chapters/../figures/RS/rs figures.PNG Graphic file (type png)
-<use chapters/../figures/RS/rs figures.PNG>
-Package pdftex.def Info: chapters/../figures/RS/rs figures.PNG  used on input line 153.
-(pdftex.def)             Requested size: 537.28221pt x 593.06561pt.
- [58 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/rs tab temps.PNG> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/texec rs(1).png>]
-<chapters/../figures/RS/rs tab ratio.PNG, id=999, 231.86626pt x 191.9672pt>
-File: chapters/../figures/RS/rs tab ratio.PNG Graphic file (type png)
-<use chapters/../figures/RS/rs tab ratio.PNG>
-Package pdftex.def Info: chapters/../figures/RS/rs tab ratio.PNG  used on input line 159.
-(pdftex.def)             Requested size: 231.86568pt x 191.96672pt.
-<chapters/../figures/RS/ratio RS.png, id=1000, 387.4475pt x 279.0425pt>
-File: chapters/../figures/RS/ratio RS.png Graphic file (type png)
-<use chapters/../figures/RS/ratio RS.png>
-Package pdftex.def Info: chapters/../figures/RS/ratio RS.png  used on input line 160.
-(pdftex.def)             Requested size: 309.95842pt x 223.2343pt.
- [59 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/rs figures.PNG>]
-Overfull \hbox (4.17986pt too wide) in paragraph at lines 168--169
-\T1/cmr/m/it/12 0.7s \T1/cmr/m/n/12 pour N=50 (classe 2) , jus-qu'à \T1/cmr/m/it/12 357s \T1/cmr/m/n/12 pour N=500 (classe1),[\T1/cmr/bx/it/12 figure01
- []
-
-[60 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/rs tab ratio.PNG> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/ratio RS.png>]) [61]
-Chapitre 2.
-(c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/WOA.tex
-<chapters/../figures/cercles.png, id=1019, 380.92313pt x 381.67593pt>
-File: chapters/../figures/cercles.png Graphic file (type png)
-<use chapters/../figures/cercles.png>
-Package pdftex.def Info: chapters/../figures/cercles.png  used on input line 14.
-(pdftex.def)             Requested size: 390.0pt x 390.78357pt.
- [62
-
-]
-<chapters/../figures/spiral.png, id=1024, 447.17062pt x 421.575pt>
-File: chapters/../figures/spiral.png Graphic file (type png)
-<use chapters/../figures/spiral.png>
-Package pdftex.def Info: chapters/../figures/spiral.png  used on input line 19.
-(pdftex.def)             Requested size: 390.0pt x 367.68715pt.
- [63 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/cercles.png>] [64 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/spiral.png>] [65] [66]
-Underfull \hbox (badness 10000) in paragraph at lines 123--131
-
- []
-
-
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 133.
-
-[67] [68]) [69]
-Chapitre 3.
-(c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/ILWOA.tex
-<chapters/../figures/logisticvsothers.PNG, id=1097, 402.00188pt x 289.08pt>
-File: chapters/../figures/logisticvsothers.PNG Graphic file (type png)
-<use chapters/../figures/logisticvsothers.PNG>
-Package pdftex.def Info: chapters/../figures/logisticvsothers.PNG  used on input line 30.
-(pdftex.def)             Requested size: 284.52756pt x 204.60422pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
-
- []
-
-[70
-
-] [71 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/logisticvsothers.PNG>]
-<chapters/../figures/Mutation.PNG, id=1112, 262.73157pt x 316.18124pt>
-File: chapters/../figures/Mutation.PNG Graphic file (type png)
-<use chapters/../figures/Mutation.PNG>
-Package pdftex.def Info: chapters/../figures/Mutation.PNG  used on input line 60.
-(pdftex.def)             Requested size: 284.52756pt x 342.4259pt.
-) [72 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/Mutation.PNG>] [73]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
- [74
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
- (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
-Package rerunfilecheck Info: File `Rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 7A106FF0AA69724284E7F9400E5CA333;6567.
-Package logreq Info: Writing requests to 'Rapport.run.xml'.
-\openout1 = `Rapport.run.xml'.
-
- ) 
+Package: import 2020/04/01  v 6.2
+)
+c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta:4: TeX capacity exceeded, sorry [input stack size=5000].
+\import.sty-h@@k ->\import.sty-h@@k 
+                                    \let \@unprocessedoptions \relax \def \c...
+l.4 \endsubpreamble
+                   
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
 Here is how much of TeX's memory you used:
- 19164 strings out of 480930
- 332329 string characters out of 2899761
- 896733 words of memory out of 3000000
- 34184 multiletter control sequences out of 15000+200000
- 552917 words of font info for 72 fonts, out of 3000000 for 9000
+ 13198 strings out of 480930
+ 233680 string characters out of 2899761
+ 869741 words of memory out of 3000000
+ 28932 multiletter control sequences out of 15000+200000
+ 536512 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,11n,86p,1239b,2085s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.pdf (75 pages, 1495944 bytes).
-PDF statistics:
- 1905 PDF objects out of 2073 (max. 8388607)
- 473 named destinations out of 1000 (max. 500000)
- 875 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 5000i,3n,48p,907b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
+c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.sta:4:  ==> Fatal error occurred, no output PDF file produced!

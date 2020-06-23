@@ -15,7 +15,7 @@
 \usepackage {mathtools}\usepackage {amsmath}\usepackage {import}\usepackage {float}\setcounter {section}{0}
 \endsubpreamble
 \subpreamble{chapters/Conception_heur.tex}
-\usepackage {mathtools}\usepackage {amsmath}\usepackage {algorithmic}\usepackage {algorithm}\usepackage {float}\setcounter {section}{0}\usepackage [subpreambles=true]{standalone}\usepackage {import}
+\usepackage {mathtools}\usepackage {amsmath}\usepackage {algorithmic}\usepackage {algorithm}\usepackage {float}\setcounter {section}{0}
 \endsubpreamble
 \subpreamble{chapters/tests_heur.tex}
 \usepackage {mathtools}\usepackage {amsmath}\usepackage {float}\usepackage {import}
@@ -29,4 +29,6 @@
 \subpreamble{chapters/ILWOA.tex}
 \usepackage {amsmath}\usepackage {mathtools}\usepackage {enumitem}\usepackage {amssymb}\usepackage {algorithm}\usepackage {algorithmic}\usepackage {graphicx}\usepackage {hyperref}\usepackage [utf8]{inputenc}
 \endsubpreamble
-\endstandalonepreambles
+\subpreamble{chapters/ag.tex}
+\usepackage {amsmath}\usepackage {graphicx}\usepackage {float}\usepackage {blindtext}\usepackage [T1]{fontenc}\usepackage [utf8]{inputenc}\usepackage {algorithm}\usepackage {algorithmic}
+\endsubpreamble

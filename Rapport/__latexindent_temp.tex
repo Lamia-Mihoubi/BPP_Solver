@@ -5,7 +5,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathtools}
 \usepackage[shortlabels]{enumitem}
-
+\usepackage[font=footnotesize]{caption}
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
 \usepackage[backend=biber]{biblatex}
@@ -16,7 +16,7 @@
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
 \graphicspath{ {figures/} }
-\title{\emph{Rapport du TP OPTIMISATION} }
+\title{Projet optimisation combinatoire\\ Etude et comparaison des méthodes de résolution du problème du Bin Packing (BPP)} 
 \author{ 
     \emph{BACHI Yasmine (CdE)}
     \and
@@ -29,6 +29,7 @@
     MIHOUBI Lamia Zohra}
 \begin{document}
     \maketitle
+    
     \tableofcontents
     \chapter*{Introduction}
     \addcontentsline{toc}{chapter}{Introduction} \markboth{INTRODUCTION}{} 
@@ -47,24 +48,24 @@
         \item \emph{les tests empiriques:} dont le but de trouver la meilleure configuration des paramètres de nos méthodes implémentées.  
         \item \emph{les tests comparatifs:} où on doit comparer les résultats obtenus des méthodes implémentées et sélectionner la meilleure méthode de résolution pour chaque instances. la comparaison se fait en terme de qualité de la solution et du temps d'exécution. 
     \end{enumerate}
-    \part{Présentation du Problème de Bin Packing (BPP): }
+    \part{Présentation du Problème de Bin Packing (BPP) }
     \import{chapters/}{Description_BPP}
-    \part{Etat de l'Art: }
+    \part{Etat de l'Art }
     \import{chapters/}{Etat_de_lart}
-    \part{Méthodes Exactes: }
-    \chapter{Conception: }
+    \part{Méthodes Exactes}
+    %\chapter{Conception }
     \import{chapters/}{conception}
-    \chapter{Test et Résultats: }
+    %\chapter{Test et Résultats }
     \import{chapters/}{Tests}
-    \part{Worst Case Analysis: }
+    \part{Worst Case Analysis }
     \import{chapters/}{worse_case_analysis}
     \newpage
-    \part{Méthodes Heuristiques: }
-    \chapter{Conception: }
+    \part{Méthodes Heuristiques}
+    %\chapter{Conception}
     \import{chapters/}{Conception_heur}
-    \chapter{Tests et Résultats: }
+    %\chapter{Tests et Résultats }
     \import{chapters/}{tests_heur}
-    \part{Méthodes Métaheuristiques: }
+    \part{Méthodes Métaheuristiques}
         Les métaheuristiques sont des méthodes d’optimisation approchées, caractérisées par leur généralité, c’est à dire qu’elles ne dépendent pas du problème à résoudre comme les heuristiques. En d'autres termes, une métaheuristique peut être considérée comme un
     cadre algorithmique qui peut être appliqué à différents problèmes d'optimisation avec relativement peu de modifications à apporter afin de l’adapter à un problème spécifique.
 
@@ -87,22 +88,17 @@
             \end{enumerate}
     \end{itemize}
     Dans le but d’explorer ces méthodes, comparer leurs performances, montrer leurs avantages et découvrir leurs limites , nous effectuerons des tests empiriques et comparatifs sur les mêmes  benchmarks utilisés pour les tests des méthodes exactes et heuristiques.( Benchmark Scholl).
-    \chapter{Récuit simulé: }
+    \chapter{Récuit simulé }
     \import{chapters/}{RecuitSim}
-    \chapter{Whale Optimization Algorithm (WOA): }
+    \chapter{Whale Optimization Algorithm (WOA)}
     \import{chapters/}{WOA}
-    \chapter{Improved Lévy Whale Optimization Algorithm (ILWOA): }
+    \chapter{Improved Lévy Whale Optimization Algorithm (ILWOA)}
     \import{chapters/}{ILWOA}
-    \chapter*{References}
-    \addcontentsline{toc}{chapter}{References} \markboth{REFERENCES}{} 
-    \begin{enumerate}
-        \item Martello ,Toth, \emph{Livre, chapitre 8} \\http://www.or.deis.unibo.it/kp/Chapter8.pdf
-        \item Maxence Delorme, Manuel Iori, Silvano Martello, DEI Guglielmo Marconi, \emph{Bin Packing and Cutting Stock Problems: Mathematical Models and Exact Algorithms}, University of Bologna (2)DISMI, University of Modena and Reggio Emilia.
-        \item Zoran Ivkovic, Errol L. Lloyd, \emph{FULLY DYNAMIC ALGORITHMS FOR BIN PACKING: BEING (MOSTLY) MYOPIC HELPS}, 1998 Society for Industrial and Applied Mathematics.
-        \item E. G. Coman, Jr. M. R. Garey, D. S. Johnson, \emph{APPROXIMATION ALGORITHMS FOR BIN PACKING: A SURVEY}.
-        \item Farida Mannai, Mongi Boulehmi, \emph{A Guided Tabu Search for the Vector Bin Packing Problem}, InterVPNC laboratory, FSJEG,University of Jendouba.  
-        \item Mirjalili S, Lewis A (2016) \emph{The whale optimization algorithm}.
-        \item Mohamed Abdel-Basset, Gunasekaran Manogaran, Laila Abdel-Fatah, Seyedali Mirjalili, (2018) \emph{An improved nature inspired meta-heuristic algorithm for 1-D bin packing problems}, 7 March 2018
-        \item R Yesodha , AmudhaT, \emph{Bio-inspired Metaheuristics for Bin Packing Problems}, International Journal of Emerging Technologies in Computational and Applied Sciences (IJETCAS)
-    \end{enumerate}    
+    \chapter{L'Algorithme Génétique}
+    \import{chapters/}{ag}
+    \chapter{comparaison en les métaheuristiques}
+    \import{chapters/}{compare_mh}
+    \chapter{Conclusion}
+    Pour synthétiser, l’Algorithme Génétique est la métaheuristique qui a donné le meilleur compromis qualité coût pour notre benchmark, le Recuit Simulé, quant à lui, donne de très bons résultats aussi, mais avec un temps d'exécution très grand. ILWOA a permis d’améliorer WOA en terme de la converge rapide vers la solution optimale, ainsi qu’en terme de la qualité de la solution trouvée. Néanmoins, les résultats obtenues par les métaheuristiques sont très proches de ceux obtenues par les heuristiques, qui sont toujours les plus rapides. En d’autres termes,on a pas pu voir un grand apport des métaheuristiques en terme de qualité de solution, donc ce n’est pas intéressant d’arrêter notre étude à ce niveau, \textbf{raison pour laquelle on s’interessera aux méthodes hybrides afin de combler les inconvénients d’une méthode par les avantages de l’autre et obtenir une meilleure qualité de solution en un temps d'exécution acceptable.}
+    
 \end{document}

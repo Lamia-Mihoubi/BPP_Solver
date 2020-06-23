@@ -7,7 +7,7 @@
 
 \begin{document}
 \section{Tests et Resultats}
-Dans cette partie, nous allons comparer les performances de nos algorithmes implémentés, pour cela, en premier lieu on va utiliser notre propre générateur d’instances pour comparer les 4 algorithms : recherche exhaustive , Branch \& Bound , Branch \& Bound amélioré et la programmation dynamique. ensuite on utilisera les instances du benchmark Scholl. 
+Dans cette partie, nous allons comparer les performances de nos algorithmes implémentés, pour cela, en premier lieu on va utiliser notre propre générateur d’instances pour comparer les 4 algorithms : recherche exhaustive , Branch \& Bound , Branch \& Bound amélioré. ensuite on utilisera les instances du benchmark Scholl. 
 \paragraph*{Remarque: } Les algorithmes ont été développés en utilisant le langage de programmation Python, et exécutés sur un \textbf{HP probook [Intel Core i7-6500U CPU @2.50GHz, 8Go RAM ]} en utilisant l'IDE Intellij pycharm
 Le générateur d’instances utilise la fonction random() de la bibliothèque random de Python, cette fonction utilise le Mersenne Twister qui est un générateur de nombres pseudo-aléatoires, réputé pour sa qualité.
 \subsection{Instances générées : }
@@ -30,11 +30,10 @@ On justifie les résultats obtenus et la grande différence entre les temps d’
     \item La recherche exhaustive, donne des temps d'exécution les plus long, car cette dernière ne possède aucun mécanisme de réduction du problème, donc elle vas parcourir toute les permutations possibles des articles.
     \item Le Branch \& Bound, offre une petite amélioration par rapport à la recherche exhaustive, grâce à la borne inférieure L1 utilisée pour réduire quelques branches qu’on est sure qu’elles ne contiennent pas la solution optimale, mais cet algorithme arrive à sa limite rapidement, car la borne L1 n’est efficace que lorsque les volume des articles sont petits par rapport à la capacité de la boîte, sinon, on retombe sur une recherche exhaustive.
     \item Le Branch \& Bound amélioré, augmente les performances du Branch \& Bound classique, à cause de la borne L2 qui couvre des cas de réduction plus large que la borne L1, de plus , l’utilisation des heuristiques permet d'accélérer le temps de trouver un noeud exacte.
-    \item Finalement, la programmation dynamique a pu résoudre le plus grand nombre d’instances, en un temps beaucoup plus petit que les autres méthodes; on peut justifier ce bon comportement par la nature de notre problème, qui passe dans sa résolution par les même sous problèmes plusieurs fois ( dans un parcours d’arbre, on repasse par le sous problème (noeud) où k objets ont été rangé, [n-k] fois pour choisir l’objet k+1 à ranger dans l’étape suivante).Donc, on a bien exploiter le point fort de la méthode qui est la table de programmation dynamique pour réutiliser les résultats des sous problèmes sans les recalculer.
 \end{enumerate}
 \subsection{Scholl Benchmark:}
 le Scholl benchmark est composé de 3 différentes classes, les volume des articles sont uniformément distribués entre 50 et 500. la capacité C de la boîte est entre 100 et 150 dans la première classe (Scholl1), égale à 1000 dans la classe 2 ( Scholl2) et égale à 100 000 dans la 3ème classe (Scholl3). 
-les deux algorithmes Recherche exhaustive et Branch \& Bound sont incapable de résoudre les instances de ce benchmark à cause de leurs tailles et difficulté relativement élevés. Donc, dans cette partie nous allons faire une comparaison entre les 2 algorithmes Branch \& Bound amélioré [BBA] et la programmation dynamique [DP]. 
+les deux algorithmes Recherche exhaustive et Branch \& Bound sont incapable de résoudre les instances de ce benchmark à cause de leurs tailles et difficulté relativement élevés. Donc, dans cette partie nous étudier Branch \& Bound amélioré [BBA]. 
 
 Pour chaque classe, on a 4 valeurs de N (50,100,200,500) et pour chaque couple (N,C) on prends 5 instances afin de calculer le temps d'exécution moyen, ceci est dû à la génération aléatoire des volume des articles, ce qui peut rendre quelques instances plus difficiles que d’autres, même s’ils ont la même valeur du couple (N,C) . les résultats en temps d'exécution sont présentés dans le tableau suivant:
 \begin{figure}[H]
@@ -42,7 +41,6 @@ Pour chaque classe, on a 4 valeurs de N (50,100,200,500) et pour chaque couple (
 \end{figure}
 \subsubsection{Analyse des résultats:}
 \begin{enumerate}
-    \item La programmation dynamique (DP)  trouve la solution optimale en un temps meilleur que le branch \& Bound amélioré
     \item En augmentant N le nombre d’articles, le temps d'exécution augmente d’une façon exponentielle
     \begin{figure}[H]
         \includegraphics[width=13.5cm]{../figures/BBA_TEXEC_N.PNG}

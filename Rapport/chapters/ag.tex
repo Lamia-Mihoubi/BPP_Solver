@@ -1,29 +1,29 @@
-\documentclass{report}
+\documentclass{article}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{blindtext}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[ruled,vlined]{algorithm2e}
-\graphicspath{ {figures/} }
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
 \begin{document}
-\title{AG}
-\chapter{Algorithme Génétique}
 Un algorithme génétique est une métaheuristique évolutionnaire à l'origine proposé par Holland [1]. Depuis lors, il est devenu une méthode puissante pour résoudre de nombreux problèmes d'optimisation combinatoire difficile, dont la liste peut être trouvée dans de nombreuses références, voir par exemple [2]. Les étapes générales de l'algorithme peuvent être décrites comme suit:
 \newline
 
 \begin{algorithm}[H]
-\SetAlgoLined
- - Générer une population initiale\;
- \While{le critère d'arret n'est pas encore rencontré}{
-  - Choisir des paires pour la reproduction\;
-  - Effectuer des croisements pour générer des descendants\;
-  - faire des fluctuations dans les nouveaux descendants (mutation)\;
-  - Evaluer l'aptitude de nouveaux descendants\;
-  - Générer une nouvelle population\;
- }
- \caption{Algorithme génétique}
+	\caption{Algorithme génétique}
+	\begin{algorithmic}
+		\STATE Générer une population initiale\;
+		\WHILE{le critère d'arret n'est pas encore rencontré}
+			\STATE Choisir des paires pour la reproduction\;
+			\STATE Effectuer des croisements pour générer des descendants\;
+			\STATE faire des fluctuations dans les nouveaux descendants (mutation)\;
+			\STATE Evaluer l'aptitude de nouveaux descendants\;
+			\STATE Générer une nouvelle population\;
+		\ENDWHILE
+	\end{algorithmic}
 \end{algorithm}
 
 Un élément clé de l'AG est la génération d'une population dont les composants sont appelés \textit{chromosomes}, un terme emprunté à la génétique. Un \textit{chromosome} est en fait une représentation codée d'une solution; dont chaque composant est appelé \textit{gène}
@@ -39,20 +39,20 @@ On représente une solution du Bin packing comme suit :
 \end{itemize}
 Pour décrire cette représentation, considérons l'exemple suivant. Supposons que nous ayons quatre objets (n=4) de poids 2 , 2 , 4 et 4 respectivement, affectés à trois cases (c0=3)  comme indiqué ci-dessous :
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic01.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic01.PNG}
 \end{figure}
 Avec c0 : contient le nombre de boîtes utilisées.
 \newline
 Le chromosome correspondant peut être défini comme suit:
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic02.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic02.PNG}
 \end{figure}
 Cependant, avec cette représentation,les chromosomes ont une longueur égale à 1 + n² (un entier pour chaque cellule), alors pour les grands n, nous aurons besoin d'une grande quantité de mémoire pour les stocker.
 Pour cela, nous utiliserons une représentation plus compacte qui utilise des chromosomes de longueur n + 1 au lieu de 1 + n². Cette dernière consiste à garder trace que des numéros des cellules remplies (ou utilisées).
 \newline
 Dans l'exemple ci-dessus, nous avons utilisé les cellules (c1,c2,c7,c12) et la cellule c0, nous aurions donc la séquence 
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic03.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic03.PNG}
 \end{figure}
 qui a une longueur de n + 1, avec n = 4. 
 \newline
@@ -93,7 +93,7 @@ Dans cette approche, un "tournoi, k" est organisé entre k chromosomes (solution
 \newline
 Supposons que k = 3 :
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic04.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic04.PNG}
 \end{figure}
 La pression de sélection(Une \textit{pression de sélection} est une contrainte environnementale qui va \textbf{pousser} une espèce à évoluer dans une direction donnée.) peut être facilement ajustée en changeant la taille du tournoi (un k plus élevé augmente la pression de sélection).
 La sélection du tournoi est indépendante de la fonction Fitness.Parmis des avantages, on cite la diminution le temps de calcul, et son fonctionnement sur les architectures parallèles.
@@ -104,7 +104,7 @@ L’opérateur choisi pour cet algorithme est le ‘One Point Crossover’ ou �
 \newline
 Par exemple dans la figure suivante, nous avons le point de croisement =5:
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic05.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic05.PNG}
 \end{figure}
 \subsection{Mutation}
 La mutation peut être définie comme un petit ajustement aléatoire dans le chromosome, pour obtenir une nouvelle solution. Il est utilisé pour maintenir et introduire la diversité dans la population génétique et est généralement appliqué avec une faible probabilité \textit{pm}. Si la probabilité est très élevée, l'AG se réduit à une recherche aléatoire.
@@ -113,7 +113,7 @@ La mutation est la partie de l'AG qui est liée à «\textbf{l'exploration}» de
 \newline
 L’opérateur de mutation choisi pour cette algorithme est :  “\textbf{scramble mutation}” ou “\textbf{la mutation de brouillage}”, qui, à partir du chromosome entier, choisi aléatoirement un sous-ensemble de gènes dont le cardinale est un paramètre en entrée de la fonction, et ses valeurs sont brouillées ou mélangées au hasard.
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic06.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic06.PNG}
 \end{figure}
 \subsection{Evaluation}
 Le choix du chromosome ayant le plus petite valeur de la cellule 0, c’est à dire le plus petit nombre de  boîtes après avoir vérifié la validité de la solution (chromosome) i.e si le chromosome constitue réellement une solution acceptable.
@@ -163,24 +163,24 @@ Voici les résultats des exécutions, pour chaque classe:
 \textbf{Graphe 01:}
 Graphe représentant le temps d'exécution moyen de chaque type d’instance ( la moyenne d'exécution de 5 instances de même type) des 3 classes de Scholl
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic07.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic07.PNG}
 \end{figure}
 \textbf{Graphe 02:}
 Les graphes suivants montrent la différence entre le nombre de boîtes utilisées par AG, la valeur optimale OPT
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic08.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic08.PNG}
 \end{figure}
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic09.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic09.PNG}
 \end{figure}
 Voici les ratio obtenus par famille d’instances :
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic10.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic10.PNG}
 \end{figure}
 \textbf{Graphe 03:}
 Et voici le graphe des ratio pour chaque nombre d'objets N des instances 
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{pic11.PNG}
+  \includegraphics[width=\linewidth]{../figures/pic11.PNG}
 \end{figure}
 \textbf{Analyse et Interprétation des résultats : }
 \newline
