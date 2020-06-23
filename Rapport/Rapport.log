@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.28)  23 JUN 2020 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.28)  23 JUN 2020 18:26
 entering extended mode
 **c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/Rapport.tex
 (c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/Rapport.tex
@@ -741,7 +741,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/TRETEC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96 ...ne {4.1}Pseudo-Code}{25}{subsection.0.4.1}
+l.90 ...nces gÃ©nÃ©rÃ©es : }{25}{subsection.0.4.1}
                                                   % [1
 
 ] [2] [3])
@@ -773,7 +773,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 15.
 
 [9] [10]
-<chapters/../figures/DP-flow.png, id=584, 377.91188pt x 197.23688pt>
+<chapters/../figures/DP-flow.png, id=576, 377.91188pt x 197.23688pt>
 File: chapters/../figures/DP-flow.png Graphic file (type png)
 <use chapters/../figures/DP-flow.png>
 Package pdftex.def Info: chapters/../figures/DP-flow.png  used on input line 77.
@@ -787,47 +787,47 @@ l.80         \section{Heuristiques}
 ] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/conception.texpdfTeX warning (ext4): destination with the same identifier (name{section.0.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 \section{Branch and bound}
+l.34 \section{Branch and bound}
                                
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 36.
+(hyperref)                than one, level fixed on input line 34.
 
-<chapters/../figures/diagr1.png, id=634, 511.9125pt x 83.5622pt>
+<chapters/../figures/diagr1.png, id=626, 511.9125pt x 83.5622pt>
 File: chapters/../figures/diagr1.png Graphic file (type png)
 <use chapters/../figures/diagr1.png>
-Package pdftex.def Info: chapters/../figures/diagr1.png  used on input line 46.
+Package pdftex.def Info: chapters/../figures/diagr1.png  used on input line 44.
 (pdftex.def)             Requested size: 390.0pt x 63.6622pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 \subsection{Pseudo-Code}
+l.46 \subsection{Pseudo-Code}
                              
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 48.
+(hyperref)                than one, level fixed on input line 46.
 
 [19 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/diagr1.png>]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 68.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 66.
  [20]pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 ...section{Evaluation d'un noeud (Borne L1)}
+l.104 ...section{Evaluation d'un noeud (Borne L1)}
                                                    [21]
-<chapters/../figures/formule1.png, id=682, 314.67563pt x 85.82062pt>
+<chapters/../figures/formule1.png, id=673, 314.67563pt x 85.82062pt>
 File: chapters/../figures/formule1.png Graphic file (type png)
 <use chapters/../figures/formule1.png>
-Package pdftex.def Info: chapters/../figures/formule1.png  used on input line 111.
+Package pdftex.def Info: chapters/../figures/formule1.png  used on input line 109.
 (pdftex.def)             Requested size: 227.62204pt x 62.07887pt.
-<chapters/../figures/example1.png, id=683, 471.26062pt x 143.78719pt>
+<chapters/../figures/example1.png, id=674, 471.26062pt x 143.78719pt>
 File: chapters/../figures/example1.png Graphic file (type png)
 <use chapters/../figures/example1.png>
-Package pdftex.def Info: chapters/../figures/example1.png  used on input line 116.
+Package pdftex.def Info: chapters/../figures/example1.png  used on input line 114.
 (pdftex.def)             Requested size: 284.52756pt x 86.8127pt.
-<chapters/../figures/diag2.png, id=684, 472.01344pt x 319.1925pt>
+<chapters/../figures/diag2.png, id=675, 472.01344pt x 319.1925pt>
 File: chapters/../figures/diag2.png Graphic file (type png)
 <use chapters/../figures/diag2.png>
-Package pdftex.def Info: chapters/../figures/diag2.png  used on input line 123.
+Package pdftex.def Info: chapters/../figures/diag2.png  used on input line 121.
 (pdftex.def)             Requested size: 390.0pt x 263.73643pt.
 
 
@@ -836,91 +836,60 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 \section{Branch and bound amÃ©liorÃ©}
+l.123 \section{Branch and bound amÃ©liorÃ©}
                                            pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.131 ...section{Evaluation d'un noeud (Borne L2)}
+l.129 ...section{Evaluation d'un noeud (Borne L2)}
                                                    [22 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/formule1.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/example1.png>] [23 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/diag2.png>]pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \subsection{Pseudo-Code}
+l.150 \subsection{Pseudo-Code}
                               
-Underfull \hbox (badness 2990) in paragraph at lines 156--157
+Underfull \hbox (badness 2990) in paragraph at lines 154--155
 [] []\T1/cmr/m/n/12 Appliquer WFD sur l'ins-tance pour ini-tia-li-ser le coût op-ti-mal :
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{section.0.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \section{Recherche exhaustive }
-                                      [24] [25] [26]
-Overfull \hbox (29.63397pt too wide) in paragraph at lines 257--257
- []\T1/cmr/bx/n/12 la mé-thode : _move_items_to_bin(list_of_items_indices, bin_index)[] 
- []
-
-[27]
-<chapters/../figures/tabit1.png, id=792, 436.63126pt x 106.14656pt>
-File: chapters/../figures/tabit1.png Graphic file (type png)
-<use chapters/../figures/tabit1.png>
-Package pdftex.def Info: chapters/../figures/tabit1.png  used on input line 296.
-(pdftex.def)             Requested size: 284.52756pt x 69.16936pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--299
- []\T1/cmr/bx/n/12 première ité-ra-tion :[] \T1/cmr/m/n/12 Construc-tion de la table de vé-rité :
- []
-
-<chapters/../figures/tabit2.png, id=793, 440.39531pt x 84.315pt>
-File: chapters/../figures/tabit2.png Graphic file (type png)
-<use chapters/../figures/tabit2.png>
-Package pdftex.def Info: chapters/../figures/tabit2.png  used on input line 309.
-(pdftex.def)             Requested size: 284.52756pt x 54.47473pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--310
- []\T1/cmr/bx/n/12 deuxième ité-ra-tion :[] \T1/cmr/m/n/12 Construc-tion de la table de vé-rité :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--310
-
- []
-
-[28 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tabit1.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tabit2.png>]) (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Tests.tex
-<chapters/../figures/tab1.png, id=813, 486.31688pt x 167.87718pt>
+l.158 \section{Recherche exhaustive }
+                                     ) (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Tests.tex [24]
+<chapters/../figures/tab1.png, id=704, 371.88937pt x 167.87718pt>
 File: chapters/../figures/tab1.png Graphic file (type png)
 <use chapters/../figures/tab1.png>
 Package pdftex.def Info: chapters/../figures/tab1.png  used on input line 16.
-(pdftex.def)             Requested size: 384.1122pt x 132.5959pt.
-<chapters/../figures/graph1.png, id=814, 412.54124pt x 234.8775pt>
+(pdftex.def)             Requested size: 384.1122pt x 173.39957pt.
+<chapters/../figures/graph1.png, id=705, 412.54124pt x 234.8775pt>
 File: chapters/../figures/graph1.png Graphic file (type png)
 <use chapters/../figures/graph1.png>
 Package pdftex.def Info: chapters/../figures/graph1.png  used on input line 19.
 (pdftex.def)             Requested size: 384.1122pt x 218.69543pt.
- [29] [30 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab1.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph1.png>]
-<chapters/../figures/tab2.png, id=832, 493.0922pt x 124.96687pt>
+ [25 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab1.png>] [26 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph1.png>]
+<chapters/../figures/tab2.png, id=724, 493.0922pt x 124.96687pt>
 File: chapters/../figures/tab2.png Graphic file (type png)
 <use chapters/../figures/tab2.png>
-Package pdftex.def Info: chapters/../figures/tab2.png  used on input line 41.
+Package pdftex.def Info: chapters/../figures/tab2.png  used on input line 40.
 (pdftex.def)             Requested size: 384.1122pt x 97.35173pt.
- [31]
-<chapters/../figures/graph2.png, id=842, 356.83313pt x 216.81pt>
+<chapters/../figures/graph2.png, id=725, 356.83313pt x 216.81pt>
 File: chapters/../figures/graph2.png Graphic file (type png)
 <use chapters/../figures/graph2.png>
-Package pdftex.def Info: chapters/../figures/graph2.png  used on input line 48.
+Package pdftex.def Info: chapters/../figures/graph2.png  used on input line 46.
 (pdftex.def)             Requested size: 384.1122pt x 233.39702pt.
-<chapters/../figures/graph3.png, id=843, 362.10281pt x 216.81pt>
+ [27 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab2.png>]
+<chapters/../figures/graph3.png, id=734, 362.10281pt x 216.81pt>
 File: chapters/../figures/graph3.png Graphic file (type png)
 <use chapters/../figures/graph3.png>
-Package pdftex.def Info: chapters/../figures/graph3.png  used on input line 52.
+Package pdftex.def Info: chapters/../figures/graph3.png  used on input line 50.
 (pdftex.def)             Requested size: 384.1122pt x 229.99283pt.
- [32 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab2.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph2.png>]) [33 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph3.png>] [34
+ [28 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph2.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/graph3.png>]) [29] [30
 
 ] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/worse_case_analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-) [35] [36
+) [31] [32
 
 ] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/Conception_heur.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--16
@@ -932,7 +901,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[37]pdfTeX warning (ext4): destination with the same identifier (name{section.0.1}) has been already used, duplicate ignored
+[33]pdfTeX warning (ext4): destination with the same identifier (name{section.0.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.29 \section{Next Fit (NF)}
@@ -967,12 +936,12 @@ l.50 \subsection{principe}
                    \relax 
 l.54 \subsection{Pseudocode:}
                              
-<chapters/../figures/NF NFD better(1).png, id=883, 626.34pt x 534.99875pt>
+<chapters/../figures/NF NFD better(1).png, id=770, 626.34pt x 534.99875pt>
 File: chapters/../figures/NF NFD better(1).png Graphic file (type png)
 <use chapters/../figures/NF NFD better(1).png>
 Package pdftex.def Info: chapters/../figures/NF NFD better(1).png  used on input line 64.
 (pdftex.def)             Requested size: 390.0pt x 333.13255pt.
- [38]pdfTeX warning (ext4): destination with the same identifier (name{section.0.3}) has been already used, duplicate ignored
+ [34]pdfTeX warning (ext4): destination with the same identifier (name{section.0.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.67 \section{First Fit (FF)}
@@ -996,35 +965,27 @@ l.92 \section{First Fit Descreasing (FFD)}
 <to be read again> 
                    \relax 
 l.93 \subsection{principe}
-                           [39 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/NF NFD better(1).png>]
-<chapters/../figures/FF FFD.png, id=908, 529.98pt x 524.96124pt>
+                           [35 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/NF NFD better(1).png>]pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 \subsection{Pseudocode}
+                            
+<chapters/../figures/FF FFD.png, id=795, 529.98pt x 524.96124pt>
 File: chapters/../figures/FF FFD.png Graphic file (type png)
 <use chapters/../figures/FF FFD.png>
 Package pdftex.def Info: chapters/../figures/FF FFD.png  used on input line 109.
 (pdftex.def)             Requested size: 390.0pt x 386.31049pt.
- [40]pdfTeX warning (ext4): destination with the same identifier (name{section.0.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.113 \section{Best Fit (BF)}
-                             pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.5.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.114 \subsection{principe}
-                           pdfTeX warning (ext4): destination with the same identifier (name{subsection.0.5.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.120 \subsection{Pseudocode}
-                             
+ [36]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/FF FFD.png>]
-<chapters/../figures/BF BFD.png, id=934, 427.5975pt x 524.96124pt>
+[37 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/FF FFD.png>]
+<chapters/../figures/BF BFD.png, id=822, 427.5975pt x 524.96124pt>
 File: chapters/../figures/BF BFD.png Graphic file (type png)
 <use chapters/../figures/BF BFD.png>
 Package pdftex.def Info: chapters/../figures/BF BFD.png  used on input line 154.
 (pdftex.def)             Requested size: 390.0pt x 478.80487pt.
- [42] [43 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/BF BFD.png>]) (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/tests_heur.tex
+ [38] [39 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/BF BFD.png>]) (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/tests_heur.tex
 Overfull \hbox (13.29288pt too wide) in paragraph at lines 11--13
 \T1/cmr/m/n/12 rithmes im-plé-men-tés : \T1/cmr/m/it/12 Next-Fit(NF), Next-Fit De-crea-sing(NFD), First-Fit(FF),
  []
@@ -1039,44 +1000,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<chapters/../figures/tab_part1.png, id=961, 342.5297pt x 97.11281pt>
+<chapters/../figures/tab_part1.png, id=848, 342.5297pt x 97.11281pt>
 File: chapters/../figures/tab_part1.png Graphic file (type png)
 <use chapters/../figures/tab_part1.png>
 Package pdftex.def Info: chapters/../figures/tab_part1.png  used on input line 29.
 (pdftex.def)             Requested size: 390.0pt x 110.57933pt.
-<chapters/../figures/tab_part2.png, id=962, 344.03531pt x 98.61844pt>
+<chapters/../figures/tab_part2.png, id=849, 344.03531pt x 98.61844pt>
 File: chapters/../figures/tab_part2.png Graphic file (type png)
 <use chapters/../figures/tab_part2.png>
 Package pdftex.def Info: chapters/../figures/tab_part2.png  used on input line 30.
 (pdftex.def)             Requested size: 390.0pt x 111.79414pt.
-<chapters/../figures/tab_part3.png, id=963, 344.03531pt x 114.4275pt>
+<chapters/../figures/tab_part3.png, id=850, 344.03531pt x 114.4275pt>
 File: chapters/../figures/tab_part3.png Graphic file (type png)
 <use chapters/../figures/tab_part3.png>
 Package pdftex.def Info: chapters/../figures/tab_part3.png  used on input line 31.
 (pdftex.def)             Requested size: 390.0pt x 129.71536pt.
-<chapters/../figures/tab_part4.png, id=964, 344.78813pt x 98.61844pt>
+<chapters/../figures/tab_part4.png, id=851, 344.78813pt x 98.61844pt>
 File: chapters/../figures/tab_part4.png Graphic file (type png)
 <use chapters/../figures/tab_part4.png>
 Package pdftex.def Info: chapters/../figures/tab_part4.png  used on input line 32.
 (pdftex.def)             Requested size: 390.0pt x 111.55188pt.
-[44]
-<chapters/../figures/Temps_exec_heuristics.png, id=970, 702.625pt x 451.6875pt>
+[40]
+<chapters/../figures/Temps_exec_heuristics.png, id=857, 702.625pt x 451.6875pt>
 File: chapters/../figures/Temps_exec_heuristics.png Graphic file (type png)
 <use chapters/../figures/Temps_exec_heuristics.png>
 Package pdftex.def Info: chapters/../figures/Temps_exec_heuristics.png  used on input line 39.
 (pdftex.def)             Requested size: 390.0pt x 250.72398pt.
- [45 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_part1.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_part2.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_part3.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_part4.png>]
-<chapters/../figures/Graphe_M_Exactes.png, id=980, 757.83125pt x 659.46375pt>
+ [41 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_part1.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_part2.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_part3.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_part4.png>]
+<chapters/../figures/Graphe_M_Exactes.png, id=867, 757.83125pt x 659.46375pt>
 File: chapters/../figures/Graphe_M_Exactes.png Graphic file (type png)
 <use chapters/../figures/Graphe_M_Exactes.png>
 Package pdftex.def Info: chapters/../figures/Graphe_M_Exactes.png  used on input line 44.
 (pdftex.def)             Requested size: 390.0pt x 339.38109pt.
- [46 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Temps_exec_heuristics.png>]
+ [42 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Temps_exec_heuristics.png>]
 Overfull \hbox (12.45625pt too wide) in paragraph at lines 52--53
 []\T1/cmr/m/n/12 Les heu-ris-tiques \T1/cmr/m/it/12 FF \T1/cmr/m/n/12 et \T1/cmr/m/it/12 FFD \T1/cmr/m/n/12 s'exé-cutent en des temps lé-gè-re-ment meilleurs
  []
 
-[47 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Graphe_M_Exactes.png>]
+[43 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Graphe_M_Exactes.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
@@ -1086,27 +1047,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
-<chapters/../figures/tab_ratio_heur.png, id=995, 375.65344pt x 209.28188pt>
+<chapters/../figures/tab_ratio_heur.png, id=883, 375.65344pt x 209.28188pt>
 File: chapters/../figures/tab_ratio_heur.png Graphic file (type png)
 <use chapters/../figures/tab_ratio_heur.png>
 Package pdftex.def Info: chapters/../figures/tab_ratio_heur.png  used on input line 71.
 (pdftex.def)             Requested size: 390.0pt x 217.29033pt.
-[48]
-<chapters/../figures/Ratio_M_heuristiques_intances.png, id=1002, 642.4pt x 398.48875pt>
+[44]
+<chapters/../figures/Ratio_M_heuristiques_intances.png, id=889, 642.4pt x 398.48875pt>
 File: chapters/../figures/Ratio_M_heuristiques_intances.png Graphic file (type png)
 <use chapters/../figures/Ratio_M_heuristiques_intances.png>
 Package pdftex.def Info: chapters/../figures/Ratio_M_heuristiques_intances.png  used on input line 76.
 (pdftex.def)             Requested size: 390.0pt x 241.92857pt.
-<chapters/../figures/Ratio_M_heuristiques.png, id=1003, 634.37pt x 390.45876pt>
+<chapters/../figures/Ratio_M_heuristiques.png, id=890, 634.37pt x 390.45876pt>
 File: chapters/../figures/Ratio_M_heuristiques.png Graphic file (type png)
 <use chapters/../figures/Ratio_M_heuristiques.png>
 Package pdftex.def Info: chapters/../figures/Ratio_M_heuristiques.png  used on input line 83.
 (pdftex.def)             Requested size: 390.0pt x 240.05623pt.
- [49 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_ratio_heur.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Ratio_M_heuristiques_intances.png>] [50 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Ratio_M_heuristiques.png>]) [51] [52
+ [45 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/tab_ratio_heur.png> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Ratio_M_heuristiques_intances.png>] [46 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Ratio_M_heuristiques.png>]) [47] [48
 
-] [53]
+] [49]
 Chapitre 1.
-(c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/RecuitSim.tex [54
+(c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/RecuitSim.tex [50
 
 ]
 
@@ -1125,61 +1086,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-[55]
-<chapters/../figures/RS_SWAP.png, id=1063, 519.44063pt x 325.215pt>
+[51]
+<chapters/../figures/RS_SWAP.png, id=950, 519.44063pt x 325.215pt>
 File: chapters/../figures/RS_SWAP.png Graphic file (type png)
 <use chapters/../figures/RS_SWAP.png>
 Package pdftex.def Info: chapters/../figures/RS_SWAP.png  used on input line 94.
 (pdftex.def)             Requested size: 390.0pt x 244.17365pt.
- [56] [57 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS_SWAP.png>] [58]
-<chapters/../figures/RS/rs tab temps.PNG, id=1080, 287.57437pt x 194.22563pt>
+ [52] [53 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS_SWAP.png>] [54]
+<chapters/../figures/RS/rs tab temps.PNG, id=968, 287.57437pt x 194.22563pt>
 File: chapters/../figures/RS/rs tab temps.PNG Graphic file (type png)
 <use chapters/../figures/RS/rs tab temps.PNG>
 Package pdftex.def Info: chapters/../figures/RS/rs tab temps.PNG  used on input line 141.
 (pdftex.def)             Requested size: 287.57367pt x 194.22514pt.
-<chapters/../figures/RS/texec rs(1).png, id=1081, 511.9125pt x 280.04625pt>
+<chapters/../figures/RS/texec rs(1).png, id=969, 511.9125pt x 280.04625pt>
 File: chapters/../figures/RS/texec rs(1).png Graphic file (type png)
 <use chapters/../figures/RS/texec rs(1).png>
 Package pdftex.def Info: chapters/../figures/RS/texec rs(1).png  used on input line 147.
 (pdftex.def)             Requested size: 390.0pt x 213.3544pt.
-<chapters/../figures/RS/rs figures.PNG, id=1082, 413.29407pt x 456.20438pt>
+<chapters/../figures/RS/rs figures.PNG, id=970, 413.29407pt x 456.20438pt>
 File: chapters/../figures/RS/rs figures.PNG Graphic file (type png)
 <use chapters/../figures/RS/rs figures.PNG>
 Package pdftex.def Info: chapters/../figures/RS/rs figures.PNG  used on input line 153.
 (pdftex.def)             Requested size: 537.28221pt x 593.06561pt.
- [59 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/rs tab temps.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/texec rs(1).png>]
-<chapters/../figures/RS/rs tab ratio.PNG, id=1091, 231.86626pt x 191.9672pt>
+ [55 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/rs tab temps.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/texec rs(1).png>]
+<chapters/../figures/RS/rs tab ratio.PNG, id=979, 231.86626pt x 191.9672pt>
 File: chapters/../figures/RS/rs tab ratio.PNG Graphic file (type png)
 <use chapters/../figures/RS/rs tab ratio.PNG>
 Package pdftex.def Info: chapters/../figures/RS/rs tab ratio.PNG  used on input line 159.
 (pdftex.def)             Requested size: 231.86568pt x 191.96672pt.
-<chapters/../figures/RS/ratio RS.png, id=1092, 387.4475pt x 279.0425pt>
+<chapters/../figures/RS/ratio RS.png, id=980, 387.4475pt x 279.0425pt>
 File: chapters/../figures/RS/ratio RS.png Graphic file (type png)
 <use chapters/../figures/RS/ratio RS.png>
 Package pdftex.def Info: chapters/../figures/RS/ratio RS.png  used on input line 160.
 (pdftex.def)             Requested size: 309.95842pt x 223.2343pt.
- [60 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/rs figures.PNG>]
+ [56 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/rs figures.PNG>]
 Overfull \hbox (4.17986pt too wide) in paragraph at lines 168--169
 \T1/cmr/m/it/12 0.7s \T1/cmr/m/n/12 pour N=50 (classe 2) , jus-qu'à \T1/cmr/m/it/12 357s \T1/cmr/m/n/12 pour N=500 (classe1),[\T1/cmr/bx/it/12 figure01
  []
 
-[61 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/rs tab ratio.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/ratio RS.png>]) [62]
+[57 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/rs tab ratio.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/RS/ratio RS.png>]) [58]
 Chapitre 2.
 (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/WOA.tex
-<chapters/../figures/cercles.png, id=1111, 380.92313pt x 381.67593pt>
+<chapters/../figures/cercles.png, id=998, 380.92313pt x 381.67593pt>
 File: chapters/../figures/cercles.png Graphic file (type png)
 <use chapters/../figures/cercles.png>
 Package pdftex.def Info: chapters/../figures/cercles.png  used on input line 14.
 (pdftex.def)             Requested size: 390.0pt x 390.78357pt.
- [63
+ [59
 
 ]
-<chapters/../figures/spiral.png, id=1116, 447.17062pt x 421.575pt>
+<chapters/../figures/spiral.png, id=1003, 447.17062pt x 421.575pt>
 File: chapters/../figures/spiral.png Graphic file (type png)
 <use chapters/../figures/spiral.png>
 Package pdftex.def Info: chapters/../figures/spiral.png  used on input line 19.
 (pdftex.def)             Requested size: 390.0pt x 367.68715pt.
- [64 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/cercles.png>] [65 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/spiral.png>] [66] [67]
+ [60 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/cercles.png>] [61 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/spiral.png>] [62] [63]
 Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
  []
@@ -1187,10 +1148,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--131
 
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 133.
 
-[68] [69]) [70]
+[64] [65]) [66]
 Chapitre 3.
 (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/ILWOA.tex
-<chapters/../figures/logisticvsothers.PNG, id=1189, 402.00188pt x 289.08pt>
+<chapters/../figures/logisticvsothers.PNG, id=1077, 402.00188pt x 289.08pt>
 File: chapters/../figures/logisticvsothers.PNG Graphic file (type png)
 <use chapters/../figures/logisticvsothers.PNG>
 Package pdftex.def Info: chapters/../figures/logisticvsothers.PNG  used on input line 30.
@@ -1204,40 +1165,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
-[71
+[67
 
-] [72 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/logisticvsothers.PNG>]
-<chapters/../figures/Mutation.PNG, id=1205, 262.73157pt x 316.18124pt>
+] [68 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/logisticvsothers.PNG>]
+<chapters/../figures/Mutation.PNG, id=1092, 262.73157pt x 316.18124pt>
 File: chapters/../figures/Mutation.PNG Graphic file (type png)
 <use chapters/../figures/Mutation.PNG>
 Package pdftex.def Info: chapters/../figures/Mutation.PNG  used on input line 60.
 (pdftex.def)             Requested size: 284.52756pt x 342.4259pt.
-) [73 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Mutation.PNG>] [74]
+) [69 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/Mutation.PNG>] [70]
 Chapitre 4.
 (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/ag.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
 
-[75
+[71
 
 ]
-<chapters/../figures/pic01.PNG, id=1254, 447.92343pt x 231.86626pt>
+<chapters/../figures/pic01.PNG, id=1141, 447.92343pt x 231.86626pt>
 File: chapters/../figures/pic01.PNG Graphic file (type png)
 <use chapters/../figures/pic01.PNG>
 Package pdftex.def Info: chapters/../figures/pic01.PNG  used on input line 42.
 (pdftex.def)             Requested size: 390.0pt x 201.88829pt.
-<chapters/../figures/pic02.PNG, id=1255, 449.42906pt x 24.09pt>
+<chapters/../figures/pic02.PNG, id=1142, 449.42906pt x 24.09pt>
 File: chapters/../figures/pic02.PNG Graphic file (type png)
 <use chapters/../figures/pic02.PNG>
 Package pdftex.def Info: chapters/../figures/pic02.PNG  used on input line 48.
 (pdftex.def)             Requested size: 390.0pt x 20.90517pt.
-<chapters/../figures/pic03.PNG, id=1256, 410.2828pt x 27.10126pt>
+<chapters/../figures/pic03.PNG, id=1143, 410.2828pt x 27.10126pt>
 File: chapters/../figures/pic03.PNG Graphic file (type png)
 <use chapters/../figures/pic03.PNG>
 Package pdftex.def Info: chapters/../figures/pic03.PNG  used on input line 55.
 (pdftex.def)             Requested size: 390.0pt x 25.76134pt.
- [76 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic01.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic02.PNG>]
+ [72 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic01.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic02.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 57--65
 
  []
@@ -1247,24 +1208,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--65
 
  []
 
-<chapters/../figures/pic04.PNG, id=1263, 587.94656pt x 275.52937pt>
+<chapters/../figures/pic04.PNG, id=1151, 587.94656pt x 275.52937pt>
 File: chapters/../figures/pic04.PNG Graphic file (type png)
 <use chapters/../figures/pic04.PNG>
 Package pdftex.def Info: chapters/../figures/pic04.PNG  used on input line 96.
 (pdftex.def)             Requested size: 390.0pt x 182.76646pt.
-[77 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic03.PNG>]
-<chapters/../figures/pic05.PNG, id=1271, 465.23813pt x 106.14656pt>
+[73 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic03.PNG>]
+<chapters/../figures/pic05.PNG, id=1159, 465.23813pt x 106.14656pt>
 File: chapters/../figures/pic05.PNG Graphic file (type png)
 <use chapters/../figures/pic05.PNG>
 Package pdftex.def Info: chapters/../figures/pic05.PNG  used on input line 107.
 (pdftex.def)             Requested size: 390.0pt x 88.98271pt.
- [78 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic04.PNG>]
-<chapters/../figures/pic06.PNG, id=1278, 465.23813pt x 59.47218pt>
+ [74 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic04.PNG>]
+<chapters/../figures/pic06.PNG, id=1165, 465.23813pt x 59.47218pt>
 File: chapters/../figures/pic06.PNG Graphic file (type png)
 <use chapters/../figures/pic06.PNG>
 Package pdftex.def Info: chapters/../figures/pic06.PNG  used on input line 116.
 (pdftex.def)             Requested size: 390.0pt x 49.85555pt.
- [79 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic05.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic06.PNG>]
+ [75 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic05.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic06.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 127--131
 
  []
@@ -1274,8 +1235,8 @@ Overfull \hbox (20.8857pt too wide) in paragraph at lines 152--153
 \T1/cmr/m/n/12 Au fi-nal, notre choix s'est porté sur le tri-plet :(\T1/cmr/bx/n/12 nbrGen\T1/cmr/m/n/12 =200, \T1/cmr/bx/n/12 k\T1/cmr/m/n/12 =25,\T1/cmr/bx/n/12 popSize\T1/cmr/m/n/12 =10)
  []
 
-[80]
-<chapters/../figures/pic07.PNG, id=1291, 450.18187pt x 382.42876pt>
+[76]
+<chapters/../figures/pic07.PNG, id=1178, 450.18187pt x 382.42876pt>
 File: chapters/../figures/pic07.PNG Graphic file (type png)
 <use chapters/../figures/pic07.PNG>
 Package pdftex.def Info: chapters/../figures/pic07.PNG  used on input line 166.
@@ -1285,54 +1246,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--167
 
  []
 
-[81]
-<chapters/../figures/pic08.PNG, id=1296, 496.85625pt x 349.305pt>
+[77]
+<chapters/../figures/pic08.PNG, id=1183, 496.85625pt x 349.305pt>
 File: chapters/../figures/pic08.PNG Graphic file (type png)
 <use chapters/../figures/pic08.PNG>
 Package pdftex.def Info: chapters/../figures/pic08.PNG  used on input line 171.
 (pdftex.def)             Requested size: 390.0pt x 274.1837pt.
-<chapters/../figures/pic09.PNG, id=1297, 482.55281pt x 221.32687pt>
+<chapters/../figures/pic09.PNG, id=1184, 482.55281pt x 221.32687pt>
 File: chapters/../figures/pic09.PNG Graphic file (type png)
 <use chapters/../figures/pic09.PNG>
 Package pdftex.def Info: chapters/../figures/pic09.PNG  used on input line 174.
 (pdftex.def)             Requested size: 390.0pt x 178.882pt.
- [82 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic07.PNG>]
-<chapters/../figures/pic10.PNG, id=1303, 316.93407pt x 207.77625pt>
+ [78 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic07.PNG>]
+<chapters/../figures/pic10.PNG, id=1191, 316.93407pt x 207.77625pt>
 File: chapters/../figures/pic10.PNG Graphic file (type png)
 <use chapters/../figures/pic10.PNG>
 Package pdftex.def Info: chapters/../figures/pic10.PNG  used on input line 178.
 (pdftex.def)             Requested size: 390.0pt x 255.69641pt.
- [83 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic08.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic09.PNG>]
-<chapters/../figures/pic11.PNG, id=1310, 395.97937pt x 313.17pt>
+ [79 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic08.PNG> <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic09.PNG>]
+<chapters/../figures/pic11.PNG, id=1198, 395.97937pt x 313.17pt>
 File: chapters/../figures/pic11.PNG Graphic file (type png)
 <use chapters/../figures/pic11.PNG>
 Package pdftex.def Info: chapters/../figures/pic11.PNG  used on input line 183.
 (pdftex.def)             Requested size: 390.0pt x 308.44797pt.
- [84 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic10.PNG>]
+ [80 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic10.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 185--188
 
  []
 
-) [85 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic11.PNG>]
+) [81 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/pic11.PNG>]
 Chapitre 5.
 (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters/compare_mh.tex
-<chapters/../figures/mh_texec.png, id=1322, 479.54156pt x 222.8325pt>
+<chapters/../figures/mh_texec.png, id=1209, 479.54156pt x 222.8325pt>
 File: chapters/../figures/mh_texec.png Graphic file (type png)
 <use chapters/../figures/mh_texec.png>
 Package pdftex.def Info: chapters/../figures/mh_texec.png  used on input line 28.
 (pdftex.def)             Requested size: 390.0pt x 181.22777pt.
- [86
+ [82
 
 ]
-<chapters/../figures/mh_ecart.png, id=1327, 479.54156pt x 228.10219pt>
+<chapters/../figures/mh_ecart.png, id=1214, 479.54156pt x 228.10219pt>
 File: chapters/../figures/mh_ecart.png Graphic file (type png)
 <use chapters/../figures/mh_ecart.png>
 Package pdftex.def Info: chapters/../figures/mh_ecart.png  used on input line 40.
 (pdftex.def)             Requested size: 390.0pt x 185.51353pt.
- [87 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/mh_texec.png>]) [88 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/mh_ecart.png>]
+ [83 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/mh_texec.png>]) [84 <c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/../figures/mh_ecart.png>]
 Chapitre 6.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
-[89
+[85
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
@@ -1340,23 +1301,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `Rapport.out' has not changed.
-(rerunfilecheck)             Checksum: C531EC02F38F1E12F99DC62AF8C13B07;7995.
+(rerunfilecheck)             Checksum: 6632345E6524CF05C8DE3B9E84D72947;7852.
 Package logreq Info: Writing requests to 'Rapport.run.xml'.
 \openout1 = `Rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19492 strings out of 480934
- 334955 string characters out of 2909679
- 896819 words of memory out of 3000000
- 34442 multiletter control sequences out of 15000+200000
+ 19391 strings out of 480934
+ 333497 string characters out of 2909679
+ 895819 words of memory out of 3000000
+ 34432 multiletter control sequences out of 15000+200000
  552917 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,11n,86p,1231b,2101s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.pdf (90 pages, 1755295 bytes).
+Output written on c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.pdf (86 pages, 1725423 bytes).
 PDF statistics:
- 2099 PDF objects out of 2487 (max. 8388607)
- 513 named destinations out of 1000 (max. 500000)
- 1084 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1964 PDF objects out of 2073 (max. 8388607)
+ 424 named destinations out of 1000 (max. 500000)
+ 1058 words of extra memory for PDF output out of 10000 (max. 10000000)
 
