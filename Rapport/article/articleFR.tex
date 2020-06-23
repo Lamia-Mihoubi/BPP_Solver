@@ -1,9 +1,11 @@
-\documentclass[preprint,12pt]{elsarticle}
+\documentclass[preprint]{elsarticle}
 \usepackage[utf8]{inputenc}
 \usepackage[numbers]{natbib}
 \bibliographystyle{abbrvnat}
 \usepackage{graphicx}
-
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage[export]{adjustbox}
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
 
@@ -101,7 +103,7 @@ L’objectif du problème du bin packing (BPP) est de trouver le nombre minimal 
 
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
-Bin packing \sep hybridation \sep AG \sep recuit simulé 
+Bin packing \sep hybridation \sep AG \sep recuit simulé \sep WOA \sep ILWOA 
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
 
@@ -126,8 +128,9 @@ L’algorithme génétique est une heuristique de recherche initialement propos�
 
 La figure suivante représente les étapes de fonctionnement de notre AG, avec la spécification des méthodes utilisées pour implémenter chaque étape. 
 
-\begin{figure}[h]
-    \includegraphics[width=\linewidth]{./figures/AG schema.png}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.6]{./figures/AG schema.png}
     \caption{Processus de AG }
     \label{fig:agschema}
 \end{figure}
@@ -186,91 +189,62 @@ La première contrainte signifie qu’un article j ne peut être placé qu’en 
 La deuxième fait qu’on ne dépasse pas la taille d’une boite lors du rangement
 
 \section{L'approche hybride proposée}
+Pour le schéma de l’hybridation proposé dans cet article,il s’agit d’une hybridation  classifiée selon la taxonomie de talbi comme suit 
+\textbf{HRH globale, généraliste }, et qui utilise l'algorithme génétique comme méthode révolutionnaire,
+suivie par un  Recuit Simulé pour l'intensification des résultats de ce dernier.
 
 \subsection{Encodage de la solution}
+\subsubsection{Solution du bin packing}
+La solution sera représentée par: 
+\begin{itemize}
+    \item une liste de boîtes, où la boîte est représenté par une liste des objets qui y sont rangés, et l’objet est représenté par un entier désignant son poids.  poids des objets qui y sont rangés, ainsi que le nombre de boîtes utilisées, ce qui représente le coût de la solution, et nous permettra  d’évaluer la performance de l’algorithme en terme de la qualité de la solution.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.6]{./figures/Untitled Diagram(6).png}
+    \end{figure}
+    \item Le nombre de boîtes utilisées, ce qui représente le coût de la solution, et nous permettra  d’évaluer la performance de l’algorithme en terme de la qualité de la solution.
+
+\end{itemize}
+\subsubsection{Représentation chromosomique}
+Pour cette implémentation de l’AG, nous allons utiliser une nouvelle représentation chromosomique, proposée dans \cite{Mohamadi}, On représente une solution du Bin packing comme suit: 
+\begin{itemize}
+    \item On suppose qu’on a ‘n’ articles à ranger donc on utilisera n boîtes au maximum.
+    \item Chaque boîte est composée de  “n” cellules, où chaque cellule ne peut contenir qu’un seul article.
+    \item Chaque cellule à un numéro unique dans la solution.
+    \item Si la cellule de l’ordre i de la boite j est remplie par un objet, alors on aura plus le droit de ranger un objet dans toutes les cellules de l’ordre i des autres boites.
+    \item La cellule “zero” contient le nombre de boîtes utilisés dans cette solution.
+\end{itemize}
+Dans le chromosome , on ne garde trace que des numéros de cellules où les objets sont stockés, donc la taille du chromosome sera de 1+n, où n est le nombre d'objets à ranger.
+
+\textbf{Exemple:} Supposons que nous avons quatre objets (n=4) de poids 2, 2, 4 et 4 respectivement, affectés à trois cases (c0=3)  comme indiqué ci-dessous :
+\begin{figure}[H]
+\end{figure}
+Le chromosome correspondant est le suivant : 
+\begin{figure}[H]
+\end{figure}
+Ceci signifie que le nombre de boîtes utilisé est 3, le premier objet est rangé dans la première cellule(boîte 1) , le deuxième objet est rangé dans la 2ème cellule (boîte 1), le 3ème objet est rangé dans la 7ème cellule ( boîte 2), et le 4ème objet est rangé dans la 12ème cellule ( boîte 3) .
+
 \subsection{L'hybridation AG-RS}
+Une hybridation entre AG et RS permet à AG d'explorer un énorme espace de recherche et à RS d'exploiter des zones de recherche locales. Le RS commence généralement par une solution initiale aléatoire, dans la solution proposée, la meilleure solution de AG est utilisée comme configuration initiale, et le Recuit simulé va se charger de l’intensification de cette dernière, où il utilise un processus de recherche d'une solution optimale globale dans l'espace de la solution, grâce à son aspect aléatoire, et qui a été prouvé de guider l’algorithme vers l’optimum global. 
+Donc, le GA est puissant pour obtenir une solution presque optimale sur la zone de recherche large tandis que SA est utile pour rechercher une solution dans la zone de recherche étroite.\cite{Gusti}
+
 \medskip
 
 \bibliography{Samples}
 
-
-\begin{table}[h]
-\centering
-\begin{tabular}{l l l}
-\hline
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\hline
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\hline
-\end{tabular}
-\caption{Table caption}
-\end{table}
-
-
-
-
-\subsection{Subsection Two}
-
-Donec eget ligula venenatis est posuere eleifend in sit amet diam. Vestibulum sollicitudin mauris ac augue blandit ultricies. Nulla facilisi. Etiam ut turpis nunc. Praesent leo orci, tincidunt vitae feugiat eu, feugiat a massa. Duis mauris ipsum, tempor vel condimentum nec, suscipit non mi. Fusce quis urna dictum felis posuere sagittis ac sit amet erat. In in ultrices lectus. Nulla vitae ipsum lectus, a gravida erat. Etiam quam nisl, blandit ut porta in, accumsan a nibh. Phasellus sodales euismod dolor sit amet elementum. Phasellus varius placerat erat, nec gravida libero pellentesque id. Fusce nisi ante, euismod nec cursus at, suscipit a enim. Nulla facilisi.
-
-\begin{figure}[h]
-
-\caption{Figure caption}
-\end{figure}
-
-Integer risus dui, condimentum et gravida vitae, adipiscing et enim. Aliquam erat volutpat. Pellentesque diam sapien, egestas eget gravida ut, tempor eu nulla. Vestibulum mollis pretium lacus eget venenatis. Fusce gravida nisl quis est molestie eu luctus ipsum pretium. Maecenas non eros lorem, vel adipiscing odio. Etiam dolor risus, mattis in pellentesque id, pellentesque eu nibh. Mauris nec ante at orci ultricies placerat ac non massa. Aenean imperdiet, ante eu sollicitudin vestibulum, dolor felis dapibus arcu, sit amet fermentum urna nibh sit amet mauris. Suspendisse adipiscing mollis dolor quis lobortis.
-
-\begin{equation}
-\label{eq:emc}
-e = mc^2
-\end{equation}
-
-\section{The Second Section}
-\label{S:2}
-
-Reference to Section \ref{S:1}. Etiam congue sollicitudin diam non porttitor. Etiam turpis nulla, auctor a pretium non, luctus quis ipsum. Fusce pretium gravida libero non accumsan. Donec eget augue ut nulla placerat hendrerit ac ut mi. Phasellus euismod ornare mollis. Proin tempus fringilla ultricies. Donec pretium feugiat libero quis convallis. Nam interdum ante sed magna congue eu semper tellus sagittis. Curabitur eu augue elit.
-
-Aenean eleifend purus et massa consequat facilisis. Etiam volutpat placerat dignissim. Ut nec nibh nulla. Aliquam erat volutpat. Nam at massa velit, eu malesuada augue. Maecenas sit amet nunc mauris. Maecenas eu ligula quis turpis molestie elementum nec at est. Sed adipiscing neque ac sapien viverra sit amet vestibulum arcu rhoncus.
-
-Vivamus pharetra nibh in orci euismod congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque lacus diam, congue vel laoreet id, iaculis eu sapien. In id risus ac leo pellentesque pellentesque et in dui. Etiam tincidunt quam ut ante vestibulum ultricies. Nam at rutrum lectus. Aenean non justo tortor, nec mattis justo. Aliquam erat volutpat. Nullam ac viverra augue. In tempus venenatis nibh quis semper. Maecenas ac nisl eu ligula dictum lobortis. Sed lacus ante, tempor eu dictum eu, accumsan in velit. Integer accumsan convallis porttitor. Maecenas pretium tincidunt metus sit amet gravida. Maecenas pretium blandit felis, ac interdum ante semper sed.
-
-In auctor ultrices elit, vel feugiat ligula aliquam sed. Curabitur aliquam elit sed dui rhoncus consectetur. Cras elit ipsum, lobortis a tempor at, viverra vitae mi. Cras sed urna sed eros bibendum faucibus. Morbi vel leo orci, vel faucibus orci. Vivamus urna nisl, sodales vitae posuere in, tempus vel tellus. Donec magna est, luctus non commodo sit amet, placerat et enim.
-
-%% The Appendices part is started with the command \appendix;
-%% appendix sections are then done as normal sections
-%% \appendix
-
-%% \section{}
-%% \label{}
-
-%% References
-%%
-%% Following citation commands can be used in the body text:
-%% Usage of \cite is as follows:
-%%   \cite{key}          ==>>  [#]
-%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
-%%   \citet{key}         ==>>  Author [#]
-
-%% References with bibTeX database:
-%% Authors are advised to submit their bibtex database files. They are
-%% requested to list a bibtex style file in the manuscript if they do
-%% not want to use model1-num-names.bst.
-
-%% References without bibTeX database:
-
-% \begin{thebibliography}{00}
-
-%% \bibitem must have the following form:
-%%   \bibitem{key}...
-%%
-
-% \bibitem{}
-
-% \end{thebibliography}
-
 \end{document}
 
-%%
-%% End of file `elsarticle-template-1-num.tex'.
+%%\begin{table}[h]
+%%\centering
+%%\begin{tabular}{l l l}
+%%\hline
+%%\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+%%\hline
+%%Treatment 1 & 0.0003262 & 0.562 \\
+%%Treatment 2 & 0.0015681 & 0.910 \\
+%%Treatment 3 & 0.0009271 & 0.296 \\
+%%\hline
+%%\end{tabular}
+%%\caption{Table caption}
+%%\end{table}
+

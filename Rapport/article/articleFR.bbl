@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,12 +20,26 @@ S.~S. Chen~PH.
 \newblock page 18:434–443, 2009.
 \newblock \doi{10.1016/j.autcon.2008.10.007}.
 
+\bibitem[Gusti et~al.(2017)Gusti, Andreas, Tirana, M.Shochibul, and
+  F.Wayan]{Gusti}
+Gusti, Andreas, Tirana, M.Shochibul, and F.Wayan.
+\newblock Hybrid genetic algorithm and simulated annealing for function
+  optimization.
+\newblock 2017.
+\newblock \doi{10.25126/jitecs.20161215}.
+
 \bibitem[Junghans~L(2015)]{Junghans}
 D.~N. Junghans~L.
 \newblock Hybrid single objective genetic algorithm coupled with the simulated
   annealing optimization method for building optimization.
 \newblock page 187–191, 2015.
 \newblock \doi{10.1016/j.enbuild.2014.10.039}.
+
+\bibitem[Mohamadi(2010)]{Mohamadi}
+N.~Mohamadi.
+\newblock Application of genetic algorithm for the bin packingproblem with a
+  new representation scheme.
+\newblock 2010.
 
 \bibitem[S.Kirkpatrick(1983)]{kirk}
 J.~M. S.Kirkpatrick, C.D.Gelatt.
