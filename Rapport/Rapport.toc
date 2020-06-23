@@ -1,0 +1,184 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {french}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Introduction}{2}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{I\hspace {1em}Présentation du Problème de Bin Packing (BPP): }{3}{part.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.1}Domaines d'Application:}{4}{section.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.2}Formulation Mathématique}{4}{section.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{II\hspace {1em}Etat de l'Art: }{5}{part.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.3}Méthodes Exactes}{6}{section.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.3.1}Branche and Bound}{6}{subsection.0.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Borne inférieure évidente:}{6}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Borne de Martello and Toth \(L_2\):}{6}{section*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Borne inférieure \(L_3\):}{7}{section*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.3.2}Programmation Dynamique}{8}{subsection.0.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.4}Heuristiques}{9}{section.0.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.1}Algorithmes ON-LINE:}{9}{subsection.0.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.1.1}Next Fit (NF):}{10}{subsubsection.0.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.1.2}First Fit (FF): }{10}{subsubsection.0.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.1.3}Best Fit (BF):}{10}{subsubsection.0.4.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.1.4}Worst Fit (WF): }{10}{subsubsection.0.4.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.1.5}Harmonic K (Hk): }{11}{subsubsection.0.4.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.1.6}Autres algorithmes: }{11}{subsubsection.0.4.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.2}Algorithmes OFF-LINE: }{11}{subsection.0.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.2.1}First Fit Decreasing (FFD) : }{11}{subsubsection.0.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.2.2}Best Fit Decreasing (BFD) :}{12}{subsubsection.0.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.3}Algorithmes SEMI-ONLINE :}{12}{subsection.0.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.3.1}MMP (Mostly Myopic Helps) : Fully Dynamic Algorithm}{12}{subsubsection.0.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {0.4.3.2}Harmonic Fit avec (4 ou 6) partitions: }{12}{subsubsection.0.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.4.4}Algorithmes d’Espace Borné (Bounded Space):}{13}{subsection.0.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {0.5}Métaheuristiques}{13}{section.0.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.1}La recherche tabou: }{13}{subsection.0.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.2}L’algorithme ILWOA (Improved Lévy WOA): }{13}{subsection.0.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {0.5.3}L’algorithme FFA (FireFly Algorithm): }{13}{subsection.0.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{III\hspace {1em}Méthodes Exactes: }{15}{part.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Conception: }{16}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Branch and bound}{16}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Pseudo-Code}{17}{subsection.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{exemple 1: }{19}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{exemple 2: }{19}{section*.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Branch and bound amélioré}{19}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{rappel}{20}{section*.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Explication de la formule :}{21}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Pseudo-Code}{21}{subsection.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Recherche exhaustive }{21}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}La programmation dynamique }{21}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{principe }{21}{section*.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{\underline {structure de donnée :}}{21}{section*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{\underline {Etapes :}}{22}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}Pseudo-Code}{22}{subsection.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.1.1}Méthodes utilisées :}{22}{subsubsection.1.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{la méthode : get\_truth\_table(capacité, items):}{22}{section*.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{paramètres:}{22}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Rôle :}{22}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\_pick\_items(m)}{23}{section*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{paramètres:}{23}{section*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Rôle :}{23}{section*.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{la méthode : \_move\_items\_to\_bin(list\_of\_items\_indices, bin\_index)}{24}{section*.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{paramètres:}{24}{section*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Rôle :}{24}{section*.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.1.2}Méthode principale :}{24}{subsubsection.1.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{La méthode: Pack\_items()}{24}{section*.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{Rôle :}{25}{section*.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{première itération :}{25}{section*.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{deuxième itération :}{25}{section*.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{troisième itération :}{26}{section*.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{La solution optimale:}{26}{section*.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Test et Résultats: }{27}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Instances générées : }{27}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Analyse des résultats:}{28}{subsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Interprétation des résultats:}{29}{subsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Scholl Benchmark:}{29}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Analyse des résultats:}{30}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Conclusion}{31}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{IV\hspace {1em}Worst Case Analysis: }{32}{part.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{V\hspace {1em}Méthodes Heuristiques: }{34}{part.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Conception: }{35}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Next Fit (NF)}{36}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}principe}{36}{subsection.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Pseudo-Code}{36}{subsection.3.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Next Fit Decreasing (NFD)}{36}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}principe}{36}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Pseudo-Code}{36}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}First Fit (FF)}{37}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}principe}{37}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Pseudo-Code}{38}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}First Fit Descreasing (FFD)}{38}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}principe}{38}{subsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Pseudo-Code}{38}{subsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Best Fit (BF)}{39}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}principe}{39}{subsection.3.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}Pseudo-Code}{41}{subsection.3.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Best Fit Decreasing (BFD)}{41}{section.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.1}principe}{41}{subsection.3.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.2}Pseudo-Code}{42}{subsection.3.6.2}%

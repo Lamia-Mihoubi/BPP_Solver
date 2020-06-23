@@ -1,14 +1,12 @@
-\documentclass[class=article, crop=false]{standalone}
+\documentclass[12pt]{article}
 \usepackage{mathtools}
 \usepackage{amsmath}
 \usepackage{float}
 \usepackage{algorithmic}
-\usepackage[ruled]{algorithm2e}
+\usepackage{algorithm}
 \setcounter{section}{0}
-\usepackage[subpreambles=true]{standalone}
-\usepackage{import}
+
 \begin{document}
-\section{Introduction}
 Le Whale Optimization Algorithm est une nouvelle métaheuristique introduite en 2016 par Mirjalili et Lewis basée sur l’intelligence en essaim. Cet algorithme est inspiré d’une stratégie d’alimentation des baleines à bosse connue sous le nom de L'alimentation au filet à bulles. Une tactique qui leur permet d’attraper le plus de poissons possibles en un seul coup. Après avoir détecté ses proies, la baleine libère des bulles en nageant dans un mouvement spirale vers la surface pour encercler la proie pour la capturer.
 Les bulles libérées peuvent prendre 2 formes : une forme de cercles rétrécissants \textbf{\emph{[figure 01]}} ou une forme spirale \textbf{\emph{[figure 02]}}. 
 Dans cet algorithme, La recherche des proies représente l’exploration de l’espace de recherche et La libération des bulles représente l’exploitation.
@@ -74,32 +72,34 @@ avec \(x*(t)\) est la meilleure solution actuelle au temps \(t\), \(p\) est éga
 
 \subsection{Pseudocode:}
 \begin{algorithm}[H]
-    \SetAlgoLined
-    \KwResult{Nombre de boîte utilisées.}
-    Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
-    Évaluer les solutions de la population initiale\;
-    X* = la meilleure solution actuelle\;
-    \While{\(t < max\_iter\)}{
-        \For{solution \(\in\) population}{
-            Mettre à jour a, A, C, l et r\;
-            \eIf{\(r  < 0,5\)}{
-                \eIf{\(|A| < 1\)}{
-                    Mettre à jour la solution par Eq.(1)\;
-                }{
-                    Sélectionnez une solution aléatoire \(X_r\)\;
-                    Mettre à jour la solution par Eq.(2)\;
-                }
-            }{
-                Mettre à jour la solution par l'Eq.(4)\;
-            }
-        }
-        Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
-        Évaluer chaque solution\;
-        Mettre à jour X* s'il existe une meilleure solution\;
-        t = t + 1\;
-     }
-    \caption{Whale Optimization Algorithm}
-    \end{algorithm}
+    \caption{Improved Whale Optimization Algorithm}
+    \begin{algorithmic}
+        \STATE Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
+        \STATE Évaluer les solutions de la population initiale\;
+        \STATE X* = la meilleure solution actuelle\;
+        \WHILE{\(t < max\_iter\)}
+            \FOR{solution \(\in\) population}
+                \STATE Mettre à jour a, A, C avec le vol de levy, l et p avec la fonction logistique\;
+                \IF{\(r  < 0,5\)}
+                    \IF{\(|A| < 1\)}
+                        \STATE Mettre à jour la solution par Eq.(1)\;
+                    \ELSE
+                        \STATE Sélectionnez une solution aléatoire \(X_r\)\;
+                        \STATE Mettre à jour la solution par Eq.(2)\;
+                    \ENDIF
+                \ELSE 
+                    \STATE Mettre à jour la solution par l'Eq.(3)\;
+                \ENDIF
+            \ENDFOR
+            \STATE Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
+            \STATE Appliquer la discretisation par LOV\;
+            \STATE Évaluer la nouvelle solution\;
+            \STATE Mettre à jour X* s'il existe une meilleure solution Sinon lancer la phase de mutation\;
+            \STATE Evaluer la nouvelle solution,màj de la meilleure solution
+            \STATE t = t + 1\;
+        \ENDWHILE
+    \end{algorithmic}
+\end{algorithm}
 \subsection{Ingrédients du WOA :}
 \begin{itemize}
     \item Population initiale des solutions.
@@ -122,12 +122,13 @@ avec \(x*(t)\) est la meilleure solution actuelle au temps \(t\), \(p\) est éga
 \subsubsection{Discrétisation de l'espace de recherche :}
 Cet algorithme a été proposé pour la résolution de problèmes à espace \\ de recherche continu. Afin de l’adapter à notre problème discret nous allons utiliser une méthode appelée LOV qui permet de passer d’une solution continue à une solution discrète:\\
 \begin{algorithm}[H]
-    \SetAlgoLined
-    \KwResult{Solution discrète \(X = (x_1, x_2, \dots, x_n)\) obtenue à partir de la solution continue \(\tilde{X} = (\tilde{x_1}, \tilde{x_2}, \dots, \tilde{x_n})\)}
-    Ordonnez les valeurs du vecteur de \(\tilde{X}\) par ordre décroissant\;
-    L'indice d'ordre de caque valeur est stocké dans un vecteur \(\theta = \{ \theta_i = \text{ordre de l'élément } \tilde{x_i}\}\)\;
-     \caption{Discrétisation de l'espace de recherche par LOV}
-    \end{algorithm}
+    \caption{Discrétisation de l'espace de recherche par LOV}
+    \begin{algorithmic}
+        \STATE \textbf{Résultat en sortie:} Solution discrète \(X = (x_1, x_2, \dots, x_n)\) obtenue à partir de la solution continue \(\tilde{X} = (\tilde{x_1}, \tilde{x_2}, \dots, \tilde{x_n})\)\;
+        \STATE Ordonnez les valeurs du vecteur de \(\tilde{X}\) par ordre décroissant\;
+        \STATE L'indice d'ordre de caque valeur est stocké dans un vecteur \(\theta = \{ \theta_i = \text{ordre de l'élément } \tilde{x_i}\}\)\;
+    \end{algorithmic}  
+\end{algorithm}
 \subsubsection{Représentation d’une solution :}
 Une solution est exprimée par un vecteur \(x(t)=(a_1, a_2, …, a_n)\) représentant la distribution des articles dans les boîtes au moment t, avec n le nombre d’article et ai est un article d’ordre i. Les articles sont ordonnés selon les boîtes dans lesquelles ils sont rangés, i.e. l’article a1 est rangé dans la première boîte, s’il y’en a de l’espace dans cette boîte alors l’article a2 est y rangé, sinon a2 est rangé dan la deuxième boîte...ainsi de suite. ( principe du Next Fit) 
 Une solution \(x(t)\) appartient au domaine de recherche tant qu’elle respecte les contraintes du problème: un objet ne peut pas être rangé dans plus d’une boîte, donc pas de doublons dans x(t), l’autre contrainte concernant le respect de la capacité d’une boîte est vérifié trivialement par définition du vecteur x(t).
@@ -142,4 +143,37 @@ Avec:
     \item \(c\) capacité des boites.
     
 \end{itemize}
+\section{Test et Résultats: }
+Dans cette partie nous allons tester les performances de la métaheuristique WOA sur les instances du benchmark Scholl. Ensuite nous allons effectuer une comparaison des résultats obtenus avec les résultats optimaux. Nous utiliserons pour chacune des trois classes du benchmark Scholl deux configurations de paramètres; la première configuration est obtenue par tâtonnement après plusieurs essais manuels, la deuxième par calibrage automatiques des paramètres utilisant le package irace qui implémente l’algorithme I/F-Race (voir chapitre XX).
+Pour pouvoir étudier les performances de WOA, notre étude se portera sur 2 axes:
+\begin{itemize}
+    \item Temps d'exécution.
+    \item Qualité de la solution  (ratio et comparaisons avec les solutions optimales)
+\end{itemize}
+
+\paragraph{Remarque: }
+Les algorithmes ont été développés en utilisant le langage de programmation python, et exécutés sur un DELL Inspiron15 [Intel® Core™ i7-8550U CPU @ 1.80GHz×8, 8Go] en utilisant Visual Studio Code.
+\subsection{Rappel des paramètres de WOA: }
+\begin{itemize}
+    \item La taille de la population: \(nb\_whales\).
+    \item Le nombre maximal d’itérations: \(max\_iter\).
+    \item La constante de l’encerclement spirale \(b\).
+    \item La constante \(a\) qui détermine le degré d’exploration de l’espace de recherche.
+\end{itemize}
+\subsection{Temps d'exécution: }
+\subsection{Qualité de solution: }
+\subsubsection{Ratio: }
+\subsubsection{Comparaison avec la solution optimale: }
+\subsection{Analyses des résultats: }
+\begin{itemize}
+    \item WOA permet d'obtenir un ratio inférieur à 1.4 pour les benchmark Scholl, et un ratio de 1 pour les instances de la classe 2 de taille N1.
+    \item Parmis les trois classes WOA est plus performant dans le cas des instances difficiles (classe 3: C3) et la classe 2.
+    \item Le calibrage automatique permet généralement d’améliorer la qualité de la solution très légèrement sauf pour le cas des instances de la classe C2 de tailles N1 et N4 ou la configuration manuelle donne de meilleurs résultats.
+    \item Le calibrage automatique permet de réduire le temps d’exécution significativement surtout pour les instances de grande taille (N4) et les instances de la classe 3 (instances difficiles).
+    \item Avec une configuration optimale des paramètres le temps de résolution des instances les plus difficiles et/ou volumineuse ne dépasse pas 8s.
+\end{itemize}
+
+
+
+
 \end{document}

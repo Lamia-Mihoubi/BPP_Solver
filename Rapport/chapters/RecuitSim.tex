@@ -2,8 +2,6 @@
 
 \usepackage{amsmath}
 \usepackage{mathtools}
-\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
-\usepackage{mathtools}
 \usepackage{algorithm}
 
 \usepackage{algorithmic}
@@ -11,8 +9,6 @@
 \usepackage{enumitem}
 
 \usepackage{amssymb}
-\usepackage{algorithmic}
-\usepackage[ruled]{algorithm2e}
 
 \usepackage{graphicx}
 
@@ -22,10 +18,9 @@
 \usepackage[utf8]{inputenc}
 \title{Recuit Simulé}
 \begin{document}
-\section{Recuit simulé}
     Le recuit simulé (\emph{Simulated annealing}), est une métaheuristique proposée par Kirkpatrick et al. [2] en1983. cette méthode est inspirée du recuit en métallurgie, une technique impliquant le chauffage et le refroidissement contrôlé d'un matériau pour augmenter la taille de ses cristaux et réduire leurs défauts. Les deux sont des attributs du matériau qui dépendent de son énergie thermodynamique. Le chauffage et le refroidissement du matériau affectent à la fois la température et l'énergie libre thermodynamique.
 
-\subsection{Pseudo algorithme}
+\section{Pseudo algorithme}
 
 \begin{algorithm}[H]
     \caption{Recuit simulé}
@@ -69,10 +64,10 @@ $ P_{acceptation}(S') = e^{\frac{F(S')-F(S)}{T}}$ \newline
 L’algorithme s'arrête quand la température \emph{$T_{0}$} est atteinte, et retourne la meilleure solution trouvée,
  dans cette étape on prend la meilleure solution en terme de nombre de boîtes utilisées ( gardée dans la variable Best). 
 
-\subsubsection{Critère d'arrêt}
+\subsection{Critère d'arrêt}
 L’algorithme s’arrête quand la température de gel \emph{$T_{0}$} est atteinte, et dans chaque température T le processus de recherche de voisinage est exécuté R fois.
 
-\subsubsection{Fonction objectif}
+\subsection{Fonction objectif}
 La fonction objective est utilisée pour accepter une solution voisine S’ = V(S), elle est donnée par la formule suivante : 
 \begin{equation}
     \max{F(S')} = \sum_{i=1}^m (\sum_{j=1}^{k_{i}} w_{j})^{2}
@@ -87,7 +82,7 @@ Cette fonction permet de maximiser le taux de remplissage des boîtes utilisées
 
 la raison de ne pas avoir utilisé la fonction objective définie dans le problème du bin packing ( minimiser le nombre de boîtes utilisées) est que cette dernière donne la même valeure pour plusieurs solutions différentes et ne montre pas les changements au niveau du contenu des boîtes. 
 
-\subsubsection{Génération des voisins}
+\subsection{Génération des voisins}
 pour chercher de nouvelles solutions à partir d’une solution S, l’algorithme utilise l’une des 2 technique Swap (0,1) , Swap (1,1). 
 \begin{itemize}
     \item Swap(0,1): Consiste à déplacer un article choisi aléatoirement d’une boite à une autre 
@@ -101,11 +96,11 @@ pour chercher de nouvelles solutions à partir d’une solution S, l’algorithm
     \label{fig:swap}
 \end{figure}
 \end{itemize}
-\subsection{les paramètres du recuit simulé }
-\subsubsection{Le nombre d'itérations R}
+\section{Les paramètres du recuit simulé }
+\subsection{Le nombre d'itérations R}
 Signifie le nombre de fois à faire une recherche locale avant de diminuer la température. Dans notre cas cette valeur est fixée par calibrage de paramètres à $R = 1000$.
  De plus la boucle peut s’arrêter si après $R/2$ itération on n'obtient aucune amélioration.
-\subsubsection{La température T}
+\subsection{La température T}
 La température T décroît au cours des itérations et influe d’une façon directe sur la probabilité d’acceptation des solutions non améliorantes: 
 \begin{itemize}
     \item premières itérations : T elevée $\implies $ acceptation fréquente des solutions non améliorantes (Diversification)
@@ -113,14 +108,14 @@ La température T décroît au cours des itérations et influe d’une façon di
     
 \end{itemize}
 
-\subsubsection{valeur de Tinit}
+\subsection{valeur de Tinit}
 La valeur initiale Tinit doit permettre d’accepter initialement la plupart des solutions voisines (Diversification), généralement elle est fixée pour avoir une probabilité d’acceptation p0 de 0.8. 
 La valeur de la température initiale Tinit dépends de la fonction objectif et de l’instance du problème. Dans notre cas elle est estimée en effectuant une recherche initiale en acceptant toute les solutions générées, et en calculant la moyenne des différences dans la fonction objectif, elle est donnée donc par la formule suivante : 
 
 \begin{equation}
     T_{init} = \frac{|\Delta F|}{\ln p_{0}}
 \end{equation}
-\subsubsection{valeur de T0}
+\subsection{valeur de T0}
 cette valeur définie le nombre d’itération à effectuer, elle doit être suffisamment petite pour atteindre l’état de gèle, dans notre cas, elle est fixée à 0.1, mais l’algorithme  peut s’arrêter si les conditions suivantes sont vérifiées: 
 \begin{itemize}
     \item Pas d’amélioration trouvée durant les R itérations d’une température T
@@ -128,7 +123,7 @@ cette valeur définie le nombre d’itération à effectuer, elle doit être suf
     \item Le temps d'exécution limite est atteint.
 \end{itemize}
 
-\subsubsection{Le facteur de diminution de la températures}
+\subsection{Le facteur de diminution de la températures}
 ce facteur définit le schéma de refroidissement de notre système, c’est à dire la vitesse de convergence vers la solution finale.  sa valeur est généralement  entre 0.8 et 1.
 \begin{itemize}
     \item Si $ \alpha $ est très grand, la convergence est trop rapide, dans ce cas on aura une convergence prématurée ( on reste dans un optimum local).
@@ -136,7 +131,7 @@ ce facteur définit le schéma de refroidissement de notre système, c’est à 
 Après calibrâge de paramètres, cette valeur est fixée à 0.925.    
 \end{itemize}
 
-\subsection{Résultats expérimentaux}
+\section{Résultats expérimentaux: }
 Dans cette partie on présentera les résultats d'exécution de notre méthode du recuit simulé avec les paramètres défini précédemment \textbf{$R=1000,T_{0}=0.1,\alpha =0925$}.
 Le tableau dans \textbf{ \emph{figure01} } montre le temps d'exécution moyen de chaque type d’instance 
 ( la moyenne d'exécution de 5 instances de même type)  par la méta heuristique recuit simulé.
@@ -167,7 +162,7 @@ Dans le tableau et le graphe \textbf{\emph{figure04}}on donne la qualité de sol
     \label{fig:ratio}
 \end{figure}
  
-\subsubsection{Analyse et interprétation des résultats}
+\subsection{Analyse et interprétation des résultats}
 \begin{itemize}
     \item Le temps d’exécution du recuit simulé est très élevé, même avec les plus petites instances. 
     \item Ce temps d’exécution augmente avec la taille du problème et varie de \emph{0.7s} pour N=50 (classe 2) , jusqu’à \emph{357s} pour N=500 (classe1),[\textbf{\emph{figure01}} , \textbf{\emph{figure02}}].

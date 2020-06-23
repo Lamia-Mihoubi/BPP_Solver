@@ -1,0 +1,20 @@
+\standalonepreambles
+\subpreamble{chapters/Description_BPP.tex}
+\usepackage {mathtools}\usepackage [subpreambles=true]{standalone}\usepackage {import}
+\endsubpreamble
+\subpreamble{chapters/Etat_de_lart.tex}
+\usepackage {mathtools}\DeclarePairedDelimiter \ceil {\lceil }{\rceil }\usepackage [shortlabels]{enumitem}\usepackage [subpreambles=true]{standalone}\usepackage {import}
+\endsubpreamble
+\subpreamble{chapters/conception.tex}
+\usepackage {amsmath}\usepackage {mathtools}\usepackage {algorithm}\usepackage {algorithmic}\usepackage {enumitem}\usepackage {amssymb}\usepackage {graphicx}\usepackage {hyperref}\usepackage [utf8]{inputenc}
+\endsubpreamble
+\subpreamble{chapters/Tests.tex}
+\usepackage {mathtools}\usepackage [shortlabels]{enumitem}\usepackage [subpreambles=true]{standalone}\usepackage {import}
+\endsubpreamble
+\subpreamble{chapters/worse_case_analysis.tex}
+\usepackage {mathtools}\usepackage {amsmath}\usepackage {import}\usepackage {float}\setcounter {section}{0}
+\endsubpreamble
+\subpreamble{chapters/Conception_heur.tex}
+\usepackage {mathtools}\usepackage {amsmath}\usepackage {float}\usepackage {algorithmic}\usepackage [ruled]{algorithm2e}\setcounter {section}{0}\usepackage [subpreambles=true]{standalone}\usepackage {import}
+\endsubpreamble
+\endstandalonepreambles
