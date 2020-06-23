@@ -1,0 +1,35 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Al-Khateeb~B(2013)]{Alkhateeb}
+T.~W. Al-Khateeb~B.
+\newblock Solving 8-queens problem by using genetic algorithms, simulated
+  annealing, and randomization method.
+\newblock \emph{International Conference on Developments in eSystems
+  Engineering (DeSE)}, page 187–191, 2013.
+\newblock \doi{10.1109/DeSE.2013.41}.
+
+\bibitem[Chen~PH(2009)]{Chen}
+S.~S. Chen~PH.
+\newblock Hybrid of genetic algorithm and simulated annealing for multiple
+  project scheduling with multiple resource constraints.
+\newblock page 18:434–443, 2009.
+\newblock \doi{10.1016/j.autcon.2008.10.007}.
+
+\bibitem[Junghans~L(2015)]{Junghans}
+D.~N. Junghans~L.
+\newblock Hybrid single objective genetic algorithm coupled with the simulated
+  annealing optimization method for building optimization.
+\newblock page 187–191, 2015.
+\newblock \doi{10.1016/j.enbuild.2014.10.039}.
+
+\bibitem[S.Kirkpatrick(1983)]{kirk}
+J.~M. S.Kirkpatrick, C.D.Gelatt.
+\newblock Optimization by simulated annealing.
+\newblock 1983.
+
+\end{thebibliography}
