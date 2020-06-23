@@ -5,7 +5,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathtools}
 \usepackage[shortlabels]{enumitem}
-
+\usepackage[font=footnotesize]{caption}
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
 \usepackage[backend=biber]{biblatex}
@@ -16,7 +16,7 @@
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
 \graphicspath{ {figures/} }
-\title{\emph{Rapport du TP OPTIMISATION} }
+\title{Projet optimisation combinatoire\\ Etude et comparaison des méthodes de résolution du problème du Bin Packing (BPP)} 
 \author{ 
     \emph{BACHI Yasmine (CdE)}
     \and
@@ -29,6 +29,7 @@
     MIHOUBI Lamia Zohra}
 \begin{document}
     \maketitle
+    
     \tableofcontents
     \chapter*{Introduction}
     \addcontentsline{toc}{chapter}{Introduction} \markboth{INTRODUCTION}{} 
@@ -47,24 +48,24 @@
         \item \emph{les tests empiriques:} dont le but de trouver la meilleure configuration des paramètres de nos méthodes implémentées.  
         \item \emph{les tests comparatifs:} où on doit comparer les résultats obtenus des méthodes implémentées et sélectionner la meilleure méthode de résolution pour chaque instances. la comparaison se fait en terme de qualité de la solution et du temps d'exécution. 
     \end{enumerate}
-    \part{Présentation du Problème de Bin Packing (BPP): }
+    \part{Présentation du Problème de Bin Packing (BPP) }
     \import{chapters/}{Description_BPP}
-    \part{Etat de l'Art: }
+    \part{Etat de l'Art }
     \import{chapters/}{Etat_de_lart}
-    \part{Méthodes Exactes: }
-    \chapter{Conception: }
+    \part{Méthodes Exactes}
+    %\chapter{Conception }
     \import{chapters/}{conception}
-    \chapter{Test et Résultats: }
+    %\chapter{Test et Résultats }
     \import{chapters/}{Tests}
-    \part{Worst Case Analysis: }
+    \part{Worst Case Analysis }
     \import{chapters/}{worse_case_analysis}
     \newpage
-    \part{Méthodes Heuristiques: }
-    \chapter{Conception: }
+    \part{Méthodes Heuristiques}
+    %\chapter{Conception}
     \import{chapters/}{Conception_heur}
-    \chapter{Tests et Résultats: }
+    %\chapter{Tests et Résultats }
     \import{chapters/}{tests_heur}
-    \part{Méthodes Métaheuristiques: }
+    \part{Méthodes Métaheuristiques}
         Les métaheuristiques sont des méthodes d’optimisation approchées, caractérisées par leur généralité, c’est à dire qu’elles ne dépendent pas du problème à résoudre comme les heuristiques. En d'autres termes, une métaheuristique peut être considérée comme un
     cadre algorithmique qui peut être appliqué à différents problèmes d'optimisation avec relativement peu de modifications à apporter afin de l’adapter à un problème spécifique.
 
@@ -89,9 +90,9 @@
     Dans le but d’explorer ces méthodes, comparer leurs performances, montrer leurs avantages et découvrir leurs limites , nous effectuerons des tests empiriques et comparatifs sur les mêmes  benchmarks utilisés pour les tests des méthodes exactes et heuristiques.( Benchmark Scholl).
     \chapter{Récuit simulé: }
     \import{chapters/}{RecuitSim}
-    \chapter{Whale Optimization Algorithm (WOA): }
+    \chapter{Whale Optimization Algorithm (WOA)}
     \import{chapters/}{WOA}
-    \chapter{Improved Lévy Whale Optimization Algorithm (ILWOA): }
+    \chapter{Improved Lévy Whale Optimization Algorithm (ILWOA)}
     \import{chapters/}{ILWOA}
     \chapter*{References}
     \addcontentsline{toc}{chapter}{References} \markboth{REFERENCES}{} 

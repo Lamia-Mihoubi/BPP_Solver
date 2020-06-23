@@ -1,33 +1,33 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.28)  22 JUN 2020 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  23 JUN 2020 11:49
 entering extended mode
-**c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex
-(c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex
+**c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex
+(c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06> ("C:\Program Files\MiKTeX 2.9\tex/latex/standalone\standalone.cls"
+L3 programming layer <2020-04-06> ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.cls"
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files standalone
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\shellesc.sty"
+("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\shellesc.sty"
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifluatex.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifluatex.sty"
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
- ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex" ("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex" ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
 \XKV@toks=\toks15
 \XKV@tempa@toks=\toks16
- ("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\keyval.tex"))
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\keyval.tex"))
 \XKV@depth=\count167
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \sa@internal=\count168
 \c@sapage=\count169
- ("C:\Program Files\MiKTeX 2.9\tex/latex/standalone\standalone.cfg"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.cfg"
 File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalone' class
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
+("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count170
@@ -41,9 +41,9 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/mathtools\mathtools.sty
+)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mathtools\mathtools.sty"
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
- ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count178
 \calc@Bcount=\count179
@@ -55,23 +55,23 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count180
 \calc@Cskip=\skip51
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/mathtools\mhsetup.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mathtools\mhsetup.sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
- ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen137
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen138
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count181
@@ -127,9 +127,9 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_shortintertext_sep=\dimen152
 \xmathstrut@box=\box47
 \xmathstrut@dim=\dimen153
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithms\algorithmic.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
- ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@ALC@unique=\count194
@@ -138,9 +138,9 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \c@ALC@depth=\count197
 \ALC@tlm=\skip56
 \algorithmicindent=\skip57
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithms\algorithm.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/float\float.sty
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count198
 \float@exts=\toks22
@@ -150,48 +150,48 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@algorithm=\toks24
 \c@algorithm=\count199
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/standalone\standalone.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty"
 Package: standalone 2018/03/26 v1.3a Package to include TeX sub-files with preambles
- (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/currfile\currfile.sty
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/currfile\currfile.sty"
 Package: currfile 2015/04/23 v0.7c Provides the file path elements of the current input file
- (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
- (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/filehook\filehook.sty
+)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/filehook\filehook.sty"
 Package: filehook 2020/02/03 v0.7 Hooks for input files
 )
 \c@currfiledepth=\count266
 )
 \sa@out=\write3
- (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.sta) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/gincltex\gincltex.sty (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/svn-prov\svn-prov.sty
+ (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Conception_heur.sta) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/gincltex\gincltex.sty" ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/svn-prov\svn-prov.sty"
 Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
 )
 Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
- (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/adjustbox\adjustbox.sty
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjustbox.sty"
 Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
- (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/adjustbox\adjcalc.sty
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjcalc.sty"
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/adjustbox\trimclip.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\trimclip.sty"
 Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen154
 \Gin@req@width=\dimen155
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/collectbox\collectbox.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/collectbox\collectbox.sty"
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box50
 )
@@ -200,7 +200,7 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@urx=\dimen158
 \tc@ury=\dimen159
 Package trimclip Info: Using driver 'tc-pdftex.def'.
- (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/adjustbox\tc-pdftex.def
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\tc-pdftex.def"
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen160
@@ -211,10 +211,10 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pheight=\dimen165
 \adjbox@pdepth=\dimen166
 \adjbox@ptotalheight=\dimen167
- (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/ifoddpage\ifoddpage.sty
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count267
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/varwidth\varwidth.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box51
 \sift@deathcycles=\count268
@@ -222,15 +222,15 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@roff=\dimen169
 ))
 \gincltex@box=\box52
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/filemod\filemod-expmin.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/filemod\filemod-expmin.sty"
 Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times (expandable; minimal)
-)) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/import\import.sty
+)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/import\import.sty"
 Package: import 2020/04/01  v 6.2
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count269
 \l__pdf_internal_box=\box53
-) (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.aux)
+) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Conception_heur.aux)
 \openout1 = `Conception_heur.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -247,10 +247,10 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
- (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.sta)
+ (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Conception_heur.sta)
 \openout3 = `Conception_heur.sta'.
 
- ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count270
 \scratchdimen=\dimen170
@@ -263,7 +263,7 @@ LaTeX Font Info:    ... okay on input line 10.
 \MPnumerator=\count274
 \makeMPintoPDFobject=\count275
 \everyMPtoPDFconversion=\toks26
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
@@ -283,8 +283,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
 [1
 
-{C:/Users/TRETEC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Extra }, or forgotten \endgroup.
+{C:/Users/BACHI/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
 l.50 \end{algorithm}
@@ -295,7 +295,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Undefined control sequence.
 \endalgorithm ...oatbox \global \setbox \@currbox 
                                                   \float@makebox \columnwidt...
 l.50 \end{algorithm}
@@ -306,7 +306,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Missing number, treated as zero.
 <to be read again> 
                    \vbox 
 l.50 \end{algorithm}
@@ -315,7 +315,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Undefined control sequence.
 \float@makebox ... \@fs@mid \fi \unvbox \@currbox 
                                                   \else \unvbox \@currbox \i...
 l.50 \end{algorithm}
@@ -326,7 +326,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:50: Missing number, treated as zero.
 <to be read again> 
                    \par 
 l.50 \end{algorithm}
@@ -335,7 +335,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Extra }, or forgotten \endgroup.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
 l.63 \end{algorithm}
@@ -346,7 +346,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Undefined control sequence.
 \endalgorithm ...oatbox \global \setbox \@currbox 
                                                   \float@makebox \columnwidt...
 l.63 \end{algorithm}
@@ -357,7 +357,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Missing number, treated as zero.
 <to be read again> 
                    \vbox 
 l.63 \end{algorithm}
@@ -366,7 +366,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Undefined control sequence.
 \float@makebox ... \@fs@mid \fi \unvbox \@currbox 
                                                   \else \unvbox \@currbox \i...
 l.63 \end{algorithm}
@@ -377,7 +377,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:63: Missing number, treated as zero.
 <to be read again> 
                    \par 
 l.63 \end{algorithm}
@@ -392,7 +392,7 @@ File: ../figures/NF NFD better(1).png Graphic file (type png)
 Package pdftex.def Info: ../figures/NF NFD better(1).png  used on input line 66.
 (pdftex.def)             Requested size: 345.0pt x 294.6992pt.
 [2] [3 <../figures/NF NFD better(1).png>]
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Extra }, or forgotten \endgroup.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
 l.92 \end{algorithm}
@@ -403,7 +403,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Undefined control sequence.
 \endalgorithm ...oatbox \global \setbox \@currbox 
                                                   \float@makebox \columnwidt...
 l.92 \end{algorithm}
@@ -414,7 +414,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Missing number, treated as zero.
 <to be read again> 
                    \vbox 
 l.92 \end{algorithm}
@@ -423,7 +423,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Undefined control sequence.
 \float@makebox ... \@fs@mid \fi \unvbox \@currbox 
                                                   \else \unvbox \@currbox \i...
 l.92 \end{algorithm}
@@ -434,7 +434,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:92: Missing number, treated as zero.
 <to be read again> 
                    \par 
 l.92 \end{algorithm}
@@ -443,7 +443,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Extra }, or forgotten \endgroup.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
 l.108 \end{algorithm}
@@ -454,7 +454,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Undefined control sequence.
 \endalgorithm ...oatbox \global \setbox \@currbox 
                                                   \float@makebox \columnwidt...
 l.108 \end{algorithm}
@@ -465,7 +465,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Missing number, treated as zero.
 <to be read again> 
                    \vbox 
 l.108 \end{algorithm}
@@ -474,7 +474,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Undefined control sequence.
 \float@makebox ... \@fs@mid \fi \unvbox \@currbox 
                                                   \else \unvbox \@currbox \i...
 l.108 \end{algorithm}
@@ -485,7 +485,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:108: Missing number, treated as zero.
 <to be read again> 
                    \par 
 l.108 \end{algorithm}
@@ -500,7 +500,7 @@ File: ../figures/FF FFD.png Graphic file (type png)
 Package pdftex.def Info: ../figures/FF FFD.png  used on input line 111.
 (pdftex.def)             Requested size: 345.0pt x 341.73341pt.
 [4] [5 <../figures/FF FFD.png>]
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Extra }, or forgotten \endgroup.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
 l.138 \end{algorithm}
@@ -511,7 +511,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Undefined control sequence.
 \endalgorithm ...oatbox \global \setbox \@currbox 
                                                   \float@makebox \columnwidt...
 l.138 \end{algorithm}
@@ -522,7 +522,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Missing number, treated as zero.
 <to be read again> 
                    \vbox 
 l.138 \end{algorithm}
@@ -531,7 +531,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Undefined control sequence.
 \float@makebox ... \@fs@mid \fi \unvbox \@currbox 
                                                   \else \unvbox \@currbox \i...
 l.138 \end{algorithm}
@@ -542,7 +542,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:138: Missing number, treated as zero.
 <to be read again> 
                    \par 
 l.138 \end{algorithm}
@@ -551,7 +551,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Extra }, or forgotten \endgroup.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
 l.152 \end{algorithm}
@@ -562,7 +562,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Undefined control sequence.
 \endalgorithm ...oatbox \global \setbox \@currbox 
                                                   \float@makebox \columnwidt...
 l.152 \end{algorithm}
@@ -573,7 +573,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Missing number, treated as zero.
 <to be read again> 
                    \vbox 
 l.152 \end{algorithm}
@@ -582,7 +582,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Undefined control sequence.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Undefined control sequence.
 \float@makebox ... \@fs@mid \fi \unvbox \@currbox 
                                                   \else \unvbox \@currbox \i...
 l.152 \end{algorithm}
@@ -593,7 +593,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Missing number, treated as zero.
+c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/Conception_heur.tex:152: Missing number, treated as zero.
 <to be read again> 
                    \par 
 l.152 \end{algorithm}
@@ -607,17 +607,17 @@ File: ../figures/BF BFD.png Graphic file (type png)
 <use ../figures/BF BFD.png>
 Package pdftex.def Info: ../figures/BF BFD.png  used on input line 156.
 (pdftex.def)             Requested size: 345.0pt x 423.55815pt.
-[6] [7 <../figures/BF BFD.png>] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.aux) ) 
+[6] [7 <../figures/BF BFD.png>] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Conception_heur.aux) ) 
 Here is how much of TeX's memory you used:
- 4701 strings out of 480934
- 75324 string characters out of 2909679
- 320311 words of memory out of 3000000
- 20477 multiletter control sequences out of 15000+200000
+ 4701 strings out of 480930
+ 77202 string characters out of 2899761
+ 320213 words of memory out of 3000000
+ 20480 multiletter control sequences out of 15000+200000
  534191 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,4n,60p,391b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.pdf (7 pages, 78367 bytes).
+ 67i,4n,60p,399b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\Conception_heur.pdf (7 pages, 78367 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

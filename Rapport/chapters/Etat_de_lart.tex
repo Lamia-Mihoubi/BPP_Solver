@@ -6,7 +6,9 @@
 % if you want to add packages add them before not after these two lines
 \usepackage[subpreambles=true]{standalone}
 \usepackage{import}
+
 \begin{document}
+\setcounter{section}{0}
     Après une étude ciblée des travaux existants sur le problème du Bin Packing, nous avons abouti à une synthèse des méthodes de résolution les plus connues --dans chacune des trois catégories: méthodes exactes, et méthodes approchées: heuristiques et métaheuristiques-- que nous allons exposer dans ce qui suit. 
     \section{Méthodes Exactes}
     Les méthodes exactes permettent d’avoir des solutions optimales, cependant le temps de calcul peut être très long pour certaines instances du problème. Il n’existe pas un grand nombre de méthodes exactes pour résoudre le problème du Bin Packing , nous allons présenter dans ce qui suit la méthode  MTP ( basée sur le Branch and Bound) et une méthode de programmation dynamique DP-flow.

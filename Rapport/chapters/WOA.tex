@@ -129,8 +129,8 @@ Cet algorithme a été proposé pour la résolution de problèmes à espace \\ d
         \STATE L'indice d'ordre de caque valeur est stocké dans un vecteur \(\theta = \{ \theta_i = \text{ordre de l'élément } \tilde{x_i}\}\)\;
     \end{algorithmic}  
 \end{algorithm}
-\subsubsection{Représentation d’une solution :}
-Une solution est exprimée par un vecteur \(x(t)=(a_1, a_2, …, a_n)\) représentant la distribution des articles dans les boîtes au moment t, avec n le nombre d’article et ai est un article d’ordre i. Les articles sont ordonnés selon les boîtes dans lesquelles ils sont rangés, i.e. l’article a1 est rangé dans la première boîte, s’il y’en a de l’espace dans cette boîte alors l’article a2 est y rangé, sinon a2 est rangé dan la deuxième boîte...ainsi de suite. ( principe du Next Fit) 
+\subsubsection{Représentation d’une solution }
+Une solution est exprimée par un vecteur $ x(t)=(a_1, a_2, …, a_n)$ représentant la distribution des articles dans les boîtes au moment t, avec n le nombre d’article et ai est un article d’ordre i. Les articles sont ordonnés selon les boîtes dans lesquelles ils sont rangés, i.e. l’article a1 est rangé dans la première boîte, s’il y’en a de l’espace dans cette boîte alors l’article a2 est y rangé, sinon a2 est rangé dan la deuxième boîte...ainsi de suite. ( principe du Next Fit) 
 Une solution \(x(t)\) appartient au domaine de recherche tant qu’elle respecte les contraintes du problème: un objet ne peut pas être rangé dans plus d’une boîte, donc pas de doublons dans x(t), l’autre contrainte concernant le respect de la capacité d’une boîte est vérifié trivialement par définition du vecteur x(t).
 
 \subsubsection{La fonction objectif :}

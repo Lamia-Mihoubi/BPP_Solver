@@ -12,10 +12,9 @@
 \usepackage{graphicx}
 
 \usepackage{hyperref}
-\usepackage[font=footnotesize]{caption}
 
 \usepackage[utf8]{inputenc}
-\title{ILWOA}
+%\title{ILWOA}
 \begin{document}
 \section{ILWOA}
     Cette version de l'algorithme utilise une fonction à dynamique chaotique et la distribution vol de Lévy afin de garantir une convergence rapide .Une phase de mutation est aussi rajoutée à la fin de chaque itération
@@ -29,7 +28,7 @@ Ce sont des fonctions qui permettent d'avoir une suite de nombres aléatoires qu
 \begin{figure}[h!]
    \centering
     \includegraphics[width=10cm]{../figures/logisticvsothers.PNG}
-    \caption[\small]{convergence fonctions chaotiques}
+    \caption{convergence fonctions chaotiques}
 \end{figure}
 Du graphe , on peut voir qu'avec la fonction logistique la fonction objective atteint le minimumu à partir de la 5eme itération
 \subsubsection{Fonction logistique}
@@ -59,7 +58,7 @@ Cette phase est composée de 3 opérations exécutées séquentiellement comme l
 \begin{figure}[h!]
    \centering
     \includegraphics[width=10cm]{../figures/Mutation.PNG}
-    \caption[\small]{Phase de mutation}
+    \caption{Phase de mutation}
 \end{figure}
 \subsection{Pseudocode:}
 \begin{algorithm}[H]
