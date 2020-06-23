@@ -305,4 +305,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Les tests après calibrage des paramètres}{81}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{References}{87}{part*.34}%
+\contentsline {chapter}{\numberline {5}comparaison en les métaheuristiques}{86}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Comparaison par rapport au temps d'exécution}{87}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Analyse et interprétation}{87}{subsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Comparaison par rapport à la qualité de la solution}{88}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Analyse et interprétation}{88}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Conclusion}{89}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{References}{91}{part*.34}%

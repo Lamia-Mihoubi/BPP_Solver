@@ -32,4 +32,7 @@
 \subpreamble{chapters/ag.tex}
 \usepackage {amsmath}\usepackage {graphicx}\usepackage {float}\usepackage {blindtext}\usepackage [T1]{fontenc}\usepackage [utf8]{inputenc}\usepackage {algorithm}\usepackage {algorithmic}
 \endsubpreamble
+\subpreamble{chapters/compare_mh.tex}
+\usepackage {mathtools}\usepackage {amsmath}\usepackage {algorithmic}\usepackage {algorithm}\usepackage {float}\setcounter {section}{0}
+\endsubpreamble
 \endstandalonepreambles

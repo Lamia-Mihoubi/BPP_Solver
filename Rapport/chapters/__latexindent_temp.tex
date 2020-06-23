@@ -1,193 +1,52 @@
-\documentclass{article}
+\documentclass[12pt]{article}
+\usepackage{mathtools}
 \usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{blindtext}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{algorithm}
 \usepackage{algorithmic}
-
+\usepackage{algorithm}
+\usepackage{float}
+\setcounter{section}{0}
 \begin{document}
-Un algorithme génétique est une métaheuristique évolutionnaire à l'origine proposé par Holland [1]. Depuis lors, il est devenu une méthode puissante pour résoudre de nombreux problèmes d'optimisation combinatoire difficile, dont la liste peut être trouvée dans de nombreuses références, voir par exemple [2]. Les étapes générales de l'algorithme peuvent être décrites comme suit:
-\newline
+    Nous allons comparer les quatres métaheuristiques implémentées afin de voir l’apport de chaque méthode en terme de qualité de solution et de temps d'exécution.
 
-\begin{algorithm}[H]
-	\caption{Algorithme génétique}
-	\begin{algorithmic}
-		\STATE Générer une population initiale\;
-		\WHILE{le critère d'arret n'est pas encore rencontré}
-			\STATE Choisir des paires pour la reproduction\;
-			\STATE Effectuer des croisements pour générer des descendants\;
-			\STATE faire des fluctuations dans les nouveaux descendants (mutation)\;
-			\STATE Evaluer l'aptitude de nouveaux descendants\;
-			\STATE Générer une nouvelle population\;
-		\ENDWHILE
-	\end{algorithmic}
-\end{algorithm}
+    Tout d’abord nous allons vous rappeler les métriques de cette comparaison, ainsi que la formule de chacune :
+    \begin{itemize}
+        \item \textbf{Temps d'exécution moyen} : la moyenne des temps d'exécution pour toutes les instances ayant la même valeur du N, le nombre d’objets.
+        \item \textbf{La moyennes des écarts de la solution optimale} : pour chaque instance on calcule 
+        \((n\_bins - opt)*100/opt\) avec \(n\_bins\) nombre de boîtes obtenu par la métaheuristique et \(opt\) nombre de boîtes dans la solution optimale, puis on calcule la moyenne de ces écarts pour les instances ayant le même nombre d’objets, hormis la classe HARD qui a été séparée des autres, vu le degré de difficulté de ces instances. 
+    \end{itemize}
 
-Un élément clé de l'AG est la génération d'une population dont les composants sont appelés \textit{chromosomes}, un terme emprunté à la génétique. Un \textit{chromosome} est en fait une représentation codée d'une solution; dont chaque composant est appelé \textit{gène}
-
-\section{Algorithme Génétique}
-On représente une solution du Bin packing comme suit : 
-\begin{itemize}
-	\item On a \textbf{n} articles à ranger donc on utilisera n boîtes au 
-	\item On suppose que chaque boîte est composée de \textbf{n}, où chaque cellule peut contenir qu’un seul article.
-	\item Chaque cellule à un numéro unique dans la solution.
-	\item Si la cellule de l’ordre \textbf{i} de la boite \textbf{j} est remplie par un objet, alors on aura plus le droit de ranger un objet dans toutes les cellules de l’ordre \textbf{i} des autres boites.
-	\item La cellule \textbf{zero} contient le nombre de boîtes utilisés dans cette solution.
-\end{itemize}
-Pour décrire cette représentation, considérons l'exemple suivant. Supposons que nous ayons quatre objets (n=4) de poids 2 , 2 , 4 et 4 respectivement, affectés à trois cases (c0=3)  comme indiqué ci-dessous :
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic01.PNG}
-\end{figure}
-Avec c0 : contient le nombre de boîtes utilisées.
-\newline
-Le chromosome correspondant peut être défini comme suit:
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic02.PNG}
-\end{figure}
-Cependant, avec cette représentation,les chromosomes ont une longueur égale à 1 + n² (un entier pour chaque cellule), alors pour les grands n, nous aurons besoin d'une grande quantité de mémoire pour les stocker.
-Pour cela, nous utiliserons une représentation plus compacte qui utilise des chromosomes de longueur n + 1 au lieu de 1 + n². Cette dernière consiste à garder trace que des numéros des cellules remplies (ou utilisées).
-\newline
-Dans l'exemple ci-dessus, nous avons utilisé les cellules (c1,c2,c7,c12) et la cellule c0, nous aurions donc la séquence 
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic03.PNG}
-\end{figure}
-qui a une longueur de n + 1, avec n = 4. 
-\newline
-\newline
-Dans la première cellule, cellule 0, on stocke le nombre de boîtes utilisées qui est de  3 boites. Les numéros suivants indiquent les numéros de cellules dans lesquels les objets sont placés.
-\newline
-\newline
-\textbf{Récupérer la solution depuis un chromosome: }
-\begin{enumerate}
-	\item Le nombre de boîtes utilisées est obtenu à partir de la cellule 0. 
-	\item Pour obtenir dans quelle boîte chaque article a été affecté, on suit les étapes suivantes: 
-	\begin{itemize}
-		\item On pose c le numéro de la cellule et n le nombre d’articles
-		\item on calcule : a= c mod (n) et b=[c/n] où c = bn + a
-		\item  Si a=0  (c est divisible par n), alors: 
-		\begin{itemize}
-			\item Le numéro de l’article est\textbf{ sa position dans le chromosome} et le numéro de la boîte où il est rangé  est \textbf{b}.
-		\end{itemize}
-		Sinon:
-		\begin{itemize}
-			\item Le numéro de l’article est \textbf{sa position dans le chromosome} et le numéro de la boîte où il est rangé est \textbf{1 + b}.
-		\end{itemize}
-	\end{itemize}
-\end{enumerate}
-Dans l'exemple ci-dessus, pour la cellule 7, nous avons: 7 = 1 × 4 + 3, 
-le reste est a= 3 et b = 1, donc b + 1 = 2, donc l'objet 3 est placé dans la boîte 2. 
-Pour la cellule 12, nous avons: 12 = 3 × 4 + 0, le reste est a= 0, et b = 3, donc l'objet 4 est placé dans la boîte 3
-\subsection{Initialisation}
-La génération de la population initiale en :
-		\begin{itemize}
-			\item Changeant l’ordre des objets aléatoirement.
-			\item Génération du chromosome avec \textbf{First Fit}
-		\end{itemize}
-\subsection{Selection (Choix d'une paire pour la reproduction)}
-C’est la phase qui consiste à choisir les individus à reproduire et ceux qui participent à la construction d’une nouvelle population. Nous avons opté pour la méthode du Tournament Selection.
-\subsection{Tournament Selection}
-Dans cette approche, un "tournoi, k" est organisé entre k chromosomes (solutions)choisis au hasard dans la population et celui avec la meilleure forme physique (Fitness Value) est sélectionné comme gagnant et sera autorisé à se reproduire.
-\newline
-Supposons que k = 3 :
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic04.PNG}
-\end{figure}
-La pression de sélection(Une \textit{pression de sélection} est une contrainte environnementale qui va \textbf{pousser} une espèce à évoluer dans une direction donnée.) peut être facilement ajustée en changeant la taille du tournoi (un k plus élevé augmente la pression de sélection).
-La sélection du tournoi est indépendante de la fonction Fitness.Parmis des avantages, on cite la diminution le temps de calcul, et son fonctionnement sur les architectures parallèles.
-\subsection{Croisement}
-L'opérateur de croisement est analogue à la reproduction et au croisement biologique. Dans ce cas, plus d'un parent est sélectionné et un ou plusieurs descendants sont produits en utilisant le matériel génétique des parents. Le crossover est généralement appliqué dans une AG à forte probabilité \textit{pc}
-\newline
-L’opérateur choisi pour cet algorithme est le ‘One Point Crossover’ ou ‘le croisement à un point’. Dans ce croisement, un point de croisement aléatoire est sélectionné et les queues de ses deux parents sont échangées pour obtenir de nouveaux descendants, ce qui revient à diviser le l’ensemble des boîtes en deux fragments et échanger les objets de ces derniers.
-\newline
-Par exemple dans la figure suivante, nous avons le point de croisement =5:
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic05.PNG}
-\end{figure}
-\subsection{Mutation}
-La mutation peut être définie comme un petit ajustement aléatoire dans le chromosome, pour obtenir une nouvelle solution. Il est utilisé pour maintenir et introduire la diversité dans la population génétique et est généralement appliqué avec une faible probabilité \textit{pm}. Si la probabilité est très élevée, l'AG se réduit à une recherche aléatoire.
-\newline
-La mutation est la partie de l'AG qui est liée à «\textbf{l'exploration}» de l'espace de recherche. Il a été observé que la mutation est essentielle à la convergence de l'AG alors que le croisement ne l'est pas.
-\newline
-L’opérateur de mutation choisi pour cette algorithme est :  “\textbf{scramble mutation}” ou “\textbf{la mutation de brouillage}”, qui, à partir du chromosome entier, choisi aléatoirement un sous-ensemble de gènes dont le cardinale est un paramètre en entrée de la fonction, et ses valeurs sont brouillées ou mélangées au hasard.
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic06.PNG}
-\end{figure}
-\subsection{Evaluation}
-Le choix du chromosome ayant le plus petite valeur de la cellule 0, c’est à dire le plus petit nombre de  boîtes après avoir vérifié la validité de la solution (chromosome) i.e si le chromosome constitue réellement une solution acceptable.
-\subsection{Fitness et validation d’un chromosome}
-Cette fonction nous permet de vérifier si et combien un chromosome donné est “bon” ou “fit” à notre problème. 
-\newline
-Pour cela il faut d’abord vérifier la validité de la solution: d’un côté vérifier si tous les articles ont effectivement été rangés dans des boîtes, et de l’autre vérifier si le total des poids des articles dans chaques boîtes est effectivement inférieur ou égal à la capacité d’une boîte. 
-\newline
-Après avoire effectué ces vérifications on pourra prendre comme valeur de “\textit{fitness}” du chromosome, le nombre de boîtes utilisées, stocké dans la 1ère cellule du chromosome.
-\subsection{Critère d'arrêt}
-L'algorithme s’arrête après un nombre d’itérations prédéfini, donné en paramètre.
-\newline
-\newline
-\textbf{L’Algorithme AG sera à son tour exécuté plusieurs fois, selon un paramètre en entrée  ( on a opté pour 10 fois), et à la fin la solution ayant la meilleure solution sera prises comme solution de l’instance.}
-\section{Tests}
-Après avoir finalisé notre code, on a commencé la phase des tests qui a été divisée en deux partie :
-\begin{enumerate}
-	\item La partie des test préliminaires.
-	\item La partie des tests après le calibrage des paramètres. 
-\end{enumerate}
-On a utilisé pour nos tests comme instances du problème BinPacking, comme pour les méthodes précédentes (Exactes et Heuristiques), les instances de Scholl.
-Les paramètres sur lesquels on a joué, sont :
-\begin{itemize}
-	\item \textbf{nbrGen} : le nombre de populations générées.
-	\item\textbf{ k} : le paramètre de l’algorithme de sélection “\textit{le k-tournament}”
-	\item \textbf{popSize} : la taille d’une population
-\end{itemize}
-La probabilité de croisement a été fixée  à 0.85, et la probabilité de mutation  a été fixée à son tour à 0.1.
-\subsection{Les tests préliminaires}
-Dans cette partie, on a voulu tester les performances de notre programme , en essayant plusieurs combinaisons des paramètres:
-\begin{itemize}
-	\item \textbf{nbrGen} : on a essayé 4, 50, 100, 200 et puis 500 qui lui,  ne donnait pas de meilleur  résultats que ceux obtenus avec 200 itérations.
-	\item\textbf{ k} : on a essayé 4 et 25.
-	\item \textbf{popSize} : on a essayé avec une population de 4 chromosomes, 8, et 10.
-\end{itemize}
-Au final, notre choix s’est porté sur le triplet :(\textbf{nbrGen}=200,\textbf{ k}=25,\textbf{popSize}=10) car ils donnaient d’assez bon résultats.
-\subsection{Les tests après calibrage des paramètres}
-Pour pouvoir confirmer notre choix de paramètres on a vu nécessaire d’utiliser un outil de calibrage, on a utilisé \textbf{IRACE}. 
-\newline
-Après avoir exécuté le code avec \textbf{IRACE}, on a obtenu cette combinaison des paramètres (\textbf{nbrGen}=200,\textbf{k}=25,\textbf{popSize}=10) en fixant , \textbf{probaCroisement}=0.85 et \textbf{probaMutation}=0.1, et qui est,en effet, la combinaison qui donne les meilleures résultats dans le cas de notre programme. Ceci confirme nos résultats pour le choix des paramètres trouvés pendant les tests préliminaires.
-\newline
-\newline
-Dans ce qui suit on présentera les résultats d’exécution de notre algorithme génétique en prenant comme paramètres ceux trouvés par l’outils \textbf{IRACE} (\textbf{nbrGen}=200,\textbf{k}=25,\textbf{popSize}=10) avec \textbf{probaCroisement}=0.85 et \textbf{probaMutation}=0.1
-\newline
-Voici les résultats des exécutions, pour chaque classe:
-\newline
-\textbf{Graphe 01:}
-Graphe représentant le temps d'exécution moyen de chaque type d’instance ( la moyenne d'exécution de 5 instances de même type) des 3 classes de Scholl
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic07.PNG}
-\end{figure}
-\textbf{Graphe 02:}
-Les graphes suivants montrent la différence entre le nombre de boîtes utilisées par AG, la valeur optimale OPT
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic08.PNG}
-\end{figure}
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic09.PNG}
-\end{figure}
-Voici les ratio obtenus par famille d’instances :
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic10.PNG}
-\end{figure}
-\textbf{Graphe 03:}
-Et voici le graphe des ratio pour chaque nombre d'objets N des instances 
-\begin{figure}[H]
-  \includegraphics[width=\linewidth]{../figures/pic11.PNG}
-\end{figure}
-\textbf{Analyse et Interprétation des résultats : }
-\newline
-\begin{itemize}
-	\item Le temps d’exécution correspond à l’exécution 10 fois du AG, ceci était nécessaire à cause de la nature stochastique de l’algorithme,  la solution initiale générée aléatoirement (le trie aléatoir de la liste des objets avant d’effectuer FF) et les facteurs liés aux méthodes de croisement et de mutation, influent sur les résultats obtenus.
-	\item En terme de qualité de solution (étudiée en utilisant le ratio), l'AG donne d’assez bons résultats pour les instances du benchmark scholl, surtout dans le cas des classes 1 et 2 , où il arrive souvent à trouver la solution optimale sinon une valeur très proche de cette dernière, mais avec une qualité moindre dans le cas de la 3ème classe. \textbf{[Graphe 03] }
-	\item Le Ratio obtenu par l’AG est proche de 1 (Worst case ratio<1.1 dans tous les cas). Ceci signifie que l’algorithme génétique donne une bonne qualité de résultats même dans le pire des cas (les instances les plus difficiles).\textbf{[Graphe 03] }
-\end{itemize}
-
+    Il est à noter que les résultats des algorithmes AG, et RS sont le résultats de dix exécutions par instance, afin d’échapper à l’aspect aléatoires des fonctions intérieures à ces deux méthodes, où le temps d'exécution moyen et la meilleure solution parmis les dix obtenues ont été pris
+    Dans ce qui suit on va comparer:
+    \begin{itemize}
+        \item Whale Optimization Algorithm (WOA).
+        \item Improved Whale Optimization Algorithm (ILWOA).
+        \item L’Algorithm Génétique (AG).
+        \item Recuit Simulé (RS).
+    \end{itemize} 
+    \section{Comparaison par rapport au temps d'exécution}
+        \begin{figure}[H]
+            \includegraphics[width=\linewidth]{../figures/mh_texec.png}
+            \caption{la moyenne des temps d'exécution (en s) des métaheuristiques en fonction de la taille d'instance}
+        \end{figure}
+        \subsection{Analyse et interprétation}
+            \begin{itemize}
+                \item On peut clairement voir à partir du  graphe ci-dessus que le recuit simulé (RS) est l’algorithme le plus lent des quatre algorithmes, et dont le temps d'exécution augmente avec l’augmentation de la taille des instances. 
+                \item l’algorithm génétique (AG)  est la méthode la plus rapide suivi du WOA en deuxième position, et ILWOA juste derrière.
+                \item Contrairement à ce que le graphe montre, l’algorithme ILWOA converge beaucoup plus rapidement que WOA .En effet, le temps d'exécution ne reflète pas exactement la vitesse de convergence d’un algorithme dans notre cas dû au choix de la condition d'arrêt qui est pour rappel le nombre d'itérations (section ILWOA).
+                \item Le temps d'exécution des métaheuristiques est plus grand que le temps d'exécution des heuristiques, et ceci est triviale, à cause de la nature gloutonne des heuristiques, contrairement aux métaheuristiques qui sont des méthodes plus sophistiqués,utilisant plusieurs mécanismes d’intensification et diversification pour éviter les optimums locaux.
+            \end{itemize}
+    \section{Comparaison par rapport à la qualité de la solution}
+        \begin{figure}[H]
+            \includegraphics[width=\linewidth]{../figures/mh_ecart.png}
+            \caption{la moyenne des écarts (en \%) des métaheuristiques de la solution optimale en fonction de la taille d'instance}
+        \end{figure}
+        \subsection{Analyse et interprétation}
+            \begin{itemize}
+                \item On remarque que WOA dans tous les cas donne le plus grand écart par rapport à la solution optimale sauf dans le cas N4=500 où c’est RS qui trouve les solutions les plus écartées des solutions optimales (un écart de 60%). 
+                \item Pour la majorité des tailles des instances, AG donne les meilleurs résultats sauf dans le cas des instances Hard et N4 où ILWOA offre une légère amélioration. On peut donc conclure qu'en général AG donne de meilleurs solutions pour toutes les instances du benchmark. et ILWOA est celui qui arrive à améliorer les solutions des instances HARD. 
+                \item Les solutions obtenues sont généralement proches de celles retournées par les heuristiques, avec quelques instances où les métaheuristiques sont meilleures que les heuristique et vise versa.
+            \end{itemize}
+            Enfin, d’après ces deux graphes synthétiques, on conclut  que AG donne de meilleurs résultats en faisant un compromis entre le temps d'exécution et la qualité de la solution, le ILWOA pas très loin derrière.
+    \section{Conclusion}
+    Pour synthétiser, l’Algorithme Génétique est la métaheuristique qui a donné le meilleur compromis qualité coût pour notre benchmark, le Recuit Simulé, quant à lui, donne de très bons résultats aussi, mais avec un temps d'exécution très grand. ILWOA a permis d’améliorer WOA en terme de la converge rapide vers la solution optimale, ainsi qu’en terme de la qualité de la solution trouvée. Néanmoins, les résultats obtenues par les métaheuristiques sont très proches de ceux obtenues par les heuristiques, qui sont toujours les plus rapides. En d’autres termes,on a pas pu voir un grand apport des métaheuristiques en terme de qualité de solution, donc ce n’est pas intéressant d’arrêter notre étude à ce niveau, \textbf{raison pour laquelle on s’interessera aux méthodes hybrides afin de combler les inconvénients d’une méthode par les avantages de l’autre et obtenir une meilleure qualité de solution en un temps d'exécution acceptable.}
 \end{document}
