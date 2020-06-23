@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  23 JUN 2020 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  23 JUN 2020 18:51
 entering extended mode
 **c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/Rapport.tex
 (c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/Rapport.tex
@@ -877,17 +877,17 @@ File: chapters/../figures/tab2.png Graphic file (type png)
 Package pdftex.def Info: chapters/../figures/tab2.png  used on input line 41.
 (pdftex.def)             Requested size: 384.1122pt x 97.35173pt.
  [30]
-<chapters/../figures/graph2.png, id=748, 356.83313pt x 216.81pt>
-File: chapters/../figures/graph2.png Graphic file (type png)
-<use chapters/../figures/graph2.png>
-Package pdftex.def Info: chapters/../figures/graph2.png  used on input line 48.
-(pdftex.def)             Requested size: 384.1122pt x 233.39702pt.
-<chapters/../figures/graph3.png, id=749, 362.10281pt x 216.81pt>
-File: chapters/../figures/graph3.png Graphic file (type png)
-<use chapters/../figures/graph3.png>
-Package pdftex.def Info: chapters/../figures/graph3.png  used on input line 52.
-(pdftex.def)             Requested size: 384.1122pt x 229.99283pt.
- [31 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab2.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/graph2.png>]) [32 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/graph3.png>] [33
+<chapters/../figures/BBA_TEXEC_N.PNG, id=748, 359.09157pt x 203.25937pt>
+File: chapters/../figures/BBA_TEXEC_N.PNG Graphic file (type png)
+<use chapters/../figures/BBA_TEXEC_N.PNG>
+Package pdftex.def Info: chapters/../figures/BBA_TEXEC_N.PNG  used on input line 48.
+(pdftex.def)             Requested size: 384.1122pt x 217.43884pt.
+<chapters/../figures/BBA_TEXEC_C.PNG, id=749, 365.11406pt x 220.57407pt>
+File: chapters/../figures/BBA_TEXEC_C.PNG Graphic file (type png)
+<use chapters/../figures/BBA_TEXEC_C.PNG>
+Package pdftex.def Info: chapters/../figures/BBA_TEXEC_C.PNG  used on input line 52.
+(pdftex.def)             Requested size: 384.1122pt x 232.0606pt.
+ [31 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab2.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/BBA_TEXEC_N.PNG>]) [32 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/BBA_TEXEC_C.PNG>] [33
 
 ] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/worse_case_analysis.tex
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
@@ -941,7 +941,7 @@ l.52 \subsection{principe}
                    \relax 
 l.56 \subsection{Pseudocode:}
                              
-<chapters/../figures/NF NFD better(1).png, id=789, 626.34pt x 534.99875pt>
+<chapters/../figures/NF NFD better(1).png, id=791, 626.34pt x 534.99875pt>
 File: chapters/../figures/NF NFD better(1).png Graphic file (type png)
 <use chapters/../figures/NF NFD better(1).png>
 Package pdftex.def Info: chapters/../figures/NF NFD better(1).png  used on input line 66.
@@ -971,7 +971,7 @@ l.94 \section{First Fit Descreasing (FFD)}
                    \relax 
 l.95 \subsection{principe}
                            [38 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/NF NFD better(1).png>]
-<chapters/../figures/FF FFD.png, id=814, 529.98pt x 524.96124pt>
+<chapters/../figures/FF FFD.png, id=816, 529.98pt x 524.96124pt>
 File: chapters/../figures/FF FFD.png Graphic file (type png)
 <use chapters/../figures/FF FFD.png>
 Package pdftex.def Info: chapters/../figures/FF FFD.png  used on input line 111.
@@ -993,7 +993,7 @@ l.122 \subsection{Pseudocode}
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [40 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/FF FFD.png>]
-<chapters/../figures/BF BFD.png, id=840, 427.5975pt x 524.96124pt>
+<chapters/../figures/BF BFD.png, id=842, 427.5975pt x 524.96124pt>
 File: chapters/../figures/BF BFD.png Graphic file (type png)
 <use chapters/../figures/BF BFD.png>
 Package pdftex.def Info: chapters/../figures/BF BFD.png  used on input line 156.
@@ -1013,34 +1013,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<chapters/../figures/tab_part1.png, id=867, 342.5297pt x 97.11281pt>
+<chapters/../figures/tab_part1.png, id=869, 342.5297pt x 97.11281pt>
 File: chapters/../figures/tab_part1.png Graphic file (type png)
 <use chapters/../figures/tab_part1.png>
 Package pdftex.def Info: chapters/../figures/tab_part1.png  used on input line 29.
 (pdftex.def)             Requested size: 390.0pt x 110.57933pt.
-<chapters/../figures/tab_part2.png, id=868, 344.03531pt x 98.61844pt>
+<chapters/../figures/tab_part2.png, id=870, 344.03531pt x 98.61844pt>
 File: chapters/../figures/tab_part2.png Graphic file (type png)
 <use chapters/../figures/tab_part2.png>
 Package pdftex.def Info: chapters/../figures/tab_part2.png  used on input line 30.
 (pdftex.def)             Requested size: 390.0pt x 111.79414pt.
-<chapters/../figures/tab_part3.png, id=869, 344.03531pt x 114.4275pt>
+<chapters/../figures/tab_part3.png, id=871, 344.03531pt x 114.4275pt>
 File: chapters/../figures/tab_part3.png Graphic file (type png)
 <use chapters/../figures/tab_part3.png>
 Package pdftex.def Info: chapters/../figures/tab_part3.png  used on input line 31.
 (pdftex.def)             Requested size: 390.0pt x 129.71536pt.
-<chapters/../figures/tab_part4.png, id=870, 344.78813pt x 98.61844pt>
+<chapters/../figures/tab_part4.png, id=872, 344.78813pt x 98.61844pt>
 File: chapters/../figures/tab_part4.png Graphic file (type png)
 <use chapters/../figures/tab_part4.png>
 Package pdftex.def Info: chapters/../figures/tab_part4.png  used on input line 32.
 (pdftex.def)             Requested size: 390.0pt x 111.55188pt.
 [43]
-<chapters/../figures/Temps_exec_heuristics.png, id=876, 702.625pt x 451.6875pt>
+<chapters/../figures/Temps_exec_heuristics.png, id=878, 702.625pt x 451.6875pt>
 File: chapters/../figures/Temps_exec_heuristics.png Graphic file (type png)
 <use chapters/../figures/Temps_exec_heuristics.png>
 Package pdftex.def Info: chapters/../figures/Temps_exec_heuristics.png  used on input line 39.
 (pdftex.def)             Requested size: 390.0pt x 250.72398pt.
  [44 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_part1.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_part2.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_part3.png> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/tab_part4.png>]
-<chapters/../figures/Graphe_M_Exactes.png, id=886, 757.83125pt x 659.46375pt>
+<chapters/../figures/Graphe_M_Exactes.png, id=888, 757.83125pt x 659.46375pt>
 File: chapters/../figures/Graphe_M_Exactes.png Graphic file (type png)
 <use chapters/../figures/Graphe_M_Exactes.png>
 Package pdftex.def Info: chapters/../figures/Graphe_M_Exactes.png  used on input line 44.
@@ -1060,18 +1060,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
-<chapters/../figures/tab_ratio_heur.png, id=901, 375.65344pt x 209.28188pt>
+<chapters/../figures/tab_ratio_heur.png, id=903, 375.65344pt x 209.28188pt>
 File: chapters/../figures/tab_ratio_heur.png Graphic file (type png)
 <use chapters/../figures/tab_ratio_heur.png>
 Package pdftex.def Info: chapters/../figures/tab_ratio_heur.png  used on input line 71.
 (pdftex.def)             Requested size: 390.0pt x 217.29033pt.
 [47]
-<chapters/../figures/Ratio_M_heuristiques_intances.png, id=907, 642.4pt x 398.48875pt>
+<chapters/../figures/Ratio_M_heuristiques_intances.png, id=909, 642.4pt x 398.48875pt>
 File: chapters/../figures/Ratio_M_heuristiques_intances.png Graphic file (type png)
 <use chapters/../figures/Ratio_M_heuristiques_intances.png>
 Package pdftex.def Info: chapters/../figures/Ratio_M_heuristiques_intances.png  used on input line 76.
 (pdftex.def)             Requested size: 390.0pt x 241.92857pt.
-<chapters/../figures/Ratio_M_heuristiques.png, id=908, 634.37pt x 390.45876pt>
+<chapters/../figures/Ratio_M_heuristiques.png, id=910, 634.37pt x 390.45876pt>
 File: chapters/../figures/Ratio_M_heuristiques.png Graphic file (type png)
 <use chapters/../figures/Ratio_M_heuristiques.png>
 Package pdftex.def Info: chapters/../figures/Ratio_M_heuristiques.png  used on input line 83.
@@ -1100,34 +1100,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
  []
 
 [54]
-<chapters/../figures/RS_SWAP.png, id=969, 519.44063pt x 325.215pt>
+<chapters/../figures/RS_SWAP.png, id=971, 519.44063pt x 325.215pt>
 File: chapters/../figures/RS_SWAP.png Graphic file (type png)
 <use chapters/../figures/RS_SWAP.png>
 Package pdftex.def Info: chapters/../figures/RS_SWAP.png  used on input line 94.
 (pdftex.def)             Requested size: 390.0pt x 244.17365pt.
  [55] [56 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS_SWAP.png>] [57]
-<chapters/../figures/RS/rs tab temps.PNG, id=986, 287.57437pt x 194.22563pt>
+<chapters/../figures/RS/rs tab temps.PNG, id=988, 287.57437pt x 194.22563pt>
 File: chapters/../figures/RS/rs tab temps.PNG Graphic file (type png)
 <use chapters/../figures/RS/rs tab temps.PNG>
 Package pdftex.def Info: chapters/../figures/RS/rs tab temps.PNG  used on input line 141.
 (pdftex.def)             Requested size: 287.57367pt x 194.22514pt.
-<chapters/../figures/RS/texec rs(1).png, id=987, 511.9125pt x 280.04625pt>
+<chapters/../figures/RS/texec rs(1).png, id=989, 511.9125pt x 280.04625pt>
 File: chapters/../figures/RS/texec rs(1).png Graphic file (type png)
 <use chapters/../figures/RS/texec rs(1).png>
 Package pdftex.def Info: chapters/../figures/RS/texec rs(1).png  used on input line 147.
 (pdftex.def)             Requested size: 390.0pt x 213.3544pt.
-<chapters/../figures/RS/rs figures.PNG, id=988, 413.29407pt x 456.20438pt>
+<chapters/../figures/RS/rs figures.PNG, id=990, 413.29407pt x 456.20438pt>
 File: chapters/../figures/RS/rs figures.PNG Graphic file (type png)
 <use chapters/../figures/RS/rs figures.PNG>
 Package pdftex.def Info: chapters/../figures/RS/rs figures.PNG  used on input line 153.
 (pdftex.def)             Requested size: 537.28221pt x 593.06561pt.
  [58 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/rs tab temps.PNG> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/texec rs(1).png>]
-<chapters/../figures/RS/rs tab ratio.PNG, id=997, 231.86626pt x 191.9672pt>
+<chapters/../figures/RS/rs tab ratio.PNG, id=999, 231.86626pt x 191.9672pt>
 File: chapters/../figures/RS/rs tab ratio.PNG Graphic file (type png)
 <use chapters/../figures/RS/rs tab ratio.PNG>
 Package pdftex.def Info: chapters/../figures/RS/rs tab ratio.PNG  used on input line 159.
 (pdftex.def)             Requested size: 231.86568pt x 191.96672pt.
-<chapters/../figures/RS/ratio RS.png, id=998, 387.4475pt x 279.0425pt>
+<chapters/../figures/RS/ratio RS.png, id=1000, 387.4475pt x 279.0425pt>
 File: chapters/../figures/RS/ratio RS.png Graphic file (type png)
 <use chapters/../figures/RS/ratio RS.png>
 Package pdftex.def Info: chapters/../figures/RS/ratio RS.png  used on input line 160.
@@ -1140,7 +1140,7 @@ Overfull \hbox (4.17986pt too wide) in paragraph at lines 168--169
 [60 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/rs tab ratio.PNG> <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/RS/ratio RS.png>]) [61]
 Chapitre 2.
 (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/WOA.tex
-<chapters/../figures/cercles.png, id=1017, 380.92313pt x 381.67593pt>
+<chapters/../figures/cercles.png, id=1019, 380.92313pt x 381.67593pt>
 File: chapters/../figures/cercles.png Graphic file (type png)
 <use chapters/../figures/cercles.png>
 Package pdftex.def Info: chapters/../figures/cercles.png  used on input line 14.
@@ -1148,7 +1148,7 @@ Package pdftex.def Info: chapters/../figures/cercles.png  used on input line 14.
  [62
 
 ]
-<chapters/../figures/spiral.png, id=1022, 447.17062pt x 421.575pt>
+<chapters/../figures/spiral.png, id=1024, 447.17062pt x 421.575pt>
 File: chapters/../figures/spiral.png Graphic file (type png)
 <use chapters/../figures/spiral.png>
 Package pdftex.def Info: chapters/../figures/spiral.png  used on input line 19.
@@ -1164,7 +1164,7 @@ LaTeX Warning: Command \textellipsis invalid in math mode on input line 133.
 [67] [68]) [69]
 Chapitre 3.
 (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters/ILWOA.tex
-<chapters/../figures/logisticvsothers.PNG, id=1095, 402.00188pt x 289.08pt>
+<chapters/../figures/logisticvsothers.PNG, id=1097, 402.00188pt x 289.08pt>
 File: chapters/../figures/logisticvsothers.PNG Graphic file (type png)
 <use chapters/../figures/logisticvsothers.PNG>
 Package pdftex.def Info: chapters/../figures/logisticvsothers.PNG  used on input line 30.
@@ -1181,7 +1181,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--37
 [70
 
 ] [71 <c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/../figures/logisticvsothers.PNG>]
-<chapters/../figures/Mutation.PNG, id=1110, 262.73157pt x 316.18124pt>
+<chapters/../figures/Mutation.PNG, id=1112, 262.73157pt x 316.18124pt>
 File: chapters/../figures/Mutation.PNG Graphic file (type png)
 <use chapters/../figures/Mutation.PNG>
 Package pdftex.def Info: chapters/../figures/Mutation.PNG  used on input line 60.
@@ -1203,16 +1203,16 @@ Package logreq Info: Writing requests to 'Rapport.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  19164 strings out of 480930
- 332269 string characters out of 2899761
+ 332329 string characters out of 2899761
  896733 words of memory out of 3000000
  34184 multiletter control sequences out of 15000+200000
  552917 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,11n,86p,1239b,2085s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.pdf (75 pages, 1494531 bytes).
+Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\Rapport.pdf (75 pages, 1495944 bytes).
 PDF statistics:
- 1903 PDF objects out of 2073 (max. 8388607)
+ 1905 PDF objects out of 2073 (max. 8388607)
  473 named destinations out of 1000 (max. 500000)
  875 words of extra memory for PDF output out of 10000 (max. 10000000)
 
