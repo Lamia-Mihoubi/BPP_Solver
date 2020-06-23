@@ -315,6 +315,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Analyse et interprétation}{88}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Conclusion}{89}{section.5.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {part}{References}{91}{part*.34}%
+\contentsline {chapter}{\numberline {6}Conclusion}{89}{chapter.6}%
