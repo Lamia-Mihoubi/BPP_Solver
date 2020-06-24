@@ -210,6 +210,8 @@ OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.pdf
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
 OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty
@@ -355,7 +357,6 @@ INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\B
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\tests_heur.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\tests_heur.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\tests_heur.tex
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcbx1200.tfm
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab_part1.png
@@ -438,16 +439,31 @@ INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\R
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\WOA.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\WOA.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\WOA.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\cercles.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\cercles.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\spiral.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_texec.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_texec.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_texec.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_texec.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_texec.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\ratio_woa_configs.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\ratio_woa_configs.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\ratio_woa_configs.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\ratio_woa_configs.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\ratio_woa_configs.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_opt.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_opt.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_opt.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_opt.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\WOA\woa_opt.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ILWOA.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ILWOA.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ILWOA.tex
@@ -461,6 +477,16 @@ INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\M
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Mutation.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabreslts.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabreslts.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabreslts.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabreslts.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tabreslts.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\woavsilwoatemps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\woavsilwoatemps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\woavsilwoatemps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\woavsilwoatemps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\woavsilwoatemps.PNG
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
@@ -539,8 +565,6 @@ INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.run.xml
 OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.run.xml
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
-INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
-INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk

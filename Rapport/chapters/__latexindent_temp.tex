@@ -1,73 +1,70 @@
 \documentclass[12pt]{article}
-\usepackage{mathtools}
+
 \usepackage{amsmath}
-\usepackage{float}
-\usepackage{algorithmic}
+\usepackage{mathtools}
 \usepackage{algorithm}
-\setcounter{section}{0}
 
+\usepackage{algorithmic}
+
+\usepackage{enumitem}
+
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\usepackage[font=footnotesize]{caption}
+
+\usepackage[utf8]{inputenc}
 \begin{document}
-Le Whale Optimization Algorithm est une nouvelle métaheuristique introduite en 2016 par Mirjalili et Lewis basée sur l’intelligence en essaim. Cet algorithme est inspiré d’une stratégie d’alimentation des baleines à bosse connue sous le nom de L'alimentation au filet à bulles. Une tactique qui leur permet d’attraper le plus de poissons possibles en un seul coup. Après avoir détecté ses proies, la baleine libère des bulles en nageant dans un mouvement spirale vers la surface pour encercler la proie pour la capturer.
-Les bulles libérées peuvent prendre 2 formes : une forme de cercles rétrécissants ou une forme spirale . 
-Dans cet algorithme, La recherche des proies représente l’exploration de l’espace de recherche et La libération des bulles représente l’exploitation.
-\begin{figure}[hbt!] 
-    \includegraphics[width=7cm]{../figures/WOA/cercles.png}
-    \includegraphics[width=7cm]{../figures/WOA/spiral.png}
-    \caption{Libération des bulles en cercles rétrecissants (à gauche), ibération des bulles en spirale (à droite).}
+\section{ILWOA}
+    Cette version de l'algorithme utilise une fonction à dynamique chaotique et la distribution vol de Lévy afin de garantir une convergence rapide .Une phase de mutation est aussi rajoutée à la fin de chaque itération
+\subsection{Fonction à dynamique chaotique}
+Soit f:I $\rightarrow$ I une fonction continue.On suppose que la dynamique associée est chaotique.Alors:
+\begin{enumerate}
+    \item L'ensemble des points périodiques de f est partout dense dans I 
+    \item f est sensible aux conditions initiales, ceci signifie que s'il y'a un petit changement dans la condition initiale $x_0$,le changement correspondant de $x_t=f_t(x_0)$ croit avec la croissance de t 
+\end{enumerate}
+Ce sont des fonctions qui permettent d'avoir une suite de nombres aléatoires qui dépend d'une condition initiale.Il existe plusieurs types de fonctions chaotique :fonction logistique,fonction de tchebychev.Après plusieurs tests, il a été remarqué qu'avec les fonctions logistiques nous obtenons une convergence plus rapide de la fonction objective .Le minimum de la fonction objective a été atteint en 5 itérations comme le montre le graphe(add refrence here)
+\begin{figure}[h!]
+   \centering
+    \includegraphics[width=10cm]{../figures/logisticvsothers.PNG}
+    \caption[\small]{convergence fonctions chaotiques}
 \end{figure}
-\section{Représentation mathématique :}
-\subsection{Encerclement avec bulles en cercles rétrécissants :}
-Soient:
+Du graphe , on peut voir qu'avec la fonction logistique la fonction objective atteint le minimumu à partir de la 5eme itération
+\subsubsection{Fonction logistique}
+La fonction logistique est définie par la formule suivante :
+\newline
+\begin{center}
+    $x_{n+1}=ax_n(1-x_n) ,x\in[0,1],0<a\leq4$   
+\end{center}
+où a est une constante caractéristique de la fonction logistique que nous avons fixé à la valeur give the value après plusieurs simulations
+La fonction logistique est utilisée dans l'algorithme pour générer la valeur p
+\subsection{La distribution vol de Lévy}
+le vol de levy est un modèle mathématique caractérisé par une moyenne et une variance infinies ce qui rend le mouvement plus lent permettant ainsi une meilleure exploration de l'espace de recherche (REFERENCE).
+Dans ILWOA , la variable C est remplacé par un pas aléatoire de la marche aleatoire levy donné par les formules suivantes:
+\begin{align*}
+&Levy\leadsto\frac{\lambda\Gamma(\lambda)\sin(\pi\lambda/2)}{\pi}\frac{1}{s^{1+\lambda}}\\
+&s=\frac{U}{\left|{V^{\lambda^-1}}\right| },\quad U\leadsto N(0,\sigma_u^2),V\leadsto N(0,1)\\
+&\sigma_u^2=[\frac{\Gamma(\lambda+1)}{\Gamma((\lambda+1)/2)}\frac{\sin(\pi\lambda/2)}{2^{(\lambda-1)/2}}]^{1/\lambda}
+\end{align*}
+\subsection{Phase de mutation}
+Une phase de mutation a lieu à la fin de chaque itération.On vérifie d'abord si la solution atteinte est optimale .dans ce cas la recherche s'arrete sinon on applique la mutation sur cette dernière.
+Cette phase est composée de 3 opérations exécutées séquentiellement comme le montre la figure (add fig number): 
 \begin{itemize}
-    \item \(x^*(t)\) la meilleure solution courante.
-    \item \(t\) le numéro de l'itération courante.
-    \item \(\vec{D}\) indique la distance du ième baleine (ième solution candidate) à la proie (la meilleure solution actuelle).
-    \item \(x(t)\) une solution de la population à l'itération \(t\), et \(x(t+1)\) le résultat de sa mise à jour.
-    \item \(x_r(t)\) une solution choisie aléatoirement de la la population courante.
-    \item \(A\) et \(C\) des coefficients calculés par les formules suivantes:
-    \[A = 2ar-a\] 
-    \[C = 2r\] 
-    Avec \(r\) un nombre aléatoire appartenant à \([0,1]\).
-    \\ et \(a\) un nombre décrémenté linéairement à chaque itération de 2 à 0, de la façon suivante:
-    \(a =  a_{init} - a_{init}*i/max\_iter\) avec \(i\) numéro de l’itération courante, \(max\_iter\) le nombre maximal des itération et \(a_{init}\) la valeur initiale de \(a\).
+    \item Permutation: deux items de la solution sont choisis aléatoirement pour effectuer une permutation entre eux
+    \item deplacement: Un sous ensemble d'items choisi aléatoirement est déplacé vers une position qui est egalement choisie aléatoirement
+    \item Inversion: On applique une inversion sur un sous ensemble d'items
 \end{itemize}
-Le processus d’encerclement de la proie peut être représenté par les équations suivantes :
-
-\begin{equation*}
-    \vec{D} = |Cx^*(t) - x(t)|
-\end{equation*}
-Si \(|A| < 1\):
-\begin{equation}
-    x(t+1) = x^*(t) - A\vec{D}
-\end{equation}
-Sinon:
-\begin{equation}
-    x(t+1) = x_r(t) - A\vec{D}
-\end{equation}
-Le comportement de l’encerclement avec bulles en cercle rétrécissant est obtenu en diminuant la valeur de \(a\) de \(a_{init}\) à 0 au cours des itérations. La variation de \(A\) peut être utilisée pour rechercher des proies, c'est-à-dire la phase d'exploration. Par conséquent, \(A\) peut être utilisé avec des valeurs aléatoires supérieures à 1 ou inférieures à -1 pour forcer les solutions à s'éloigner de la solutions de référence (la meilleure solution \(|A| < 1\) ou une solution aléatoire sinon).
-\subsection{Encerclement avec bulles sous forme spirale :}
-Il est modélisé par les équations suivantes :
-\begin{equation}
-    \vec{D} = |x^*(t) - x(t)|
-\end{equation}
-\begin{equation}
-    x(t+1) = \vec{D} e^{bl} \cos (2\pi l) + x^*(t)
-\end{equation}
-Où \(l\) est un nombre aléatoire appartenant à \([-1,1]\) Et \(b\) une constante qui définit la forme de la spirale 
-
-Ces deux types définissent deux mécanismes d’explorations de l’espace recherche, ce qui permet une meilleure diversification de l’espace de recherche.
-Dans chaque itération du WOA, un de ces deux mécanismes est choisi avec une probabilité \(p\) égale à \(50\%\) pour mettre à jour la population des solutions candidates comme suit:
-\[ x(t+1) =
-  \begin{cases}
-    x^*(t) - A\vec{D}       & \quad r < p\\
-    \vec{D} e^{bl} \cos (2\pi l) + x^*(t)  & \quad r \geq p
-  \end{cases}
-\]
-avec \(x*(t)\) est la meilleure solution actuelle au temps \(t\), \(p\) est égal à \(0,5\) et \(r\) est un nombre aléatoire entre \([0, 1]\)
-
+\begin{figure}[h!]
+   \centering
+    \includegraphics[width=10cm]{../figures/Mutation.PNG}
+    \caption[\small]{Phase de mutation}
+\end{figure}
 \subsection{Pseudocode:}
 \begin{algorithm}[H]
-    \caption{Whale Optimization Algorithm}
+    \caption{Improved Whale Optimization Algorithm}
     \begin{algorithmic}
         \STATE Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
         \STATE Évaluer les solutions de la population initiale\;
@@ -79,7 +76,7 @@ avec \(x*(t)\) est la meilleure solution actuelle au temps \(t\), \(p\) est éga
                     \IF{\(|A| < 1\)}
                         \STATE Mettre à jour la solution par Eq.(1)\;
                     \ELSE
-                        \STATE Sélectionnez une solution aléatoire \(X_r\)\;
+                        \STATE Sélectionner une solution aléatoire \(X_r\)\;
                         \STATE Mettre à jour la solution par Eq.(2)\;
                     \ENDIF
                 \ELSE 
@@ -87,111 +84,80 @@ avec \(x*(t)\) est la meilleure solution actuelle au temps \(t\), \(p\) est éga
                 \ENDIF
             \ENDFOR
             \STATE Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
-            \STATE Évaluer la nouvelle population\;
-            \STATE Mettre à jour X* \;
+            \STATE Appliquer la discretisation par LOV\;
+            \STATE Évaluer la nouvelle solution\;
+            \STATE Mettre à jour X* s'il existe une meilleure solution Sinon lancer la phase de mutation\;
+            \STATE Evaluer la nouvelle solution,màj de la meilleure solution
             \STATE t = t + 1\;
         \ENDWHILE
     \end{algorithmic}
 \end{algorithm}
-\subsection{Ingrédients du WOA :}
+\subsection{Test et résultats:}
+Pour montrer les performances de cet algorithme nous avons effectué une série de Test sur des instances du Benchmark \guillemotleft Scholl \guillemotright composé de trois classes d’une difficulté qui varie d’une classe à une autre.
+En ce qui concerne les paramètres de l’algorithme, nous avons utilisé deux méthodes de calibrage : Un calibrage manuel et un calibrage automatique avec IRace ;Le tableau ci-dessous indique les valeurs obtenues par chacune des deux méthodes.
+\begin{table}[h!]
+    \begin{center}
+      \caption{Configuration paramétrique de l'algorithme}
+      \label{tab:table1}
+      \begin{tabular}{c|c|c|c|c|c} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+       \textbf{}&\textbf{A} & \textbf{B} &\textbf{Beta} & \textbf{MAXITER} & \textbf{Searchagents} \\
+        \hline
+        
+        Calibrage manuel &8&0.99&1.5&391&13\\ 
+        \hline
+       Calibrage automatique&4&1.5&1&30(Hard),10(Classe 1 et 2)&10\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+\linebreak
+ Nous allons dans l’analyse qui suit:
 \begin{itemize}
-    \item Population initiale des solutions.
-    \item Fonction d’évaluation qui permet de choisir la meilleure solution x*(t).
-    \item Un mécanisme d'évolution:
-    \begin{itemize}
-        \item Encerclement avec bulles en cercle rétrécissant.
-        \item Encerclement avec bulles sous forme de spirale.
-    \end{itemize}
-    \item Critère d'arrêt du WOA: nombre maximal d’itérations.    
+    \item comparer entre les résultats obtenus par les deux méthodes de calibrage ainsi montrer l’influence du choix des paramètres sur la performance de l’algorithme.
+    \item Analyser les performances de l’algorithme et le comparer à l’algorithme WOA exécuté avec la configuration optimale suivante : $Search Agents=28$, $max_iter=271$,  $b=7.64$, $a=20$ .
 \end{itemize}
-\subsection{Paramètres du WOA :}
+\paragraph{Comparaison entre les résultats obtenus par calibrage automatique et les résultats obtenus par calibrage manuel:                }
+Afin d’effectuer cela ,Nous avons exécuté l’algorithme avec les paramètres obtenus par calibrage automatique et les paramètres obtenus par calibrage automatique, sur les instances difficiles de la classe 3 .Les tableaux ci-dessous montrent que le calibrage automatique améliore la qualité de la solution ainsi que le temps d’exécution
+\begin{figure}[h!]
+    \centering
+     \includegraphics[width=10cm]{../figures/tabreslts.PNG}
+     \caption[\small]{Phase de mutation}
+ \end{figure}
+\paragraph{Analyse des performances de l'algorithme: }
+\subparagraph{Analyse du temps d'exécution :}
+A partir du graphes ci-dessous , on peut déduire que :
 \begin{itemize}
-    \item La taille de la population des solutions candidates à évaluer dans chaque itération.
-    \item La constante \(b\) qui définit la forme de la spirale.
-    \item Le nombre maximal d’itérations: \(max_iter\).
-    \item le nombre \(a\) qui détermine le degré de diversification (exploration).    
+    \item Le temps d'exécution de ILWOA varie de 1  à quelques dizaines de secondes pour les grandes instances 
+    \item L’algorithme ILWOA est plus lent que WOA , on justifie ceci par le fait qu’en plus des instructions exécutées par le WOA , l’ILWOA comporte une phase de mutation et une initialisation par une heuristique  
 \end{itemize}
-\subsection{Application de l’algorithme au problème du bin packing :}
-\subsubsection{Discrétisation de l'espace de recherche :}
-Cet algorithme a été proposé pour la résolution de problèmes à espace \\ de recherche continu. Afin de l’adapter à notre problème discret nous allons utiliser une méthode appelée LOV qui permet de passer d’une solution continue à une solution discrète:\\
-\begin{algorithm}[H]
-    \caption{Discrétisation de l'espace de recherche par LOV}
-    \begin{algorithmic}
-        \STATE \textbf{Résultat en sortie:} Solution discrète \(X = (x_1, x_2, \dots, x_n)\) obtenue à partir de la solution continue \(\tilde{X} = (\tilde{x_1}, \tilde{x_2}, \dots, \tilde{x_n})\)\;
-        \STATE Ordonnez les valeurs du vecteur de \(\tilde{X}\) par ordre décroissant\;
-        \STATE L'indice d'ordre de caque valeur est stocké dans un vecteur \(\theta = \{ \theta_i = \text{ordre de l'élément } \tilde{x_i}\}\)\;
-    \end{algorithmic}  
-\end{algorithm}
-\subsubsection{Représentation d’une solution }
-Une solution est exprimée par un vecteur $ x(t)=(a_1, a_2, …, a_n)$ représentant la distribution des articles dans les boîtes au moment t, avec n le nombre d’article et ai est un article d’ordre i. Les articles sont ordonnés selon les boîtes dans lesquelles ils sont rangés, i.e. l’article a1 est rangé dans la première boîte, s’il y’en a de l’espace dans cette boîte alors l’article a2 est y rangé, sinon a2 est rangé dan la deuxième boîte...ainsi de suite. ( principe du Next Fit) 
-Une solution \(x(t)\) appartient au domaine de recherche tant qu’elle respecte les contraintes du problème: un objet ne peut pas être rangé dans plus d’une boîte, donc pas de doublons dans x(t), l’autre contrainte concernant le respect de la capacité d’une boîte est vérifié trivialement par définition du vecteur x(t).
+\begin{figure}[h!]
+    \centering
+     \includegraphics[width=10cm]{../figures/woavsilwoatemps.PNG}
+     \caption[\small]{temps d'execution de ILWOA et WOA}
+ \end{figure}
+ \subparagraph{Analyse de la qualité de solution :}
+La qualité de solution a été mesurée par le ration dont on a cité la formule précédemment.A partir du graphes ci-dessous , on peut déduire que :
+ \begin{itemize}
+     \item Le Ratio obtenu par l’ILWOA est proche de 1 pour toutes les instances même pour les instance de la classe 3 ceci signifie qu’il donne de bons résultats quelque soit la difficulté de l’instance 
+     \item la solution obtenue avec l’algorithme ILWOA est très proche de la solution optimale voire même égale pour des instances des classes 1 et 2 
+     \item ILWOA améliore la qualité de solution par rapport à l’algorithme woa pour les instances des 3 classes confondues
+ \end{itemize}
+ \begin{figure}[h!]
+     \centering
+      %\includegraphics[width=10cm]{../figures/ilwoavswoaqs.PNG}
+      \caption[\small]{ratio de ILWOA et WOA}
+  \end{figure}
+  \subsection{Interprétation :}
+  \begin{itemize}
+    \item L’Algorithme ILWOA permet d’obtenir une bonne qualité de solution en un temps raisonnable   
+    \item Le caractère stochastique de l’algorithme WOA permet de mieux explorer l’espace de recherche, l’utilisation des fonctions logistiques et de la distribution du vol de lévy ont amélioré cela 
+    \item En analysant le nombre de search agents et d’itérations ainsi que la solution obtenue , On peut conclure que l’ajout d’une phase de mutation a permis d’améliorer la rapidité de convergence de l’algorithme 
+    \item Les améliorations effectuées ont permis d’augmenter la performance de l’algorithme 
+    \item La performance de l’algorithme dépend fortement des valeurs de ses paramètres d’où la nécessité du calibrage qui permet de trouver la meilleure configuration pour l’algorithme
+    \item La valeur des paramètres peut dépendre de la nature de l’instance
+    \item Le calibrage automatique est important du fait que ça permet de nous épargner une tâche tant  fastidieuse, tout en assurant une meilleure qualité du résultat
 
-\subsubsection{La fonction objectif :}
-Afin de pouvoir évaluer les solutions, Nous avons opté pour la fonction suivante proposée par \emph{Hyde et al} [add ref here], au lieu du nombre de boîtes utilisées, parce que avec cette dernière pour plusieurs solutions on peut avoir la même évaluation ce qui peut engendrer la stagnation de l’algorithme.
-\[ F_{min} = 1 - \frac{\sum_{1}^{n} (occup_i / c)^k}{n}\]
-Avec:
-\begin{itemize}
-    \item \(n\) nombre de boites utilisées.
-    \item \(ocup_i\) total des poids des objets rangés dans l’ième.
-    \item \(c\) capacité des boites.
-    
 \end{itemize}
-\section{Test et Résultats: }
-Dans cette partie nous allons tester les performances de la métaheuristique WOA sur les instances du benchmark Scholl. Ensuite nous allons effectuer une comparaison des résultats obtenus avec les résultats optimaux. Nous utiliserons pour chacune des trois classes du benchmark Scholl deux configurations de paramètres; la première configuration est obtenue par tâtonnement après plusieurs essais manuels, la deuxième par calibrage automatiques des paramètres utilisant le package irace qui implémente l’algorithme I/F-Race (voir chapitre XX).
-Pour pouvoir étudier les performances de WOA, notre étude se portera sur 2 axes:
-\begin{itemize}
-    \item Temps d'exécution.
-    \item Qualité de la solution  (ratio et comparaisons avec les solutions optimales)
-\end{itemize}
-
-\paragraph{Remarque: }
-Les algorithmes ont été développés en utilisant le langage de programmation python, et exécutés sur un DELL Inspiron15 [Intel® Core™ i7-8550U CPU @ 1.80GHz×8, 8Go] en utilisant Visual Studio Code.
-\subsection{Rappel des paramètres de WOA: }
-\begin{itemize}
-    \item La taille de la population: \(nb\_whales\).
-    \item Le nombre maximal d’itérations: \(max\_iter\).
-    \item La constante de l’encerclement spirale \(b\).
-    \item La constante \(a\) qui détermine le degré d’exploration de l’espace de recherche.
-\end{itemize}
-\subsection{Temps d'exécution: }
-\begin{figure}[!hbt]
-    \includegraphics[width=\linewidth]{../figures/WOA/woa_texec.png}
-    \caption{Histogramme des temps d'exécutions moyens pour les deux configurations pour tout le benchmark Scholl. Configuration 1 en bleu. Configuration 2 en rouge.}
-\end{figure}
-Configurations de paramètres utilisées:
-\begin{enumerate}
-    \item Configuration 1 (obtenue manuellement): \(nb\_whales=30, max\_iter=50, b=1.5, a=4\).
-    \item Configuration 2 (obtenue par calibrage automatique par IRACE): \( nb\_whales=30, max\_iter=117, b=8.96, a=10\).
-\end{enumerate}
-
-\subsection{Qualité de solution: }
-\subsubsection{Ratio: }
-\begin{figure}[!hbt]
-    \includegraphics[width=\linewidth]{../figures/WOA/ratio_woa_configs.png}
-    \caption{Histogramme des ratios des deux configurations pour tout le benchmark Scholl. Configuration 1 en bleu. Configuration 2 en rouge.}
-\end{figure}
-Configurations de paramètres utilisées:
-\begin{enumerate}
-    \item Configuration 1 (obtenue manuellement): \(nb\_whales=30, max\_iter=50, b=1.5, a=4\).
-    \item Configuration 2 (obtenue par calibrage automatique par IRACE): \(nb\_whales=28, max\_iter=271,  b=7.64, a=20\).
-\end{enumerate}
-\subsubsection{Comparaison avec la solution optimale: }
-\begin{figure}[!hbt]
-    \includegraphics[width=\linewidth, scale=1.3]{../figures/WOA/woa_opt.png}
-    \caption{le nombre de boites obtenu par WOA (en vert) par rapport à la solution optimale (en bleu) pour les instances de la classe 1 et 2 de taille respectivement de haut en bas, de gauche à droite: N1, N2, N3, N4 et les instances de la classe 3.}
-\end{figure}
-Configuration de paramètres utilisée (obtenue par calibrage automatique par IRACE): \(nb\_whales=28, max\_iter=271,  b=7.64, a=20\).
-
-\subsection{Analyses des résultats: }
-\begin{itemize}
-    \item WOA permet d'obtenir un ratio inférieur à 1.4 pour les benchmark Scholl, et un ratio de 1 pour les instances de la classe 2 de taille N1.
-    \item Parmis les trois classes WOA est plus performant dans le cas des instances difficiles (classe 3: C3) et la classe 2 (C2).
-    \item Le calibrage automatique permet généralement d’améliorer la qualité de la solution très légèrement sauf pour le cas des instances de la classe C2 de tailles N1 et N4 ou la configuration manuelle donne de meilleurs résultats.
-    \item Le calibrage automatique permet de réduire le temps d’exécution significativement surtout pour les instances de grande taille (N4) et les instances de la classe 3 (instances difficiles).
-    \item Avec une configuration optimale des paramètres le temps de résolution des instances les plus difficiles et/ou volumineuse ne dépasse pas 8s.
-\end{itemize}
-
-
 
 
 \end{document}
