@@ -33,20 +33,20 @@
     \tableofcontents
     \chapter*{Introduction}
     \addcontentsline{toc}{chapter}{Introduction} \markboth{INTRODUCTION}{} 
-    Le problème du bin packing, dans lequel un ensemble d’objets de différents poids doit être rangé dans un nombre minimum de boîtes identiques de capacité C est un problème NP-difficile, c’est à dire qu’il n y a aucune chance de trouver une méthode de résolution qui fournit la solution exacte en un temps polynomiale, sauf si l’égalité NP=P est prouvée. 
+    Le problème du bin packing, dans lequel un ensemble de N objets de différents poids doivent être rangés dans un nombre minimum de boîtes identiques, de capacité C, est un problème NP-difficile, c’est à dire qu’il n y a aucune chance de trouver une méthode de résolution qui fournit la solution exacte en un temps polynomiale, sauf si l’égalité NP=P est prouvée. 
     Durant le dernier siècle, divers efforts ont été consacrés pour étudier ce problème, dans le but de trouver des algorithmes heuristiques rapides pour fournir de bonnes solutions approximatives.
-    Dans ce projet, nous allons mettre en place un plateforme de résolution du problème du Bin Packing. pour cela , nous implémenterons 4 types de méthodes: 
+    Dans ce projet, nous allons mettre en place une plateforme de résolution du problème du Bin Packing. pour cela , nous implémenterons 4 types de méthodes: 
     \begin{enumerate}
-        \item \emph{méthodes exactes:} fournissant la solution optimale, mais qui sont très limités par la taille du problème. 
-        \item \emph{heuristiques:} qui sont des méthodes approchées spécifiques au problème.
-        \item \emph{métaheuristiques:} qui sont des méthodes approchées génériques.
-        \item \emph{hybridation d'une métaheuristique avec une recherche locale:} qui est notre contribution principale dans la résolution de ce problème.
+        \item \emph{Méthodes exactes:} fournissant la solution optimale, mais qui sont très limitées par la taille du problème. 
+        \item \emph{Heuristiques:} qui sont des méthodes approchées spécifiques au problème.
+        \item \emph{Métaheuristiques:} qui sont des méthodes approchées génériques.
+        \item \emph{Hybridation d'une métaheuristique avec une recherche locale:} qui représente notre contribution principale dans la résolution de ce problème.
     \end{enumerate}
-    Nous commencerons par la présentation du problème, sa formulation mathématique, et une étude des méthodes de résolutions existantes dans la littérature.[ Etat de l’Art]. Ensuite, nous présenterons la conception détaillée de chaque méthode implémentée, ainsi que les résultats des test de ces méthodes effectués sur des benchmark connus.[Conception \& Tests]
+    Nous commencerons par la présentation du problème, sa formulation mathématique, et une étude des méthodes de résolutions existantes dans la littérature.[ Etat de l’Art]. Ensuite, nous présenterons la conception détaillée de chaque méthode implémentée, ainsi que les résultats des tests de ces méthodes effectuées sur des benchmarks connus.[Conception \& Tests]
     On distingue 2 types de tests:
     \begin{enumerate}
-        \item \emph{les tests empiriques:} dont le but de trouver la meilleure configuration des paramètres de nos méthodes implémentées.  
-        \item \emph{les tests comparatifs:} où on doit comparer les résultats obtenus des méthodes implémentées et sélectionner la meilleure méthode de résolution pour chaque instances. la comparaison se fait en terme de qualité de la solution et du temps d'exécution. 
+        \item \emph{Les tests empiriques:} dont le but est de trouver la meilleure configuration des paramètres des méthodes implémentées.  
+        \item \emph{Les tests comparatifs:} où on doit comparer les résultats obtenus par les méthodes implémentées et sélectionner la meilleure méthode de résolution pour chaque instance. La comparaison se fait en terme de la qualité de la solution et du temps d'exécution. 
     \end{enumerate}
     \part{Présentation du Problème de Bin Packing (BPP) }
     \import{chapters/}{Description_BPP}
@@ -69,7 +69,7 @@
         Les métaheuristiques sont des méthodes d’optimisation approchées, caractérisées par leur généralité, c’est à dire qu’elles ne dépendent pas du problème à résoudre comme les heuristiques. En d'autres termes, une métaheuristique peut être considérée comme un
     cadre algorithmique qui peut être appliqué à différents problèmes d'optimisation avec relativement peu de modifications à apporter afin de l’adapter à un problème spécifique.
 
-    Les métaheuristiques sont caractérisées par leurs stratégies qui permettent de guider la recherche d’une solution, afin d’explorer l’espace de recherche efficacement pour déterminer des points (presque) optimaux,grâce à des mécanismes qui permettent d’éviter d'être bloqués dans des optima locaux, mais elles sont en général non déterministes et ne donnent aucune garantie d’optimalité.
+    Les métaheuristiques sont caractérisées par leurs stratégies qui permettent de guider la recherche d’une solution, afin d’explorer l’espace de recherche efficacement pour déterminer des points (presque) optimaux,grâce à des mécanismes qui permettent d’éviter d'être bloqué dans des optima locaux, mais elles sont en général non déterministes et ne donnent aucune garantie d’optimalité.
     Les métaheuristiques se divisent sur deux méthodes :
     \begin{itemize}
         \item Les méthodes de voisinage.
@@ -97,8 +97,8 @@
     \chapter{L'Algorithme Génétique}
     \import{chapters/}{ag}
     \chapter{comparaison en les métaheuristiques}
-    \import{chapters/}{compare_mh}
+  %  \import{chapters/}{compare_mh}
     \chapter{Conclusion}
-    Pour synthétiser, l’Algorithme Génétique est la métaheuristique qui a donné le meilleur compromis qualité coût pour notre benchmark, le Recuit Simulé, quant à lui, donne de très bons résultats aussi, mais avec un temps d'exécution très grand. ILWOA a permis d’améliorer WOA en terme de la converge rapide vers la solution optimale, ainsi qu’en terme de la qualité de la solution trouvée. Néanmoins, les résultats obtenues par les métaheuristiques sont très proches de ceux obtenues par les heuristiques, qui sont toujours les plus rapides. En d’autres termes,on a pas pu voir un grand apport des métaheuristiques en terme de qualité de solution, donc ce n’est pas intéressant d’arrêter notre étude à ce niveau, \textbf{raison pour laquelle on s’interessera aux méthodes hybrides afin de combler les inconvénients d’une méthode par les avantages de l’autre et obtenir une meilleure qualité de solution en un temps d'exécution acceptable.}
+    Pour synthétiser, l’Algorithme Génétique est la métaheuristique qui a donné le meilleur compromis qualité-coût pour notre benchmark, le Recuit Simulé, quant à lui, donne de très bons résultats aussi, mais avec un temps d'exécution très grand. ILWOA a permis d’améliorer WOA en terme de la converge rapide vers la solution optimale, ainsi qu’en terme de la qualité de la solution trouvée. Néanmoins, les résultats obtenues par les métaheuristiques sont très proches de ceux obtenues par les heuristiques, qui sont toujours les plus rapides. En d’autres termes,on a pas pu voir un grand apport des métaheuristiques en terme de qualité de solution, donc ce n’est pas intéressant d’arrêter notre étude à ce niveau, \textbf{raison pour laquelle on s’interessera aux méthodes hybrides afin de combler les inconvénients d’une méthode par les avantages de l’autre et obtenir une meilleure qualité de solution en un temps d'exécution acceptable.}
     
 \end{document}

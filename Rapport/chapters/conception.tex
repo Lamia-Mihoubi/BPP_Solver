@@ -48,14 +48,14 @@ Soient:
 \begin{itemize}
     \item n : le nombre d’articles 
     \item list[0… n-1] : la liste des articles en entrées 
-    \item opt\_list: la list ordonnée fournissant la solution optimale en sortie 
+    \item opt\_list: la liste ordonnée fournissant la solution optimale en sortie 
     \item opt\_cost: le nombre de boîtes optimal
     \item C:la capacité maximale d’une boîte. 
 \end{itemize}
 
 L’algorithme proposé est une fonction récursive packBins ayant comme paramètres:
 \begin{itemize}
-    \item k:l’ordre de l’élément à être ranger ( le niveau dans l’arbre).
+    \item k:l’ordre de l’élément à être rangé ( le niveau dans l’arbre).
     \item sumwt:la somme des poids des éléments restants à être rangés
     \item bcount:la somme cumulée des boîtes déjà utilisées ( depuis la racine jusqu’à ce nœud)
     \item capa\_restante:l’espace libre restant dans la boîte ouverte.
@@ -66,34 +66,34 @@ L’algorithme proposé est une fonction récursive packBins ayant comme paramè
     \caption{Branch \& Bound}
     \begin{algorithmic}
     \IF{$n=k$}
-        \STATE //noeud feuille (n objets rangés)
+        \STATE //Noeud feuille (n objets rangés)
         \IF{$bcount<opt\_cost$}
-            \STATE //solution exacte obtenue par cette branche est meilleure que celle trouvée auparavant
-            \STATE màj du coût optimal $opt\_cost=bcount$ .
-            \STATE sauvegarder la solution liste  $opt\_list=liste$. 
+            \STATE //Solution exacte obtenue par cette branche est meilleure que celle trouvée auparavant
+            \STATE Mise à jor du coût optimal $opt\_cost=bcount$ .
+            \STATE sauvegarde de la solution liste  $opt\_list=liste$. 
         
         \ELSE
-            \STATE continuer le parcours (monter d’un niveau dans l’arbre).
+            \STATE Continuer le parcours (monter d’un niveau dans l’arbre).
        \ENDIF
         
     \ELSE
 
         \STATE //L’ensemble des articles restants sont dans les positions list[k… n-1].
-        \STATE //chaque nœud fils i signifie qu’on a rangé le ième article parmi les articles restants (ayant la position k+i dans la liste list) à la position k.
+        \STATE //Chaque nœud fils i signifie qu’on a rangé le ième article parmi les articles restants (ayant la position k+i dans la liste list) à la position k.
         \FOR{ chaque nœud fils i }
             \STATE Mettre l’article list[k+i] dans une boîte en permutant l’article[k+i] avec l’article[k] : permuter(k+i,k) .
             \STATE Incrémenter le nombre de boîtes utilisées (bcount) si on a ouvert une nouvelle boite.
             \STATE Mettre à jour la capacité restante (capa\_restante).
-            \STATE Mettre à jour la somme des volume des articles restants à être ranger (Sumwt)
+            \STATE Mettre à jour la somme des volumes des articles restants à être rangés (Sumwt)
             \STATE Calculer l’évaluation du nœud fils courant (borne L1) : $Bound=bcount+\frac{(sumwt-capa\_restante)}{C}$
             \STATE Comparer l’évaluation du nœud avec la solution optimale courante :
             \IF{$bcount\geq opt\_cost$}
-                \STATE //solution exacte obtenue par cette branche est meilleure que celle trouvée auparavant
-                \STATE  le nœud est éliminé. Dans ce cas on re-permute pour revenir à l’état précédant (permute (k+i,k)). 
-                \STATE sauvegarder la solution liste  $opt\_list=liste$ 
+                \STATE //Solution exacte obtenue par cette branche est meilleure que celle trouvée auparavant
+                \STATE  Le nœud est éliminé. Dans ce cas on re-permute pour revenir à l’état précédant (permute (k+i,k)). 
+                \STATE Sauvegarder la solution liste  $opt\_list=liste$ 
         
            \ELSE
-                \STATE on exploite le nœud courant encore, en faisant un appel récursif à la fonction avec la valeur  k+1 dans le 1 paramètre,en utilisant les nouvelles valeurs des autres paramètres.
+                \STATE On exploite le nœud courant encore, en faisant un appel récursif à la fonction avec la valeur  k+1 dans le premier paramètre,en utilisant les nouvelles valeurs des autres paramètres.
            \ENDIF
 
 
@@ -121,7 +121,7 @@ on pose : $b_j$= le numéro de boîte qui contient l’objet j.
     \includegraphics[width=\linewidth]{../figures/diag2.png}
 \end{figure}
 \section{Branch and bound amélioré}
-Une version améliorée de l’algorithme Branch and Bound présenté ci-dessus. L’amélioration s’est faite en 2 étapes: 
+Une version améliorée de l’algorithme Branch and Bound présentée ci-dessus. L’amélioration est faite en 2 étapes: 
 \begin{enumerate}
     \item Utilisation de l’heuristique WFD (Worst Fit Decreasing) pour initialiser la solution optimale.
     \item Changement de la borne L1 utilisée par une autre borne plus puissante appelée L2. 
@@ -129,7 +129,7 @@ Une version améliorée de l’algorithme Branch and Bound présenté ci-dessus.
 \subsection{Evaluation d'un noeud (Borne L2)}
 Il a été prouvé que la borne L1 n’est efficace que quand les poids des objets sont petits, c’est à dire qu’on peut mettre plusieurs objets dans la même boîte. Si ce n’est pas le cas, et que les objets ont de grands poids ( proches de C) , cette borne n’aura aucun effet et l’algorithme fera une recherche exhaustive. 
 C’est pour cela que la borne L2 à été proposée par Martello et Toth ,pour remédier à ce problème. 
-on rappelle la formule de la borne L2, qui a été déjà présentée dans l’état de l’art:
+On rappelle la formule de la borne L2, qui a été déjà présentée dans l’état de l’art:
 \paragraph{rappel}
 Soit \(\alpha\) un entier tels que :
 \[0 \le \alpha \le C/2\]
@@ -146,7 +146,7 @@ Etant donnée que les objets des classes $C_1$ et $C_2$ ont un poids supérieur 
 $|C_1|+|C_2|$boîtes sont utilisées quelque soit la solution. De plus,aucun objet de l’ensemble $C_3$ ne peut être rangé dans une boîte contenant un objet de $C_1$ ( à cause de la contrainte de capacité). La capacité résiduelle (espace libre) des
 $|C_2|$ boîtes est de : $C^*=|C_2|*c-\sum_{j \in C_2}^{} w_j$
 Donc dans le meilleur des cas, cette capacité résiduelle va être remplie par les objets de $C_3$, et dans ce cas le nombre de nouvelles boîtes qu’on doit ouvrir est de :  
-$\frac{\sum_{j \in C_3 -C^*}^{} w_j}{c}$ ( cette dernière formule utilise le même principe que la borne L1).
+$\frac{\sum_{j \in C_3 -C^*}^{} w_j}{c}$ (cette dernière formule utilise le même principe que la borne L1).
 \subsection{Pseudo-Code}
 \begin{algorithm}[H]
    \caption{Branch and bound amélioré }
