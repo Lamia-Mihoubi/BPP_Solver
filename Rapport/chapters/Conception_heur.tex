@@ -10,8 +10,8 @@
 Les heuristiques sont des méthodes spécifiques qui exploitent au mieux la structure du 
 problème dans le but de trouver une solution raisonnable (non nécessairement optimale) en un temps réduit. 
 L’utilisation de ce type d’algorithmes s'impose car les méthodes de résolution exactes sont 
-de complexité exponentielle, et échouent à trouver la solution pour des instances de tailles moyennes voir petites,
- comme on la constater lors du chapitre précédant. 
+de complexité exponentielle, et échouent à trouver la solution pour des instances de tailles moyennes voire petites,
+ comme on l'a constaté lors du chapitre précédant. 
 L'usage des heuristiques est donc pertinent pour surmonter ces limites.\\
 
 Dans ce chapitre, nous allons présenter la conception détaillée des heuristiques sur lesquelles notre choix d’implémentation s’est porté et qui sont:
@@ -24,10 +24,10 @@ Dans ce chapitre, nous allons présenter la conception détaillée des heuristiq
     \item Best Fit Decreasing (BFD)\\
 \end{enumerate}
 
-Dans le but d’explorer ces méthodes, comparer leurs performances, montrer leurs avantages et découvrir leurs limites, nous effectuerons des tests empiriques et comparatifs sur les mêmes  benchmarks utilisés pour les tests des méthodes exactes ( Benchmark Scholl).
+Dans le but d’explorer ces méthodes, comparer leurs performances, montrer leurs avantages et découvrir leurs limites, nous effectuerons des tests empiriques et comparatifs sur le même benchmark utilisé pour les tests des méthodes exactes (Benchmark Scholl).
 \newpage
 \section{Next Fit (NF)}
-\subsection{principe}
+\subsection{Principe}
 Si l’article tient dans la même boite que l’article précédent, il est placé avec ce dernier. Sinon, on ouvre une nouvelle boite et le mettre là-dedans.
 \begin{itemize}
     \item NF est un algorithme simple d’une complexité de O(n). 
@@ -47,8 +47,8 @@ Si l’article tient dans la même boite que l’article précédent, il est pla
     \end{algorithmic}
 \end{algorithm}
 \section{Next Fit Decreasing (NFD)}
-\subsection{principe}
-Le NFD est une amélioration de l’algorithme Next-Fit. Cet algorithme ordonne es articles par
+\subsection{Principe}
+Le NFD est une amélioration de l’algorithme Next-Fit. Cet algorithme ordonne les articles par
  ordre décroissant des poids,puis applique l’algorithme NF.
 
 \subsection{Pseudocode:}
@@ -76,10 +76,10 @@ Ranger chaque article courant dans la première boîte, entre celles déjà ouve
     \caption{First Fit}
     \begin{algorithmic}
     \FOR{Tous les articles i = 1, 2,. . . , n}
-        \FOR{Tous les boîtes j = 1, 2,. . . m}
+        \FOR{Toutes les boîtes j = 1, 2,. . . m}
             \IF{l'article i s'inscrit dans la boîte j}
               \STATE Ranger l’article i dans la boîte j\;
-              \STATE Quitter la boucle ( passer à l'article suivant)\;
+              \STATE Quitter la boucle (passer à l'article suivant)\;
              \ENDIF 
         \ENDFOR
         \IF{l’article i ne rentre dans aucune boîte disponible}
@@ -90,8 +90,8 @@ Ranger chaque article courant dans la première boîte, entre celles déjà ouve
 \end{algorithm}
 
 \section{First Fit Descreasing (FFD)}
-\subsection{principe}
-Le FFD est une amélioration de l’algorithme First-Fit. Cet algorithme ordonne les poids dans le sens décroissant puis lui applique l’algorithme FF.
+\subsection{Principe}
+Le FFD est une amélioration de l’algorithme First-Fit. Cet algorithme ordonne les poids dans un ordre décroissant puis leur applique l’algorithme FF.
 \begin{itemize}
     \item L’algorithme First Fit peut être implémenté en O(nlog n ) en utilisant les arbres de recherche binaires 
 \end{itemize}
@@ -112,7 +112,7 @@ Le FFD est une amélioration de l’algorithme First-Fit. Cet algorithme ordonne
 
 \section{Best Fit (BF)}
 \subsection{principe}
-Ranger chaque article courant dans la boîte la mieux remplie, entre celles déjà ouvertes, qui peut le contenir sinon ouvrir une nouvelle boîte et on le range dedans.
+Ranger chaque article courant dans la boîte la mieux remplie, entre celles déjà ouvertes, qui peut le contenir sinon ouvrir une nouvelle boîte et le ranger dedans.
 \begin{itemize}
     \item L’algorithme Best Fit implémenté a une complexité de O(n²).
 \end{itemize}
@@ -124,10 +124,10 @@ Ranger chaque article courant dans la boîte la mieux remplie, entre celles déj
     \FOR{Tous les articles i = 1, 2,. . . , n}
         \FOR{Tous les boîtes j = 1, 2,. . . m}
             \IF{l'article i s'inscrit dans la boîte j}
-              \STATE Calculer la capacité restante dans la boîte j une fois l'article
+              \STATE Calculer la capacité restante dans la boîte j
              \ENDIF 
         \ENDFOR
-        \STATE Ranger l’article i dans la boîte j, où j est la boîte ayant la capacité restante minimale après avoir ajouté l’article(c'est-à-dire que "l’article convient le mieux").
+        \STATE Ranger l’article i dans la boîte j, où j est la boîte ayant la capacité restante minimale après avoir ajouté l’article(c'est-à-dire que "l’article lui convient le mieux").
         \IF{une telle boîte n'existe pas ( l’article ne peut être rangé dans aucune boîte)}
             \STATE Créer une nouvelle boîte et ranger l’article i dedans
         \ENDIF
@@ -137,7 +137,7 @@ Ranger chaque article courant dans la boîte la mieux remplie, entre celles déj
 
 \section{Best Fit Decreasing (BFD)}
 \subsection{principe}
-Le BFD est une amélioration de l’algorithme Best-Fit. Cet algorithme ordonne les poids dans le sens décroissant puis applique l’algorithme BF.
+Le BFD est une amélioration de l’algorithme Best-Fit. Cet algorithme ordonne les poids dans un ordre décroissant puis applique l’algorithme BF.
 
 \subsection{Pseudocode}
 
