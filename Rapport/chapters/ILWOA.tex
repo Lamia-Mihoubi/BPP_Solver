@@ -13,6 +13,7 @@
 \usepackage{amssymb}
 \usepackage{algorithmic}
 \usepackage[ruled]{algorithm2e}
+\usepackage[T1]{fontenc}
 
 \usepackage{graphicx}
 
@@ -68,32 +69,100 @@ Cette phase est composée de 3 opérations exécutées séquentiellement comme l
 \end{figure}
 \subsection{Pseudocode:}
 \begin{algorithm}[H]
-    \SetAlgoLined
-    \KwResult{Nombre de boîte utilisées.}
-    Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
-    Évaluer les solutions de la population initiale\;
-    X* = la meilleure solution actuelle\;
-    \newline \While{\(t < max\_iter\)}{
-        \For{solution \(\in\) population}{
-            Mettre à jour a, A, C avec le vol de levy, l et p avec la fonction logistique\;
-           \newline \eIf{\(r  < 0,5\)}{
-                \eIf{\(|A| < 1\)}{
-                    Mettre à jour la solution par Eq.(1)\;
-                }{
-                    Sélectionnez une solution aléatoire \(X_r\)\;
-                    Mettre à jour la solution par Eq.(2)\;
-                }
-            }{
-                Mettre à jour la solution par l'Eq.(3)\;
-            }
-        }
-        Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
-        \newline Appliquer la discretisation par LOV\;
-        \newline Évaluer la nouvelle solution\;
-        \newline Mettre à jour X* s'il existe une meilleure solution Sinon lancer la phase de mutation\;
-        \newline Evaluer la nouvelle solution,màj de la meilleure solution
-        t = t + 1\;
-     }
     \caption{Improved Whale Optimization Algorithm}
-    \end{algorithm}
+    \begin{algorithmic}
+        \STATE Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
+        \STATE Évaluer les solutions de la population initiale\;
+        \STATE X* = la meilleure solution actuelle\;
+        \WHILE{\(t < max\_iter\)}
+            \FOR{solution \(\in\) population}
+                \STATE Mettre à jour a, A, C avec le vol de levy, l et p avec la fonction logistique\;
+                \IF{\(r  < 0,5\)}
+                    \IF{\(|A| < 1\)}
+                        \STATE Mettre à jour la solution par Eq.(1)\;
+                    \ELSE
+                        \STATE Sélectionner une solution aléatoire \(X_r\)\;
+                        \STATE Mettre à jour la solution par Eq.(2)\;
+                    \ENDIF
+                \ELSE 
+                    \STATE Mettre à jour la solution par l'Eq.(3)\;
+                \ENDIF
+            \ENDFOR
+            \STATE Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
+            \STATE Appliquer la discretisation par LOV\;
+            \STATE Évaluer la nouvelle solution\;
+            \STATE Mettre à jour X* s'il existe une meilleure solution Sinon lancer la phase de mutation\;
+            \STATE Evaluer la nouvelle solution,màj de la meilleure solution
+            \STATE t = t + 1\;
+        \ENDWHILE
+    \end{algorithmic}
+\end{algorithm}
+\subsection{Test et résultats:}
+Pour montrer les performances de cet algorithme nous avons effectué une série de Test sur des instances du Benchmark \guillemotleft Scholl \guillemotright composé de trois classes d’une difficulté qui varie d’une classe à une autre.
+En ce qui concerne les paramètres de l’algorithme, nous avons utilisé deux méthodes de calibrage : Un calibrage manuel et un calibrage automatique avec IRace ;Le tableau ci-dessous indique les valeurs obtenues par chacune des deux méthodes.
+\begin{table}[h!]
+    \begin{center}
+      \caption{Configuration paramétrique de l'algorithme}
+      \label{tab:table1}
+      \begin{tabular}{c|c|c|c|c|c} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+       \textbf{}&\textbf{A} & \textbf{B} &\textbf{Beta} & \textbf{MAXITER} & \textbf{Searchagents} \\
+        \hline
+        
+        Calibrage manuel &8&0.99&1.5&391&13\\ 
+        \hline
+       Calibrage automatique&4&1.5&1&30(Hard),10(Classe 1 et 2)&10\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+\linebreak
+ Nous allons dans l’analyse qui suit:
+\begin{itemize}
+    \item comparer entre les résultats obtenus par les deux méthodes de calibrage ainsi montrer l’influence du choix des paramètres sur la performance de l’algorithme.
+    \item Analyser les performances de l’algorithme et le comparer à l’algorithme WOA exécuté avec la configuration optimale suivante : $Search Agents=28$, $max_iter=271$,  $b=7.64$, $a=20$ .
+\end{itemize}
+\paragraph{Comparaison entre les résultats obtenus par calibrage automatique et les résultats obtenus par calibrage manuel:                }
+Afin d’effectuer cela ,Nous avons exécuté l’algorithme avec les paramètres obtenus par calibrage automatique et les paramètres obtenus par calibrage automatique, sur les instances difficiles de la classe 3 .Les tableaux ci-dessous montrent que le calibrage automatique améliore la qualité de la solution ainsi que le temps d’exécution
+\begin{figure}[h!]
+    \centering
+     \includegraphics[width=10cm]{../figures/tabreslts.PNG}
+     \caption[\small]{Phase de mutation}
+ \end{figure}
+\paragraph{Analyse des performances de l'algorithme: }
+\subparagraph{Analyse du temps d'exécution :}
+A partir du graphes ci-dessous , on peut déduire que :
+\begin{itemize}
+    \item Le temps d'exécution de ILWOA varie de 1  à quelques dizaines de secondes pour les grandes instances 
+    \item L’algorithme ILWOA est plus lent que WOA , on justifie ceci par le fait qu’en plus des instructions exécutées par le WOA , l’ILWOA comporte une phase de mutation et une initialisation par une heuristique  
+\end{itemize}
+\begin{figure}[h!]
+    \centering
+     \includegraphics[width=10cm]{../figures/woavsilwoatemps.PNG}
+     \caption[\small]{temps d'execution de ILWOA et WOA}
+ \end{figure}
+ \subparagraph{Analyse de la qualité de solution :}
+La qualité de solution a été mesurée par le ration dont on a cité la formule précédemment.A partir du graphes ci-dessous , on peut déduire que :
+ \begin{itemize}
+     \item Le Ratio obtenu par l’ILWOA est proche de 1 pour toutes les instances même pour les instance de la classe 3 ceci signifie qu’il donne de bons résultats quelque soit la difficulté de l’instance 
+     \item la solution obtenue avec l’algorithme ILWOA est très proche de la solution optimale voire même égale pour des instances des classes 1 et 2 
+     \item ILWOA améliore la qualité de solution par rapport à l’algorithme woa pour les instances des 3 classes confondues
+ \end{itemize}
+ \begin{figure}[h!]
+     \centering
+      \includegraphics[width=10cm]{../figures/ilwoavswoaqs.PNG}
+      \caption[\small]{ratio de ILWOA et WOA}
+  \end{figure}
+  \subsection{Interprétation :}
+  \begin{itemize}
+    \item L’Algorithme ILWOA permet d’obtenir une bonne qualité de solution en un temps raisonnable   
+    \item Le caractère stochastique de l’algorithme WOA permet de mieux explorer l’espace de recherche, l’utilisation des fonctions logistiques et de la distribution du vol de lévy ont amélioré cela 
+    \item En analysant le nombre de search agents et d’itérations ainsi que la solution obtenue , On peut conclure que l’ajout d’une phase de mutation a permis d’améliorer la rapidité de convergence de l’algorithme 
+    \item Les améliorations effectuées ont permis d’augmenter la performance de l’algorithme 
+    \item La performance de l’algorithme dépend fortement des valeurs de ses paramètres d’où la nécessité du calibrage qui permet de trouver la meilleure configuration pour l’algorithme
+    \item La valeur des paramètres peut dépendre de la nature de l’instance
+    \item Le calibrage automatique est important du fait que ça permet de nous épargner une tâche tant  fastidieuse, tout en assurant une meilleure qualité du résultat
+
+\end{itemize}
+
+
 \end{document}
