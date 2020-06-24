@@ -178,13 +178,14 @@ Configurations de paramètres utilisées:
 \subsubsection{Comparaison avec la solution optimale: }
 \begin{figure}[!hbt]
     \includegraphics[width=\linewidth, scale=1.3]{../figures/WOA/woa_opt.png}
+    \caption{le nombre de boites obtenu par WOA (en vert) par rapport à la solution optimale (en bleu) pour les instances de la classe 1 et 2 de taille respectivement de haut en bas, de gauche à droite: N1, N2, N3, N4 et les instances de la classe 3.}
 \end{figure}
 Configuration de paramètres utilisée (obtenue par calibrage automatique par IRACE): \(nb\_whales=28, max\_iter=271,  b=7.64, a=20\).
 
 \subsection{Analyses des résultats: }
 \begin{itemize}
     \item WOA permet d'obtenir un ratio inférieur à 1.4 pour les benchmark Scholl, et un ratio de 1 pour les instances de la classe 2 de taille N1.
-    \item Parmis les trois classes WOA est plus performant dans le cas des instances difficiles (classe 3: C3) et la classe 2.
+    \item Parmis les trois classes WOA est plus performant dans le cas des instances difficiles (classe 3: C3) et la classe 2 (C2).
     \item Le calibrage automatique permet généralement d’améliorer la qualité de la solution très légèrement sauf pour le cas des instances de la classe C2 de tailles N1 et N4 ou la configuration manuelle donne de meilleurs résultats.
     \item Le calibrage automatique permet de réduire le temps d’exécution significativement surtout pour les instances de grande taille (N4) et les instances de la classe 3 (instances difficiles).
     \item Avec une configuration optimale des paramètres le temps de résolution des instances les plus difficiles et/ou volumineuse ne dépasse pas 8s.
