@@ -8,18 +8,13 @@
 
 \begin{document}
 Le Whale Optimization Algorithm est une nouvelle métaheuristique introduite en 2016 par Mirjalili et Lewis basée sur l’intelligence en essaim. Cet algorithme est inspiré d’une stratégie d’alimentation des baleines à bosse connue sous le nom de L'alimentation au filet à bulles. Une tactique qui leur permet d’attraper le plus de poissons possibles en un seul coup. Après avoir détecté ses proies, la baleine libère des bulles en nageant dans un mouvement spirale vers la surface pour encercler la proie pour la capturer.
-Les bulles libérées peuvent prendre 2 formes : une forme de cercles rétrécissants \textbf{\emph{[figure 01]}} ou une forme spirale \textbf{\emph{[figure 02]}}. 
+Les bulles libérées peuvent prendre 2 formes : une forme de cercles rétrécissants ou une forme spirale . 
 Dans cet algorithme, La recherche des proies représente l’exploration de l’espace de recherche et La libération des bulles représente l’exploitation.
-\begin{figure}[H] 
-    \includegraphics[width=\linewidth]{../figures/cercles.png}
-    \caption{Libération des bulles en cercles rétrecissants}
+\begin{figure}[hbt!] 
+    \includegraphics[width=7cm]{../figures/WOA/cercles.png}
+    \includegraphics[width=7cm]{../figures/WOA/spiral.png}
+    \caption{Libération des bulles en cercles rétrecissants (à gauche), ibération des bulles en spirale (à droite).}
 \end{figure}
-
-\begin{figure}[H] 
-    \includegraphics[width=\linewidth]{../figures/spiral.png}
-    \caption{Libération des bulles en spirale}
-\end{figure}
-
 \section{Représentation mathématique :}
 \subsection{Encerclement avec bulles en cercles rétrécissants :}
 Soient:
@@ -72,7 +67,7 @@ avec \(x*(t)\) est la meilleure solution actuelle au temps \(t\), \(p\) est éga
 
 \subsection{Pseudocode:}
 \begin{algorithm}[H]
-    \caption{Improved Whale Optimization Algorithm}
+    \caption{Whale Optimization Algorithm}
     \begin{algorithmic}
         \STATE Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
         \STATE Évaluer les solutions de la population initiale\;
@@ -92,10 +87,8 @@ avec \(x*(t)\) est la meilleure solution actuelle au temps \(t\), \(p\) est éga
                 \ENDIF
             \ENDFOR
             \STATE Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
-            \STATE Appliquer la discretisation par LOV\;
-            \STATE Évaluer la nouvelle solution\;
-            \STATE Mettre à jour X* s'il existe une meilleure solution Sinon lancer la phase de mutation\;
-            \STATE Evaluer la nouvelle solution,màj de la meilleure solution
+            \STATE Évaluer la nouvelle population\;
+            \STATE Mettre à jour X* \;
             \STATE t = t + 1\;
         \ENDWHILE
     \end{algorithmic}
@@ -161,9 +154,33 @@ Les algorithmes ont été développés en utilisant le langage de programmation 
     \item La constante \(a\) qui détermine le degré d’exploration de l’espace de recherche.
 \end{itemize}
 \subsection{Temps d'exécution: }
+\begin{figure}[!hbt]
+    \includegraphics[width=\linewidth]{../figures/WOA/woa_texec.png}
+    \caption{Histogramme des temps d'exécutions moyens pour les deux configurations pour tout le benchmark Scholl. Configuration 1 en bleu. Configuration 2 en rouge.}
+\end{figure}
+Configurations de paramètres utilisées:
+\begin{enumerate}
+    \item Configuration 1 (obtenue manuellement): \(nb\_whales=30, max\_iter=50, b=1.5, a=4\).
+    \item Configuration 2 (obtenue par calibrage automatique par IRACE): \( nb\_whales=30, max\_iter=117, b=8.96, a=10\).
+\end{enumerate}
+
 \subsection{Qualité de solution: }
 \subsubsection{Ratio: }
+\begin{figure}[!hbt]
+    \includegraphics[width=\linewidth]{../figures/WOA/ratio_woa_configs.png}
+    \caption{Histogramme des ratios des deux configurations pour tout le benchmark Scholl. Configuration 1 en bleu. Configuration 2 en rouge.}
+\end{figure}
+Configurations de paramètres utilisées:
+\begin{enumerate}
+    \item Configuration 1 (obtenue manuellement): \(nb\_whales=30, max\_iter=50, b=1.5, a=4\).
+    \item Configuration 2 (obtenue par calibrage automatique par IRACE): \(nb\_whales=28, max\_iter=271,  b=7.64, a=20\).
+\end{enumerate}
 \subsubsection{Comparaison avec la solution optimale: }
+\begin{figure}[!hbt]
+    \includegraphics[width=\linewidth, scale=1.3]{../figures/WOA/woa_opt.png}
+\end{figure}
+Configuration de paramètres utilisée (obtenue par calibrage automatique par IRACE): \(nb\_whales=28, max\_iter=271,  b=7.64, a=20\).
+
 \subsection{Analyses des résultats: }
 \begin{itemize}
     \item WOA permet d'obtenir un ratio inférieur à 1.4 pour les benchmark Scholl, et un ratio de 1 pour les instances de la classe 2 de taille N1.

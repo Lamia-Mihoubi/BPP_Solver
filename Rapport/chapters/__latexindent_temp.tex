@@ -1,58 +1,196 @@
 \documentclass[12pt]{article}
 \usepackage{mathtools}
-\usepackage[shortlabels]{enumitem}
-% make sure to keep these two lines the very last in the preamble
-% if you want to add packages add them before not after these two lines
-\usepackage[subpreambles=true]{standalone}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\setcounter{section}{0}
 
 \begin{document}
-\section{Tests et Resultats}
-Dans cette partie, nous allons comparer les performances de nos algorithmes implémentés, pour cela, en premier lieu on va utiliser notre propre générateur d’instances pour comparer les 4 algorithms : recherche exhaustive , Branch \& Bound , Branch \& Bound amélioré. ensuite on utilisera les instances du benchmark Scholl. 
-\paragraph*{Remarque: } Les algorithmes ont été développés en utilisant le langage de programmation Python, et exécutés sur un \textbf{HP probook [Intel Core i7-6500U CPU @2.50GHz, 8Go RAM ]} en utilisant l'IDE Intellij pycharm
-Le générateur d’instances utilise la fonction random() de la bibliothèque random de Python, cette fonction utilise le Mersenne Twister qui est un générateur de nombres pseudo-aléatoires, réputé pour sa qualité.
-\subsection{Instances générées : }
-On génère plusieurs instances du problèmes avec la valeur \(C=100\) pour la capacité de la boîte, et un nombre d’articles croissant : \( N \in \{5,10,15,20,25\}\). Les volumes des articles sont générés aléatoirement dans l’interval \(]0,100]\). le tableau ci dessous résume les résultats en termes de temps d'exécution en secondes de chacun des 4 algorithmes sur les instances générées. 
-\begin{figure}[H]
-    \includegraphics[width=13.5cm]{../figures/tab1.png}
+Le Whale Optimization Algorithm est une nouvelle métaheuristique introduite en 2016 par Mirjalili et Lewis basée sur l’intelligence en essaim. Cet algorithme est inspiré d’une stratégie d’alimentation des baleines à bosse connue sous le nom de L'alimentation au filet à bulles. Une tactique qui leur permet d’attraper le plus de poissons possibles en un seul coup. Après avoir détecté ses proies, la baleine libère des bulles en nageant dans un mouvement spirale vers la surface pour encercler la proie pour la capturer.
+Les bulles libérées peuvent prendre 2 formes : une forme de cercles rétrécissants ou une forme spirale . 
+Dans cet algorithme, La recherche des proies représente l’exploration de l’espace de recherche et La libération des bulles représente l’exploitation.
+\begin{figure}[hbt!] 
+    \includegraphics[width=7cm]{../figures/WOA/cercles.png}
+    \includegraphics[width=7cm]{../figures/WOA/spiral.png}
+    \caption{Libération des bulles en cercles rétrecissants (à gauche), ibération des bulles en spirale (à droite).}
 \end{figure}
-\begin{figure}[H]
-    \includegraphics[width=13.5cm]{../figures/graph1.png}
-\end{figure}
-\subsubsection{Analyse des résultats:}
-\begin{enumerate}
-    \item On remarque d’un côté qu’en augmentant la taille du problème, le temps d'exécution augmente très rapidement.
-    \item D’un autre côté, les performances de la DP sont meilleures que celle du Branch and Bound amélioré , suivie du Branch \& Bound classique, et enfin vient la rechercher exhaustive qui prend un temps énorme pour résoudre des instances de taille petite. 
-    \item Le Branch \& Bound et la recherche exhaustive arrivent rapidement à leur limite ,qui est de \(N=15\) et \(N=20\) respectivement, suivi du Branch and Bound pour \(N=25\) dans ces instances générées. Ceci signifie que ces méthodes ne sont pas efficaces pour de grandes instances.
-\end{enumerate}
-\subsubsection{Interprétation des résultats:}
-On justifie les résultats obtenus et la grande différence entre les temps d’exécution des 4 méthodes comme suit: 
-\begin{enumerate}
-    \item La recherche exhaustive, donne des temps d'exécution les plus long, car cette dernière ne possède aucun mécanisme de réduction du problème, donc elle vas parcourir toute les permutations possibles des articles.
-    \item Le Branch \& Bound, offre une petite amélioration par rapport à la recherche exhaustive, grâce à la borne inférieure L1 utilisée pour réduire quelques branches qu’on est sure qu’elles ne contiennent pas la solution optimale, mais cet algorithme arrive à sa limite rapidement, car la borne L1 n’est efficace que lorsque les volume des articles sont petits par rapport à la capacité de la boîte, sinon, on retombe sur une recherche exhaustive.
-    \item Le Branch \& Bound amélioré, augmente les performances du Branch \& Bound classique, à cause de la borne L2 qui couvre des cas de réduction plus large que la borne L1, de plus , l’utilisation des heuristiques permet d'accélérer le temps de trouver un noeud exacte.
-\end{enumerate}
-\subsection{Scholl Benchmark:}
-le Scholl benchmark est composé de 3 différentes classes, les volume des articles sont uniformément distribués entre 50 et 500. la capacité C de la boîte est entre 100 et 150 dans la première classe (Scholl1), égale à 1000 dans la classe 2 ( Scholl2) et égale à 100 000 dans la 3ème classe (Scholl3). 
-les deux algorithmes Recherche exhaustive et Branch \& Bound sont incapable de résoudre les instances de ce benchmark à cause de leurs tailles et difficulté relativement élevés. Donc, dans cette partie nous étudier Branch \& Bound amélioré [BBA]. 
+\section{Représentation mathématique :}
+\subsection{Encerclement avec bulles en cercles rétrécissants :}
+Soient:
+\begin{itemize}
+    \item \(x^*(t)\) la meilleure solution courante.
+    \item \(t\) le numéro de l'itération courante.
+    \item \(\vec{D}\) indique la distance du ième baleine (ième solution candidate) à la proie (la meilleure solution actuelle).
+    \item \(x(t)\) une solution de la population à l'itération \(t\), et \(x(t+1)\) le résultat de sa mise à jour.
+    \item \(x_r(t)\) une solution choisie aléatoirement de la la population courante.
+    \item \(A\) et \(C\) des coefficients calculés par les formules suivantes:
+    \[A = 2ar-a\] 
+    \[C = 2r\] 
+    Avec \(r\) un nombre aléatoire appartenant à \([0,1]\).
+    \\ et \(a\) un nombre décrémenté linéairement à chaque itération de 2 à 0, de la façon suivante:
+    \(a =  a_{init} - a_{init}*i/max\_iter\) avec \(i\) numéro de l’itération courante, \(max\_iter\) le nombre maximal des itération et \(a_{init}\) la valeur initiale de \(a\).
+\end{itemize}
+Le processus d’encerclement de la proie peut être représenté par les équations suivantes :
 
-Pour chaque classe, on a 4 valeurs de N (50,100,200,500) et pour chaque couple (N,C) on prends 5 instances afin de calculer le temps d'exécution moyen, ceci est dû à la génération aléatoire des volume des articles, ce qui peut rendre quelques instances plus difficiles que d’autres, même s’ils ont la même valeur du couple (N,C) . les résultats en temps d'exécution sont présentés dans le tableau suivant:
-\begin{figure}[H]
-    \includegraphics[width=13.5cm]{../figures/tab2.png}
+\begin{equation*}
+    \vec{D} = |Cx^*(t) - x(t)|
+\end{equation*}
+Si \(|A| < 1\):
+\begin{equation}
+    x(t+1) = x^*(t) - A\vec{D}
+\end{equation}
+Sinon:
+\begin{equation}
+    x(t+1) = x_r(t) - A\vec{D}
+\end{equation}
+Le comportement de l’encerclement avec bulles en cercle rétrécissant est obtenu en diminuant la valeur de \(a\) de \(a_{init}\) à 0 au cours des itérations. La variation de \(A\) peut être utilisée pour rechercher des proies, c'est-à-dire la phase d'exploration. Par conséquent, \(A\) peut être utilisé avec des valeurs aléatoires supérieures à 1 ou inférieures à -1 pour forcer les solutions à s'éloigner de la solutions de référence (la meilleure solution \(|A| < 1\) ou une solution aléatoire sinon).
+\subsection{Encerclement avec bulles sous forme spirale :}
+Il est modélisé par les équations suivantes :
+\begin{equation}
+    \vec{D} = |x^*(t) - x(t)|
+\end{equation}
+\begin{equation}
+    x(t+1) = \vec{D} e^{bl} \cos (2\pi l) + x^*(t)
+\end{equation}
+Où \(l\) est un nombre aléatoire appartenant à \([-1,1]\) Et \(b\) une constante qui définit la forme de la spirale 
+
+Ces deux types définissent deux mécanismes d’explorations de l’espace recherche, ce qui permet une meilleure diversification de l’espace de recherche.
+Dans chaque itération du WOA, un de ces deux mécanismes est choisi avec une probabilité \(p\) égale à \(50\%\) pour mettre à jour la population des solutions candidates comme suit:
+\[ x(t+1) =
+  \begin{cases}
+    x^*(t) - A\vec{D}       & \quad r < p\\
+    \vec{D} e^{bl} \cos (2\pi l) + x^*(t)  & \quad r \geq p
+  \end{cases}
+\]
+avec \(x*(t)\) est la meilleure solution actuelle au temps \(t\), \(p\) est égal à \(0,5\) et \(r\) est un nombre aléatoire entre \([0, 1]\)
+
+\subsection{Pseudocode:}
+\begin{algorithm}[H]
+    \caption{Whale Optimization Algorithm}
+    \begin{algorithmic}
+        \STATE Initialiser la population de baleines (l'ensemble initial des solutions candidates): Xi (i = 1, 2 ,..., N)\;
+        \STATE Évaluer les solutions de la population initiale\;
+        \STATE X* = la meilleure solution actuelle\;
+        \WHILE{\(t < max\_iter\)}
+            \FOR{solution \(\in\) population}
+                \STATE Mettre à jour a, A, C avec le vol de levy, l et p avec la fonction logistique\;
+                \IF{\(r  < 0,5\)}
+                    \IF{\(|A| < 1\)}
+                        \STATE Mettre à jour la solution par Eq.(1)\;
+                    \ELSE
+                        \STATE Sélectionnez une solution aléatoire \(X_r\)\;
+                        \STATE Mettre à jour la solution par Eq.(2)\;
+                    \ENDIF
+                \ELSE 
+                    \STATE Mettre à jour la solution par l'Eq.(3)\;
+                \ENDIF
+            \ENDFOR
+            \STATE Vérifier si une solution dans la population dépasse l'espace de recherche et la modifier\;
+            \STATE Évaluer la nouvelle population\;
+            \STATE Mettre à jour X* \;
+            \STATE t = t + 1\;
+        \ENDWHILE
+    \end{algorithmic}
+\end{algorithm}
+\subsection{Ingrédients du WOA :}
+\begin{itemize}
+    \item Population initiale des solutions.
+    \item Fonction d’évaluation qui permet de choisir la meilleure solution x*(t).
+    \item Un mécanisme d'évolution:
+    \begin{itemize}
+        \item Encerclement avec bulles en cercle rétrécissant.
+        \item Encerclement avec bulles sous forme de spirale.
+    \end{itemize}
+    \item Critère d'arrêt du WOA: nombre maximal d’itérations.    
+\end{itemize}
+\subsection{Paramètres du WOA :}
+\begin{itemize}
+    \item La taille de la population des solutions candidates à évaluer dans chaque itération.
+    \item La constante \(b\) qui définit la forme de la spirale.
+    \item Le nombre maximal d’itérations: \(max_iter\).
+    \item le nombre \(a\) qui détermine le degré de diversification (exploration).    
+\end{itemize}
+\subsection{Application de l’algorithme au problème du bin packing :}
+\subsubsection{Discrétisation de l'espace de recherche :}
+Cet algorithme a été proposé pour la résolution de problèmes à espace \\ de recherche continu. Afin de l’adapter à notre problème discret nous allons utiliser une méthode appelée LOV qui permet de passer d’une solution continue à une solution discrète:\\
+\begin{algorithm}[H]
+    \caption{Discrétisation de l'espace de recherche par LOV}
+    \begin{algorithmic}
+        \STATE \textbf{Résultat en sortie:} Solution discrète \(X = (x_1, x_2, \dots, x_n)\) obtenue à partir de la solution continue \(\tilde{X} = (\tilde{x_1}, \tilde{x_2}, \dots, \tilde{x_n})\)\;
+        \STATE Ordonnez les valeurs du vecteur de \(\tilde{X}\) par ordre décroissant\;
+        \STATE L'indice d'ordre de caque valeur est stocké dans un vecteur \(\theta = \{ \theta_i = \text{ordre de l'élément } \tilde{x_i}\}\)\;
+    \end{algorithmic}  
+\end{algorithm}
+\subsubsection{Représentation d’une solution }
+Une solution est exprimée par un vecteur $ x(t)=(a_1, a_2, …, a_n)$ représentant la distribution des articles dans les boîtes au moment t, avec n le nombre d’article et ai est un article d’ordre i. Les articles sont ordonnés selon les boîtes dans lesquelles ils sont rangés, i.e. l’article a1 est rangé dans la première boîte, s’il y’en a de l’espace dans cette boîte alors l’article a2 est y rangé, sinon a2 est rangé dan la deuxième boîte...ainsi de suite. ( principe du Next Fit) 
+Une solution \(x(t)\) appartient au domaine de recherche tant qu’elle respecte les contraintes du problème: un objet ne peut pas être rangé dans plus d’une boîte, donc pas de doublons dans x(t), l’autre contrainte concernant le respect de la capacité d’une boîte est vérifié trivialement par définition du vecteur x(t).
+
+\subsubsection{La fonction objectif :}
+Afin de pouvoir évaluer les solutions, Nous avons opté pour la fonction suivante proposée par \emph{Hyde et al} [add ref here], au lieu du nombre de boîtes utilisées, parce que avec cette dernière pour plusieurs solutions on peut avoir la même évaluation ce qui peut engendrer la stagnation de l’algorithme.
+\[ F_{min} = 1 - \frac{\sum_{1}^{n} (occup_i / c)^k}{n}\]
+Avec:
+\begin{itemize}
+    \item \(n\) nombre de boites utilisées.
+    \item \(ocup_i\) total des poids des objets rangés dans l’ième.
+    \item \(c\) capacité des boites.
+    
+\end{itemize}
+\section{Test et Résultats: }
+Dans cette partie nous allons tester les performances de la métaheuristique WOA sur les instances du benchmark Scholl. Ensuite nous allons effectuer une comparaison des résultats obtenus avec les résultats optimaux. Nous utiliserons pour chacune des trois classes du benchmark Scholl deux configurations de paramètres; la première configuration est obtenue par tâtonnement après plusieurs essais manuels, la deuxième par calibrage automatiques des paramètres utilisant le package irace qui implémente l’algorithme I/F-Race (voir chapitre XX).
+Pour pouvoir étudier les performances de WOA, notre étude se portera sur 2 axes:
+\begin{itemize}
+    \item Temps d'exécution.
+    \item Qualité de la solution  (ratio et comparaisons avec les solutions optimales)
+\end{itemize}
+
+\paragraph{Remarque: }
+Les algorithmes ont été développés en utilisant le langage de programmation python, et exécutés sur un DELL Inspiron15 [Intel® Core™ i7-8550U CPU @ 1.80GHz×8, 8Go] en utilisant Visual Studio Code.
+\subsection{Rappel des paramètres de WOA: }
+\begin{itemize}
+    \item La taille de la population: \(nb\_whales\).
+    \item Le nombre maximal d’itérations: \(max\_iter\).
+    \item La constante de l’encerclement spirale \(b\).
+    \item La constante \(a\) qui détermine le degré d’exploration de l’espace de recherche.
+\end{itemize}
+\subsection{Temps d'exécution: }
+\begin{figure}[!hbt]
+    \includegraphics[width=\linewidth]{../figures/WOA/woa_texec.png}
+    \caption{Histogramme des temps d'exécutions moyens pour les deux configurations pour tout le benchmark Scholl. Configuration 1 en bleu. Configuration 2 en rouge.}
 \end{figure}
-\subsubsection{Analyse des résultats:}
+Configurations de paramètres utilisées:
 \begin{enumerate}
-    \item En augmentant N le nombre d’articles, le temps d'exécution augmente d’une façon exponentielle
-    \begin{figure}[H]
-        \includegraphics[width=13.5cm]{../figures/graph2.png}
-    \end{figure}
-    \item En fixant le nombre d’articles, l’augmentation de la capacité C produit une augmentation dans les temps d’exécution
-    \begin{figure}[H]
-        \includegraphics[width=13.5cm]{../figures/graph3.png}
-    \end{figure}
-    \item Pour la 3eme classe, qui contient les instances les plus difficiles, seul l’algorithme DP arrive à terminer son exécution( en 200 secondes), ce qui n’est pas très intéressant comme temps d'exécution.
+    \item Configuration 1 (obtenue manuellement): \(nb\_whales=30, max\_iter=50, b=1.5, a=4\).
+    \item Configuration 2 (obtenue par calibrage automatique par IRACE): \( nb\_whales=30, max\_iter=117, b=8.96, a=10\).
 \end{enumerate}
-\subsubsection{Conclusion méthodes exactes}
-Malgré les améliorations apportées aux algorithmes exactes ( utilisation des heuristiques pour l’initialisation de la solution optimale, utilisation d’un évaluation plus performante ..), ces derniers suivent toujours la courbe exponentielle en terme de temps d'exécution en augmentant la taille du problème. En d’autres termes, ce type d’algorithmes arrivent rapidement à leur limite, sans même pas pouvoir résoudre des instances de taille moyenne.
-De nos jours, les données étants d’une très grande taille ( qui dépasse les milliers ), l’utilisation des méthodes exactes, quelques soit leurs performances, est impossible même avec les ordinateurs les plus rapides du monde. C’est pour cela que les chercheurs se sont dirigés vers des méthodes approchées qui fournissent une solution proche de l’optimal mais en un temps polynomial. Ce qui fait l’article des prochaines parties de notre projet.
+
+\subsection{Qualité de solution: }
+\subsubsection{Ratio: }
+\begin{figure}[!hbt]
+    \includegraphics[width=\linewidth]{../figures/WOA/ratio_woa_configs.png}
+    \caption{Histogramme des ratios des deux configurations pour tout le benchmark Scholl. Configuration 1 en bleu. Configuration 2 en rouge.}
+\end{figure}
+Configurations de paramètres utilisées:
+\begin{enumerate}
+    \item Configuration 1 (obtenue manuellement): \(nb\_whales=30, max\_iter=50, b=1.5, a=4\).
+    \item Configuration 2 (obtenue par calibrage automatique par IRACE): \(nb\_whales=28, max\_iter=271,  b=7.64, a=20\).
+\end{enumerate}
+\subsubsection{Comparaison avec la solution optimale: }
+\begin{figure}[!hbt]
+    \includegraphics[width=\linewidth, scale=1.3]{../figures/WOA/woa_opt.png}
+\end{figure}
+Configuration de paramètres utilisée (obtenue par calibrage automatique par IRACE): \(nb\_whales=28, max\_iter=271,  b=7.64, a=20\).
+
+\subsection{Analyses des résultats: }
+\begin{itemize}
+    \item WOA permet d'obtenir un ratio inférieur à 1.4 pour les benchmark Scholl, et un ratio de 1 pour les instances de la classe 2 de taille N1.
+    \item Parmis les trois classes WOA est plus performant dans le cas des instances difficiles (classe 3: C3) et la classe 2.
+    \item Le calibrage automatique permet généralement d’améliorer la qualité de la solution très légèrement sauf pour le cas des instances de la classe C2 de tailles N1 et N4 ou la configuration manuelle donne de meilleurs résultats.
+    \item Le calibrage automatique permet de réduire le temps d’exécution significativement surtout pour les instances de grande taille (N4) et les instances de la classe 3 (instances difficiles).
+    \item Avec une configuration optimale des paramètres le temps de résolution des instances les plus difficiles et/ou volumineuse ne dépasse pas 8s.
+\end{itemize}
+
+
+
 
 \end{document}
