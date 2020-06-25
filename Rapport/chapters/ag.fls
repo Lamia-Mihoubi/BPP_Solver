@@ -1,0 +1,129 @@
+PWD c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.log
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\float\float.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithmic.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithmic.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.aux
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.aux
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.aux
+INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1200.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1000.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1000.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT ..\figures\pic01.PNG
+INPUT ..\figures\pic01.PNG
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.pdf
+INPUT ..\figures\pic01.PNG
+INPUT ..\figures\pic01.PNG
+INPUT ..\figures\pic01.PNG
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT ..\figures\pic02.PNG
+INPUT ..\figures\pic02.PNG
+INPUT ..\figures\pic02.PNG
+INPUT ..\figures\pic02.PNG
+INPUT ..\figures\pic02.PNG
+INPUT ..\figures\pic03.PNG
+INPUT ..\figures\pic03.PNG
+INPUT ..\figures\pic03.PNG
+INPUT ..\figures\pic03.PNG
+INPUT ..\figures\pic03.PNG
+INPUT ..\figures\pic04.PNG
+INPUT ..\figures\pic04.PNG
+INPUT ..\figures\pic04.PNG
+INPUT ..\figures\pic04.PNG
+INPUT ..\figures\pic04.PNG
+INPUT ..\figures\pic05.PNG
+INPUT ..\figures\pic05.PNG
+INPUT ..\figures\pic05.PNG
+INPUT ..\figures\pic05.PNG
+INPUT ..\figures\pic05.PNG
+INPUT ..\figures\pic06.PNG
+INPUT ..\figures\pic06.PNG
+INPUT ..\figures\pic06.PNG
+INPUT ..\figures\pic06.PNG
+INPUT ..\figures\pic06.PNG
+INPUT ..\figures\pic07.PNG
+INPUT ..\figures\pic07.PNG
+INPUT ..\figures\pic07.PNG
+INPUT ..\figures\pic07.PNG
+INPUT ..\figures\pic07.PNG
+INPUT ..\figures\pic08.PNG
+INPUT ..\figures\pic08.PNG
+INPUT ..\figures\pic08.PNG
+INPUT ..\figures\pic08.PNG
+INPUT ..\figures\pic08.PNG
+INPUT ..\figures\pic09.PNG
+INPUT ..\figures\pic09.PNG
+INPUT ..\figures\pic09.PNG
+INPUT ..\figures\pic09.PNG
+INPUT ..\figures\pic09.PNG
+INPUT ..\figures\pic10.PNG
+INPUT ..\figures\pic10.PNG
+INPUT ..\figures\pic10.PNG
+INPUT ..\figures\pic10.PNG
+INPUT ..\figures\pic10.PNG
+INPUT ..\figures\pic11.PNG
+INPUT ..\figures\pic11.PNG
+INPUT ..\figures\pic11.PNG
+INPUT ..\figures\pic11.PNG
+INPUT ..\figures\pic11.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.aux
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk

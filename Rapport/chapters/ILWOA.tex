@@ -2,22 +2,30 @@
 
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{algorithm}
+
+\usepackage{algorithmic}
 
 \usepackage{enumitem}
 
 \usepackage{amssymb}
-\usepackage{algorithm}
+\usepackage[T1]{fontenc}
 
-\usepackage{algorithmic}
 \usepackage{graphicx}
 
 \usepackage{hyperref}
-
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    bookmarks=true,
+}
+\usepackage[font=footnotesize]{caption}
+\setcounter{secnumdepth}{4}
 \usepackage[utf8]{inputenc}
-%\title{ILWOA}
 \begin{document}
-\section{ILWOA}
-    Cette version de l'algorithme utilise une fonction à dynamique chaotique et la distribution vol de Lévy afin de garantir une convergence rapide .Une phase de mutation est aussi rajoutée à la fin de chaque itération
+    Cette version de l'algorithme utilise une fonction à dynamique chaotique et la distribution vol de Lévy afin de garantir une convergence rapide. Une phase de mutation est aussi rajoutée à la fin de chaque itération
 \subsection{Fonction à dynamique chaotique}
 Soit f:I $\rightarrow$ I une fonction continue.On suppose que la dynamique associée est chaotique.Alors:
 \begin{enumerate}
@@ -28,7 +36,7 @@ Ce sont des fonctions qui permettent d'avoir une suite de nombres aléatoires qu
 \begin{figure}[h!]
    \centering
     \includegraphics[width=10cm]{../figures/logisticvsothers.PNG}
-    \caption{convergence fonctions chaotiques}
+    \caption[\small]{convergence fonctions chaotiques}
 \end{figure}
 Du graphe , on peut voir qu'avec la fonction logistique la fonction objective atteint le minimumu à partir de la 5eme itération
 \subsubsection{Fonction logistique}
@@ -48,19 +56,20 @@ Dans ILWOA , la variable C est remplacé par un pas aléatoire de la marche alea
 &\sigma_u^2=[\frac{\Gamma(\lambda+1)}{\Gamma((\lambda+1)/2)}\frac{\sin(\pi\lambda/2)}{2^{(\lambda-1)/2}}]^{1/\lambda}
 \end{align*}
 \subsection{Phase de mutation}
-Une phase de mutation a lieu à la fin de chaque itération.On vérifie d'abord si la solution atteinte est optimale .dans ce cas la recherche s'arrete sinon on applique la mutation sur cette dernière.
-Cette phase est composée de 3 opérations exécutées séquentiellement comme le montre la figure (add fig number): 
+Une phase de mutation a lieu à la fin de chaque itération. On vérifie d'abord si la solution atteinte est optimale .dans ce cas la recherche s'arrete sinon on applique la mutation sur cette dernière.
+Cette phase est composée de 3 opérations exécutées séquentiellement comme le montre la figure \textbf{\emph{figure \refeq{fig:mutation}}}: 
 \begin{itemize}
     \item Permutation: deux items de la solution sont choisis aléatoirement pour effectuer une permutation entre eux
-    \item deplacement: Un sous ensemble d'items choisi aléatoirement est déplacé vers une position qui est egalement choisie aléatoirement
+    \item Deplacement: Un sous ensemble d'items choisi aléatoirement est déplacé vers une position qui est egalement choisie aléatoirement
     \item Inversion: On applique une inversion sur un sous ensemble d'items
 \end{itemize}
 \begin{figure}[h!]
    \centering
     \includegraphics[width=10cm]{../figures/Mutation.PNG}
-    \caption{Phase de mutation}
+    \caption[\small]{Phase de mutation}
+    \label{fig:mutation}
 \end{figure}
-\subsection{Pseudocode:}
+\subsection{Pseudocode}
 \begin{algorithm}[H]
     \caption{Improved Whale Optimization Algorithm}
     \begin{algorithmic}
@@ -74,7 +83,7 @@ Cette phase est composée de 3 opérations exécutées séquentiellement comme l
                     \IF{\(|A| < 1\)}
                         \STATE Mettre à jour la solution par Eq.(1)\;
                     \ELSE
-                        \STATE Sélectionnez une solution aléatoire \(X_r\)\;
+                        \STATE Sélectionner une solution aléatoire \(X_r\)\;
                         \STATE Mettre à jour la solution par Eq.(2)\;
                     \ENDIF
                 \ELSE 
@@ -90,8 +99,73 @@ Cette phase est composée de 3 opérations exécutées séquentiellement comme l
         \ENDWHILE
     \end{algorithmic}
 \end{algorithm}
-\end{document}
-
+\subsection{Test et résultats}
+Pour montrer les performances de cet algorithme nous avons effectué une série de Test sur des instances du Benchmark \guillemotleft Scholl \guillemotright composé de trois classes d’une difficulté qui varie d’une classe à une autre.
+En ce qui concerne les paramètres de l’algorithme, nous avons utilisé deux méthodes de calibrage : Un calibrage manuel et un calibrage automatique avec IRace; Le tableau dans la \textbf{\emph{figure \refeq{tab:table1}}} indique les valeurs obtenues par chacune des deux méthodes.
+\begin{table}[h!]
+    \begin{center}
+      \caption{Configuration paramétrique de l'algorithme}
+      \label{tab:table1}
+      \begin{tabular}{c|c|c|c|c|c} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+       \textbf{}&\textbf{a} & \textbf{b} &\textbf{beta} & \textbf{max\_iter} & \textbf{nb\_whales} \\
+        \hline
         
-     
-    
+        Calibrage manuel &8&0.99&1.5&391&13\\ 
+        \hline
+       Calibrage automatique&4&1.5&1&30(Hard),10(Classe 1 et 2)&10\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{table}
+\linebreak
+ Nous allons dans l’analyse qui suit:
+\begin{itemize}
+    \item comparer entre les résultats obtenus par les deux méthodes de calibrage ainsi montrer l’influence du choix des paramètres sur la performance de l’algorithme.
+    \item Analyser les performances de l’algorithme et le comparer à l’algorithme WOA exécuté avec la configuration optimale suivante : $nb\_whales=28$, $max\_iter=271$,  $b=7.64$, $a=20$ .
+\end{itemize}
+\subsubsection{Comparaison entre les résultats obtenus par calibrage automatique et les résultats obtenus par calibrage manuel:                }
+Afin d’effectuer cela, nous avons exécuté l’algorithme avec les paramètres obtenus par calibrage automatique et les paramètres obtenus par calibrage automatique, sur les instances difficiles de la classe 3. Les tableaux dans la \textbf{\emph{figure \refeq{tab:calib_c3}}} montrent que le calibrage automatique améliore la qualité de la solution ainsi que le temps d’exécution
+\begin{figure}[h!]
+    \centering
+     \includegraphics[width=10cm]{../figures/tabreslts.PNG}
+     \caption[\small]{Résultats d'exécution des instances de la classe 3 avec calibrage manuel vs. calibrage automatique.}
+     \label{tab:calib_c3}
+ \end{figure}
+\subsubsection{Analyse des performances de l'algorithme: }
+\paragraph{Analyse du temps d'exécution:}
+A partir du graphes \textbf{\emph{figure \refeq{fig:texec_comp}}} , on peut déduire que :
+\begin{itemize}
+    \item Le temps d'exécution de ILWOA varie de 1  à quelques dizaines de secondes pour les grandes instances 
+    \item L’algorithme ILWOA est plus lent que WOA , on justifie ceci par le fait qu’en plus des instructions exécutées par le WOA , l’ILWOA comporte une phase de mutation et une initialisation par une heuristique  
+\end{itemize}
+\begin{figure}[h!]
+    \centering
+     \includegraphics[width=10cm]{../figures/woavsilwoatemps.PNG}
+     \caption[\small]{temps d'execution (en s) de ILWOA et WOA}
+    \label{fig:texec_comp}
+    \end{figure}
+ \paragraph{Analyse de la qualité de solution: }La qualité de solution a été mesurée par le ration dont on a cité la formule précédemment.A partir du graphes ci-dessous , on peut déduire que :
+ \begin{itemize}
+     \item Le Ratio obtenu par l’ILWOA est proche de 1 pour toutes les instances même pour les instance de la classe 3 ceci signifie qu’il donne de bons résultats quelque soit la difficulté de l’instance 
+     \item la solution obtenue avec l’algorithme ILWOA est très proche de la solution optimale voire même égale pour des instances des classes 1 et 2 
+     \item ILWOA améliore la qualité de solution par rapport à l’algorithme woa pour les instances des 3 classes confondues
+ \end{itemize}
+ \begin{figure}[h!]
+     \centering
+      \includegraphics[width=10cm]{../figures/ratio_ilwoa_woa}
+      \caption[\small]{ratio de ILWOA et WOA}
+  \end{figure}
+  \subsubsection{Interprétation }
+  \begin{itemize}
+    \item L’Algorithme ILWOA permet d’obtenir une bonne qualité de solution en un temps raisonnable   
+    \item Le caractère stochastique de l’algorithme WOA permet de mieux explorer l’espace de recherche, l’utilisation des fonctions logistiques et de la distribution du vol de lévy ont amélioré cela 
+    \item En analysant le nombre de search agents et d’itérations ainsi que la solution obtenue , On peut conclure que l’ajout d’une phase de mutation a permis d’améliorer la rapidité de convergence de l’algorithme 
+    \item Les améliorations effectuées ont permis d’augmenter la performance de l’algorithme 
+    \item La performance de l’algorithme dépend fortement des valeurs de ses paramètres d’où la nécessité du calibrage qui permet de trouver la meilleure configuration pour l’algorithme
+    \item La valeur des paramètres peut dépendre de la nature de l’instance
+    \item Le calibrage automatique est important du fait que ça permet de nous épargner une tâche tant  fastidieuse, tout en assurant une meilleure qualité du résultat
+
+\end{itemize}
+
+
+\end{document}
