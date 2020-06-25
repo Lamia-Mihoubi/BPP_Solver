@@ -23,24 +23,24 @@
         \item L’Algorithm Génétique (AG).
         \item Recuit Simulé (RS).
     \end{itemize} 
-    \section{Comparaison par rapport au temps d'exécution}
+    \subsection{Comparaison par rapport au temps d'exécution}
         \begin{figure}[H]
             \includegraphics[width=\linewidth]{../figures/mh_texec.png}
             \caption{la moyenne des temps d'exécution (en s) des métaheuristiques en fonction de la taille d'instance}
         \end{figure}
-        \subsection{Analyse et interprétation}
+        \subsubsection{Analyse et interprétation}
             \begin{itemize}
                 \item On peut clairement voir à partir du  graphe ci-dessus que le recuit simulé (RS) est l’algorithme le plus lent des quatre algorithmes, et dont le temps d'exécution augmente avec l’augmentation de la taille des instances. 
                 \item l’algorithm génétique (AG)  est la méthode la plus rapide suivi du WOA en deuxième position, et ILWOA juste derrière.
                 \item Contrairement à ce que le graphe montre, l’algorithme ILWOA converge beaucoup plus rapidement que WOA .En effet, le temps d'exécution ne reflète pas exactement la vitesse de convergence d’un algorithme dans notre cas dû au choix de la condition d'arrêt qui est pour rappel le nombre d'itérations (section ILWOA).
                 \item Le temps d'exécution des métaheuristiques est plus grand que le temps d'exécution des heuristiques, et ceci est triviale, à cause de la nature gloutonne des heuristiques, contrairement aux métaheuristiques qui sont des méthodes plus sophistiqués,utilisant plusieurs mécanismes d’intensification et diversification pour éviter les optimums locaux.
             \end{itemize}
-    \section{Comparaison par rapport à la qualité de la solution}
+    \subsection{Comparaison par rapport à la qualité de la solution}
         \begin{figure}[H]
             \includegraphics[width=\linewidth]{../figures/mh_ecart.png}
             \caption{la moyenne des écarts (en \%) des métaheuristiques de la solution optimale en fonction de la taille d'instance}
         \end{figure}
-        \subsection{Analyse et interprétation}
+        \subsubsection{Analyse et interprétation}
             \begin{itemize}
                 \item On remarque que WOA dans tous les cas donne le plus grand écart par rapport à la solution optimale sauf dans le cas N4=500 où c’est RS qui trouve les solutions les plus écartées des solutions optimales (un écart de 60%). 
                 \item Pour la majorité des tailles des instances, AG donne les meilleurs résultats sauf dans le cas des instances Hard et N4 où ILWOA offre une légère amélioration. On peut donc conclure qu'en général AG donne de meilleurs solutions pour toutes les instances du benchmark. et ILWOA est celui qui arrive à améliorer les solutions des instances HARD. 

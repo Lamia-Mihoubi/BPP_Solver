@@ -61,24 +61,21 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
     Elle s'appuie sur \emph{le principe d'optimalité de Bellman}: une solution optimale d'un problème s'obtient en combinant des solutions optimales à des sous-problèmes. 
     Un modèle pseudo-polynomial simple, pour résoudre le problème bin-packing, est obtenu en associant des variables aux décisions prises dans une table de programmation dynamique (DP) classique.
         \subsubsection*{DP-flow:}
-        Dans le modèle BPP proposé par \emph{Cambazard et O’Sullivan} [2], connu sous\\
-        le nom de DP-flow, les états DP sont représentés par un graphique dans \\
-        lequel un chemin qui commence à partir d'un nœud initial et se termine à \\ 
-        un nœud terminal représente un remplissage possible d'une boîte. Notons \\
-        \((j, d) (j = 0, \cdots, n \, et \, d = 0, \cdots, c)\) un état DP où les articles de \(0\) à \(j\) ont déjà \\
-        été étudiés (les décisions de placer les articles de \(0\) à \(j\) dans la boîte ou non\\
-        ont déjà été reprises) et entraînent un remplissage partiel de la boîte de \(d\) \\
-        unités. Notons également par \(((j, d), (j + 1, e))\) un arc reliant les états \((j, d)\) \\
+        Dans le modèle BPP proposé par \emph{Cambazard et O’Sullivan} [2], connu sous le nom de DP-flow, les états DP sont représentés par un graphique dans
+        lequel un chemin qui commence à partir d'un nœud initial et se termine à un nœud terminal représente un remplissage possible d'une boîte. Notons 
+        \((j, d) (j = 0, \cdots, n \, et \, d = 0, \cdots, c)\) un état DP où les articles de \(0\) à \(j\) ont déjà été étudiés (les décisions de placer les articles de \(0\) à \(j\) dans la boîte ou non 
+        ont déjà été reprises) et entraînent un remplissage partiel de la boîte de \(d\) unités. Notons également par \(((j, d), (j + 1, e))\) un arc reliant les états \((j, d)\) 
         et \((j + 1, e)\). Un tel arc exprime la décision d'emballer ou non l'article \(j + 1\) à partir de l'état actuel \((j, d)\): l'état atteint par l'arc est \((j + 1, d + w_j + 1)\) si l'article \(j + 1\) est emballé, et \((j + 1, d)\) sinon.
         Soit \(A\) l'ensemble de tous les arcs. Comme un remplissage réalisable d’une boîte est représenté par un chemin qui commence à partir du nœud \((0, 0)\) et se termine au nœud \((n + 1, c)\), le BPP consiste à sélectionner le nombre minimum de chemins qui contiennent tous les éléments. \\
         Pour cette instance BPP, une solution optimale est produite par les deux chemins mis en évidence dans la figure ci-dessous, à savoir \\\([(0,0), (1,4), (2,4), (3,7), (4,7), (5,9), (6,9), (7,9)]\) \\
         et \([(0,0), (1,0), (2,4), (3,4), (4,7), (5,7), (6,9), (7,9)]\).
         \begin{figure}[h!]
             \includegraphics[width=13.5cm]{../figures/DP-flow.png}
+            \caption{Exemple de l'algorithme DP-flow}
         \end{figure}
 
         \section{Heuristiques}
-        Les méthodes approchées  sont classées en plusieurs catégories:
+        Les méthodes heuristiques  sont classées en plusieurs catégories:
         \subsection{Algorithmes ON-LINE:}
         Ces algorithmes considèrent l’hypothèse que les articles arrivent un à la fois en un ordre connu, chaque article doit être rangé avant de passer à l’article suivant.
         \subsubsection{Next Fit (NF):} Lors du rangement de l’article a, NF vérifie s'il tient dans la même boîte que le dernier article (Soit la boîte du dernier article rangé$B_j$ ). Si c’est le cas, il place l’article dans la boîte $B_j$ , laissant cette boîte ouverte. Sinon, il ferme la boîte $B_j$ et place l’article a dans une nouvelle boîte $B_{j+1}$, qui devient maintenant la boîte ouverte. 

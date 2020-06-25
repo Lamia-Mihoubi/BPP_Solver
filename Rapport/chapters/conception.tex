@@ -43,22 +43,22 @@ Dans le but de montrer l’applicabilité de ces méthodes, comparer leurs perfo
 \begin{figure}[h]
     \includegraphics[width=\linewidth]{../figures/diagr1.png}
 \end{figure}
-\subsection{Pseudo-Code}
+\subsection{Pseudocode}
 Soient:
 \begin{itemize}
-    \item n : le nombre d’articles 
-    \item list[0… n-1] : la liste des articles en entrées 
-    \item opt\_list: la liste ordonnée fournissant la solution optimale en sortie 
-    \item opt\_cost: le nombre de boîtes optimal
-    \item C:la capacité maximale d’une boîte. 
+    \item $n$ : le nombre d’articles 
+    \item $list[0… n-1]$ : la liste des articles en entrées 
+    \item $opt\_list$: la liste ordonnée fournissant la solution optimale en sortie 
+    \item $opt\_cost$: le nombre de boîtes optimal
+    \item $C$:la capacité maximale d’une boîte. 
 \end{itemize}
 
 L’algorithme proposé est une fonction récursive packBins ayant comme paramètres:
 \begin{itemize}
-    \item k:l’ordre de l’élément à être rangé ( le niveau dans l’arbre).
-    \item sumwt:la somme des poids des éléments restants à être rangés
-    \item bcount:la somme cumulée des boîtes déjà utilisées ( depuis la racine jusqu’à ce nœud)
-    \item capa\_restante:l’espace libre restant dans la boîte ouverte.
+    \item $k$:l’ordre de l’élément à être rangé ( le niveau dans l’arbre).
+    \item $sumwt$:la somme des poids des éléments restants à être rangés
+    \item $bcount$:la somme cumulée des boîtes déjà utilisées ( depuis la racine jusqu’à ce nœud)
+    \item $capa\_restante$:l’espace libre restant dans la boîte ouverte.
      
 \end{itemize}
 
@@ -147,7 +147,7 @@ $|C_1|+|C_2|$boîtes sont utilisées quelque soit la solution. De plus,aucun obj
 $|C_2|$ boîtes est de : $C^*=|C_2|*c-\sum_{j \in C_2}^{} w_j$
 Donc dans le meilleur des cas, cette capacité résiduelle va être remplie par les objets de $C_3$, et dans ce cas le nombre de nouvelles boîtes qu’on doit ouvrir est de :  
 $\frac{\sum_{j \in C_3 -C^*}^{} w_j}{c}$ (cette dernière formule utilise le même principe que la borne L1).
-\subsection{Pseudo-Code}
+\subsection{Pseudocode}
 \begin{algorithm}[H]
    \caption{Branch and bound amélioré }
    \begin{algorithmic} 

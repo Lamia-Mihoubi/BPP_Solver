@@ -11,7 +11,7 @@
 \begin{document}
 Un algorithme génétique est une métaheuristique évolutionnaire à l'origine proposée par Holland [1]. Depuis lors, il est devenu une méthode puissante pour résoudre de nombreux problèmes d'optimisation combinatoire difficiles, dont la liste peut être trouvée dans de nombreuses références, voir par exemple [2]. Les étapes générales de l'algorithme peuvent être décrites comme suit:
 \newline
-
+\subsection{Pseudocode}
 \begin{algorithm}[H]
 	\caption{Algorithme génétique}
 	\begin{algorithmic}
@@ -28,7 +28,7 @@ Un algorithme génétique est une métaheuristique évolutionnaire à l'origine 
 
 Un élément clé de l'AG est la génération d'une population dont les composants sont appelés \textit{chromosomes}, un terme emprunté à la génétique. Un \textit{chromosome} est en fait une représentation codée d'une solution; dont chaque composant est appelé \textit{gène}
 
-\section{Algorithme Génétique}
+\subsection{Application du AG au problème du BP}
 On représente une solution du Bin packing comme suit : 
 \begin{itemize}
 	\item On a \textbf{n} articles à ranger donc on utilisera n boîtes au pire des cas (un objet par boite).
@@ -80,15 +80,15 @@ Dans la première cellule, cellule 0, on stocke le nombre de boîtes utilisées 
 Dans l'exemple ci-dessus, pour la cellule 7, nous avons: 7 = 1 × 4 + 3, 
 le reste est a= 3 et b = 1, donc b + 1 = 2, donc l'objet 3 est placé dans la boîte 2. 
 Pour la cellule 12, nous avons: 12 = 3 × 4 + 0, le reste est a= 0, et b = 3, donc l'objet 4 est placé dans la boîte 3
-\subsection{Initialisation}
+\subsubsection{Initialisation}
 La génération de la population initiale en :
 		\begin{itemize}
 			\item Changeant l’ordre des objets aléatoirement.
 			\item Génération du chromosome avec \textbf{First Fit}
 		\end{itemize}
-\subsection{Selection (Choix d'une paire pour la reproduction)}
+\subsubsection{Selection (Choix d'une paire pour la reproduction)}
 C’est la phase qui consiste à choisir les individus à reproduire et ceux qui participent à la construction d’une nouvelle population. Nous avons opté pour la méthode du Tournament Selection.
-\subsection{Tournament Selection}
+\subsubsection{Tournament Selection}
 Dans cette approche, un "tournoi, k" est organisé entre k chromosomes (solutions)choisis au hasard dans la population et celui avec la meilleure forme physique (Fitness Value) est sélectionné comme gagnant et sera autorisé à se reproduire.
 \newline
 Supposons que k = 3 :
@@ -97,7 +97,7 @@ Supposons que k = 3 :
 \end{figure}
 La pression de sélection(Une \textit{pression de sélection} est une contrainte environnementale qui va \textbf{pousser} une espèce à évoluer dans une direction donnée.) peut être facilement ajustée en changeant la taille du tournoi (un k plus élevé augmente la pression de sélection).
 La sélection du tournoi est indépendante de la fonction Fitness.Parmis ces avantages, on cite la diminution le temps de calcul, et son fonctionnement sur les architectures parallèles.
-\subsection{Croisement}
+\subsubsection{Croisement}
 L'opérateur de croisement est analogue à la reproduction et au croisement biologique. Dans ce cas, plus d'un parent est sélectionné et un ou plusieurs descendants sont produits en utilisant le matériel génétique des parents. Le crossover est généralement appliqué dans une AG à forte probabilité \textit{pc}
 \newline
 L’opérateur choisi pour cet algorithme est le ‘One Point Crossover’ ou ‘le croisement à un point’. Dans ce croisement, un point de croisement aléatoire est sélectionné et les queues de ses deux parents sont échangées pour obtenir de nouveaux descendants, ce qui revient à diviser l’ensemble des boîtes en deux fragments et échanger les objets de ces derniers.
@@ -106,7 +106,7 @@ Par exemple dans la figure suivante, nous avons le point de croisement =5:
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{../figures/pic05.PNG}
 \end{figure}
-\subsection{Mutation}
+\subsubsection{Mutation}
 La mutation peut être définie comme un petit ajustement aléatoire dans le chromosome, pour obtenir une nouvelle solution. Il est utilisé pour maintenir et introduire la diversité dans la population génétique et est généralement appliqué avec une faible probabilité \textit{pm}. Si la probabilité est très élevée, l'AG se réduit à une recherche aléatoire.
 \newline
 La mutation est la partie de l'AG qui est liée à «\textbf{l'exploration}» de l'espace de recherche. Il a été observé que la mutation est essentielle à la convergence de l'AG alors que le croisement ne l'est pas.
@@ -115,20 +115,20 @@ L’opérateur de mutation choisi pour cette algorithme est :  “\textbf{scramb
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{../figures/pic06.PNG}
 \end{figure}
-\subsection{Evaluation}
+\subsubsection{Evaluation}
 Le choix du chromosome ayant la plus petite valeur de la cellule 0, c’est à dire le plus petit nombre de boîtes après avoir vérifié la validité de la solution (chromosome) i.e si le chromosome constitue réellement une solution acceptable.
-\subsection{Fitness et validation d’un chromosome}
+\subsubsection{Fitness et validation d’un chromosome}
 Cette fonction nous permet de vérifier si et combien un chromosome donné est “bon” ou “fit” à notre problème. 
 \newline
 Pour cela il faut d’abord vérifier la validité de la solution: d’un côté vérifier si tous les articles ont effectivement été rangés dans des boîtes, et de l’autre, vérifier si le total des poids des articles dans chaque boîte est effectivement inférieur ou égal à la capacité d’une boîte. 
 \newline
 Après avoire effectué ces vérifications on pourra prendre comme valeur de “\textit{fitness}” du chromosome, le nombre de boîtes utilisées, stocké dans la 1ère cellule du chromosome.
-\subsection{Critère d'arrêt}
+\subsubsection{Critère d'arrêt}
 L'algorithme s’arrête après un nombre d’itérations prédéfini, donné en paramètre.
 \newline
 \newline
 \textbf{L’Algorithme AG sera à son tour exécuté plusieurs fois, selon un paramètre en entrée  ( on a opté pour 10 fois), et à la fin la solution ayant le plus petit nombre de boîtes utilisées sera prise comme solution de l’instance.}
-\section{Tests}
+\subsection{Tests et Résultats}
 Après avoir finalisé notre code, on a commencé la phase des tests qui a été divisée en deux partie :
 \begin{enumerate}
 	\item La partie des tests préliminaires.
@@ -142,7 +142,7 @@ Les paramètres sur lesquels on a joué, sont :
 	\item \textbf{popSize} : la taille d’une population
 \end{itemize}
 La probabilité de croisement a été fixée  à 0.85, et la probabilité de mutation  a été fixée à son tour à 0.1.
-\subsection{Les tests préliminaires}
+\subsubsection{Les tests préliminaires}
 Dans cette partie, on a voulu tester les performances de notre programme , en essayant plusieurs combinaisons des paramètres:
 \begin{itemize}
 	\item \textbf{nbrGen} : on a essayé 4, 50, 100, 200 et puis 500 qui lui,  ne donnait pas de meilleurs résultats que ceux obtenus avec 200 itérations.
@@ -150,7 +150,7 @@ Dans cette partie, on a voulu tester les performances de notre programme , en es
 	\item \textbf{popSize} : on a essayé avec une population de 4 chromosomes, 8, et 10.
 \end{itemize}
 Au final, notre choix s’est porté sur le triplet :(\textbf{nbrGen}=200,\textbf{ k}=25,\textbf{popSize}=10) car ils donnaient d’assez bons résultats.
-\subsection{Les tests après calibrage des paramètres}
+\subsubsection{Les tests après calibrage des paramètres}
 Pour pouvoir confirmer notre choix de paramètres on a vu nécessaire d’utiliser un outil de calibrage, on a utilisé l'outil \textbf{IRACE}. 
 \newline
 Après avoir exécuté le code avec \textbf{IRACE}, on a obtenu cette combinaison des paramètres (\textbf{nbrGen}=200,\textbf{k}=25,\textbf{popSize}=10) en fixant , \textbf{probaCroisement}=0.85 et \textbf{probaMutation}=0.1, et qui est,en effet, la combinaison qui donne les meilleurs résultats dans le cas de notre programme. Ceci confirme nos résultats pour le choix des paramètres trouvés pendant les tests préliminaires.

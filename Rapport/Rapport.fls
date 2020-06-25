@@ -57,30 +57,62 @@ INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\infwarerr\infwarerr.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bitset\bitset.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
 INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
@@ -146,6 +178,20 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\refcount\refcount.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\gettitlestring\gettitlestring.sty
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.pdf
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
+OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\french.lbx
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\french.lbx
 OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.bcf
@@ -164,52 +210,6 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\kvdefinekeys\kvdefinekeys.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\pdfescape\pdfescape.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\pdfescape\pdfescape.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\hycolor\hycolor.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\hycolor\hycolor.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\letltxmacro\letltxmacro.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\letltxmacro\letltxmacro.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\auxhook\auxhook.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\auxhook\auxhook.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\intcalc\intcalc.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\intcalc\intcalc.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\etexcmds\etexcmds.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bitset\bitset.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bitset\bitset.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bigintcalc\bigintcalc.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\bigintcalc\bigintcalc.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\atbegshi\atbegshi.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\atbegshi\atbegshi.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\atveryend\atveryend.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\atveryend\atveryend.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\rerunfilecheck\rerunfilecheck.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\uniquecounter\uniquecounter.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\uniquecounter\uniquecounter.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\refcount\refcount.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\latex\refcount\refcount.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\gettitlestring\gettitlestring.sty
-INPUT C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex\generic\gettitlestring\gettitlestring.sty
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
-OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.pdf
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
-OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
@@ -278,71 +278,71 @@ INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\D
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\DP-flow.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
-INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1200.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1000.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1000.tfm
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\conception.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diagr1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\formule1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\example1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\diag2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Tests.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph1.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\tab2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph2.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\graph3.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\worse_case_analysis.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\Conception_heur.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\NF NFD better(1).png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\FF FFD.png
@@ -403,6 +403,10 @@ INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\R
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\Ratio_M_heuristiques.png
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcbx1200.tfm
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\calibrage.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\calibrage.tex
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\calibrage.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\RecuitSim.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\RecuitSim.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\RecuitSim.tex
@@ -487,6 +491,11 @@ INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\w
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\woavsilwoatemps.PNG
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\woavsilwoatemps.PNG
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\woavsilwoatemps.PNG
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\ratio_ilwoa_woa.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\ratio_ilwoa_woa.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\ratio_ilwoa_woa.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\ratio_ilwoa_woa.png
+INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\..\figures\ratio_ilwoa_woa.png
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.tex
@@ -563,16 +572,18 @@ INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.out
 INPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.run.xml
 OUTPUT c:\Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\Rapport.run.xml
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbi1200.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk
-INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk

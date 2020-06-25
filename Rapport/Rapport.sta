@@ -20,14 +20,17 @@
 \subpreamble{chapters/tests_heur.tex}
 \usepackage {mathtools}\usepackage {amsmath}\usepackage {float}\usepackage {import}
 \endsubpreamble
+\subpreamble{chapters/calibrage.tex}
+\usepackage {hyperref}\hypersetup {colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan,bookmarks=true,}
+\endsubpreamble
 \subpreamble{chapters/RecuitSim.tex}
-\usepackage {amsmath}\usepackage {mathtools}\usepackage {algorithm}\usepackage {algorithmic}\usepackage {enumitem}\usepackage {amssymb}\usepackage {graphicx}\usepackage {hyperref}\usepackage [font=footnotesize]{caption}\usepackage [utf8]{inputenc}
+\usepackage {amsmath}\usepackage {mathtools}\usepackage {algorithm}\usepackage {algorithmic}\usepackage {enumitem}\usepackage {amssymb}\usepackage {graphicx}\usepackage {hyperref}\hypersetup {colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan,bookmarks=true,}\usepackage [font=footnotesize]{caption}\usepackage [utf8]{inputenc}
 \endsubpreamble
 \subpreamble{chapters/WOA.tex}
-\usepackage {mathtools}\usepackage {amsmath}\usepackage {float}\usepackage {algorithmic}\usepackage {algorithm}\setcounter {section}{0}
+\usepackage {mathtools}\usepackage {amsmath}\usepackage {float}\usepackage {algorithmic}\usepackage {algorithm}\usepackage {hyperref}\hypersetup {colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan,bookmarks=true,}\setcounter {section}{0}\setcounter {secnumdepth}{4}
 \endsubpreamble
 \subpreamble{chapters/ILWOA.tex}
-\usepackage {amsmath}\usepackage {mathtools}\usepackage {algorithm}\usepackage {algorithmic}\usepackage {enumitem}\usepackage {amssymb}\usepackage [T1]{fontenc}\usepackage {graphicx}\usepackage {hyperref}\usepackage [font=footnotesize]{caption}\usepackage [utf8]{inputenc}
+\usepackage {amsmath}\usepackage {mathtools}\usepackage {algorithm}\usepackage {algorithmic}\usepackage {enumitem}\usepackage {amssymb}\usepackage [T1]{fontenc}\usepackage {graphicx}\usepackage {hyperref}\hypersetup {colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan,bookmarks=true,}\usepackage [font=footnotesize]{caption}\setcounter {secnumdepth}{4}\usepackage [utf8]{inputenc}
 \endsubpreamble
 \subpreamble{chapters/ag.tex}
 \usepackage {amsmath}\usepackage {graphicx}\usepackage {float}\usepackage {blindtext}\usepackage [T1]{fontenc}\usepackage [utf8]{inputenc}\usepackage {algorithm}\usepackage {algorithmic}
