@@ -1,9 +1,21 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Sch()]{Scholl}
+\emph{Scholl Benchmark}.
+\newblock \url{https://www2.wiwi.uni-jena.de/Entscheidung/binpp/index.html}.
+
+\bibitem[Abdel-Basset et~al.(2018)Abdel-Basset, Manogaran, Abdel-Fatah, and
+  Mirjalili]{ILWOA}
+M.~Abdel-Basset, G.~Manogaran, L.~Abdel-Fatah, and S.~Mirjalili.
+\newblock An improved nature inspired meta-heuristic algorithm for 1-d bin
+  packing problems.
+\newblock \emph{Personal and Ubiquitous Computing}, 22\penalty0 (5-6):\penalty0
+  1117--1132, 2018.
 
 \bibitem[Al-Khateeb~B(2013)]{Alkhateeb}
 T.~W. Al-Khateeb~B.
@@ -12,6 +24,14 @@ T.~W. Al-Khateeb~B.
 \newblock \emph{International Conference on Developments in eSystems
   Engineering (DeSE)}, page 187–191, 2013.
 \newblock \doi{10.1109/DeSE.2013.41}.
+
+\bibitem[Birattari et~al.(2010)Birattari, Yuan, Balaprakash, and
+  Stützle]{survey}
+M.~Birattari, Z.~Yuan, P.~Balaprakash, and T.~Stützle.
+\newblock \emph{Experimental Methods for the Analysis of Optimization 311
+  Algorithms}, chapter~13, pages 312--333.
+\newblock Springer-Verlag Berlin Heidelberg, 2010.
+\newblock \doi{10.1007/978-3-642-02538-9\_13,}.
 
 \bibitem[Chen~PH(2009)]{Chen}
 S.~S. Chen~PH.
@@ -35,15 +55,31 @@ D.~N. Junghans~L.
 \newblock page 187–191, 2015.
 \newblock \doi{10.1016/j.enbuild.2014.10.039}.
 
+\bibitem[Mirjalili and Lewis(2016)]{WOA}
+S.~Mirjalili and A.~Lewis.
+\newblock The whale optimization algorithm.
+\newblock \emph{Advances in engineering software}, 95:\penalty0 51--67, 2016.
+
 \bibitem[Mohamadi(2010)]{Mohamadi}
 N.~Mohamadi.
 \newblock Application of genetic algorithm for the bin packingproblem with a
   new representation scheme.
 \newblock 2010.
 
+\bibitem[package()]{irace}
+C.~R. package.
+\newblock Irace.
+\newblock \url{https://cran.r-project.org/package=irace}.
+
 \bibitem[S.Kirkpatrick(1983)]{kirk}
 J.~M. S.Kirkpatrick, C.D.Gelatt.
 \newblock Optimization by simulated annealing.
 \newblock 1983.
+
+\bibitem[Talbi(2002)]{talbi2002taxonomy}
+E.-G. Talbi.
+\newblock A taxonomy of hybrid metaheuristics.
+\newblock \emph{Journal of heuristics}, 8\penalty0 (5):\penalty0 541--564,
+  2002.
 
 \end{thebibliography}

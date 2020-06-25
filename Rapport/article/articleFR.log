@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  23 JUN 2020 13:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  25 JUN 2020 12:30
 entering extended mode
 **c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.tex
 (c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.tex
@@ -142,25 +142,52 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty" ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2020-04-06 L3 programming layer (loader) 
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count187
+\l__pdf_internal_box=\box56
+)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count188
+\g__xparse_grabber_int=\count189
+\l__xparse_m_args_int=\count190
+\l__xparse_v_nesting_int=\count191
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.tex"
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 )) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mathtools\mathtools.sty"
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
  ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count187
-\calc@Bcount=\count188
+\calc@Acount=\count192
+\calc@Bcount=\count193
 \calc@Adimen=\dimen158
 \calc@Bdimen=\dimen159
-\calc@Askip=\skip53
-\calc@Bskip=\skip54
+\calc@Askip=\skip62
+\calc@Bskip=\skip63
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count189
-\calc@Cskip=\skip55
+\calc@Ccount=\count194
+\calc@Cskip=\skip64
 ) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mathtools\mhsetup.sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 ) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip56
+\@mathmargin=\skip65
 
 For additional information on amsmath, use the `?' option.
 ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
@@ -175,30 +202,30 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count190
+\inf@bad=\count195
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count191
-\leftroot@=\count192
+\uproot@=\count196
+\leftroot@=\count197
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count193
-\DOTSCASE@=\count194
+\classnum@=\count198
+\DOTSCASE@=\count199
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box56
-\strutbox@=\box57
+\Mathstrutbox@=\box57
+\strutbox@=\box58
 \big@size=\dimen162
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count195
-\c@MaxMatrixCols=\count196
+\macc@depth=\count266
+\c@MaxMatrixCols=\count267
 \dotsspace@=\muskip16
-\c@parentequation=\count197
-\dspbrk@lvl=\count198
+\c@parentequation=\count268
+\dspbrk@lvl=\count269
 \tag@help=\toks27
-\row@=\count199
-\column@=\count266
-\maxfields@=\count267
+\row@=\count270
+\column@=\count271
+\maxfields@=\count272
 \andhelp@=\toks28
 \eqnshift@=\dimen163
 \alignsep@=\dimen164
@@ -207,8 +234,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \totwidth@=\dimen167
 \lineht@=\dimen168
 \@envbody=\toks29
-\multlinegap=\skip57
-\multlinetaggap=\skip58
+\multlinegap=\skip66
+\multlinetaggap=\skip67
 \mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
@@ -217,16 +244,16 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count268
+\g_MT_multlinerow_int=\count273
 \l_MT_multwidth_dim=\dimen169
-\origjot=\skip59
+\origjot=\skip68
 \l_MT_shortvdotswithinadjustabove_dim=\dimen170
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen171
 \l_MT_above_intertext_sep=\dimen172
 \l_MT_below_intertext_sep=\dimen173
 \l_MT_above_shortintertext_sep=\dimen174
 \l_MT_below_shortintertext_sep=\dimen175
-\xmathstrut@box=\box58
+\xmathstrut@box=\box59
 \xmathstrut@dim=\dimen176
 ) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/standalone\standalone.sty"
 Package: standalone 2018/03/26 v1.3a Package to include TeX sub-files with preambles
@@ -248,49 +275,45 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/filehook\filehook.sty"
 Package: filehook 2020/02/03 v0.7 Hooks for input files
 )
-\c@currfiledepth=\count269
+\c@currfiledepth=\count274
 )
 \sa@out=\write4
  (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.sta) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/gincltex\gincltex.sty" ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/svn-prov\svn-prov.sty"
 Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
 )
 Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
-\gincltex@box=\box59
+\gincltex@box=\box60
 ) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/filemod\filemod-expmin.sty"
 Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times (expandable; minimal)
-)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
-File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count270
-\l__pdf_internal_box=\box60
-) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux)
+)) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux)
 \openout1 = `articleFR.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
  ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count271
+\scratchcounter=\count275
 \scratchdimen=\dimen177
 \scratchbox=\box61
-\nofMPsegments=\count272
-\nofMParguments=\count273
+\nofMPsegments=\count276
+\nofMParguments=\count277
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count274
+\MPscratchCnt=\count278
 \MPscratchDim=\dimen178
-\MPnumerator=\count275
-\makeMPintoPDFobject=\count276
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
 \everyMPtoPDFconversion=\toks32
 ) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -298,65 +321,112 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 ) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.sta)
 \openout4 = `articleFR.sta'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
  ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
  ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <./figures/AG schema.png, id=1, 477.785pt x 276.03125pt>
 File: ./figures/AG schema.png Graphic file (type png)
 <use ./figures/AG schema.png>
-Package pdftex.def Info: ./figures/AG schema.png  used on input line 133.
+Package pdftex.def Info: ./figures/AG schema.png  used on input line 60.
 (pdftex.def)             Requested size: 286.6732pt x 165.62001pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (11.80614pt too wide) in paragraph at lines 137--139
+Overfull \hbox (11.80614pt too wide) in paragraph at lines 64--66
 []\OT1/cmr/m/n/10 Les al-go-rithmes genetiques sont con-nus par leur Ra-pidite et fa-cilite d'utilisation.
  []
 
 
-Overfull \hbox (2.22221pt too wide) has occurred while \output is active
-[] 
+Underfull \hbox (badness 10000) has occurred while \output is active
+ 
  []
 
 [1
 
 
-{C:/Users/BACHI/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./figures/AG schema.png>]
-Overfull \hbox (10.20305pt too wide) in paragraph at lines 192--195
+{C:/Users/BACHI/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 22.54448pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[2 <./figures/AG schema.png>]
+Overfull \hbox (10.20305pt too wide) in paragraph at lines 116--119
 \OT1/cmr/bx/n/10 generaliste \OT1/cmr/m/n/10 , et qui utilise l'algorithme genetique comme methode revolutionnaire,
  []
 
-[3]
-<./figures/Untitled Diagram(6).png, id=25, 414.54875pt x 74.2775pt>
+<./figures/Untitled Diagram(6).png, id=19, 414.54875pt x 74.2775pt>
 File: ./figures/Untitled Diagram(6).png Graphic file (type png)
 <use ./figures/Untitled Diagram(6).png>
-Package pdftex.def Info: ./figures/Untitled Diagram(6).png  used on input line 203.
+Package pdftex.def Info: ./figures/Untitled Diagram(6).png  used on input line 127.
 (pdftex.def)             Requested size: 248.73116pt x 44.56683pt.
-
-Overfull \hbox (24.15337pt too wide) in paragraph at lines 209--211
+[3]
+Overfull \hbox (24.15337pt too wide) in paragraph at lines 133--135
 []\OT1/cmr/m/n/10 Pour cette implementation de l'AG, nous al-lons utiliser une nou-velle representation
  []
 
-[4 <./figures/Untitled Diagram(6).png>] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.bbl [5]) [6] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux) ) 
+[4 <./figures/Untitled Diagram(6).png>]
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Overfull \hbox (8.57326pt too wide) in paragraph at lines 167--193
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+Overfull \hbox (19.408pt too wide) in paragraph at lines 220--222
+\OT1/cmr/m/n/10 simule. la com-para-i-son va in-clure les metaheuristiques utilisees ainsi que l'heuristique
+ []
+
+<./figures/texec (2).png, id=35, 488.57532pt x 228.10219pt>
+File: ./figures/texec (2).png Graphic file (type png)
+<use ./figures/texec (2).png>
+Package pdftex.def Info: ./figures/texec (2).png  used on input line 225.
+(pdftex.def)             Requested size: 293.14745pt x 136.86235pt.
+<./figures/ecart (2).png, id=36, 478.03593pt x 231.11343pt>
+File: ./figures/ecart (2).png Graphic file (type png)
+<use ./figures/ecart (2).png>
+Package pdftex.def Info: ./figures/ecart (2).png  used on input line 230.
+(pdftex.def)             Requested size: 286.82376pt x 138.66913pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./figures/texec (2).png>]
+Overfull \hbox (11.97275pt too wide) in paragraph at lines 242--244
+\OT1/cmr/m/n/10 rithme, on l'a com-pare avec d'autres schemas pro-posees a base des metaheuristiques
+ []
+
+(c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.bbl
+Overfull \hbox (71.18013pt too wide) in paragraph at lines 9--11
+[]\OT1/cmr/m/it/10 Scholl Bench-mark\OT1/cmr/m/n/10 .  \OT1/cmtt/m/n/10 https://www2.wiwi.uni-jena.de/Entscheidung/binpp/index.html\OT1/cmr/m/n/10 . 
+ []
+
+[7 <./figures/ecart (2).png>]) [8] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux) ) 
 Here is how much of TeX's memory you used:
- 5487 strings out of 480930
- 83549 string characters out of 2899761
- 328517 words of memory out of 3000000
- 21242 multiletter control sequences out of 15000+200000
- 535975 words of font info for 38 fonts, out of 3000000 for 9000
+ 6220 strings out of 480930
+ 102018 string characters out of 2899761
+ 486652 words of memory out of 3000000
+ 21954 multiletter control sequences out of 15000+200000
+ 536143 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,39p,697b,346s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.pdf (6 pages, 166491 bytes).
+ 38i,11n,45p,729b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.pdf (8 pages, 223350 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

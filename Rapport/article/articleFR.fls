@@ -55,6 +55,18 @@ INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssym
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.ltd.tex
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.ltd.tex
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
@@ -100,8 +112,6 @@ INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\svn-prov\svn-pr
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\svn-prov\svn-prov.sty
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\filemod\filemod-expmin.sty
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\filemod\filemod-expmin.sty
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux
 INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux
 OUTPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux
@@ -142,8 +152,19 @@ INPUT .\figures\Untitled Diagram(6).png
 INPUT .\figures\Untitled Diagram(6).png
 INPUT .\figures\Untitled Diagram(6).png
 INPUT .\figures\Untitled Diagram(6).png
+INPUT figures\texec (2).png
+INPUT .\figures\texec (2).png
+INPUT .\figures\texec (2).png
+INPUT .\figures\texec (2).png
+INPUT .\figures\texec (2).png
+INPUT figures\ecart (2).png
+INPUT .\figures\ecart (2).png
+INPUT .\figures\ecart (2).png
+INPUT .\figures\ecart (2).png
+INPUT .\figures\ecart (2).png
 INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.bbl
 INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.bbl
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
 INPUT c:\Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux
 INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
@@ -169,3 +190,7 @@ INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfon
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti8.pfb
 INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti8.pfb
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msam10.pfb
