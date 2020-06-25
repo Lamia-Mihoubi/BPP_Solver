@@ -10,7 +10,7 @@
 \begin{document}
     Les métaheuristiques utilisées pour résoudre les problèmes d'optimisation difficiles ont généralement plusieurs paramètres qui doivent être définis de manière appropriée de sorte que certains aspects des performances soient optimisés. Dans ce chapitre, nous passons en revue F-Race, un algorithme de course pour la configuration automatique des algorithmes. F-Race est basé sur une approche statistique pour sélectionner la meilleure configuration parmi un ensemble de configurations candidates sous évaluations stochastiques. Nous présentons également une extension de l'algorithme F-Race initial, qui conduit à une famille d'algorithmes appelée F-Race itérée (I-Race) que nous allons utiliser plus tard dans le calibrage automatiques de paramètres des métaheuristiques que nous avons implémentés. 
     \subsection{F-Race}
-        \subsection{Approche par Course (Racing)}
+        \subsubsection{Approche par Course (Racing)}
             F-Race, qui s'inspire de l'algorithme Hoeffding race [49], [50] en machine learning pour la sélection de modèles, a été proposé dans [45] et étudié de manière approfondie dans [31]. L'idée essentielle de la méthode de course est:
             \begin{itemize}
                 \item d'évaluer l’ensemble des configurations de manière incrémentale sur un flux d'instances. 

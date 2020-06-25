@@ -53,32 +53,31 @@
 \BOOKMARK [-1][-]{part.6}{VI M\351thodes M\351taheuristiques}{}% 53
 \BOOKMARK [0][-]{section.0.1}{Calibrage Automatique des Param\350tres}{part.6}% 54
 \BOOKMARK [1][-]{subsection.0.1.1}{F-Race}{section.0.1}% 55
-\BOOKMARK [2][-]{subsection.0.1.2}{Approche par Course \(Racing\)}{subsection.0.1.1}% 56
-\BOOKMARK [2][-]{subsection.0.1.3}{I/F-Race \(F-Race It\351r\351\)}{subsection.0.1.1}% 57
-\BOOKMARK [2][-]{subsection.0.1.4}{Le package IRace}{subsection.0.1.1}% 58
-\BOOKMARK [1][-]{section.0.2}{R\351cuit Simul\351 }{section.0.1}% 59
-\BOOKMARK [2][-]{subsection.0.2.1}{Pseudocode}{section.0.2}% 60
-\BOOKMARK [2][-]{subsection.0.2.2}{Les param\350tres du recuit simul\351 }{section.0.2}% 61
-\BOOKMARK [2][-]{subsection.0.2.3}{Tests et r\351sultats }{section.0.2}% 62
-\BOOKMARK [1][-]{section.0.3}{Whale Optimization Algorithm \(WOA\)}{section.0.1}% 63
-\BOOKMARK [2][-]{subsection.0.3.1}{Repr\351sentation math\351matique }{section.0.3}% 64
-\BOOKMARK [2][-]{subsection.0.3.2}{Ingr\351dients du WOA }{section.0.3}% 65
-\BOOKMARK [2][-]{subsection.0.3.3}{Param\350tres du WOA }{section.0.3}% 66
-\BOOKMARK [2][-]{subsection.0.3.4}{Application de l\220algorithme au probl\350me du bin packing :}{section.0.3}% 67
-\BOOKMARK [2][-]{subsection.0.3.5}{Pseudocode}{section.0.3}% 68
-\BOOKMARK [2][-]{subsection.0.3.6}{Test et r\351sultats }{section.0.3}% 69
-\BOOKMARK [1][-]{section.0.4}{Improved L\351vy Whale Optimization Algorithm \(ILWOA\)}{section.0.1}% 70
-\BOOKMARK [2][-]{subsection.0.4.1}{Fonction \340 dynamique chaotique}{section.0.4}% 71
-\BOOKMARK [2][-]{subsection.0.4.2}{La distribution vol de L\351vy}{section.0.4}% 72
-\BOOKMARK [2][-]{subsection.0.4.3}{Phase de mutation}{section.0.4}% 73
-\BOOKMARK [2][-]{subsection.0.4.4}{Pseudocode}{section.0.4}% 74
-\BOOKMARK [2][-]{subsection.0.4.5}{Test et r\351sultats}{section.0.4}% 75
-\BOOKMARK [1][-]{section.0.5}{L'Algorithme G\351n\351tique}{section.0.1}% 76
-\BOOKMARK [2][-]{subsection.0.5.1}{Pseudocode}{section.0.5}% 77
-\BOOKMARK [2][-]{subsection.0.5.2}{Application du AG au probl\350me du BP}{section.0.5}% 78
-\BOOKMARK [2][-]{subsection.0.5.3}{Tests et R\351sultats}{section.0.5}% 79
-\BOOKMARK [1][-]{section.0.6}{Comparaison en Les M\351taheuristiques}{section.0.1}% 80
-\BOOKMARK [2][-]{subsection.0.6.1}{Comparaison par rapport au temps d'ex\351cution}{section.0.6}% 81
-\BOOKMARK [2][-]{subsection.0.6.2}{Comparaison par rapport \340 la qualit\351 de la solution}{section.0.6}% 82
-\BOOKMARK [1][-]{section.0.7}{Conclusion}{section.0.1}% 83
-\BOOKMARK [-1][-]{part.7}{VII Conclusion}{}% 84
+\BOOKMARK [2][-]{subsection.0.1.2}{I/F-Race \(F-Race It\351r\351\)}{subsection.0.1.1}% 56
+\BOOKMARK [2][-]{subsection.0.1.3}{Le package IRace}{subsection.0.1.1}% 57
+\BOOKMARK [1][-]{section.0.2}{Recuit Simul\351 }{section.0.1}% 58
+\BOOKMARK [2][-]{subsection.0.2.1}{Pseudocode}{section.0.2}% 59
+\BOOKMARK [2][-]{subsection.0.2.2}{Les param\350tres du recuit simul\351 }{section.0.2}% 60
+\BOOKMARK [2][-]{subsection.0.2.3}{Tests et r\351sultats }{section.0.2}% 61
+\BOOKMARK [1][-]{section.0.3}{Whale Optimization Algorithm \(WOA\)}{section.0.1}% 62
+\BOOKMARK [2][-]{subsection.0.3.1}{Repr\351sentation math\351matique }{section.0.3}% 63
+\BOOKMARK [2][-]{subsection.0.3.2}{Ingr\351dients du WOA }{section.0.3}% 64
+\BOOKMARK [2][-]{subsection.0.3.3}{Param\350tres du WOA }{section.0.3}% 65
+\BOOKMARK [2][-]{subsection.0.3.4}{Application de l\220algorithme au probl\350me du bin packing :}{section.0.3}% 66
+\BOOKMARK [2][-]{subsection.0.3.5}{Pseudocode}{section.0.3}% 67
+\BOOKMARK [2][-]{subsection.0.3.6}{Test et r\351sultats }{section.0.3}% 68
+\BOOKMARK [1][-]{section.0.4}{Improved L\351vy Whale Optimization Algorithm \(ILWOA\)}{section.0.1}% 69
+\BOOKMARK [2][-]{subsection.0.4.1}{Fonction \340 dynamique chaotique}{section.0.4}% 70
+\BOOKMARK [2][-]{subsection.0.4.2}{La distribution vol de L\351vy}{section.0.4}% 71
+\BOOKMARK [2][-]{subsection.0.4.3}{Phase de mutation}{section.0.4}% 72
+\BOOKMARK [2][-]{subsection.0.4.4}{Pseudocode}{section.0.4}% 73
+\BOOKMARK [2][-]{subsection.0.4.5}{Test et r\351sultats}{section.0.4}% 74
+\BOOKMARK [1][-]{section.0.5}{L'Algorithme G\351n\351tique}{section.0.1}% 75
+\BOOKMARK [2][-]{subsection.0.5.1}{Pseudocode}{section.0.5}% 76
+\BOOKMARK [2][-]{subsection.0.5.2}{Application du AG au probl\350me du BP}{section.0.5}% 77
+\BOOKMARK [2][-]{subsection.0.5.3}{Tests et R\351sultats}{section.0.5}% 78
+\BOOKMARK [1][-]{section.0.6}{Comparaison en Les M\351taheuristiques}{section.0.1}% 79
+\BOOKMARK [2][-]{subsection.0.6.1}{Comparaison par rapport au temps d'ex\351cution}{section.0.6}% 80
+\BOOKMARK [2][-]{subsection.0.6.2}{Comparaison par rapport \340 la qualit\351 de la solution}{section.0.6}% 81
+\BOOKMARK [1][-]{section.0.7}{Conclusion}{section.0.1}% 82
+\BOOKMARK [-1][-]{part.7}{VII Conclusion}{}% 83
