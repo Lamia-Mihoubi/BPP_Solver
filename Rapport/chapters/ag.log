@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.28)  25 JUN 2020 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  27 JUN 2020 12:51
 entering extended mode
-**c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/ag.tex
-(c:/Users/TRETEC/Workspace/S2/OPTM/BPP_Solver/Rapport/chapters/ag.tex
+**c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/ag.tex
+(c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/chapters/ag.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06> ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+L3 programming layer <2020-04-06> ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
+("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
@@ -19,21 +19,21 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
- ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen135
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+)) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen136
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count175
@@ -73,34 +73,34 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen144
 \Gin@req@width=\dimen145
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/float\float.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count187
 \float@exts=\toks21
 \float@box=\box47
 \@float@everytoks=\toks22
 \@floatcapt=\box48
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/blindtext\blindtext.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/blindtext\blindtext.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
- ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count188
@@ -121,20 +121,20 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count269
 \c@blind@pangramcount=\count270
 \c@blind@pangrammax=\count271
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks23
 \inpenc@posthook=\toks24
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithms\algorithm.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks25
 \c@algorithm=\count272
-) (C:\Users\TRETEC\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithms\algorithmic.sty
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count273
 \c@ALC@line=\count274
@@ -142,11 +142,11 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@depth=\count276
 \ALC@tlm=\skip52
 \algorithmicindent=\skip53
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count277
 \l__pdf_internal_box=\box49
-) (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.aux)
+) (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\ag.aux)
 \openout1 = `ag.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -163,7 +163,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
- ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+ ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count278
 \scratchdimen=\dimen146
@@ -176,7 +176,7 @@ LaTeX Font Info:    ... okay on input line 11.
 \MPnumerator=\count282
 \makeMPintoPDFobject=\count283
 \everyMPtoPDFconversion=\toks27
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+) ("C:\Users\BACHI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
@@ -191,7 +191,7 @@ Package pdftex.def Info: ../figures/pic01.PNG  used on input line 42.
 (pdftex.def)             Requested size: 345.0pt x 178.59416pt.
 [1
 
-{C:/Users/TRETEC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/BACHI/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 <../figures/pic02.PNG, id=12, 449.42906pt x 24.09pt>
 File: ../figures/pic02.PNG Graphic file (type png)
 <use ../figures/pic02.PNG>
@@ -256,7 +256,7 @@ Package pdftex.def Info: ../figures/pic07.PNG  used on input line 166.
 (pdftex.def)             Requested size: 345.0pt x 293.08806pt.
 
 Overfull \hbox (18.50984pt too wide) in paragraph at lines 154--167
-\T1/cmr/m/n/10 paramètres (\T1/cmr/bx/n/10 nbrGen\T1/cmr/m/n/10 =200,\T1/cmr/bx/n/10 k\T1/cmr/m/n/10 =25,\T1/cmr/bx/n/10 popSize\T1/cmr/m/n/10 =10) en fix-ant , \T1/cmr/bx/n/10 probaCroise-ment\T1/cmr/m/n/10 =0.85
+\T1/cmr/m/n/10 paramètres (\T1/cmr/bx/n/10 nbrGen\T1/cmr/m/n/10 =200,\T1/cmr/bx/n/10 k\T1/cmr/m/n/10 =20,\T1/cmr/bx/n/10 popSize\T1/cmr/m/n/10 =10) en fix-ant , \T1/cmr/bx/n/10 probaCroise-ment\T1/cmr/m/n/10 =0.85
  []
 
 
@@ -297,19 +297,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-[9 <../figures/pic10.PNG> <../figures/pic11.PNG>] [10] (c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.aux) ) 
+[9 <../figures/pic10.PNG> <../figures/pic11.PNG>] [10] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\ag.aux) ) 
 Here is how much of TeX's memory you used:
- 2517 strings out of 480934
- 33851 string characters out of 2909679
- 274743 words of memory out of 3000000
- 18372 multiletter control sequences out of 15000+200000
+ 2517 strings out of 480930
+ 35054 string characters out of 2899761
+ 274645 words of memory out of 3000000
+ 18375 multiletter control sequences out of 15000+200000
  536438 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,25p,517b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\TRETEC\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk>
-Output written on c:/Users\TRETEC\Workspace\S2\OPTM\BPP_Solver\Rapport\chapters\ag.pdf (10 pages, 294649 bytes).
+ 30i,6n,25p,525b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk>
+Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\chapters\ag.pdf (10 pages, 293334 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
+ 274 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
