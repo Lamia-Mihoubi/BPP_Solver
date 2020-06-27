@@ -47,7 +47,7 @@ Bin packing \sep hybridation \sep AG \sep recuit simulé \sep WOA \sep ILWOA
 \section{Introduction}
 \label{S:1}
 
-Le problème du bin packing à une dimension (BPP) est défini comme suit, étant donné un nombre illimité de boîtes avec une capacité fixe C, et un ensemble de n objets, chacun ayant un poid spécifique $0<wi\leqslant C$, on cherche à ranger les n objets dans un nombre minimal de boîte, tout en respectant la capacité C. 
+Le problème du bin packing à une dimension (BPP) est défini comme suit, étant donné un nombre illimité de boîtes avec une capacité fixe C, et un ensemble de n objets, chacun ayant un poid spécifique $0<wi\leqslant C$, on cherche à ranger les n objets dans un nombre minimal de boîtes, tout en respectant la capacité C. 
 
 
 \subsection{Algorithme génétique (AG)}
@@ -61,12 +61,12 @@ La figure suivante représente les étapes de fonctionnement de notre AG, avec l
     \caption{Processus de AG }
     \label{fig:agschema}
 \end{figure}
-Les algorithmes génétiques sont connus par leur rapidité et facilité d’utilisation. 
+Les algorithmes génétiques sont connus pour leur rapidité et facilité d’utilisation. 
 En effet, le AG est parmis les métaheuristiques les plus rapides, de plus, si la représentation vectorielle de l'individu est correcte, nous pouvons trouver une solution sans un travail d'analyse approfondi. Par contre, cette métaheuristique ne trouve pas toujours l’optimum et peut se retrouver avec le problème d’optimum local. 
 
 \subsection{Le Recuit Simulé (SA)}
 Le recuit simulé est un algorithme de recherche locale initialement introduit par Kirkpatrick et al \cite{kirk} qui simule la fusion et le refroidissement dans le traitement des métaux. Le recuit simulé est généralement implémenté pour rechercher une solution optimale sur une petite zone, même s'il est parfois aussi performant que AG dans certains cas \cite{Alkhateeb}.
-Cette métaheuristique sophistiquée empêche d'être piégé dans les minima locaux à l'aide d'un moteur de recherche aléatoire exprimé en termes de chaîne de Markov. Elle introduit des changements dans la solution pour améliorer la fonction objectif, mais conserve également des solutions qui, malgré les moins bonnes performances, répondent à certains critères. Mais l’un des inconvénients du recuit simulé est son temps d'exécution élevé. 
+Cette métaheuristique sophistiquée s'empêche d'être piégée dans les minima locaux à l'aide d'un moteur de recherche aléatoire exprimé en termes de chaîne de Markov. Elle introduit des changements dans la solution pour améliorer la fonction objectif, mais conserve également des solutions qui, malgré les moins bonnes performances, répondent à certains critères. Mais l’un des inconvénients du recuit simulé est son temps d'exécution élevé. 
 
 \subsection{Hybridation et travaux relatifs}
 Pour surmonter les inconvénients  de GA et SA, plusieurs études proposent une hybridation entre les deux.
@@ -76,15 +76,15 @@ Junghans et Darde \cite{Junghans} comparent entre AG et AG hybride avec SA modif
  Une autre recherche menée par Chen et Shahandashti dans \cite{Chen} qui compare également le GA, SA, un hybride de GA-SA et MSA, où ils ont constaté que le GA-SA hybride est plus performante que AG, SA et MSA. \\
 Dans cet article, nous avons hybridé le GA-SA avec quatres scénarios, à savoir le AG-RS hybride, le AGH-RS, le AG-2RS et le AG-MIX, Le schéma hybride AG-RS consiste à obtenir la meilleure solution en AG et à l'utiliser comme population initiale en SA,
 le AGH-RS utilise le même processus sauf que AG à été initialisé par plusieurs heuristiques.Le schema AG-2RS  consiste à inclure SA dans le AG après l’étape de mutation, et améliorer la solution de AG par le SA à nouveau. finalement le schéma AG-MIX utilise le même processus que AG-2RS en initialisant le AG par plusieurs heuristiques. 
-D’autres schémas ont été implémenté et serons inclus dans la comparaison, on cite le WOA-RS  et le ILWOA-RS qui sont une hybridation de haut niveau des métaheuristiques WOA\cite{WOA} et ILWOA\cite{ILWOA} avec le recuit simulé.
+D’autres schémas ont été implémentés et serons inclus dans la comparaison, on cite le WOA-RS  et le ILWOA-RS qui sont une hybridation de haut niveau des métaheuristiques WOA\cite{WOA} et ILWOA\cite{ILWOA} avec le recuit simulé.
 
  
  \subsection{Organisation du papier}
- On va tout d’abord donner la formulation mathématique du problème, par la suite on présentera nos schémas hybrides proposés. Finalement, des résultats expérimentaux sont donnés et une comparaison des schémas hybrides est effectuée  dans (4) , suivi d’une conclusion.
+ On va tout d’abord donner la formulation mathématique du problème, par la suite on présentera nos schémas hybrides proposés. Finalement, des résultats expérimentaux serons donnés et une comparaison des schémas hybrides sera effectuée  dans (4) , suivie d’une conclusion.
 
 \section{Formulation du problème}
 \subsection{Formulation mathématique}
-Etant donné \(m\) boites de capacité \(C\) et \(n\) articles de volume \(v_i\) chacun. \\
+Etant données \(m\) boites de capacité \(C\) et \(n\) articles de volume \(v_i\) chacun. \\
     Soient: 
     \[ x_{ij} =
         \begin{cases}
@@ -160,7 +160,7 @@ Valeur  & 50 & 120 & 200 & 500 & HARD \\
 \end{table}
 
 \subsection{Calibrage des paramètres}
-Les paramètres des métaheuristiques utilisées dans cette article (AG, WOA, ILWOA) ont été fixé en utilisant un outil de calibrage automatique Irace , son implémentation est disponible dans un package R au près de CRAN dans \cite{irace}, ce package implémente une extension de la course F itérée (I / F-Race) expliquée dans \cite{survey}. 
+Les paramètres des métaheuristiques utilisées dans cette article (AG, WOA, ILWOA) ont été fixés en utilisant un outil de calibrage automatique Irace , son implémentation est disponible dans un package R au près de CRAN dans \cite{irace}, ce package implémente une extension de la course F itérée (I / F-Race) expliquée dans \cite{survey}. 
 Les configurations optimales des paramètres sont données dans le tableau suivant :\\
 
 
@@ -237,10 +237,10 @@ A partir des deux graphes, on voit que l’algorithme AG-RS permet d’avoir une
   on justifie ce résultat par leur coincement dans un optimum local, en effet une meilleure amélioration est d’utiliser les heuristiques dans l’initialisation d’une petite partie de la population et garder l’aspect aléatoire dans le reste pour éviter ce problème. Il est clair que le recuit simulé consomme un temps d'exécution très grand, mais offre une qualité de solution très bonne,
    sauf dans le cas N4 où un écart de 60\% est trouvé, ceci est dû à la limite de temps imposée dans l'implémentation de l’algorithme, qui n’as pas permi à RS d’explorer correctement le voisinage. 
    Les schémas utilisant le RS dans chaque itération de AG ( AG-2RS, AG-MIX-RS) ont un temps d'exécution inacceptable avec l’une des meilleures qualités de solutions (AG-2RS) , une meilleure version est d'utiliser une recherche locale moins sophistiqué que RS et l’appliquer chaque lot d’itération.
-    Finalement, l’heuristique FF donne une qualité assez bonne dans les instances de petites taille (N1,N2) avec un temps d'exécution négligeable, l’apport des MH et l’hybridation est plus visible et intéressant à partir des instances moyenne et grande taille. 
+    Finalement, l’heuristique FF donne une qualité assez bonne dans les instances de petites taille (N1,N2) avec un temps d'exécution négligeable, l’apport des MH et l’hybridation est plus visible et intéressant à partir des instances de moyenne et grande taille. 
 
 \section{Conclusion}
-Dans cet article, on s’est intéressé au problème du bin packing, où on a proposé un schéma hybride AG-RS. Pour montrer les performances de cet algorithme, on l’a comparé avec d’autres schémas proposées à base des métaheuristiques AG, WOA, et ILWOA. Les tests ont été effectué sur le benchmark scholl et les résultats ont été donné en temps d'exécution moyen et écart à la solution optimale. Notre schéma AG-RS est celui qui assure un bon compromis qualité coût. Pour pousser l’étude, on propose l’utilisation d’une heuristique de recherche locale dans quelques itérations de AG et ILWOA. 
+Dans cet article, on s’est intéressé au problème du bin packing, où on a proposé un schéma hybride AG-RS. Pour montrer les performances de cet algorithme, on l’a comparé avec d’autres schémas proposées à base des métaheuristiques AG, WOA, et ILWOA. Les tests ont été effectués sur le benchmark scholl et les résultats ont été donnés en temps d'exécution moyen et écart à la solution optimale. Notre schéma AG-RS est celui qui assure un bon compromis qualité coût. Pour pousser l’étude, on propose l’utilisation d’une heuristique de recherche locale dans quelques itérations de AG et ILWOA. 
 \medskip
 
 \bibliography{Samples}

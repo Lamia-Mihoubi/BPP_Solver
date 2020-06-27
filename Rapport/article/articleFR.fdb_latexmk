@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex articleFR"] 1593256243 "articleFR.aux" "articleFR.bbl" "articleFR" 1593256676
+["bibtex articleFR"] 1593256243 "articleFR.aux" "articleFR.bbl" "articleFR" 1593267200
   "C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/bibtex/bst/natbib/abbrvnat.bst" 1284455456 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
   "Samples.bib" 1593080936 3268 55533ef8d8274fed6ca1733ba0f28e72 ""
-  "articleFR.aux" 1593256675 3727 dd90a8488c71dba7be2b905255d5baba "pdflatex"
+  "articleFR.aux" 1593267199 3727 dd90a8488c71dba7be2b905255d5baba "pdflatex"
   (generated)
   "articleFR.bbl"
   "articleFR.blg"
-["pdflatex"] 1593256673 "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.tex" "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.pdf" "articleFR" 1593256676
+["pdflatex"] 1593267197 "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.tex" "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.pdf" "articleFR" 1593267200
   "C:/Users/BACHI/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1588286418 11548 de9f75db58164a270b555aef0ed29e89 ""
   "C:/Users/BACHI/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1588285609 10017616 2ac5a182142f467fee59b82b0dd4cdcf ""
   "C:/Users/BACHI/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1592990879 81867 278aaa06c19947ffbc66ff7b58d6d898 ""
@@ -92,22 +92,22 @@
   "C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty" 1419270738 5114 9c1069474ff71dbc47d5006555e352d3 ""
-  "articleFR.aux" 1593256675 3727 dd90a8488c71dba7be2b905255d5baba "pdflatex"
+  "articleFR.aux" 1593267199 3727 dd90a8488c71dba7be2b905255d5baba "pdflatex"
   "articleFR.bbl" 1593256244 3311 95ed358c8bee4c2dc0fd104d7104beda "bibtex articleFR"
-  "articleFR.spl" 1593256674 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "articleFR.sta" 1593256675 45 5977ee01d6365feae7164ffda30d2c8b "pdflatex"
-  "articleFR.tex" 1593256671 17311 6f48aec007f27c5fdcb1635e48cc2a7a ""
-  "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.aux" 1593256675 3727 dd90a8488c71dba7be2b905255d5baba ""
-  "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.tex" 1593256671 17311 6f48aec007f27c5fdcb1635e48cc2a7a ""
+  "articleFR.spl" 1593267198 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "articleFR.sta" 1593267199 45 5977ee01d6365feae7164ffda30d2c8b "pdflatex"
+  "articleFR.tex" 1593267195 17329 ece30cb20cc449473cc9a3e197f91a27 ""
+  "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.aux" 1593267199 3727 dd90a8488c71dba7be2b905255d5baba ""
+  "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.tex" 1593267195 17329 ece30cb20cc449473cc9a3e197f91a27 ""
   "figures/AG schema.png" 1592863322 13175 99347ac32aa9646b72f6f02c0f8f0319 ""
   "figures/Untitled Diagram(6).png" 1592863322 3273 6ba2618c9b348af259c981f90781b212 ""
   "figures/ecart (2).png" 1593079617 13948 ea6b4672bea4637cb5095b9d8eaceb02 ""
   "figures/texec (2).png" 1593079616 13179 ee12c643dc55d2e59c2a83a30815685d ""
   (generated)
-  "articleFR.pdf"
-  "articleFR.spl"
   "articleFR.aux"
-  "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.pdf"
-  "articleFR.log"
   "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.log"
+  "articleFR.log"
   "articleFR.sta"
+  "c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.pdf"
+  "articleFR.spl"
+  "articleFR.pdf"
