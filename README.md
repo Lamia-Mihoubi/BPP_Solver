@@ -6,10 +6,10 @@ Ce repository contient:\
 -**BPP_Solver.py**    : la classe principale, où on peut instancier un problème du bin packing et appeler les différentes méthodes de résolution implémentées.\
  
 -**Dossier Exact_Methods**  : contient l'ensemble des méthodes exactes implémentées pour le BPP, et qui sont :\
-    -**BB.py**  : implemente la methode branch and bound pour résoudre le BPP.\
-    -**BBA.py** : implemente une version améliorée du Branch & Bound.\
-    -**Exhaustive.py**  : implemente une recherch exhaustive.\
-    -**DP.py**  : résoudre le BPP avec la programmation dynamique.\
+    \-**BB.py**  : implemente la methode branch and bound pour résoudre le BPP.\
+    \-**BBA.py** : implemente une version améliorée du Branch & Bound.\
+    \-**Exhaustive.py**  : implemente une recherch exhaustive.\
+    \-**DP.py**  : résoudre le BPP avec la programmation dynamique.\
     
 -**Dossier Méthodes_Heuristiques**  : contient l'ensemble des méthodes heuristiques implementées pour le BPP, et qui sont :\
     -**FF_FFD.py**  : implémente les deux méthodes Fisrt Fit, et First Fit Decreasing.\
