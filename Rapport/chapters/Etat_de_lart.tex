@@ -12,13 +12,13 @@
     Après une étude ciblée des travaux existants sur le problème du Bin Packing, nous avons abouti à une synthèse des méthodes de résolution les plus connues --dans chacune des trois catégories: méthodes exactes, et méthodes approchées: heuristiques et métaheuristiques-- que nous allons exposer dans ce qui suit. 
     \section{Méthodes Exactes}
     Les méthodes exactes permettent d’avoir des solutions optimales, cependant le temps de calcul peut être très lent pour certaines instances du problème. Il n’existe pas un grand nombre de méthodes exactes pour résoudre le problème du Bin Packing , nous allons présenter dans ce qui suit la méthode  MTP ( basée sur le Branch and Bound) et une méthode de programmation dynamique DP-flow.
-    \subsection{Branche and Bound}
+    \subsection{Branch and Bound}
     Cette méthode a été utilisée pour la première fois dans les années \\ cinquante pour résoudre qui a été  modélisé par un programme linéaire en nombres entiers.
 Afin de rendre le processus de résolution plus rapide, cet algorithme utilise une borne inférieure. Plusieurs techniques ont été proposées pour obtenir cette dernière.
     \paragraph{Borne inférieure évidente:} Soient \(C\) la capacité des boîtes utilisées,\\
      \(A\) l’ensemble des articles \(a_i\) de volumes \(v_i\) de l’instance \(I\).
         \[BI(I)=\frac{\displaystyle\sum_{i=1}^{n} v_i}{C}\]
-    \paragraph{Borne de Martello and Toth \(L_2\):}  
+    \paragraph{Borne de Martello and Toth \(L_2\):\cite{martello1990lower}}  
     Soit \(\alpha\) un entier tels que :
     \[0 \le \alpha \le C/2\]
     On definie les classes d'articles suivantes: 
@@ -30,7 +30,7 @@ Afin de rendre le processus de résolution plus rapide, cet algorithme utilise u
     Avec
     \[L(\alpha)=|C_1|+|C_2|+max(0, \ceil*{\frac{\sum_{j \in C_3}^{} v_j - (|C_2|*C - \sum_{j \in C_2}^{} v_j) }{C}})\]
     cette borne est calculée en un temps \(o(nlogn)\).
-    \paragraph{Borne inférieure  \(L_3\):}
+    \paragraph{Borne inférieure  \(L_3\): \cite{martello1990lower}}
     Une autre technique a été utilisée dans l’algorithme de résolution MTP pour déterminer une borne inférieure.
     Soient \(n_1\) le nombre de boîtes obtenues après la première application de la technique de réduction MTP qui consiste à réduire l’instance du problème en rangeant l’article le plus petit, soit \(Ir^1\) l’instance résiduelle de l’instance \(I\) après cette première application ie l’ensemble des articles restants après l’opération de réduction
     \[L^\prime_1=n_1+L_2(Ir^1) \ge L_2(I)\]
@@ -141,7 +141,7 @@ De plus, La principale source d'efficacité de l'algorithme de Martello et Toth 
             \item Les classifiant en quatre types par taille.
             \item Ne permettant au plus que les déplacements de trois lots d’articles ou d'un seul article lorsqu'un nouvel article doit être attribué.
         \end{itemize}
-        Le HF avec 6 partitions [4] utilise:
+        Le HF avec 6 partitions \cite{man1996approximation} utilise:
         \renewcommand{\labelitemi}{$\circ$}  
         \begin{itemize}
             \item Six types d'articles classés par taille

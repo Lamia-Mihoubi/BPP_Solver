@@ -20,7 +20,7 @@
                         \item Si l'hypothèse nulle d'absence de différences est rejetée:
                             \begin{itemize}
                                 \item des comparaisons par paires entre la configuration la mieux classée et les autres configurations candidates sont effectuées.
-                                \item tous les candidats qui entraînent des performances nettement inférieures à la meilleure configuration sont éliminés et n'apparaîtront pas lors du prochain cycle d'évaluation [51].
+                                \item tous les candidats qui entraînent des performances nettement inférieures à la meilleure configuration sont éliminés et n'apparaîtront pas lors du prochain cycle d'évaluation \cite{birattari2010f}.
                             \end{itemize}
                     \end{itemize}
                 \item Le processus est répété jusqu'à ce qu'il ne reste que deux candidats, et le meilleur des deux est pris comme résultat pour un problème de calibrage automatique des paramètres.                
@@ -38,7 +38,7 @@
                     \end{itemize}
                 \item Ce cycle est répété jusqu'à ce que la condition d'arrêt, telle que le budget de calcul maximal, soit satisfaite.
             \end{itemize}
-            Il est à espérer de concentrer les configurations autour de la région prometteuse dans l’espace des paramètres en utilisant des configurations élites choisies par F-Race à chaque itération pour biaiser l'échantillonnage de nouvelles configurations [38].  L'efficacité de la procédure de recherche est ainsi améliorée de cette manière.
+            Il est à espérer de concentrer les configurations autour de la région prometteuse dans l’espace des paramètres en utilisant des configurations élites choisies par F-Race à chaque itération pour biaiser l'échantillonnage de nouvelles configurations \cite{birattari2009f}.  L'efficacité de la procédure de recherche est ainsi améliorée de cette manière.
         \subsection{Le package IRace}
         Le package irace implémente une procédure de course itérée, qui est une extension de la course F itérée (I / F-Race). L'utilisation principale d'irace est la configuration automatique des algorithmes d'optimisation et de décision, c'est-à-dire la recherche des paramètres les plus appropriés d'un algorithme étant donné un ensemble d’instances d'un problème. Il s'appuie sur le package de F-Race par Birattari et il est implémenté dans R. Le package irace est disponible dans \cite{lopez2016irace}.
         La version que nous avons utilisée est irace 3.4.1.
