@@ -3,7 +3,7 @@
 
 ## Description des documents : 
 Ce repository contient:\
--**BPP_Solver.py**    : la classe principale, où on peut instancier un problème du bin packing et appeler les différentes méthodes de résolution implémentées.\
+-**BPP_Solver.py**    : la classe principale, où on peut instancier un problème du bin packing et appeler les différentes méthodes de résolution implémentées.
  
 -**Dossier Exact_Methods**  : contient l'ensemble des méthodes exactes implémentées pour le BPP, et qui sont :\
     -**BB.py**  : implemente la methode branch and bound pour résoudre le BPP.\
