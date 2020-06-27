@@ -10,7 +10,7 @@
 
 \usepackage{amssymb}
 \usepackage[T1]{fontenc}
-
+\usepackage{float}
 \usepackage{graphicx}
 
 \usepackage{hyperref}
@@ -32,11 +32,11 @@ Soit f:I $\rightarrow$ I une fonction continue.On suppose que la dynamique assoc
     \item L'ensemble des points périodiques de f est partout dense dans I 
     \item f est sensible aux conditions initiales, ceci signifie que s'il y'a un petit changement dans la condition initiale $x_0$,le changement correspondant de $x_t=f_t(x_0)$ croit avec la croissance de t 
 \end{enumerate}
-Ce sont des fonctions qui permettent d'avoir une suite de nombres aléatoires qui dépend d'une condition initiale.Il existe plusieurs types de fonctions chaotique :fonction logistique,fonction de tchebychev.Après plusieurs tests, il a été remarqué qu'avec les fonctions logistiques nous obtenons une convergence plus rapide de la fonction objective .Le minimum de la fonction objective a été atteint en 5 itérations comme le montre le graphe\cite{abdel2018improved}
-\begin{figure}[h!]
+Ce sont des fonctions qui permettent d'avoir une suite de nombres aléatoires qui dépend d'une condition initiale.Il existe plusieurs types de fonctions chaotique :fonction logistique,fonction de tchebychev.Après plusieurs tests, il a été remarqué qu'avec les fonctions logistiques nous obtenons une convergence plus rapide de la fonction objective .Le minimum de la fonction objective a été atteint en 5 itérations comme le montre le graphe
+\begin{figure}[H]
    \centering
     \includegraphics[width=10cm]{../figures/logisticvsothers.PNG}
-    \caption[\small]{convergence fonctions chaotiques}
+    \caption{convergence fonctions chaotiques \cite{abdel2018improved}}
 \end{figure}
 Du graphe , on peut voir qu'avec la fonction logistique la fonction objective atteint le minimumu à partir de la 5eme itération
 \subsubsection{Fonction logistique}
@@ -66,7 +66,7 @@ Cette phase est composée de 3 opérations exécutées séquentiellement comme l
 \begin{figure}[h!]
    \centering
     \includegraphics[width=10cm]{../figures/Mutation.PNG}
-    \caption[\small]{Phase de mutation}
+    \caption{Phase de mutation}
     \label{fig:mutation}
 \end{figure}
 \subsection{Pseudocode}
@@ -128,7 +128,7 @@ Afin d’effectuer cela, nous avons exécuté l’algorithme avec les paramètre
 \begin{figure}[h!]
     \centering
      \includegraphics[width=10cm]{../figures/tabreslts.PNG}
-     \caption[\small]{Résultats d'exécution des instances de la classe 3 avec calibrage manuel vs. calibrage automatique.}
+     \caption{Résultats d'exécution des instances de la classe 3 avec calibrage manuel vs. calibrage automatique.}
      \label{tab:calib_c3}
  \end{figure}
 \subsubsection{Analyse des performances de l'algorithme: }
@@ -141,7 +141,7 @@ A partir du graphes \textbf{\emph{figure \refeq{fig:texec_comp}}} , on peut déd
 \begin{figure}[h!]
     \centering
      \includegraphics[width=10cm]{../figures/woavsilwoatemps.PNG}
-     \caption[\small]{temps d'execution (en s) de ILWOA et WOA}
+     \caption{temps d'execution (en s) de ILWOA et WOA}
     \label{fig:texec_comp}
     \end{figure}
  \paragraph{Analyse de la qualité de solution: }La qualité de solution a été mesurée par le ration dont on a cité la formule précédemment.A partir du graphes ci-dessous , on peut déduire que :
@@ -153,7 +153,7 @@ A partir du graphes \textbf{\emph{figure \refeq{fig:texec_comp}}} , on peut déd
  \begin{figure}[h!]
      \centering
       \includegraphics[width=10cm]{../figures/ratio_ilwoa_woa}
-      \caption[\small]{ratio de ILWOA et WOA}
+      \caption{ratio de ILWOA et WOA}
   \end{figure}
   \subsubsection{Interprétation }
   \begin{itemize}
