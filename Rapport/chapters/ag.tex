@@ -9,7 +9,7 @@
 \usepackage{algorithmic}
 
 \begin{document}
-Un algorithme génétique est une métaheuristique évolutionnaire à l'origine proposée par Holland [1]. Depuis lors, il est devenu une méthode puissante pour résoudre de nombreux problèmes d'optimisation combinatoire difficiles, dont la liste peut être trouvée dans de nombreuses références, voir par exemple [2]. Les étapes générales de l'algorithme peuvent être décrites comme suit:
+Un algorithme génétique est une métaheuristique évolutionnaire à l'origine proposée par Holland \cite{holland1975adaptation}. Depuis lors, il est devenu une méthode puissante pour résoudre de nombreux problèmes d'optimisation combinatoire difficiles, dont la liste peut être trouvée dans de nombreuses références, voir par exemple \cite{cheng2000genetic}. Les étapes générales de l'algorithme peuvent être décrites comme suit:
 \newline
 \subsection{Pseudocode}
 \begin{algorithm}[H]
@@ -29,7 +29,7 @@ Un algorithme génétique est une métaheuristique évolutionnaire à l'origine 
 Un élément clé de l'AG est la génération d'une population dont les composants sont appelés \textit{chromosomes}, un terme emprunté à la génétique. Un \textit{chromosome} est en fait une représentation codée d'une solution; dont chaque composant est appelé \textit{gène}
 
 \subsection{Représentation chromosomique}
-On représente une solution du Bin packing comme suit : 
+On représente une solution du Bin packing comme suit \cite{mohamadi2010application} : 
 \begin{itemize}
 	\item On a \textbf{n} articles à ranger donc on utilisera n boîtes au pire des cas (un objet par boite).
 	\item On suppose que chaque boîte est composée de \textbf{n} cellules, où chaque cellule ne peut contenir qu’un seul article.
@@ -160,12 +160,11 @@ Dans ce qui suit on présentera les résultats d’exécution de notre algorithm
 \newline
 Voici les résultats des exécutions, pour chaque classe:
 \newline
-\textbf{Graphe 01:}
-Graphe représentant le temps d'exécution moyen de chaque type d’instance ( la moyenne d'exécution de 5 instances de même type) des 3 classes de Scholl
+Le graphe suivant représente le temps d'exécution moyen de chaque type d’instance ( la moyenne d'exécution de 5 instances de même type) des 3 classes de Scholl
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{../figures/pic07.PNG}
+  \caption{temps d'exécution moyen de chaque type d’instance}
 \end{figure}
-\textbf{Graphe 02:}
 Les graphes suivants montrent la différence entre le nombre de boîtes utilisées par AG et  la valeur optimale OPT
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{../figures/pic08.PNG}
@@ -173,12 +172,10 @@ Les graphes suivants montrent la différence entre le nombre de boîtes utilisé
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{../figures/pic09.PNG}
 \end{figure}
-Voici les ratio obtenus par famille d’instances :
+Le tableau et l'histogramme suivants représentent le ratio obtenu pour chaque nombre d'objets N des instances
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{../figures/pic10.PNG}
 \end{figure}
-\textbf{Graphe 03:}
-Et voici le graphe des ratio pour chaque nombre d'objets N des instances 
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{../figures/pic11.PNG}
 \end{figure}

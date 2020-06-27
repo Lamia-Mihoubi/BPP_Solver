@@ -25,14 +25,14 @@
 \setcounter{secnumdepth}{4}
 \usepackage[utf8]{inputenc}
 \begin{document}
-    Cette version de l'algorithme utilise une fonction à dynamique chaotique et la distribution vol de Lévy afin de garantir une convergence rapide. Une phase de mutation est aussi rajoutée à la fin de chaque itération
+    Cette version de l'algorithme, proposée dans \cite{abdel2018improved} utilise une fonction à dynamique chaotique et la distribution vol de Lévy afin de garantir une convergence rapide. Une phase de mutation est aussi rajoutée à la fin de chaque itération 
 \subsection{Fonction à dynamique chaotique}
 Soit f:I $\rightarrow$ I une fonction continue.On suppose que la dynamique associée est chaotique.Alors:
 \begin{enumerate}
     \item L'ensemble des points périodiques de f est partout dense dans I 
     \item f est sensible aux conditions initiales, ceci signifie que s'il y'a un petit changement dans la condition initiale $x_0$,le changement correspondant de $x_t=f_t(x_0)$ croit avec la croissance de t 
 \end{enumerate}
-Ce sont des fonctions qui permettent d'avoir une suite de nombres aléatoires qui dépend d'une condition initiale.Il existe plusieurs types de fonctions chaotique :fonction logistique,fonction de tchebychev.Après plusieurs tests, il a été remarqué qu'avec les fonctions logistiques nous obtenons une convergence plus rapide de la fonction objective .Le minimum de la fonction objective a été atteint en 5 itérations comme le montre le graphe(add refrence here)
+Ce sont des fonctions qui permettent d'avoir une suite de nombres aléatoires qui dépend d'une condition initiale.Il existe plusieurs types de fonctions chaotique :fonction logistique,fonction de tchebychev.Après plusieurs tests, il a été remarqué qu'avec les fonctions logistiques nous obtenons une convergence plus rapide de la fonction objective .Le minimum de la fonction objective a été atteint en 5 itérations comme le montre le graphe\cite{abdel2018improved}
 \begin{figure}[h!]
    \centering
     \includegraphics[width=10cm]{../figures/logisticvsothers.PNG}
@@ -48,7 +48,7 @@ La fonction logistique est définie par la formule suivante :
 où a est une constante caractéristique de la fonction logistique que nous avons fixé à la valeur give the value après plusieurs simulations
 La fonction logistique est utilisée dans l'algorithme pour générer la valeur p
 \subsection{La distribution vol de Lévy}
-le vol de levy est un modèle mathématique caractérisé par une moyenne et une variance infinies ce qui rend le mouvement plus lent permettant ainsi une meilleure exploration de l'espace de recherche (REFERENCE).
+le vol de levy est un modèle mathématique caractérisé par une moyenne et une variance infinies ce qui rend le mouvement plus lent permettant ainsi une meilleure exploration de l'espace de recherche \cite{JAMIL201349}.
 Dans ILWOA , la variable C est remplacé par un pas aléatoire de la marche aleatoire levy donné par les formules suivantes:
 \begin{align*}
 &Levy\leadsto\frac{\lambda\Gamma(\lambda)\sin(\pi\lambda/2)}{\pi}\frac{1}{s^{1+\lambda}}\\

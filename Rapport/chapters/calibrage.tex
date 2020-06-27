@@ -11,7 +11,7 @@
     Les métaheuristiques utilisées pour résoudre les problèmes d'optimisation difficiles ont généralement plusieurs paramètres qui doivent être définis de manière appropriée de sorte que certains aspects des performances soient optimisés. Dans ce chapitre, nous passons en revue F-Race, un algorithme de course pour la configuration automatique des algorithmes. F-Race est basé sur une approche statistique pour sélectionner la meilleure configuration parmi un ensemble de configurations candidates sous évaluations stochastiques. Nous présentons également une extension de l'algorithme F-Race initial, qui conduit à une famille d'algorithmes appelée F-Race itérée (I-Race) que nous allons utiliser plus tard dans le calibrage automatiques de paramètres des métaheuristiques que nous avons implémentés. 
     \subsection{F-Race}
         \subsubsection{Approche par Course (Racing)}
-            F-Race, qui s'inspire de l'algorithme Hoeffding race [49], [50] en machine learning pour la sélection de modèles, a été proposé dans [45] et étudié de manière approfondie dans [31]. L'idée essentielle de la méthode de course est:
+            F-Race, qui s'inspire de l'algorithme Hoeffding race \cite{maron1994hoeffding, maron1997racing}  en machine learning pour la sélection de modèles, a été proposé dans \cite{birattari2002racing} et étudié de manière approfondie dans \cite{birattari2009tuning}. L'idée essentielle de la méthode de course est:
             \begin{itemize}
                 \item d'évaluer l’ensemble des configurations de manière incrémentale sur un flux d'instances. 
                 \item dès que des preuves (statistiques) suffisantes sont rassemblées contre certains candidats, ces configurations sont rejetées et la course continue sur les candidats survivants. 
@@ -27,7 +27,7 @@
             \end{itemize}
             F-Race utilise la puissance de calcul plus efficacement qu'une évaluation répétée dans une approche par force brute. Il peut également arrêter le processus de recherche par lui-même, c'est-à-dire s'arrêter lorsqu'il ne reste qu'une configuration. Cependant, si l'algorithme cible a un grand nombre de paramètres et / ou chaque paramètre a une large gamme de valeurs possibles, un très grand nombre de configurations candidates doivent être évaluées pour obtenir des résultats de haute qualité. Dans de tels cas, l'adoption de F-Race pourrait devenir peu pratique ou prohibitive sur le plan des calculs.
         \subsection{I/F-Race (F-Race Itéré)} 
-            Pour atténuer ce problème, Balaprakash et al. [63] a proposé l'application itérative de la F-Race, qui est abrégée en F-Race itéré ou I / F-Race.
+            Pour atténuer ce problème, Balaprakash et al. \cite{balaprakash2007improvement} a proposé l'application itérative de la F-Race, qui est abrégée en F-Race itéré ou I / F-Race.
             F-Race itérée, comme son nom l'indique, utilise une procédure itérative pour trouver les configurations de paramètres optimales:
             \begin{itemize}
                 \item A chaque itération:
@@ -40,6 +40,6 @@
             \end{itemize}
             Il est à espérer de concentrer les configurations autour de la région prometteuse dans l’espace des paramètres en utilisant des configurations élites choisies par F-Race à chaque itération pour biaiser l'échantillonnage de nouvelles configurations [38].  L'efficacité de la procédure de recherche est ainsi améliorée de cette manière.
         \subsection{Le package IRace}
-        Le package irace implémente une procédure de course itérée, qui est une extension de la course F itérée (I / F-Race). L'utilisation principale d'irace est la configuration automatique des algorithmes d'optimisation et de décision, c'est-à-dire la recherche des paramètres les plus appropriés d'un algorithme étant donné un ensemble d’instances d'un problème. Il s'appuie sur le package de F-Race par Birattari et il est implémenté dans R. Le package irace est disponible auprès de ce \href{https://cran.r-project.org/package=irace}{CRAN}.
+        Le package irace implémente une procédure de course itérée, qui est une extension de la course F itérée (I / F-Race). L'utilisation principale d'irace est la configuration automatique des algorithmes d'optimisation et de décision, c'est-à-dire la recherche des paramètres les plus appropriés d'un algorithme étant donné un ensemble d’instances d'un problème. Il s'appuie sur le package de F-Race par Birattari et il est implémenté dans R. Le package irace est disponible dans \cite{lopez2016irace}.
         La version que nous avons utilisée est irace 3.4.1.
 \end{document}

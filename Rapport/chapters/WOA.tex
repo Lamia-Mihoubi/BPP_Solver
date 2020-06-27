@@ -17,7 +17,7 @@
 \begin{document}
 Le Whale Optimization Algorithm est une nouvelle métaheuristique introduite en 2016 par Mirjalili et Lewis basée sur l’intelligence en essaim. Cet algorithme est inspiré d’une stratégie d’alimentation des baleines à bosse connue sous le nom de \emph{L'alimentation au filet à bulles} . Une tactique qui leur permet d’attraper le plus de poissons possibles en un seul coup. Après avoir détecté ses proies, la baleine libère des bulles en nageant dans un mouvement spirale vers la surface pour encercler la proie pour la capturer.
 Les bulles libérées peuvent prendre 2 formes : une forme de cercles rétrécissants ou une forme spirale \textbf{\emph{figure \refeq{fig:alimentation}}}. 
-Dans cet algorithme, La recherche des proies représente l’exploration de l’espace de recherche et La libération des bulles représente l’exploitation.
+Dans cet algorithme, La recherche des proies représente l’exploration de l’espace de recherche et La libération des bulles représente l’exploitation \cite{mirjalili2016whale}.
 \begin{figure}[h!] 
     \includegraphics[width=7cm]{../figures/WOA/cercles.png}
     \includegraphics[width=7cm]{../figures/WOA/spiral.png}
@@ -108,7 +108,7 @@ Une solution est exprimée par un vecteur $ x(t)=(a_1, a_2, …, a_n)$ représen
 Une solution \(x(t)\) appartient au domaine de recherche tant qu’elle respecte les contraintes du problème: un objet ne peut pas être rangé dans plus d’une boîte, donc pas de doublons dans x(t), l’autre contrainte concernant le respect de la capacité d’une boîte est vérifiée trivialement par définition du vecteur x(t).
 
 \subsubsection{La fonction objective }
-Afin de pouvoir évaluer les solutions, Nous avons opté pour la fonction suivante proposée par \emph{Hyde et al} [add ref here], au lieu du nombre de boîtes utilisées, parce que avec cette dernière pour plusieurs solutions on peut avoir la même évaluation ce qui peut engendrer la stagnation de l’algorithme.
+Afin de pouvoir évaluer les solutions, Nous avons opté pour la fonction suivante proposée par \emph{Hyde et al} \cite{hyde2009hyflex}, au lieu du nombre de boîtes utilisées, parce que avec cette dernière pour plusieurs solutions on peut avoir la même évaluation ce qui peut engendrer la stagnation de l’algorithme.
 \[ F_{min} = 1 - \frac{\sum_{1}^{n} (occup_i / c)^k}{n}\]
 Avec:
 \begin{itemize}

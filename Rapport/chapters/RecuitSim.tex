@@ -25,7 +25,7 @@
 \usepackage[utf8]{inputenc}
 %\title{Recuit Simulé}
 \begin{document}
-    Le recuit simulé (\emph{Simulated annealing}), est une métaheuristique proposée par Kirkpatrick et al. [2] en1983. cette méthode est inspirée du recuit en métallurgie, une technique impliquant le chauffage et le refroidissement contrôlé d'un matériau pour augmenter la taille de ses cristaux et réduire leurs défauts. Les deux sont des attributs du matériau qui dépendent de son énergie thermodynamique. Le chauffage et le refroidissement du matériau affectent à la fois la température et l'énergie libre thermodynamique.
+    Le recuit simulé (\emph{Simulated annealing}), est une métaheuristique proposée par Kirkpatrick et al. \cite{kirkpatrick1983optimization} en 1983. cette méthode est inspirée du recuit en métallurgie, une technique impliquant le chauffage et le refroidissement contrôlé d'un matériau pour augmenter la taille de ses cristaux et réduire leurs défauts. Les deux sont des attributs du matériau qui dépendent de son énergie thermodynamique. Le chauffage et le refroidissement du matériau affectent à la fois la température et l'énergie libre thermodynamique.
 
 \subsection{Pseudocode}
 
@@ -75,7 +75,7 @@ L’algorithme s'arrête quand la température \emph{$T_{0}$} est atteinte, et r
 L’algorithme s’arrête quand la température de gel \emph{$T_{0}$} est atteinte, et dans chaque température T le processus de recherche de voisinage est exécuté R fois.
 
 \subsubsection{Fonction objective}
-La fonction objective est utilisée pour accepter une solution voisine S’ = V(S), elle est donnée par la formule suivante : 
+La fonction objective est utilisée pour accepter une solution voisine S’ = V(S), elle est donnée par la formule suivante \cite{sonuc2017solving} : 
 \begin{equation}
     \max{F(S')} = \sum_{i=1}^m (\sum_{j=1}^{k_{i}} w_{j})^{2}
 \end{equation}
@@ -99,7 +99,7 @@ Pour chercher de nouvelles solutions à partir d’une solution S, l’algorithm
      Il a été montré que cette technique est efficace dans les basses températures ($T<T_{1/2}$)
 \begin{figure}[H]
     \includegraphics[width=\linewidth]{../figures/RS_SWAP.png}
-    \caption{fonctions swap(1,0) et swap (1,1)}
+    \caption{fonctions swap(1,0) et swap (1,1) \cite{sonuc2017solving}}
     \label{fig:swap}
 \end{figure}
 \end{itemize}
