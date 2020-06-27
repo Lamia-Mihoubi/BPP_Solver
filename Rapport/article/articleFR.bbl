@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -47,6 +47,11 @@ Gusti, Andreas, Tirana, M.Shochibul, and F.Wayan.
   optimization.
 \newblock 2017.
 \newblock \doi{10.25126/jitecs.20161215}.
+
+\bibitem[J((1975,1992))]{Holland}
+H.~J.
+\newblock {Adaptation in natural and artificial systems}. ({English}).
+\newblock \emph{MIT press, Cambridge}, (1975,1992).
 
 \bibitem[Junghans~L(2015)]{Junghans}
 D.~N. Junghans~L.

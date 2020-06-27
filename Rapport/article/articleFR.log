@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  25 JUN 2020 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.30)  27 JUN 2020 12:17
 entering extended mode
 **c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.tex
 (c:/Users/BACHI/PycharmProjects/OPT_PROJET/BPP_Solver/Rapport/article/articleFR.tex
@@ -339,8 +339,8 @@ Package pdftex.def Info: ./figures/AG schema.png  used on input line 60.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (11.80614pt too wide) in paragraph at lines 64--66
-[]\OT1/cmr/m/n/10 Les al-go-rithmes genetiques sont con-nus par leur Ra-pidite et fa-cilite d'utilisation.
+Overfull \hbox (8.3617pt too wide) in paragraph at lines 64--66
+[]\OT1/cmr/m/n/10 Les al-go-rithmes genetiques sont con-nus par leur ra-pidite et fa-cilite d'utilisation.
  []
 
 
@@ -387,10 +387,6 @@ Overfull \hbox (8.57326pt too wide) in paragraph at lines 167--193
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
-Overfull \hbox (19.408pt too wide) in paragraph at lines 220--222
-\OT1/cmr/m/n/10 simule. la com-para-i-son va in-clure les metaheuristiques utilisees ainsi que l'heuristique
- []
-
 <./figures/texec (2).png, id=35, 488.57532pt x 228.10219pt>
 File: ./figures/texec (2).png Graphic file (type png)
 <use ./figures/texec (2).png>
@@ -401,7 +397,7 @@ File: ./figures/ecart (2).png Graphic file (type png)
 <use ./figures/ecart (2).png>
 Package pdftex.def Info: ./figures/ecart (2).png  used on input line 231.
 (pdftex.def)             Requested size: 286.82376pt x 138.66913pt.
-[6 <./figures/texec (2).png>]
+ [6 <./figures/texec (2).png>]
 Overfull \hbox (11.97275pt too wide) in paragraph at lines 243--245
 \OT1/cmr/m/n/10 rithme, on l'a com-pare avec d'autres schemas pro-posees a base des metaheuristiques
  []
@@ -413,15 +409,15 @@ Overfull \hbox (71.18013pt too wide) in paragraph at lines 9--11
 
 ) [8] (c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.aux) ) 
 Here is how much of TeX's memory you used:
- 6221 strings out of 480930
- 102028 string characters out of 2899761
+ 6224 strings out of 480930
+ 102073 string characters out of 2899761
  486652 words of memory out of 3000000
- 21955 multiletter control sequences out of 15000+200000
+ 21958 multiletter control sequences out of 15000+200000
  536143 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,11n,45p,729b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\BACHI\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/BACHI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.pdf (8 pages, 223370 bytes).
+Output written on c:/Users\BACHI\PycharmProjects\OPT_PROJET\BPP_Solver\Rapport\article\articleFR.pdf (8 pages, 223833 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

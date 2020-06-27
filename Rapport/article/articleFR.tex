@@ -51,7 +51,7 @@ Le problème du bin packing à une dimension (BPP) est défini comme suit, étan
 
 
 \subsection{Algorithme génétique (AG)}
-L’algorithme génétique est une heuristique de recherche initialement proposée par Holland [1] qui imite le processus de sélection naturelle. Elle appartient à la plus grande classe d'algorithmes évolutionnaires (EA), qui génèrent des solutions en utilisant des techniques inspirées de l'évolution naturelle, telles que la mutation, la sélection et le croisement.
+L’algorithme génétique est une métaheuristique de recherche initialement proposée par Holland \cite{Holland} qui imite le processus de sélection naturelle. Elle appartient à la plus grande classe d'algorithmes évolutionnaires (EA), qui génèrent des solutions en utilisant des techniques inspirées de l'évolution naturelle, telles que la mutation, la sélection et le croisement.
 
 La figure suivante représente les étapes de fonctionnement de notre AG, avec la spécification des méthodes utilisées pour implémenter chaque étape. 
 
@@ -61,8 +61,8 @@ La figure suivante représente les étapes de fonctionnement de notre AG, avec l
     \caption{Processus de AG }
     \label{fig:agschema}
 \end{figure}
-Les algorithmes génétiques sont connus par leur Rapidité et facilité d’utilisation. 
-En effet, le AG est parmis les métaheuristiques les plus rapides, de plus, si la la représentation vectorielle de l'individu est correcte, nous pouvons trouver une solution sans un travail d'analyse approfondi. Par contre, cette métaheuristique ne trouve pas toujours l’optimum et peut se retrouver avec le problème d’optimum local. 
+Les algorithmes génétiques sont connus par leur rapidité et facilité d’utilisation. 
+En effet, le AG est parmis les métaheuristiques les plus rapides, de plus, si la représentation vectorielle de l'individu est correcte, nous pouvons trouver une solution sans un travail d'analyse approfondi. Par contre, cette métaheuristique ne trouve pas toujours l’optimum et peut se retrouver avec le problème d’optimum local. 
 
 \subsection{Le Recuit Simulé (SA)}
 Le recuit simulé est un algorithme de recherche locale initialement introduit par Kirkpatrick et al \cite{kirk} qui simule la fusion et le refroidissement dans le traitement des métaux. Le recuit simulé est généralement implémenté pour rechercher une solution optimale sur une petite zone, même s'il est parfois aussi performant que AG dans certains cas \cite{Alkhateeb}.
@@ -217,7 +217,7 @@ Dans le tableau suivant on donne le temps d'exécution moyen de AG-RS en fonctio
 Le temps d'exécution de AG-RS augmente avec la taille de l’instance,  on  voit un plus grand écart au niveau de N4 =500, où le temps moyen de résolution d’une instance est de 48 secondes, qui reste toujours un temps acceptable. Le AG-RS converge vers la solution assez rapidement. \\
 Pour toutes les instances du benchmark, AG-RS arrive à donner des solutions très proches des solutions optimales avec un écart qui ne dépasse pas 2\%, sauf le cas des instances  HARD (classe 3) où il atteint une valeur de 6\%.
 \subsection{Etude comparative}
-Dans cette partie nous allons comparer AG-RS avec d’autres algorithmes de résolution  implémentés , dont les trois autres schémas à base de AG (AGH-RS,AG-MIX-RS, AG-RS2) présentés dans [num section hybridation de l’intro], ainsi que deux autres schémas HRH, HRH-WOA-RS, HRH-ILWOA-RS, utilisant les métaheuristiques WOA[1], ILWOA[2] respectivement, suivi du recuit simulé. la comparaison va inclure les métaheuristiques utilisées ainsi que l’heuristique FF qui est la plus performante parmis les heuristiques du bin packing. 
+Dans cette partie nous allons comparer AG-RS avec d’autres algorithmes de résolution  implémentés et  présentés dans \emph{(1.3)}, dont les trois schémas à base de AG (AGH-RS,AG-MIX-RS, AG-RS2), ainsi que deux autres schémas HRH-WOA-RS, HRH-ILWOA-RS, à base des métaheuristiques WOA, ILWOA respectivement. La comparaison va inclure les métaheuristiques utilisées ainsi que l’heuristique FF qui est la plus performante parmis les heuristiques du bin packing. 
 \newline Les figure 1 et 2 représentent le temps d'exécution et l’écart à la solution optimale en \% (resp) pour chaque méthode implémentée,  en fonction de la taille de l’instance et sa difficulté. 
 
 \begin{figure}[H]
